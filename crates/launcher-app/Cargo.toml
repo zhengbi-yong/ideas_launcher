@@ -1,0 +1,32 @@
+[package]
+name = "ideas-launcher"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "A fast, low-footprint Windows quick launcher written in Rust"
+
+[build-dependencies]
+winres = "0.1"
+
+[dependencies]
+ideas-design = { workspace = true }
+launcher-core = { workspace = true }
+launcher-index = { workspace = true }
+eframe = { version = "0.37", default-features = false, features = [
+    "glow",
+    "default_fonts",
+    "system_fonts",
+    "clipboard",
+    "accesskit",
+] }
+egui = "0.37"
+raw-window-handle = "0.6"
+serde = { workspace = true }
+serde_json = { workspace = true }
+dirs = { workspace = true }
+log = { workspace = true }
+env_logger = "0.11"
+rayon = { workspace = true }
+parking_lot = { workspace = true }
+image = { version = "0.25", default-features = false, features = ["png", "ico", "jpeg"] }

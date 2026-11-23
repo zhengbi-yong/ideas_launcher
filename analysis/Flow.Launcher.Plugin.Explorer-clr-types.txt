@@ -1,0 +1,2446 @@
+# Types in Flow.Launcher.Plugin.Explorer
+
+
+## (global) (110)
+- __StaticArrayInitTypeSize=16  [methods=0 fields=0 flags=0x115]
+- __StaticArrayInitTypeSize=24  [methods=0 fields=0 flags=0x115]
+- <<SetPropertyAndNotifyOnCompletion>g__MonitorTask|0>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <<SetPropertyAndNotifyOnCompletion>g__MonitorTask|0>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <<SetPropertyAndNotifyOnCompletion>g__MonitorTask|0>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__10_12
+    field <>9__10_13
+    .cctor() : ?
+    .ctor() : ?
+    <LoadContextMenus>b__10_12() : ?
+    <LoadContextMenus>b__10_13() : ?
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__20_0
+    .cctor() : ?
+    .ctor() : ?
+    <QueryDialogJumpAsync>b__20_0() : TypeDef#0
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__8_0
+    .cctor() : ?
+    .ctor() : ?
+    <AllowOnlyNumericInput>b__8_0() : ?
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__27_0
+    .cctor() : ?
+    .ctor() : ?
+    <GetFolderSize>b__27_0() : ?
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__0_0
+    .cctor() : ?
+    .ctor() : ?
+    <CreateList>b__0_0(!4864, ?et0) : System.Void
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__4_0
+    .cctor() : ?
+    .ctor() : ?
+    <HasEnvironmentVar>b__4_0() : ?
+- <>c  [methods=4 fields=2 flags=0x102103]
+    field <>9
+    field <>9__23_0
+    .cctor() : ?
+    .ctor() : ?
+    <OpenFile>b__23_0() : System.String
+    <.cctor>b__30_0(System.Void, System.String) : ?et73
+- <>c  [methods=6 fields=5 flags=0x102103]
+    field <>9
+    field <>9__1_1
+    field <>9__1_2
+    field <>9__2_0
+    field <>9__2_1
+    .cctor() : ?
+    .ctor() : ?
+    <AccessLinkListMatched>b__1_1() : ?et116
+    <AccessLinkListMatched>b__1_2() : ?
+    <AccessLinkListAll>b__2_0() : ?et116
+    <AccessLinkListAll>b__2_1() : ?
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__3_0
+    field <>9__3_1
+    .cctor() : ?
+    .ctor() : ?
+    <DirectorySearch>b__3_0() : ?et100
+    <DirectorySearch>b__3_1() : ?
+- <>c__DisplayClass0_0  [methods=2 fields=1 flags=0x100103]
+    field api
+    .ctor() : ?
+    <PromptDownloadIfNotInstallAsync>b__0() : System.String
+- <>c__DisplayClass1_0  [methods=3 fields=1 flags=0x100103]
+    field query
+    .ctor() : ?
+    <AccessLinkListMatched>b__0() : ?
+    <AccessLinkListMatched>b__3() : TypeDef#0
+- <>c__DisplayClass1_0  [methods=2 fields=2 flags=0x100103]
+    field key
+    field <>9__0
+    .ctor() : ?
+    <GetInstalledPath>b__0() : System.String
+- <>c__DisplayClass10_0  [methods=12 fields=5 flags=0x100103]
+    field record
+    field <>4__this
+    field <>9__3
+    field <>9__8
+    field <>9__11
+    .ctor() : ?
+    <LoadContextMenus>b__0() : ?
+    <LoadContextMenus>b__1() : ?et205
+    <LoadContextMenus>b__2() : ?et205
+    <LoadContextMenus>b__3() : ?
+    <LoadContextMenus>b__4() : ?et205
+    <LoadContextMenus>b__5() : ?et205
+    <LoadContextMenus>b__6() : ?et205
+    <LoadContextMenus>b__8() : ?
+    <LoadContextMenus>b__9() : ?et205
+    <LoadContextMenus>b__10() : ?et205
+    <LoadContextMenus>b__11() : ?
+- <>c__DisplayClass10_0  [methods=2 fields=1 flags=0x100103]
+    field pathToDirectory
+    .ctor() : ?
+    <UseWindowsIndexForDirectorySearch>b__0() : ?
+- <>c__DisplayClass10_1  [methods=2 fields=2 flags=0x100103]
+    field isFile
+    field CS$<>8__locals1
+    .ctor() : ?
+    <LoadContextMenus>b__7() : ?et205
+- <>c__DisplayClass10_2  [methods=2 fields=3 flags=0x100103]
+    field includedItems
+    field excludedItems
+    field CS$<>8__locals2
+    .ctor() : ?
+    <LoadContextMenus>b__14() : ?et224
+- <>c__DisplayClass10_3  [methods=3 fields=1 flags=0x100103]
+    field contextMenuItem
+    .ctor() : ?
+    <LoadContextMenus>b__15() : ?
+    <LoadContextMenus>b__16() : ?
+- <>c__DisplayClass10_4  [methods=3 fields=2 flags=0x100103]
+    field menuItem
+    field CS$<>8__locals3
+    .ctor() : ?
+    <LoadContextMenus>b__17() : ?
+    <LoadContextMenus>b__18() : ?et205
+- <>c__DisplayClass11_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field record
+    .ctor() : ?
+    <CreateOpenContainingFolderResult>b__0() : ?et205
+- <>c__DisplayClass12_0  [methods=2 fields=3 flags=0x100103]
+    field editorPath
+    field record
+    field <>4__this
+    .ctor() : ?
+    <CreateOpenWithEditorResult>b__0() : ?et205
+- <>c__DisplayClass12_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field actions
+    .ctor() : ?
+    <GetQuickAccessResultsFilteredByActionKeyword>b__0() : ?et197
+- <>c__DisplayClass13_0  [methods=2 fields=3 flags=0x100103]
+    field shellPath
+    field record
+    field <>4__this
+    .ctor() : ?
+    <CreateOpenWithShellResult>b__0() : ?et205
+- <>c__DisplayClass13_0  [methods=2 fields=1 flags=0x100103]
+    field inputString
+    .ctor() : ?
+    <ReplaceSpecialCharacterWithTwoSideWhiteSpace>b__0() : ?et161
+- <>c__DisplayClass14_0  [methods=4 fields=4 flags=0x100103]
+    field <>4__this
+    field record
+    field <>9__1
+    field <>9__2
+    .ctor() : ?
+    <CreateAddToIndexSearchExclusionListResult>b__0() : ?et205
+    <CreateAddToIndexSearchExclusionListResult>b__1() : ?
+    <CreateAddToIndexSearchExclusionListResult>b__2() : ?
+- <>c__DisplayClass15_0  [methods=2 fields=1 flags=0x100103]
+    field e
+    .ctor() : ?
+    <QueryAsync>b__0(System.Boolean, TypeDef#0) : System.Void[]
+- <>c__DisplayClass15_0  [methods=3 fields=2 flags=0x100103]
+    field path
+    field query
+    .ctor() : ?
+    <CreateFolderResult>b__0() : ?
+    <CreateFolderResult>b__1() : ?et205
+- <>c__DisplayClass16_0  [methods=2 fields=1 flags=0x100103]
+    field record
+    .ctor() : ?
+    <CreateOpenWithMenu>b__0() : ?et205
+- <>c__DisplayClass18_0  [methods=2 fields=1 flags=0x100103]
+    field path
+    .ctor() : ?
+    <CreateDriveSpaceDisplayResult>b__0() : ?et205
+- <>c__DisplayClass2_0  [methods=2 fields=1 flags=0x100103]
+    field query
+    .ctor() : ?
+    <AccessLinkListAll>b__2() : TypeDef#0
+- <>c__DisplayClass20_0  [methods=2 fields=1 flags=0x100103]
+    field folderPath
+    .ctor() : ?
+    <CreateOpenCurrentFolderResult>b__0() : ?et205
+- <>c__DisplayClass21_0  [methods=3 fields=2 flags=0x100103]
+    field filePath
+    field directory
+    .ctor() : ?
+    <CreateFileResult>b__0() : ?
+    <CreateFileResult>b__1() : ?et205
+- <>c__DisplayClass22_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field filePath
+    .ctor() : ?
+    <.ctor>b__0() : ?
+- <>c__DisplayClass25_0  [methods=2 fields=1 flags=0x100103]
+    field fileOrFolder
+    .ctor() : ?
+    <IncrementEverythingRunCounterIfNeeded>b__0() : ?
+- <>c__DisplayClass39_0`1  [methods=2 fields=5 flags=0x100103]
+    field newValue
+    field taskNotifier
+    field <>4__this
+    field propertyName
+    field callback
+    .ctor() : ?
+    <SetPropertyAndNotifyOnCompletion>g__MonitorTask|0() : ?
+- <>c__DisplayClass5_0  [methods=2 fields=1 flags=0x100103]
+    field r
+    .ctor() : ?
+    <SearchAsync>b__1() : ?
+- <>c__DisplayClass51_0`1  [methods=2 fields=5 flags=0x100103]
+    field newValue
+    field taskNotifier
+    field <>4__this
+    field propertyName
+    field callback
+    .ctor() : ?
+    <SetPropertyAndNotifyOnCompletion>g__MonitorTask|0() : ?
+- <>c__DisplayClass54_0`1  [methods=2 fields=5 flags=0x100103]
+    field newValue
+    field taskNotifier
+    field <>4__this
+    field propertyName
+    field callback
+    .ctor() : ?
+    <SetPropertyAndNotifyOnCompletion>g__MonitorTask|0() : ?
+- <>c__DisplayClass6_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field query
+    .ctor() : ?
+    <EverythingContentSearchResult>b__0() : ?et205
+- <>c__DisplayClass9_0  [methods=2 fields=1 flags=0x100103]
+    field normalizedPath
+    .ctor() : ?
+    <IsHomeFolderPath>b__0() : ?
+- <>c__DisplayClass9_0  [methods=2 fields=1 flags=0x100103]
+    field pathToDirectory
+    .ctor() : ?
+    <UseIndexSearch>b__0() : ?
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__IsWhiteSpace
+- <>y__InlineArray4`1  [methods=0 fields=1 flags=0x100100]
+    field _element0
+- <>y__InlineArray5`1  [methods=0 fields=1 flags=0x100100]
+    field _element0
+- <ClickToInstallEverythingAsync>d__6  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <ContentSearchAsync>d__8  [methods=13 fields=19 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>v__promiseOfValueOrEnd
+    field <>2__current
+    field <>w__disposeMode
+    field <>x__combinedTokens
+    field <>l__initialThreadId
+    field <>4__this
+    field token
+    field <>3__token
+    field plainSearch
+    field <>3__plainSearch
+    field contentSearch
+    field <>3__contentSearch
+    field <>u__1
+    field <>7__wrap1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>u__2
+    .ctor() : ?
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+    System.Collections.Generic.IAsyncEnumerable<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.GetAsyncEnumerator(System.Void, TypeDef#90195033) : ?et205
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.MoveNextAsync(System.Boolean) : System.Void[]
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.get_Current() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.Threading.Tasks.Sources.IValueTaskSource.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.IAsyncDisposable.DisposeAsync() : ?
+- <EnumerateAsync>d__9  [methods=13 fields=21 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>v__promiseOfValueOrEnd
+    field <>2__current
+    field <>w__disposeMode
+    field <>x__combinedTokens
+    field <>l__initialThreadId
+    field <>4__this
+    field token
+    field <>3__token
+    field search
+    field <>3__search
+    field path
+    field <>3__path
+    field recursive
+    field <>3__recursive
+    field <>u__1
+    field <>7__wrap1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>u__2
+    .ctor() : ?
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+    System.Collections.Generic.IAsyncEnumerable<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.GetAsyncEnumerator(System.Void, TypeDef#90195033) : ?et205
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.MoveNextAsync(System.Boolean) : System.Void[]
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.get_Current() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.Threading.Tasks.Sources.IValueTaskSource.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.IAsyncDisposable.DisposeAsync() : ?
+- <ExecuteWindowsIndexSearchAsync>d__2  [methods=13 fields=26 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>v__promiseOfValueOrEnd
+    field <>2__current
+    field <>w__disposeMode
+    field <>x__combinedTokens
+    field <>l__initialThreadId
+    field connectionString
+    field <>3__connectionString
+    field token
+    field <>3__token
+    field indexQueryString
+    field <>3__indexQueryString
+    field <conn>5__2
+    field <command>5__3
+    field <dataReader>5__4
+    field <>7__wrap4
+    field <>7__wrap5
+    field <>u__1
+    field <>7__wrap6
+    field <>7__wrap7
+    field <>u__2
+    field <>7__wrap8
+    field <>7__wrap9
+    field <>u__3
+    field <>u__4
+    .ctor() : ?
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+    System.Collections.Generic.IAsyncEnumerable<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.GetAsyncEnumerator(System.Void, TypeDef#90195033) : ?et205
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.MoveNextAsync(System.Boolean) : System.Void[]
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.get_Current() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.Threading.Tasks.Sources.IValueTaskSource.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.IAsyncDisposable.DisposeAsync() : ?
+- <IncrementRunCounterAsync>d__10  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field fileOrFolder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <IsEverythingRunningAsync>d__7  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field token
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <LoadImageAsync>d__23  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <PathSearchAsync>d__7  [methods=2 fields=11 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field <>4__this
+    field token
+    field <results>5__2
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>7__wrap4
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <PrivateImplementationDetails>  [methods=2 fields=2 flags=0x100]
+    field 4B599A027697BCCD5F501E8E5BF8A706057B526C07FD41BFED459F05A8C8D99E
+    field 933C88A80444A45A105A6194FAA7724FADF3D31E62B43329A939CBAFCF8F2590
+    InlineArrayAsReadOnlySpan(!!4097, !!2048) : System.Void
+    InlineArrayElementRef() : !!2048
+- <PromptDownloadIfNotInstallAsync>d__0  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field api
+    field installedLocation
+    field <>8__1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <QueryAsync>d__15  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field query
+    field token
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <QueryDialogJumpAsync>d__20  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field query
+    field token
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <SearchAsync>d__5  [methods=2 fields=15 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field <>4__this
+    field token
+    field <results>5__2
+    field <engineName>5__3
+    field <actions>5__4
+    field <>7__wrap4
+    field <>u__1
+    field <>7__wrap5
+    field <>7__wrap6
+    field <>7__wrap7
+    field <>u__2
+    field <>u__3
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <SearchAsync>d__7  [methods=13 fields=17 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>v__promiseOfValueOrEnd
+    field <>2__current
+    field <>w__disposeMode
+    field <>x__combinedTokens
+    field <>l__initialThreadId
+    field <>4__this
+    field token
+    field <>3__token
+    field search
+    field <>3__search
+    field <>u__1
+    field <>7__wrap1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>u__2
+    .ctor() : ?
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+    System.Collections.Generic.IAsyncEnumerable<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.GetAsyncEnumerator(System.Void, TypeDef#90195033) : ?et205
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.MoveNextAsync(System.Boolean) : System.Void[]
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.get_Current() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.Threading.Tasks.Sources.IValueTaskSource.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.IAsyncDisposable.DisposeAsync() : ?
+- <SearchAsync>d__8  [methods=13 fields=13 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>v__promiseOfValueOrEnd
+    field <>2__current
+    field <>w__disposeMode
+    field <>x__combinedTokens
+    field <>l__initialThreadId
+    field option
+    field <>3__option
+    field token
+    field <>3__token
+    field <>u__1
+    field <idx>5__2
+    .ctor() : ?
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+    System.Collections.Generic.IAsyncEnumerable<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.GetAsyncEnumerator(System.Void, TypeDef#90195033) : ?et205
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.MoveNextAsync(System.Boolean) : System.Void[]
+    System.Collections.Generic.IAsyncEnumerator<Flow.Launcher.Plugin.Explorer.Search.SearchResult>.get_Current() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.Threading.Tasks.Sources.IValueTaskSource.GetResult() : ?
+    System.Threading.Tasks.Sources.IValueTaskSource.GetStatus() : System.Int16
+    System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted(?et129, System.Void, System.Object, System.Object, System.Int16, TypeDef#0) : ?et129
+    System.IAsyncDisposable.DisposeAsync() : ?
+- <ThrowIfEverythingNotAvailableAsync>d__5  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field token
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- ActionKeyword  [methods=0 fields=8 flags=0x105]
+    field value__
+    field SearchActionKeyword
+    field PathSearchActionKeyword
+    field FileContentSearchActionKeyword
+    field IndexSearchActionKeyword
+    field QuickAccessActionKeyword
+    field FolderSearchActionKeyword
+    field FileSearchActionKeyword
+- CMD_CUSTOM  [methods=0 fields=2 flags=0x103]
+    field value__
+    field ExpandCollapse
+- CMF  [methods=0 fields=11 flags=0x103]
+    field value__
+    field NORMAL
+    field DEFAULTONLY
+    field VERBSONLY
+    field EXPLORE
+    field NOVERBS
+    field CANRENAME
+    field NODEFAULT
+    field INCLUDESTATIC
+    field EXTENDEDVERBS
+    field RESERVED
+- CMIC  [methods=0 fields=12 flags=0x103]
+    field value__
+    field HOTKEY
+    field ICON
+    field FLAG_NO_UI
+    field UNICODE
+    field NO_CONSOLE
+    field ASYNCOK
+    field NOZONECHECKS
+    field SHIFT_DOWN
+    field CONTROL_DOWN
+    field FLAG_LOG_USAGE
+    field PTINVOKE
+- CMINVOKECOMMANDINFOEX  [methods=0 fields=15 flags=0x11010b]
+    field cbSize
+    field fMask
+    field hwnd
+    field lpVerb
+    field lpParameters
+    field lpDirectory
+    field nShow
+    field dwHotKey
+    field hIcon
+    field lpTitle
+    field lpVerbW
+    field lpParametersW
+    field lpDirectoryW
+    field lpTitleW
+    field ptInvoke
+- ContentIndexSearchEngineOption  [methods=0 fields=3 flags=0x102]
+    field value__
+    field WindowsIndex
+    field Everything
+- ContextMenuFlags  [methods=0 fields=17 flags=0x103]
+    field value__
+    field Normal
+    field DefaultOnly
+    field VerbsOnly
+    field Explore
+    field NoVerbs
+    field CanRename
+    field NoDefault
+    field IncludeStatic
+    field ItemMenu
+    field ExtendedVerbs
+    field DisabledVerbs
+    field AsyncVerbState
+    field OptimizeForInvoke
+    field SyncCascadeMenu
+    field DoNotPickDefault
+    field Reserved
+- ContextMenuInvokeCommandFlags  [methods=0 fields=12 flags=0x103]
+    field value__
+    field Icon
+    field Hotkey
+    field FlagNoUi
+    field Unicode
+    field NoConsole
+    field AsyncOk
+    field NoZoneChecks
+    field ShiftDown
+    field ControlDown
+    field FlagLogUsage
+    field PointInvoke
+- CWPSTRUCT  [methods=0 fields=4 flags=0x10010b]
+    field lparam
+    field wparam
+    field message
+    field hwnd
+- GCS  [methods=0 fields=7 flags=0x103]
+    field value__
+    field VERBA
+    field HELPTEXTA
+    field VALIDATEA
+    field VERBW
+    field HELPTEXTW
+    field VALIDATEW
+- GetCommandStringFlags  [methods=0 fields=12 flags=0x103]
+    field value__
+    field VerbA
+    field HelpTextA
+    field ValidateA
+    field Unicode
+    field Verb
+    field VerbW
+    field HelpText
+    field HelpTextW
+    field Validate
+    field ValidateW
+    field VerbIconW
+- HookEventHandler  [methods=4 fields=0 flags=0x102]
+    .ctor() : ?
+    Invoke() : ?[,]
+    BeginInvoke(TypeDef#744490117, System.Object) : System.Object
+    EndInvoke() : ?et173
+- HookProc  [methods=4 fields=0 flags=0x102]
+    .ctor() : ?
+    Invoke() : System.IntPtr
+    BeginInvoke(System.IntPtr, System.IntPtr, TypeDef#0) : System.Int32
+    EndInvoke() : ?et173
+- IContextMenu  [methods=3 fields=0 flags=0x1010a3]
+    QueryContextMenu(System.UInt32, TypeDef#0) : System.UInt32
+    InvokeCommand(?et252) : ?et128
+    GetCommandString(System.Object, System.UInt32, System.Byte[], System.Int32) : ?et129
+- IContextMenu2  [methods=4 fields=0 flags=0x1010a3]
+    QueryContextMenu(System.UInt32, TypeDef#0) : System.UInt32
+    InvokeCommand(?et252) : ?et128
+    GetCommandString(System.Object, System.UInt32, TypeDef#0) : ?et129
+    HandleMenuMsg() : System.IntPtr
+- IContextMenu3  [methods=5 fields=0 flags=0x1010a3]
+    QueryContextMenu(System.UInt32, TypeDef#0) : System.UInt32
+    InvokeCommand(?et252) : ?et128
+    GetCommandString(System.Object, System.UInt32, TypeDef#0) : ?et129
+    HandleMenuMsg() : System.IntPtr
+    HandleMenuMsg2(System.IntPtr) : System.IntPtr
+- IndexSearchEngineOption  [methods=0 fields=3 flags=0x102]
+    field value__
+    field WindowsIndex
+    field Everything
+- IShellFolder  [methods=10 fields=0 flags=0x1010a3]
+    ParseDisplayName(System.UInt32&, System.IntPtr&, TypeDef#0&) : System.String
+    EnumObjects(System.IntPtr&[,]) : ?et129
+    BindToObject() : TypeDef#0&
+    BindToStorage() : TypeDef#0&
+    CompareIDs() : System.IntPtr
+    CreateViewObject(System.IntPtr&) : ?et109
+    GetAttributesOf(TypeDef#0&) : System.IntPtr
+    GetUIObjectOf(TypeRef#100927003&) : System.IntPtr[]
+    GetDisplayNameOf(System.Single, System.IntPtr) : ?et129
+    SetNameOf(TypeRef#100926240) : System.String
+- ITaskNotifier`1  [methods=2 fields=0 flags=0x1000a3]
+    get_Task() : ?
+    set_Task() : ?
+- ITaskNotifier`1  [methods=2 fields=0 flags=0x1000a3]
+    get_Task() : ?
+    set_Task() : ?
+- ITaskNotifier`1  [methods=2 fields=0 flags=0x1000a3]
+    get_Task() : ?
+    set_Task() : ?
+- MenuItemFtype  [methods=0 fields=10 flags=0x103]
+    field value__
+    field Bitmap
+    field MenuBarBreak
+    field MenuBreak
+    field OwnerDraw
+    field RadioCheck
+    field RightJustify
+    field RightOrder
+    field Separator
+    field String
+- MENUITEMINFO  [methods=1 fields=12 flags=0x12010b]
+    field cbSize
+    field fMask
+    field fType
+    field fState
+    field wID
+    field hSubMenu
+    field hbmpChecked
+    field hbmpUnchecked
+    field dwItemData
+    field dwTypeData
+    field cch
+    field hbmpItem
+    .ctor() : ?
+- MenuItemInformationMask  [methods=0 fields=10 flags=0x103]
+    field value__
+    field Bitmap
+    field Checkmarks
+    field Data
+    field Ftype
+    field Id
+    field State
+    field String
+    field Submenu
+    field Type
+- MFS  [methods=0 fields=9 flags=0x103]
+    field value__
+    field GRAYED
+    field DISABLED
+    field CHECKED
+    field HILITE
+    field ENABLED
+    field UNCHECKED
+    field UNHILITE
+    field DEFAULT
+- MFT  [methods=0 fields=14 flags=0x103]
+    field value__
+    field GRAYED
+    field DISABLED
+    field CHECKED
+    field SEPARATOR
+    field RADIOCHECK
+    field BITMAP
+    field OWNERDRAW
+    field MENUBARBREAK
+    field MENUBREAK
+    field RIGHTORDER
+    field BYCOMMAND
+    field BYPOSITION
+    field POPUP
+- MIIM  [methods=0 fields=10 flags=0x103]
+    field value__
+    field BITMAP
+    field CHECKMARKS
+    field DATA
+    field FTYPE
+    field ID
+    field STATE
+    field STRING
+    field SUBMENU
+    field TYPE
+- PathEnumerationEngineOption  [methods=0 fields=4 flags=0x102]
+    field value__
+    field WindowsIndex
+    field Everything
+    field DirectEnumeration
+- PathEqualityComparator  [methods=4 fields=1 flags=0x100002]
+    field instance
+    get_Instance() : ?
+    Equals(TypeDef#0) : ?et197
+    GetHashCode() : ?et197
+    .ctor() : ?
+- POINT  [methods=1 fields=2 flags=0x12010b]
+    field x
+    field y
+    .ctor() : ?
+- SFGAO  [methods=0 fields=34 flags=0x103]
+    field value__
+    field BROWSABLE
+    field CANCOPY
+    field CANDELETE
+    field CANLINK
+    field CANMONIKER
+    field CANMOVE
+    field CANRENAME
+    field CAPABILITYMASK
+    field COMPRESSED
+    field CONTENTSMASK
+    field DISPLAYATTRMASK
+    field DROPTARGET
+    field ENCRYPTED
+    field FILESYSANCESTOR
+    field FILESYSTEM
+    field FOLDER
+    field GHOSTED
+    field HASPROPSHEET
+    field HASSTORAGE
+    field HASSUBFOLDER
+    field HIDDEN
+    field ISSLOW
+    field LINK
+    field NEWCONTENT
+    field NONENUMERATED
+    field READONLY
+    field REMOVABLE
+    field SHARE
+    field STORAGE
+    field STORAGEANCESTOR
+    field STORAGECAPMASK
+    field STREAM
+    field VALIDATE
+- SHCONTF  [methods=0 fields=8 flags=0x103]
+    field value__
+    field FOLDERS
+    field NONFOLDERS
+    field INCLUDEHIDDEN
+    field INIT_ON_FIRST_NEXT
+    field NETPRINTERSRCH
+    field SHAREABLE
+    field STORAGE
+- SHGNO  [methods=0 fields=6 flags=0x103]
+    field value__
+    field NORMAL
+    field INFOLDER
+    field FOREDITING
+    field FORADDRESSBAR
+    field FORPARSING
+- StateCode  [methods=0 fields=9 flags=0x102]
+    field value__
+    field OK
+    field MemoryError
+    field IPCError
+    field RegisterClassExError
+    field CreateWindowError
+    field CreateThreadError
+    field InvalidIndexError
+    field InvalidCallError
+- STGMEDIUM  [methods=0 fields=9 flags=0x10010b]
+    field tymed
+    field hBitmap
+    field hMetaFilePict
+    field hEnhMetaFile
+    field hGlobal
+    field lpszFileName
+    field pstm
+    field pstg
+    field pUnkForRelease
+- SW  [methods=0 fields=14 flags=0x103]
+    field value__
+    field HIDE
+    field SHOWNORMAL
+    field NORMAL
+    field SHOWMINIMIZED
+    field SHOWMAXIMIZED
+    field MAXIMIZE
+    field SHOWNOACTIVATE
+    field SHOW
+    field MINIMIZE
+    field SHOWMINNOACTIVE
+    field SHOWNA
+    field RESTORE
+    field SHOWDEFAULT
+- TaskNotifier  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.Explorer.Views.ActionKeywordSetting.ITaskNotifier<System.Threading.Tasks.Task>.get_Task() : ?
+    Flow.Launcher.Plugin.Explorer.Views.ActionKeywordSetting.ITaskNotifier<System.Threading.Tasks.Task>.set_Task() : System.Void
+    op_Implicit() : TypeDef#0
+- TaskNotifier  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.Explorer.Views.PreviewPanel.ITaskNotifier<System.Threading.Tasks.Task>.get_Task() : ?
+    Flow.Launcher.Plugin.Explorer.Views.PreviewPanel.ITaskNotifier<System.Threading.Tasks.Task>.set_Task() : System.Void
+    op_Implicit() : TypeDef#0
+- TaskNotifier  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.Explorer.Views.QuickAccessLinkSettings.ITaskNotifier<System.Threading.Tasks.Task>.get_Task() : ?
+    Flow.Launcher.Plugin.Explorer.Views.QuickAccessLinkSettings.ITaskNotifier<System.Threading.Tasks.Task>.set_Task() : System.Void
+    op_Implicit() : TypeDef#0
+- TaskNotifier`1  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.Explorer.Views.ActionKeywordSetting.ITaskNotifier<System.Threading.Tasks.Task<T>>.get_Task(System.Void, !0) : System.Double
+    Flow.Launcher.Plugin.Explorer.Views.ActionKeywordSetting.ITaskNotifier<System.Threading.Tasks.Task<T>>.set_Task(System.Double, System.Void, !0) : ?et129
+    op_Implicit(System.Void, !5376, TypeRef#79719456, ?et0) : System.Double
+- TaskNotifier`1  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.Explorer.Views.PreviewPanel.ITaskNotifier<System.Threading.Tasks.Task<T>>.get_Task(System.Void, !0) : System.Double
+    Flow.Launcher.Plugin.Explorer.Views.PreviewPanel.ITaskNotifier<System.Threading.Tasks.Task<T>>.set_Task(System.Double, System.Void, !0) : ?et129
+    op_Implicit(System.Void, !5376, TypeRef#79720992, ?et0) : System.Double
+- TaskNotifier`1  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.Explorer.Views.QuickAccessLinkSettings.ITaskNotifier<System.Threading.Tasks.Task<T>>.get_Task(System.Void, !0) : System.Double
+    Flow.Launcher.Plugin.Explorer.Views.QuickAccessLinkSettings.ITaskNotifier<System.Threading.Tasks.Task<T>>.set_Task(System.Double, System.Void, !0) : ?et129
+    op_Implicit(System.Void, !5376, TypeRef#79722784, ?et0) : System.Double
+- TPM  [methods=0 fields=20 flags=0x103]
+    field value__
+    field LEFTBUTTON
+    field RIGHTBUTTON
+    field LEFTALIGN
+    field CENTERALIGN
+    field RIGHTALIGN
+    field TOPALIGN
+    field VCENTERALIGN
+    field BOTTOMALIGN
+    field HORIZONTAL
+    field VERTICAL
+    field NONOTIFY
+    field RETURNCMD
+    field RECURSE
+    field HORPOSANIMATION
+    field HORNEGANIMATION
+    field VERPOSANIMATION
+    field VERNEGANIMATION
+    field NOANIMATION
+    field LAYOUTRTL
+- TYMED  [methods=0 fields=9 flags=0x103]
+    field value__
+    field ENHMF
+    field FILE
+    field GDI
+    field HGLOBAL
+    field ISTORAGE
+    field ISTREAM
+    field MFPICT
+    field NULL
+- WM  [methods=0 fields=210 flags=0x103]
+    field value__
+    field ACTIVATE
+    field ACTIVATEAPP
+    field AFXFIRST
+    field AFXLAST
+    field APP
+    field ASKCBFORMATNAME
+    field CANCELJOURNAL
+    field CANCELMODE
+    field CAPTURECHANGED
+    field CHANGECBCHAIN
+    field CHAR
+    field CHARTOITEM
+    field CHILDACTIVATE
+    field CLEAR
+    field CLOSE
+    field COMMAND
+    field COMPACTING
+    field COMPAREITEM
+    field CONTEXTMENU
+    field COPY
+    field COPYDATA
+    field CREATE
+    field CTLCOLORBTN
+    field CTLCOLORDLG
+    field CTLCOLOREDIT
+    field CTLCOLORLISTBOX
+    field CTLCOLORMSGBOX
+    field CTLCOLORSCROLLBAR
+    field CTLCOLORSTATIC
+    field CUT
+    field DEADCHAR
+    field DELETEITEM
+    field DESTROY
+    field DESTROYCLIPBOARD
+    field DEVICECHANGE
+    field DEVMODECHANGE
+    field DISPLAYCHANGE
+    field DRAWCLIPBOARD
+    field DRAWITEM
+    field DROPFILES
+    field ENABLE
+    field ENDSESSION
+    field ENTERIDLE
+    field ENTERMENULOOP
+    field ENTERSIZEMOVE
+    field ERASEBKGND
+    field EXITMENULOOP
+    field EXITSIZEMOVE
+    field FONTCHANGE
+    field GETDLGCODE
+    field GETFONT
+    field GETHOTKEY
+    field GETICON
+    field GETMINMAXINFO
+    field GETOBJECT
+    field GETSYSMENU
+    field GETTEXT
+    field GETTEXTLENGTH
+    field HANDHELDFIRST
+    field HANDHELDLAST
+    field HELP
+    field HOTKEY
+    field HSCROLL
+    field HSCROLLCLIPBOARD
+    field ICONERASEBKGND
+    field IME_CHAR
+    field IME_COMPOSITION
+    field IME_COMPOSITIONFULL
+    field IME_CONTROL
+    field IME_ENDCOMPOSITION
+    field IME_KEYDOWN
+    field IME_KEYLAST
+    field IME_KEYUP
+    field IME_NOTIFY
+    field IME_REQUEST
+    field IME_SELECT
+    field IME_SETCONTEXT
+    field IME_STARTCOMPOSITION
+    field INITDIALOG
+    field INITMENU
+    field INITMENUPOPUP
+    field INPUTLANGCHANGE
+    field INPUTLANGCHANGEREQUEST
+    field KEYDOWN
+    field KEYFIRST
+    field KEYLAST
+    field KEYUP
+    field KILLFOCUS
+    field LBUTTONDBLCLK
+    field LBUTTONDOWN
+    field LBUTTONUP
+    field LVM_GETEDITCONTROL
+    field LVM_SETIMAGELIST
+    field MBUTTONDBLCLK
+    field MBUTTONDOWN
+    field MBUTTONUP
+    field MDIACTIVATE
+    field MDICASCADE
+    field MDICREATE
+    field MDIDESTROY
+    field MDIGETACTIVE
+    field MDIICONARRANGE
+    field MDIMAXIMIZE
+    field MDINEXT
+    field MDIREFRESHMENU
+    field MDIRESTORE
+    field MDISETMENU
+    field MDITILE
+    field MEASUREITEM
+    field MENUCHAR
+    field MENUCOMMAND
+    field MENUDRAG
+    field MENUGETOBJECT
+    field MENURBUTTONUP
+    field MENUSELECT
+    field MOUSEACTIVATE
+    field MOUSEFIRST
+    field MOUSEHOVER
+    field MOUSELAST
+    field MOUSELEAVE
+    field MOUSEMOVE
+    field MOUSEWHEEL
+    field MOVE
+    field MOVING
+    field NCACTIVATE
+    field NCCALCSIZE
+    field NCCREATE
+    field NCDESTROY
+    field NCHITTEST
+    field NCLBUTTONDBLCLK
+    field NCLBUTTONDOWN
+    field NCLBUTTONUP
+    field NCMBUTTONDBLCLK
+    field NCMBUTTONDOWN
+    field NCMBUTTONUP
+    field NCMOUSEHOVER
+    field NCMOUSELEAVE
+    field NCMOUSEMOVE
+    field NCPAINT
+    field NCRBUTTONDBLCLK
+    field NCRBUTTONDOWN
+    field NCRBUTTONUP
+    field NEXTDLGCTL
+    field NEXTMENU
+    field NOTIFY
+    field NOTIFYFORMAT
+    field NULL
+    field PAINT
+    field PAINTCLIPBOARD
+    field PAINTICON
+    field PALETTECHANGED
+    field PALETTEISCHANGING
+    field PARENTNOTIFY
+    field PASTE
+    field PENWINFIRST
+    field PENWINLAST
+    field POWER
+    field PRINT
+    field PRINTCLIENT
+    field QUERYDRAGICON
+    field QUERYENDSESSION
+    field QUERYNEWPALETTE
+    field QUERYOPEN
+    field QUEUESYNC
+    field QUIT
+    field RBUTTONDBLCLK
+    field RBUTTONDOWN
+    field RBUTTONUP
+    field RENDERALLFORMATS
+    field RENDERFORMAT
+    field SETCURSOR
+    field SETFOCUS
+    field SETFONT
+    field SETHOTKEY
+    field SETICON
+    field SETMARGINS
+    field SETREDRAW
+    field SETTEXT
+    field SETTINGCHANGE
+    field SHOWWINDOW
+    field SIZE
+    field SIZECLIPBOARD
+    field SIZING
+    field SPOOLERSTATUS
+    field STYLECHANGED
+    field STYLECHANGING
+    field SYNCPAINT
+    field SYSCHAR
+    field SYSCOLORCHANGE
+    field SYSCOMMAND
+    field SYSDEADCHAR
+    field SYSKEYDOWN
+    field SYSKEYUP
+    field TCARD
+    field TIMECHANGE
+    field TIMER
+    field TVM_GETEDITCONTROL
+    field TVM_SETIMAGELIST
+    field UNDO
+    field UNINITMENUPOPUP
+    field USER
+    field USERCHANGED
+    field VKEYTOITEM
+    field VSCROLL
+    field VSCROLLCLIPBOARD
+    field WINDOWPOSCHANGED
+    field WINDOWPOSCHANGING
+    field WININICHANGE
+    field SH_NOTIFY
+
+## CommunityToolkit.Mvvm.ComponentModel.__Internals (1)
+- __KnownINotifyPropertyChangedArgs  [methods=1 fields=4 flags=0x100180]
+    field FileSize
+    field CreatedAt
+    field LastModifiedAt
+    field PreviewImage
+    .cctor() : ?
+
+## Flow.Launcher.Plugin.Explorer (4)
+- ContextMenu  [methods=16 fields=3 flags=0x100000]
+    field ClassName
+    field <Context>k__BackingField
+    field <Settings>k__BackingField
+    get_Context() : ?
+    set_Context() : ?et189
+    get_Settings() : ?
+    set_Settings() : ?
+    .ctor(TypeDef#0) : ?et189
+    LoadContextMenus(System.Void, TypeDef#537178464, ?et197) : ?et193
+    CreateOpenContainingFolderResult() : TypeDef#0
+    CreateOpenWithEditorResult() : TypeDef#0
+    CreateOpenWithShellResult() : TypeDef#0
+    CreateAddToIndexSearchExclusionListResult() : TypeDef#0
+    CreateOpenWindowsIndexingOptions() : ?
+    CreateOpenWithMenu() : TypeDef#0
+    LogException(?et157) : ?et128
+    CanRunAsDifferentUser() : ?
+    .cctor() : ?
+    <CreateOpenWindowsIndexingOptions>b__15_0() : ?et205
+- Localize  [methods=187 fields=0 flags=0x100181]
+    plugin_explorer_make_selection_warning() : ?
+    plugin_explorer_quick_access_link_no_folder_selected() : ?
+    plugin_explorer_quick_access_link_path_already_exists() : ?
+    plugin_explorer_delete_quick_access_link() : ?
+    plugin_explorer_delete_index_search_excluded_path() : ?
+    plugin_explorer_select_folder_link_warning() : ?
+    plugin_explorer_delete_folder_link() : ?
+    plugin_explorer_deletefileconfirm() : ?
+    plugin_explorer_deletefilefolderconfirm() : ?
+    plugin_explorer_deletefilefoldersuccess() : ?
+    plugin_explorer_deletefilefoldersuccess_detail() : ?
+    plugin_explorer_globalActionKeywordInvalid() : ?
+    plugin_explorer_quickaccess_globalActionKeywordInvalid() : ?
+    plugin_explorer_windowsSearchServiceNotRunning() : ?
+    plugin_explorer_windowsSearchServiceFix() : ?
+    plugin_explorer_alternative() : ?
+    plugin_explorer_alternative_title() : ?
+    plugin_explorer_directoryinfosearch_error() : ?
+    plugin_explorer_opendir_error() : ?
+    plugin_explorer_openfile_error() : ?
+    plugin_explorer_new_action_keyword_assigned() : ?
+    plugin_explorer_delete() : ?
+    plugin_explorer_edit() : ?
+    plugin_explorer_add() : ?
+    plugin_explorer_generalsetting_header() : ?
+    plugin_explorer_manageactionkeywords_header() : ?
+    plugin_explorer_manage_quick_access_links_header() : ?
+    plugin_explorer_quickaccesslinks_header() : ?
+    plugin_explorer_everything_setting_header() : ?
+    plugin_explorer_previewpanel_setting_header() : ?
+    plugin_explorer_previewpanel_display_file_size_checkbox() : ?
+    plugin_explorer_previewpanel_display_file_creation_checkbox() : ?
+    plugin_explorer_previewpanel_display_file_modification_checkbox() : ?
+    plugin_explorer_previewpanel_display_file_age_checkbox() : ?
+    plugin_explorer_previewpanel_file_info_label() : ?
+    plugin_explorer_previewpanel_date_and_time_format_label() : ?
+    plugin_explorer_everything_sort_option() : ?
+    plugin_explorer_everything_installed_path() : ?
+    plugin_explorer_launch_hidden() : ?
+    plugin_explorer_editor_path() : ?
+    plugin_explorer_shell_path() : ?
+    plugin_explorer_indexsearchexcludedpaths_header() : ?
+    plugin_explorer_use_location_as_working_dir() : ?
+    plugin_explorer_display_more_info_in_tooltip() : ?
+    plugin_explorer_default_open_in_file_manager() : ?
+    plugin_explorer_boost_home_folder_score() : ?
+    plugin_explorer_usewindowsindexfordirectorysearch() : ?
+    plugin_explorer_manageindexoptions() : ?
+    plugin_explorer_actionkeywordview_search() : ?
+    plugin_explorer_actionkeywordview_pathsearch() : ?
+    plugin_explorer_actionkeywordview_filecontentsearch() : ?
+    plugin_explorer_actionkeywordview_indexsearch() : ?
+    plugin_explorer_actionkeywordview_quickaccess() : ?
+    plugin_explorer_actionkeywordview_foldersearch() : ?
+    plugin_explorer_actionkeywordview_filesearch() : ?
+    plugin_explorer_actionkeyword_current() : ?
+    plugin_explorer_actionkeyword_done() : ?
+    plugin_explorer_actionkeyword_enabled() : ?
+    plugin_explorer_actionkeyword_enabled_tooltip() : ?
+    plugin_explorer_engine_everything() : ?
+    plugin_explorer_engine_windows_index() : ?
+    plugin_explorer_path_enumeration_engine_none() : ?
+    plugin_explorer_file_editor_path() : ?
+    plugin_explorer_folder_editor_path() : ?
+    plugin_explorer_enabled() : ?
+    plugin_explorer_disabled() : ?
+    plugin_explorer_Content_Search_Engine() : ?
+    plugin_explorer_Directory_Recursive_Search_Engine() : ?
+    plugin_explorer_Index_Search_Engine() : ?
+    plugin_explorer_Open_Window_Index_Option() : ?
+    plugin_explorer_Excluded_File_Types() : ?
+    plugin_explorer_Excluded_File_Types_Tooltip() : ?
+    plugin_explorer_Maximum_Results() : ?
+    plugin_explorer_Maximum_Results_Tooltip() : ?
+    plugin_explorer_plugin_name() : ?
+    plugin_explorer_plugin_description() : ?
+    plugin_explorer_plugin_ToolTipOpenDirectory() : ?
+    plugin_explorer_plugin_ToolTipOpenContainingFolder() : ?
+    plugin_explorer_plugin_tooltip_more_info(System.Object, System.Object) : System.Object
+    plugin_explorer_plugin_tooltip_more_info_unknown() : ?
+    plugin_explorer_plugin_tooltip_more_info_volume(System.Object) : System.Object
+    plugin_explorer_copypath() : ?
+    plugin_explorer_copypath_subtitle() : ?
+    plugin_explorer_copyname() : ?
+    plugin_explorer_copyname_subtitle() : ?
+    plugin_explorer_copyfilefolder() : ?
+    plugin_explorer_copyfile_subtitle() : ?
+    plugin_explorer_copyfolder_subtitle() : ?
+    plugin_explorer_deletefilefolder() : ?
+    plugin_explorer_deletefile_subtitle() : ?
+    plugin_explorer_deletefolder_subtitle() : ?
+    plugin_explorer_name() : ?
+    plugin_explorer_type() : ?
+    plugin_explorer_path() : ?
+    plugin_explorer_file() : ?
+    plugin_explorer_folder() : ?
+    plugin_explorer_deletefilefolder_subtitle() : ?
+    plugin_explorer_runasdifferentuser() : ?
+    plugin_explorer_runasdifferentuser_subtitle() : ?
+    plugin_explorer_opencontainingfolder() : ?
+    plugin_explorer_opencontainingfolder_subtitle() : ?
+    plugin_explorer_openwitheditor() : ?
+    plugin_explorer_openwitheditor_error() : System.Object
+    plugin_explorer_openwithshell() : ?
+    plugin_explorer_openwithshell_error() : System.Object
+    plugin_explorer_excludefromindexsearch() : ?
+    plugin_explorer_excludedfromindexsearch_msg() : ?
+    plugin_explorer_openindexingoptions() : ?
+    plugin_explorer_openindexingoptions_subtitle() : ?
+    plugin_explorer_openindexingoptions_errormsg() : ?
+    plugin_explorer_add_to_quickaccess_title() : ?
+    plugin_explorer_add_to_quickaccess_subtitle() : ?
+    plugin_explorer_addfilefoldersuccess() : ?
+    plugin_explorer_addfilefoldersuccess_detail() : ?
+    plugin_explorer_removefilefoldersuccess() : ?
+    plugin_explorer_removefilefoldersuccess_detail() : ?
+    plugin_explorer_contextmenu_titletooltip() : ?
+    plugin_explorer_contextmenu_remove_titletooltip() : ?
+    plugin_explorer_remove_from_quickaccess_title() : ?
+    plugin_explorer_remove_from_quickaccess_subtitle() : ?
+    plugin_explorer_show_contextmenu_title() : ?
+    plugin_explorer_openwith() : ?
+    plugin_explorer_openwith_subtitle() : ?
+    plugin_explorer_fail_to_delete() : ?
+    plugin_explorer_file_not_found() : ?
+    plugin_explorer_fail_to_open() : ?
+    plugin_explorer_fail_to_set_text() : ?
+    plugin_explorer_fail_to_set_files() : ?
+    plugin_explorer_diskfreespace() : ?
+    plugin_explorer_openresultfolder() : ?
+    plugin_explorer_openresultfolder_subtitle() : ?
+    flowlauncher_plugin_everything_sdk_issue() : ?
+    flowlauncher_plugin_everything_is_not_running() : ?
+    flowlauncher_plugin_everything_query_error() : ?
+    flowlauncher_plugin_everything_sort_by() : ?
+    flowlauncher_plugin_everything_sort_by_name_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_name_descending() : ?
+    flowlauncher_plugin_everything_sort_by_path_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_path_descending() : ?
+    flowlauncher_plugin_everything_sort_by_size_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_size_descending() : ?
+    flowlauncher_plugin_everything_sort_by_extension_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_extension_descending() : ?
+    flowlauncher_plugin_everything_sort_by_type_name_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_type_name_descending() : ?
+    flowlauncher_plugin_everything_sort_by_date_created_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_date_created_descending() : ?
+    flowlauncher_plugin_everything_sort_by_date_modified_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_date_modified_descending() : ?
+    flowlauncher_plugin_everything_sort_by_attributes_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_attributes_descending() : ?
+    flowlauncher_plugin_everything_sort_by_file_list_filename_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_file_list_filename_descending() : ?
+    flowlauncher_plugin_everything_sort_by_run_count_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_run_count_descending() : ?
+    flowlauncher_plugin_everything_sort_by_date_recently_changed_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_date_recently_changed_descending() : ?
+    flowlauncher_plugin_everything_sort_by_date_accessed_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_date_accessed_descending() : ?
+    flowlauncher_plugin_everything_sort_by_date_run_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_date_run_descending() : ?
+    flowlauncher_plugin_everything_sort_by_ascending() : ?
+    flowlauncher_plugin_everything_sort_by_descending() : ?
+    flowlauncher_plugin_everything_nonfastsort_warning() : ?
+    flowlauncher_plugin_everything_search_fullpath() : ?
+    flowlauncher_plugin_everything_enable_run_count() : ?
+    flowlauncher_plugin_everything_click_to_launch_or_install() : ?
+    flowlauncher_plugin_everything_installing_title() : ?
+    flowlauncher_plugin_everything_installing_subtitle() : ?
+    flowlauncher_plugin_everything_installationsuccess_subtitle() : ?
+    flowlauncher_plugin_everything_installationfailed_subtitle() : ?
+    flowlauncher_plugin_everything_run_service() : ?
+    flowlauncher_plugin_everything_installing_select() : ?
+    flowlauncher_plugin_everything_enable_content_search() : ?
+    flowlauncher_plugin_everything_enable_content_search_tips() : ?
+    flowlauncher_plugin_everything_not_found() : ?
+    flowlauncher_plugin_everything_install_issue() : ?
+    plugin_explorer_native_context_menu_header() : ?
+    plugin_explorer_native_context_menu_display_context_menu() : ?
+    plugin_explorer_native_context_menu_include_patterns_guide() : ?
+    plugin_explorer_native_context_menu_exclude_patterns_guide() : ?
+    Today() : ?
+    DaysAgo() : ?
+    OneMonthAgo() : ?
+    MonthsAgo() : ?
+    OneYearAgo() : ?
+    YearsAgo() : ?
+- Main  [methods=15 fields=6 flags=0x100001]
+    field <Context>k__BackingField
+    field <Settings>k__BackingField
+    field viewModel
+    field contextMenu
+    field searchManager
+    field _emptyDialogJumpResultList
+    get_Context() : ?
+    set_Context() : ?et189
+    get_Settings() : ?
+    set_Settings() : ?
+    CreateSettingPanel() : ?
+    InitAsync() : TypeDef#0
+    LoadContextMenus(System.Void, TypeDef#537178464, ?et197) : ?et193
+    QueryAsync(System.Void, TypeSpec#7364612<?et129, TypeDef#0, ?, ?, ?>) : System.Double
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    OnCultureInfoChanged() : System.UIntPtr
+    FillQuickAccessLinkNames() : ?
+    QueryDialogJumpAsync(System.Void, TypeSpec#7364612<?et129, TypeDef#0, ?, ?, ?>) : System.Double
+    .ctor() : ?
+    .cctor() : ?
+- Settings  [methods=98 fields=45 flags=0x100001]
+    field <MaxResult>k__BackingField
+    field <QuickAccessLinks>k__BackingField
+    field <IndexSearchExcludedSubdirectoryPaths>k__BackingField
+    field <EditorPath>k__BackingField
+    field <FolderEditorPath>k__BackingField
+    field <ShellPath>k__BackingField
+    field <ExcludedFileTypes>k__BackingField
+    field <UseLocationAsWorkingDir>k__BackingField
+    field <ShowInlinedWindowsContextMenu>k__BackingField
+    field <WindowsContextMenuIncludedItems>k__BackingField
+    field <WindowsContextMenuExcludedItems>k__BackingField
+    field <DefaultOpenFolderInFileManager>k__BackingField
+    field <DisplayMoreInformationInToolTip>k__BackingField
+    field <BoostHomeFolderScore>k__BackingField
+    field <SearchActionKeyword>k__BackingField
+    field <SearchActionKeywordEnabled>k__BackingField
+    field <FileContentSearchActionKeyword>k__BackingField
+    field <FileContentSearchKeywordEnabled>k__BackingField
+    field <PathSearchActionKeyword>k__BackingField
+    field <PathSearchKeywordEnabled>k__BackingField
+    field <IndexSearchActionKeyword>k__BackingField
+    field <IndexSearchKeywordEnabled>k__BackingField
+    field <QuickAccessActionKeyword>k__BackingField
+    field <QuickAccessKeywordEnabled>k__BackingField
+    field <FolderSearchActionKeyword>k__BackingField
+    field <FolderSearchKeywordEnabled>k__BackingField
+    field <FileSearchActionKeyword>k__BackingField
+    field <FileSearchKeywordEnabled>k__BackingField
+    field <WarnWindowsSearchServiceOff>k__BackingField
+    field <ShowFileSizeInPreviewPanel>k__BackingField
+    field <ShowCreatedDateInPreviewPanel>k__BackingField
+    field <ShowModifiedDateInPreviewPanel>k__BackingField
+    field <ShowFileAgeInPreviewPanel>k__BackingField
+    field <PreviewPanelDateFormat>k__BackingField
+    field <PreviewPanelTimeFormat>k__BackingField
+    field _everythingManagerInstance
+    field _windowsIndexSearchManager
+    field <IndexSearchEngine>k__BackingField
+    field <PathEnumerationEngine>k__BackingField
+    field <ContentSearchEngine>k__BackingField
+    field <EverythingInstalledPath>k__BackingField
+    field <SortOption>k__BackingField
+    field <EnableEverythingContentSearch>k__BackingField
+    field <EverythingSearchFullPath>k__BackingField
+    field <EverythingEnableRunCount>k__BackingField
+    get_MaxResult() : ?
+    set_MaxResult() : ?
+    get_QuickAccessLinks(System.Void, TypeDef#0) : ?et49
+    set_QuickAccessLinks(?et49, System.Void, TypeDef#0) : ?et129
+    get_IndexSearchExcludedSubdirectoryPaths(System.Void, TypeDef#0) : ?et49
+    set_IndexSearchExcludedSubdirectoryPaths(?et49, System.Void, TypeDef#0) : ?et129
+    get_EditorPath() : ?
+    set_EditorPath() : ?
+    get_FolderEditorPath() : ?
+    set_FolderEditorPath() : ?
+    get_ShellPath() : ?
+    set_ShellPath() : ?
+    get_ExcludedFileTypes() : ?
+    set_ExcludedFileTypes() : ?
+    get_UseLocationAsWorkingDir() : ?
+    set_UseLocationAsWorkingDir() : ?
+    get_ShowInlinedWindowsContextMenu() : ?
+    set_ShowInlinedWindowsContextMenu() : ?
+    get_WindowsContextMenuIncludedItems() : ?
+    set_WindowsContextMenuIncludedItems() : ?
+    get_WindowsContextMenuExcludedItems() : ?
+    set_WindowsContextMenuExcludedItems() : ?
+    get_DefaultOpenFolderInFileManager() : ?
+    set_DefaultOpenFolderInFileManager() : ?
+    get_DisplayMoreInformationInToolTip() : ?
+    set_DisplayMoreInformationInToolTip() : ?
+    get_BoostHomeFolderScore() : ?
+    set_BoostHomeFolderScore() : ?
+    get_SearchActionKeyword() : ?
+    set_SearchActionKeyword() : ?
+    get_SearchActionKeywordEnabled() : ?
+    set_SearchActionKeywordEnabled() : ?
+    get_FileContentSearchActionKeyword() : ?
+    set_FileContentSearchActionKeyword() : ?
+    get_FileContentSearchKeywordEnabled() : ?
+    set_FileContentSearchKeywordEnabled() : ?
+    get_PathSearchActionKeyword() : ?
+    set_PathSearchActionKeyword() : ?
+    get_PathSearchKeywordEnabled() : ?
+    set_PathSearchKeywordEnabled() : ?
+    get_IndexSearchActionKeyword() : ?
+    set_IndexSearchActionKeyword() : ?
+    get_IndexSearchKeywordEnabled() : ?
+    set_IndexSearchKeywordEnabled() : ?
+    get_QuickAccessActionKeyword() : ?
+    set_QuickAccessActionKeyword() : ?
+    get_QuickAccessKeywordEnabled() : ?
+    set_QuickAccessKeywordEnabled() : ?
+    get_FolderSearchActionKeyword() : ?
+    set_FolderSearchActionKeyword() : ?
+    get_FolderSearchKeywordEnabled() : ?
+    set_FolderSearchKeywordEnabled() : ?
+    get_FileSearchActionKeyword() : ?
+    set_FileSearchActionKeyword() : ?
+    get_FileSearchKeywordEnabled() : ?
+    set_FileSearchKeywordEnabled() : ?
+    get_WarnWindowsSearchServiceOff() : ?
+    set_WarnWindowsSearchServiceOff() : ?
+    get_ShowFileSizeInPreviewPanel() : ?
+    set_ShowFileSizeInPreviewPanel() : ?
+    get_ShowCreatedDateInPreviewPanel() : ?
+    set_ShowCreatedDateInPreviewPanel() : ?
+    get_ShowModifiedDateInPreviewPanel() : ?
+    set_ShowModifiedDateInPreviewPanel() : ?
+    get_ShowFileAgeInPreviewPanel() : ?
+    set_ShowFileAgeInPreviewPanel() : ?
+    get_PreviewPanelDateFormat() : ?
+    set_PreviewPanelDateFormat() : ?
+    get_PreviewPanelTimeFormat() : ?
+    set_PreviewPanelTimeFormat() : ?
+    get_EverythingManagerInstance() : ?
+    get_WindowsIndexSearchManager() : ?
+    get_IndexSearchEngine() : ?
+    set_IndexSearchEngine() : ?et156
+    get_IndexProvider() : ?
+    get_PathEnumerationEngine() : ?
+    set_PathEnumerationEngine() : ?et152
+    get_PathEnumerator() : ?
+    get_ContentSearchEngine() : ?
+    set_ContentSearchEngine() : ?et160
+    get_ContentIndexProvider() : ?
+    get_EverythingInstalledPath() : ?
+    set_EverythingInstalledPath() : ?
+    get_SortOption() : ?
+    set_SortOption() : ?et156
+    get_EnableEverythingContentSearch() : ?
+    set_EnableEverythingContentSearch() : ?
+    get_EverythingEnabled() : ?
+    get_EverythingSearchFullPath() : ?
+    set_EverythingSearchFullPath() : ?
+    get_EverythingEnableRunCount() : ?
+    set_EverythingEnableRunCount() : ?
+    GetActionKeyword() : ?et164
+    SetActionKeyword(System.String) : ?et164
+    GetActionKeywordEnabled() : ?et164
+    SetActionKeywordEnabled(System.Boolean) : ?et164
+    GetActiveActionKeywords(System.Boolean, TypeRef#58960160) : ?et53
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Explorer.Exceptions (2)
+- EngineNotAvailableException  [methods=11 fields=4 flags=0x100001]
+    field <EngineName>k__BackingField
+    field <Resolution>k__BackingField
+    field <Action>k__BackingField
+    field <ErrorIcon>k__BackingField
+    get_EngineName() : ?
+    get_Resolution() : ?
+    get_Action(System.Boolean, TypeDef#71660384, ?et129, System.Void[], System.Boolean) : ?et209
+    get_ErrorIcon() : ?
+    set_ErrorIcon(System.String) : System.Void
+    .ctor(TypeSpec#11821060<TypeRef#8406880, ?, ?, ?, ?>) : System.String
+    .ctor(TypeDef#0) : System.String
+    .ctor(System.String, TypeSpec#11821060<TypeRef#8406880, ?, ?, ?, ?>) : System.String
+    ToString() : ?
+    <.ctor>b__13_0(System.Boolean, TypeDef#0) : System.Void[]
+    <.ctor>b__15_0(System.Boolean, TypeDef#0) : System.Void[]
+- SearchException  [methods=4 fields=1 flags=0x100001]
+    field <EngineName>k__BackingField
+    get_EngineName() : ?
+    .ctor() : ?
+    .ctor() : TypeDef#0
+    ToString() : ?
+
+## Flow.Launcher.Plugin.Explorer.Helper (8)
+- CMINVOKECOMMANDINFO  [methods=0 fields=9 flags=0x100109]
+    field cbSize
+    field fMask
+    field hwnd
+    field lpVerb
+    field lpParameters
+    field lpDirectory
+    field nShow
+    field dwHotKey
+    field hIcon
+- ContextMenuItem  [methods=18 fields=3 flags=0x100001]
+    field <Label>k__BackingField
+    field <Icon>k__BackingField
+    field <CommandId>k__BackingField
+    .ctor(?et229, System.UInt32) : ?et128
+    get_EqualityContract() : ?
+    get_Label() : ?
+    set_Label(System.String) : System.Void
+    get_Icon() : ?
+    set_Icon(TypeDef#0) : System.Void
+    get_CommandId() : ?
+    set_CommandId(System.UInt32) : System.Void
+    ToString() : ?
+    PrintMembers() : ?
+    op_Inequality(TypeDef#0) : ?et224
+    op_Equality(TypeDef#0) : ?et224
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?et224
+    <Clone>$() : ?
+    .ctor() : ?et224
+    Deconstruct() : TypeDef#38025568&
+- IContextMenu  [methods=3 fields=0 flags=0x1010a1]
+    QueryContextMenu(System.UInt32, System.UInt32) : System.UInt32
+    InvokeCommand(?et212) : ?et128
+    GetCommandString(TypeDef#0) : System.IntPtr
+- IMalloc  [methods=6 fields=0 flags=0x1010a1]
+    Alloc() : ?
+    Realloc() : ?
+    Free() : ?
+    GetSize() : ?
+    DidAlloc() : ?
+    HeapMinimize() : ?
+- IShellFolder  [methods=10 fields=0 flags=0x1010a1]
+    ParseDisplayName(System.UInt32&, System.IntPtr&, System.UInt32&) : System.String
+    EnumObjects() : System.IntPtr&
+    BindToObject() : TypeDef#0
+    BindToStorage() : TypeDef#0
+    CompareIDs() : System.IntPtr
+    CreateViewObject(System.IntPtr&) : ?et109
+    GetAttributesOf(System.UInt32&) : System.IntPtr
+    GetUIObjectOf(TypeRef#100927003) : System.IntPtr[]
+    GetDisplayNameOf() : System.IntPtr
+    SetNameOf(System.UInt32, System.IntPtr&) : System.String
+- MENUITEMINFO  [methods=0 fields=12 flags=0x100109]
+    field cbSize
+    field fMask
+    field fType
+    field fState
+    field wID
+    field hSubMenu
+    field hbmpChecked
+    field hbmpUnchecked
+    field dwItemData
+    field dwTypeData
+    field cch
+    field hbmpItem
+- PathHelper  [methods=1 fields=0 flags=0x100181]
+    GetPathName() : ?
+- ShellContextMenuDisplayHelper  [methods=16 fields=3 flags=0x100181]
+    field ContextMenuStartId
+    field ContextMenuEndId
+    field IgnoredContextMenuCommands
+    SHGetMalloc() : ?
+    SHParseDisplayName(System.UInt32, System.UInt32&) : System.IntPtr&
+    SHBindToParent(System.IntPtr&, System.IntPtr&) : ?et109
+    CreatePopupMenu() : ?
+    DestroyMenu() : ?
+    GetMenuItemCount() : ?
+    GetMenuString() : TypeDef#0
+    GetSubMenu() : ?
+    GetMenuItemInfo(TypeDef#0&) : System.Boolean
+    DeleteObject() : ?
+    GetMalloc() : ?
+    ExecuteContextMenuItem() : ?
+    GetContextMenuWithIcons(System.Void, TypeDef#0) : ?et193
+    ProcessMenuWithIcons(?et220, TypeSpec#7364612<>) : ?et128
+    GetBitmapSourceFromHBitmap() : System.IntPtr
+    .cctor() : ?
+
+## Flow.Launcher.Plugin.Explorer.Search (6)
+- Constants  [methods=1 fields=23 flags=0x100180]
+    field FolderImagePath
+    field FileImagePath
+    field DeleteFileFolderImagePath
+    field CopyImagePath
+    field IndexImagePath
+    field ExcludeFromIndexImagePath
+    field ExplorerIconImagePath
+    field DifferentUserIconImagePath
+    field IndexingOptionsIconImagePath
+    field QuickAccessImagePath
+    field RemoveQuickAccessImagePath
+    field ShowContextMenuImagePath
+    field EverythingErrorImagePath
+    field IndexSearchWarningImagePath
+    field WindowsIndexErrorImagePath
+    field GeneralSearchErrorImagePath
+    field ToolTipOpenDirectory
+    field ToolTipOpenContainingFolder
+    field AllFilesFolderSearchWildcard
+    field DefaultContentSearchActionKeyword
+    field UnixDirectorySeparator
+    field DirectorySeparator
+    field WindowsIndexingOptions
+    get_ExplorerIconImageFullPath() : ?
+- EnvironmentVariables  [methods=5 fields=1 flags=0x100181]
+    field _envStringPaths
+    get_EnvStringPaths(System.Boolean, System.String, System.String) : ?et53
+    IsEnvironmentVariableSearch() : ?
+    HasEnvironmentVar() : ?
+    LoadEnvironmentStringPaths() : ?
+    GetEnvironmentStringPathSuggestions(System.Void, TypeDef#75739488, ?et129, TypeDef#0) : ?et193
+- ResultManager  [methods=23 fields=7 flags=0x100181]
+    field ClassName
+    field SizeUnits
+    field Context
+    field <Settings>k__BackingField
+    field HomeFolderScoreBoost
+    field HomeFolderPaths
+    field MediaExtensions
+    get_Settings() : ?
+    set_Settings() : ?
+    IsHomeFolderPath() : ?
+    Init(TypeDef#0) : ?et189
+    GetPathWithActionKeyword(System.String) : ?et92
+    GetAutoCompleteText(TypeDef#0) : ?et129
+    CreateResult() : TypeRef#419710048
+    ShowNativeContextMenu() : ?et92
+    CreateFolderResult(System.String, System.String, TypeRef#8520800, TypeSpec#7364612<>) : System.String
+    CreateDriveSpaceDisplayResult(System.String, System.Int32) : System.String
+    CreateDriveSpaceDisplayResult(System.String, System.Boolean) : System.String
+    CreateDriveSpaceDisplayResult(System.String, System.Int32, System.Boolean) : System.String
+    ToReadableSize() : ?
+    CreateOpenCurrentFolderResult(System.String, System.Boolean) : System.String
+    CreateFileResult(TypeRef#8520800, System.String, TypeSpec#7364612<>) : System.String
+    IsMedia() : ?
+    OpenFile() : System.Boolean
+    OpenFolder() : ?
+    IncrementEverythingRunCounterIfNeeded() : ?
+    GetFileMoreInfoTooltip() : ?
+    GetFolderMoreInfoTooltip() : ?
+    GetVolumeMoreInfoTooltip() : System.String
+    .cctor() : ?
+- ResultType  [methods=0 fields=4 flags=0x101]
+    field value__
+    field Volume
+    field Folder
+    field File
+- SearchManager  [methods=13 fields=3 flags=0x100001]
+    field Context
+    field Settings
+    field _allowedTypesByActionKeyword
+    .ctor() : TypeDef#0
+    SearchAsync(System.Void, TypeSpec#7364612<?et129, TypeDef#0, ?, ?, ?>) : System.Double
+    EverythingContentSearchResult(System.Void, TypeDef#541372768, TypeDef#0) : ?et193
+    PathSearchAsync(System.Void, TypeSpec#7364612<?et129, TypeDef#0, ?, ?, ?>) : System.Double
+    IsFileContentSearch() : ?
+    UseIndexSearch() : ?
+    UseWindowsIndexForDirectorySearch() : ?
+    IsExcludedFile() : ?
+    GetQuickAccessResultsFilteredByActionKeyword(System.Void, TypeDef#541372768, TypeRef#811598981, System.Void, TypeDef#0) : ?et193
+    IsResultTypeFilteredByActionKeyword() : TypeSpec#7364612<>
+    CanUseIndexSearchByActionKeywords(?et53, System.Boolean, TypeDef#0) : ?et129
+    CanUsePathSearchByActionKeywords(?et53, System.Boolean, TypeDef#0) : ?et129
+    <SearchAsync>b__5_0() : ?et197
+- SearchResult  [methods=18 fields=5 flags=0x100109]
+    field <FullPath>k__BackingField
+    field <Type>k__BackingField
+    field <Score>k__BackingField
+    field <WindowsIndexed>k__BackingField
+    field <HighlightData>k__BackingField
+    .ctor() : ?
+    get_FullPath() : ?
+    set_FullPath(System.String) : System.Void
+    get_Type() : ?
+    set_Type(TypeDef#0) : System.Void
+    get_Score() : ?
+    set_Score(System.Int32) : System.Void
+    get_WindowsIndexed() : ?
+    set_WindowsIndexed(System.Boolean) : System.Void
+    get_HighlightData(System.Void, System.Int32) : ?et193
+    set_HighlightData(TypeSpec#7364612<>) : System.Void
+    ToString() : ?
+    PrintMembers() : ?
+    op_Inequality() : TypeDef#0
+    op_Equality() : TypeDef#0
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?
+
+## Flow.Launcher.Plugin.Explorer.Search.DirectoryInfo (1)
+- DirectoryInfoSearch  [methods=4 fields=1 flags=0x100181]
+    field ClassName
+    TopLevelDirectorySearch(System.Void, TypeDef#73417881, System.String, TypeDef#0) : ?et245
+    ConstructSearchCriteria() : ?
+    DirectorySearch(System.Void, TypeDef#174113945, System.String, System.String, TypeDef#0) : ?et245
+    .cctor() : ?
+
+## Flow.Launcher.Plugin.Explorer.Search.Everything (7)
+- EverythingApi  [methods=7 fields=5 flags=0x100181]
+    field BufferSize
+    field _semaphore
+    field buffer
+    field EVERYTHING_REQUEST_FULL_PATH_AND_FILE_NAME
+    field EVERYTHING_REQUEST_RUN_COUNT
+    IsFastSortOption() : ?et156
+    IsEverythingRunningAsync(System.Boolean, TypeDef#0) : System.Void[]
+    SearchAsync(System.Void, TypeDef#639632473, TypeDef#0) : ?et113
+    CheckAndThrowExceptionOnError() : ?
+    IncrementRunCounterAsync() : System.String
+    EverythingHighlightStringToHighlightList(System.Void, System.Int32, System.String) : ?et193
+    .cctor() : ?
+- EverythingApiDllImport  [methods=54 fields=1 flags=0x100181]
+    field DLL
+    Load() : ?
+    LoadLibrary() : ?
+    Everything_SetSearchW() : ?
+    Everything_SetMatchPath() : ?
+    Everything_SetMatchCase() : ?
+    Everything_SetMatchWholeWord() : ?
+    Everything_SetRegex() : ?
+    Everything_SetMax() : ?
+    Everything_SetOffset() : ?
+    Everything_GetMatchPath() : ?
+    Everything_GetMatchCase() : ?
+    Everything_GetMatchWholeWord() : ?
+    Everything_GetRegex() : ?
+    Everything_GetMax() : ?
+    Everything_GetOffset() : ?
+    Everything_GetSearchW() : ?
+    Everything_GetLastError() : ?
+    Everything_QueryW() : ?
+    Everything_SortResultsByPath() : ?
+    Everything_GetNumFileResults() : ?
+    Everything_GetMajorVersion() : ?
+    Everything_GetNumFolderResults() : ?
+    Everything_GetNumResults() : ?
+    Everything_GetTotFileResults() : ?
+    Everything_GetTotFolderResults() : ?
+    Everything_GetTotResults() : ?
+    Everything_IsVolumeResult() : ?
+    Everything_IsFolderResult() : ?
+    Everything_IsFileResult() : ?
+    Everything_GetResultFullPathNameW(System.Int32) : ?et121
+    Everything_Reset() : ?
+    Everything_SetSort() : ?et156
+    Everything_IsFastSort() : ?et156
+    Everything_GetSort() : ?
+    Everything_GetResultListSort() : ?
+    Everything_SetRequestFlags() : ?
+    Everything_GetRequestFlags() : ?
+    Everything_GetResultListRequestFlags() : ?
+    Everything_GetResultExtension() : ?
+    Everything_GetResultSize() : System.Int64
+    Everything_GetResultDateCreated() : System.Int64
+    Everything_GetResultDateModified() : System.Int64
+    Everything_GetResultDateAccessed() : System.Int64
+    Everything_GetResultAttributes() : ?
+    Everything_GetResultFileListFileName() : ?
+    Everything_GetResultRunCount() : ?
+    Everything_GetResultDateRun() : System.Int64
+    Everything_GetResultDateRecentlyChanged() : System.Int64
+    Everything_GetResultHighlightedFileName() : ?
+    Everything_GetResultHighlightedPath() : ?
+    Everything_GetResultHighlightedFullPathAndFileName() : ?
+    Everything_GetRunCountFromFileName() : ?
+    Everything_SetRunCountFromFileName() : ?
+    Everything_IncRunCountFromFileName() : ?
+- EverythingDownloadHelper  [methods=2 fields=0 flags=0x100181]
+    PromptDownloadIfNotInstallAsync(System.Void, System.String, System.String, TypeDef#0) : System.Double
+    GetInstalledPath() : ?
+- EverythingSearchManager  [methods=9 fields=2 flags=0x100001]
+    field ClassName
+    field <Settings>k__BackingField
+    get_Settings() : ?
+    .ctor() : ?
+    ThrowIfEverythingNotAvailableAsync() : TypeDef#0
+    ClickToInstallEverythingAsync(System.Boolean, TypeDef#0) : System.Void[]
+    SearchAsync(System.Void, TypeDef#541344665, TypeDef#0<>) : ?et113
+    ContentSearchAsync(System.Void, TypeDef#71533465, ?et129, TypeDef#0<>) : ?et113
+    EnumerateAsync(System.Void, TypeDef#8618905, TypeDef#0) : ?et113
+    .cctor() : ?
+    <ContentSearchAsync>b__8_0(System.Boolean, TypeDef#0) : System.Void[]
+- EverythingSearchOption  [methods=29 fields=10 flags=0x100109]
+    field <Keyword>k__BackingField
+    field <SortOption>k__BackingField
+    field <IsContentSearch>k__BackingField
+    field <ContentSearchKeyword>k__BackingField
+    field <ParentPath>k__BackingField
+    field <IsRecursive>k__BackingField
+    field <Offset>k__BackingField
+    field <MaxCount>k__BackingField
+    field <IsFullPathSearch>k__BackingField
+    field <IsRunCounterEnabled>k__BackingField
+    .ctor(?et156, System.Boolean, System.String, System.String, System.Boolean, System.Int32, System.Int32, System.Boolean, System.Boolean) : ?et128
+    get_Keyword() : ?
+    set_Keyword() : ?
+    get_SortOption() : ?
+    set_SortOption() : ?et156
+    get_IsContentSearch() : ?
+    set_IsContentSearch() : ?
+    get_ContentSearchKeyword() : ?
+    set_ContentSearchKeyword() : ?
+    get_ParentPath() : ?
+    set_ParentPath() : ?
+    get_IsRecursive() : ?
+    set_IsRecursive() : ?
+    get_Offset() : ?
+    set_Offset() : ?
+    get_MaxCount() : ?
+    set_MaxCount() : ?
+    get_IsFullPathSearch() : ?
+    set_IsFullPathSearch() : ?
+    get_IsRunCounterEnabled() : ?
+    set_IsRunCounterEnabled() : ?
+    ToString() : ?
+    PrintMembers() : ?
+    op_Inequality(TypeDef#0) : ?et152
+    op_Equality(TypeDef#0) : ?et152
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?et152
+    Deconstruct(System.String&, System.String&, System.Boolean&, System.Int32&, System.Int32&, System.Boolean&, System.Boolean&) : TypeDef#8660768&
+- EverythingSortOption  [methods=0 fields=26 flags=0x101]
+    field value__
+    field NAME_ASCENDING
+    field NAME_DESCENDING
+    field PATH_ASCENDING
+    field PATH_DESCENDING
+    field SIZE_ASCENDING
+    field SIZE_DESCENDING
+    field EXTENSION_ASCENDING
+    field EXTENSION_DESCENDING
+    field TYPE_NAME_ASCENDING
+    field TYPE_NAME_DESCENDING
+    field DATE_CREATED_ASCENDING
+    field DATE_CREATED_DESCENDING
+    field DATE_MODIFIED_ASCENDING
+    field DATE_MODIFIED_DESCENDING
+    field ATTRIBUTES_ASCENDING
+    field ATTRIBUTES_DESCENDING
+    field FILE_LIST_FILENAME_ASCENDING
+    field FILE_LIST_FILENAME_DESCENDING
+    field RUN_COUNT_DESCENDING
+    field DATE_RECENTLY_CHANGED_ASCENDING
+    field DATE_RECENTLY_CHANGED_DESCENDING
+    field DATE_ACCESSED_ASCENDING
+    field DATE_ACCESSED_DESCENDING
+    field DATE_RUN_ASCENDING
+    field DATE_RUN_DESCENDING
+- EverythingSortOptionLocalized  [methods=14 fields=5 flags=0x100001]
+    field <Value>k__BackingField
+    field _display
+    field <LocalizationKey>k__BackingField
+    field <LocalizationValue>k__BackingField
+    field PropertyChanged
+    get_Value() : ?
+    set_Value(TypeDef#0) : System.Void
+    get_Display() : ?
+    set_Display() : ?
+    get_LocalizationKey() : ?
+    set_LocalizationKey() : ?
+    get_LocalizationValue() : ?
+    set_LocalizationValue() : ?
+    GetValues(System.Void, TypeDef#0) : ?et193
+    UpdateLabels(?et193, System.Void, TypeDef#0) : ?et128
+    add_PropertyChanged() : ?et81
+    remove_PropertyChanged() : ?et81
+    OnPropertyChanged() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Explorer.Search.Everything.Exceptions (7)
+- CreateThreadException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+- CreateWindowException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+- InvalidCallException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+- InvalidIndexException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+- IPCErrorException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+- MemoryErrorException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+- RegisterClassExException  [methods=1 fields=0 flags=0x100001]
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Explorer.Search.IProvider (3)
+- IContentIndexProvider  [methods=1 fields=0 flags=0x1000a1]
+    ContentSearchAsync(System.Void, TypeDef#71533465, ?et129, TypeDef#0<>) : ?et113
+- IIndexProvider  [methods=1 fields=0 flags=0x1000a1]
+    SearchAsync(System.Void, TypeDef#541344665, TypeDef#0<>) : ?et113
+- IPathIndexProvider  [methods=1 fields=0 flags=0x1000a1]
+    EnumerateAsync(System.Void, TypeDef#8618905, TypeDef#0) : ?et113
+
+## Flow.Launcher.Plugin.Explorer.Search.QuickAccessLinks (2)
+- AccessLink  [methods=7 fields=3 flags=0x100001]
+    field <Path>k__BackingField
+    field <Type>k__BackingField
+    field <Name>k__BackingField
+    get_Path() : ?
+    set_Path() : ?
+    get_Type() : ?
+    set_Type() : ?
+    get_Name() : ?
+    set_Name() : ?
+    .ctor() : ?
+- QuickAccess  [methods=2 fields=1 flags=0x100180]
+    field QuickAccessResultScore
+    AccessLinkListMatched(System.Void, TypeDef#541372768, TypeRef#1029735557, System.Void, TypeDef#0) : ?et193
+    AccessLinkListAll(System.Void, TypeDef#541372768, TypeRef#1029735557, System.Void, TypeDef#0) : ?et193
+
+## Flow.Launcher.Plugin.Explorer.Search.WindowsIndex (3)
+- QueryConstructor  [methods=12 fields=6 flags=0x100001]
+    field _specialCharacterMatcher
+    field _multiWhiteSpacesMatcher
+    field <Settings>k__BackingField
+    field SystemIndex
+    field RestrictionsForAllFilesAndFoldersSearch
+    field OrderIdentifier
+    get_Settings() : ?
+    .ctor() : ?
+    CreateBaseQuery() : ?
+    CreateQueryHelper() : ?
+    TopLevelDirectoryConstraint(?et157, System.Void, System.Char) : ?et130
+    RecursiveDirectoryConstraint(?et157, System.Void, System.Char) : ?et130
+    Directory(?et157, System.Void, System.Char, TypeRef#6774916<>) : ?et130
+    FilesAndFolders(?et157, System.Void, System.Char) : ?et130
+    ReplaceSpecialCharacterWithTwoSideWhiteSpace(?et157, System.Void, System.Char) : ?et130
+    FileContent(?et157, System.Void, System.Char) : ?et130
+    RestrictionsForFileContentSearch(?et157, System.Void, System.Char) : ?et130
+    .cctor() : ?
+- WindowsIndex  [methods=4 fields=2 flags=0x100180]
+    field ClassName
+    field _reservedPatternMatcher
+    ExecuteWindowsIndexSearchAsync(System.Void, TypeDef#71533465, ?et129, TypeDef#0<>) : ?et113
+    WindowsIndexSearchAsync(System.Void, TypeDef#71533465, ?et129, TypeDef#0<>) : ?et113
+    PathIsIndexed() : ?
+    .cctor() : ?
+- WindowsIndexSearchManager  [methods=11 fields=2 flags=0x100001]
+    field <Settings>k__BackingField
+    field <QueryConstructor>k__BackingField
+    get_Settings() : ?
+    get_QueryConstructor() : ?
+    .ctor() : ?
+    WindowsIndexFileContentSearchAsync(System.Void, TypeDef#545539417, ?et157, System.Void, System.Char, TypeDef#0) : ?et113
+    WindowsIndexFilesAndFoldersSearchAsync(System.Void, TypeDef#545539417, ?et157, System.Void, System.Char, TypeDef#0) : ?et113
+    WindowsIndexTopLevelFolderSearchAsync(System.Void, TypeDef#545539417, ?et157, System.Void, System.Char, TypeRef#6774916<TypeDef#0<>>) : ?et113
+    SearchAsync(System.Void, TypeDef#541344665, TypeDef#0<>) : ?et113
+    ContentSearchAsync(System.Void, TypeDef#71533465, ?et129, TypeDef#0<>) : ?et113
+    EnumerateAsync(System.Void, TypeDef#8618905, TypeDef#0) : ?et113
+    HandledEngineNotAvailableExceptionAsync(System.Void, TypeDef#0) : ?et113
+    <HandledEngineNotAvailableExceptionAsync>b__13_0(System.Boolean, TypeDef#0) : System.Void[]
+
+## Flow.Launcher.Plugin.Explorer.ViewModels (3)
+- ActionKeywordModel  [methods=10 fields=5 flags=0x100001]
+    field _settings
+    field <Description>k__BackingField
+    field <KeywordProperty>k__BackingField
+    field keyword
+    field enabled
+    Init() : ?
+    .ctor(System.String) : ?et164
+    get_Description() : ?
+    set_Description(System.String) : System.Void
+    get_LocalizedDescription() : ?
+    get_KeywordProperty() : ?
+    get_Keyword() : ?
+    set_Keyword() : ?
+    get_Enabled() : ?
+    set_Enabled() : ?
+- EnumBindingModel`1  [methods=11 fields=3 flags=0x100001]
+    field <Name>k__BackingField
+    field <LocalizationKey>k__BackingField
+    field <Value>k__BackingField
+    CreateList() : TypeRef#302286144<>
+    From(!4864, ?et0) : System.Void
+    GetDescriptionAttr() : ?
+    get_Name() : ?
+    set_Name() : ?
+    get_LocalizationKey() : ?
+    set_LocalizationKey() : ?
+    get_Description() : ?
+    get_Value() : ?
+    set_Value() : ?
+    .ctor() : ?
+- SettingsViewModel  [methods=96 fields=26 flags=0x100001]
+    field <Settings>k__BackingField
+    field <Context>k__BackingField
+    field <IndexSearchEngines>k__BackingField
+    field <ContentIndexSearchEngines>k__BackingField
+    field <PathEnumerationEngines>k__BackingField
+    field _selectedIndexSearchEngine
+    field _selectedContentSearchEngine
+    field _selectedPathEnumerationEngine
+    field <TimeFormatList>k__BackingField
+    field <DateFormatList>k__BackingField
+    field <ActionKeywordsModels>k__BackingField
+    field <SelectedActionKeyword>k__BackingField
+    field <SelectedQuickAccessLink>k__BackingField
+    field <SelectedIndexSearchExcludedPath>k__BackingField
+    field <MaxResultLowerLimit>k__BackingField
+    field <MaxResultUpperLimit>k__BackingField
+    field <AllEverythingSortOptions>k__BackingField
+    field editActionKeywordCommand
+    field editIndexSearchExcludePathsCommand
+    field addIndexSearchExcludePathsCommand
+    field editQuickAccessLinkCommand
+    field addQuickAccessLinkCommand
+    field removeLinkCommand
+    field openFileEditorPathCommand
+    field openFolderEditorPathCommand
+    field openShellPathCommand
+    get_Settings() : ?
+    set_Settings() : ?
+    get_Context() : ?
+    set_Context() : ?et189
+    get_IndexSearchEngines() : TypeRef#302286144<>
+    set_IndexSearchEngines(TypeRef#302286144<>) : ?et130
+    get_ContentIndexSearchEngines() : TypeRef#302286144<>
+    set_ContentIndexSearchEngines(TypeRef#302286144<>) : ?et130
+    get_PathEnumerationEngines() : TypeRef#302286144<>
+    set_PathEnumerationEngines(TypeRef#302286144<>) : ?et130
+    .ctor(TypeDef#0) : ?et189
+    Save() : ?
+    get_SelectedIndexSearchEngine(TypeDef#0) : System.Void
+    set_SelectedIndexSearchEngine(System.Void, TypeDef#0) : ?et72
+    get_SelectedContentSearchEngine(TypeDef#0) : System.Void
+    set_SelectedContentSearchEngine(System.Void, TypeDef#0) : ?et72
+    get_SelectedPathEnumerationEngine(TypeDef#0) : System.Void
+    set_SelectedPathEnumerationEngine(System.Void, TypeDef#0) : ?et72
+    InitializeEngineSelection() : ?
+    get_ShowWindowsContextMenu() : ?
+    set_ShowWindowsContextMenu() : ?
+    get_WindowsContextMenuIncludedItems() : ?
+    set_WindowsContextMenuIncludedItems() : ?
+    get_WindowsContextMenuExcludedItems() : ?
+    set_WindowsContextMenuExcludedItems() : ?
+    get_ShowFileSizeInPreviewPanel() : ?
+    set_ShowFileSizeInPreviewPanel() : ?
+    get_ShowCreatedDateInPreviewPanel() : ?
+    set_ShowCreatedDateInPreviewPanel() : ?
+    get_ShowModifiedDateInPreviewPanel() : ?
+    set_ShowModifiedDateInPreviewPanel() : ?
+    get_ShowFileAgeInPreviewPanel() : ?
+    set_ShowFileAgeInPreviewPanel() : ?
+    get_PreviewPanelDateFormat() : ?
+    set_PreviewPanelDateFormat() : ?
+    get_PreviewPanelTimeFormat() : ?
+    set_PreviewPanelTimeFormat() : ?
+    get_PreviewPanelDateFormatDemo() : ?
+    get_PreviewPanelTimeFormatDemo() : ?
+    get_ShowPreviewPanelDateTimeChoices() : ?
+    get_PreviewPanelDateTimeChoicesVisibility() : ?
+    get_TimeFormatList(System.Void, System.String) : ?et193
+    get_DateFormatList(System.Void, System.String) : ?et193
+    InitializeActionKeywordModels() : ?
+    get_ActionKeywordsModels() : TypeDef#0<>
+    set_ActionKeywordsModels(TypeDef#0<>) : ?et130
+    get_SelectedActionKeyword() : ?
+    set_SelectedActionKeyword() : ?
+    EditActionKeyword() : ?
+    get_SelectedQuickAccessLink() : ?
+    set_SelectedQuickAccessLink() : ?
+    get_SelectedIndexSearchExcludedPath() : ?
+    set_SelectedIndexSearchExcludedPath() : ?
+    AppendLink() : ?et116
+    EditIndexSearchExcludePaths() : ?
+    AddIndexSearchExcludePaths() : ?
+    EditQuickAccessLink() : ?
+    AddQuickAccessLink() : ?
+    RemoveLink() : ?
+    ShowUnselectedMessage() : ?
+    PromptUserSelectPath() : System.String
+    OpenWindowsIndexingOptions() : ?
+    OpenFileEditorPath() : ?
+    OpenFolderEditorPath() : ?
+    OpenShellPath() : ?
+    get_FileEditorPath() : ?
+    set_FileEditorPath() : ?
+    get_FolderEditorPath() : ?
+    set_FolderEditorPath() : ?
+    get_ShellPath() : ?
+    set_ShellPath() : ?
+    get_ExcludedFileTypes() : ?
+    set_ExcludedFileTypes() : ?
+    get_MaxResultLowerLimit() : ?
+    get_MaxResultUpperLimit() : ?
+    get_MaxResult() : ?
+    set_MaxResult() : ?
+    get_AllEverythingSortOptions(System.Void, TypeDef#0) : ?et193
+    get_SelectedEverythingSortOption() : ?
+    set_SelectedEverythingSortOption() : ?et156
+    get_FastSortWarningVisibility() : ?
+    get_SortOptionWarningMessage() : ?
+    get_EverythingInstalledPath() : ?
+    set_EverythingInstalledPath() : ?
+    get_EditActionKeywordCommand(System.Void, System.Object) : ?et41
+    get_EditIndexSearchExcludePathsCommand() : ?
+    get_AddIndexSearchExcludePathsCommand() : ?
+    get_EditQuickAccessLinkCommand() : ?
+    get_AddQuickAccessLinkCommand() : ?
+    get_RemoveLinkCommand(System.Void, System.Object) : ?et41
+    get_OpenFileEditorPathCommand() : ?
+    get_OpenFolderEditorPathCommand() : ?
+    get_OpenShellPathCommand() : ?
+    <InitializeEngineSelection>b__34_0(System.Void, TypeDef#0) : ?et72
+    <InitializeEngineSelection>b__34_1(System.Void, TypeDef#0) : ?et72
+    <InitializeEngineSelection>b__34_2(System.Void, TypeDef#0) : ?et72
+
+## Flow.Launcher.Plugin.Explorer.Views (4)
+- ActionKeywordSetting  [methods=27 fields=10 flags=0x100001]
+    field <CurrentActionKeyword>k__BackingField
+    field actionKeyword
+    field _keywordEnabled
+    field TxtCurrentActionKeyword
+    field ChkActionKeywordEnabled
+    field btnCancel
+    field DownButton
+    field lblAdd
+    field _contentLoaded
+    field PropertyChanged
+    get_CurrentActionKeyword() : ?
+    get_ActionKeyword() : ?
+    set_ActionKeyword() : ?
+    get_KeywordEnabled() : ?
+    set_KeywordEnabled() : ?
+    .ctor() : ?
+    OnDoneButtonClick(?et101) : ?et129
+    BtnCancel_OnClick(?et101) : ?et129
+    TxtCurrentActionKeyword_OnKeyDown(?et105) : ?et129
+    TextBox_Pasting(?et109) : ?et129
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    add_PropertyChanged() : ?et81
+    remove_PropertyChanged() : ?et81
+    OnPropertyChanged() : ?
+    OnPropertyChanged() : ?
+    SetProperty() : !!3584
+    SetProperty(TypeRef#125853536, ?et0, System.String) : !!5376
+    SetProperty(TypeSpec#6316100<>) : ?et0
+    SetProperty(TypeSpec#6250564<?et129, ?et129, System.Void, !!3584, ?, ?>) : ?et0
+    SetProperty(!!5376, TypeRef#125870432, ?et0, !!3585) : System.Void
+    SetProperty(TypeSpec#6250564<TypeSpec#10575940<System.String>, ?, ?, ?, ?, ?, ?, ?, ?, ?>) : System.Void
+    SetPropertyAndNotifyOnCompletion(?et172, TypeDef#0) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et172, TypeRef#75841632, ?et129, ?et129, System.Void, TypeDef#0) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et176, System.Void, !!5376, TypeRef#125846368, ?et0, System.String) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et176, System.Void, !!5376, TypeRef#125846368, ?et0, TypeSpec#6316100<System.Void, !!3584, ?, ?>) : ?et129
+    SetPropertyAndNotifyOnCompletion(System.Void, !!7680, ?et0, TypeSpec#6316100<>) : ?et168
+- ExplorerSettings  [methods=13 fields=14 flags=0x100001]
+    field _viewModel
+    field _expanders
+    field ExpanderContainer
+    field GeneralSettingsExpander
+    field ContextMenuExpander
+    field PreviewPanelExpander
+    field EverythingExpander
+    field tbFastSortWarning
+    field ActionKeywordsExpander
+    field QuickAccessExpander
+    field lbxAccessLinks
+    field ExcludedPathsExpander
+    field lbxExcludedPaths
+    field _contentLoaded
+    .ctor() : ?
+    AccessLinkDragDrop(?et181) : ?et129
+    lbxAccessLinks_DragEnter(?et181) : ?et129
+    btnOpenIndexingOptions_Click(?et101) : ?et129
+    LbxAccessLinks_OnDrop(?et181) : ?et129
+    LbxExcludedPaths_OnDrop(?et181) : ?et129
+    AllowOnlyNumericInput(?et185) : ?et129
+    Expander_Expanded(?et101) : ?et129
+    lbxAccessLinks_Loaded(?et101) : ?et129
+    lbxExcludedPaths_Loaded(?et101) : ?et129
+    lbxAccessLinks_SizeChanged(?et193) : ?et129
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- PreviewPanel  [methods=42 fields=12 flags=0x100001]
+    field ClassName
+    field <FilePath>k__BackingField
+    field <FileName>k__BackingField
+    field _fileSize
+    field _createdAt
+    field _lastModifiedAt
+    field _previewImage
+    field <Settings>k__BackingField
+    field PreviewGrid
+    field PreviewSep
+    field _contentLoaded
+    field PropertyChanged
+    get_FilePath() : ?
+    get_FileName() : ?
+    get_Settings() : ?
+    get_FileSizeVisibility() : ?
+    get_CreatedAtVisibility() : ?
+    get_LastModifiedAtVisibility() : ?
+    get_FileInfoVisibility() : ?
+    .ctor(TypeDef#0) : System.String
+    LoadImageAsync() : ?
+    GetFileSize() : ?
+    GetFileCreatedAt(System.Boolean) : System.String
+    GetFileLastModifiedAt(System.Boolean) : System.String
+    GetFolderSize() : ?
+    GetFolderCreatedAt(System.Boolean) : System.String
+    GetFolderLastModifiedAt(System.Boolean) : System.String
+    GetFileAge() : ?et221
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    add_PropertyChanged() : ?et81
+    remove_PropertyChanged() : ?et81
+    OnPropertyChanged() : ?
+    OnPropertyChanged() : ?
+    SetProperty() : !!3584
+    SetProperty(TypeRef#125853536, ?et0, System.String) : !!5376
+    SetProperty(TypeSpec#6316100<>) : ?et0
+    SetProperty(TypeSpec#6250564<?et129, ?et129, System.Void, !!3584, ?, ?>) : ?et0
+    SetProperty(!!5376, TypeRef#125870432, ?et0, !!3585) : System.Void
+    SetProperty(TypeSpec#6250564<TypeSpec#10575940<System.String>, ?, ?, ?, ?, ?, ?, ?, ?, ?>) : System.Void
+    SetPropertyAndNotifyOnCompletion(?et196, TypeDef#0) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et196, TypeRef#75841632, ?et129, ?et129, System.Void, TypeDef#0) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et200, System.Void, !!5376, TypeRef#125846368, ?et0, System.String) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et200, System.Void, !!5376, TypeRef#125846368, ?et0, TypeSpec#6316100<System.Void, !!3584, ?, ?>) : ?et129
+    SetPropertyAndNotifyOnCompletion(System.Void, !!7680, ?et0, TypeSpec#6316100<>) : ?et192
+    get_FileSize() : ?
+    set_FileSize() : ?
+    get_CreatedAt() : ?
+    set_CreatedAt() : ?
+    get_LastModifiedAt() : ?
+    set_LastModifiedAt() : ?
+    get_PreviewImage() : ?
+    set_PreviewImage() : ?et229
+    .cctor() : ?
+- QuickAccessLinkSettings  [methods=37 fields=14 flags=0x100001]
+    field ClassName
+    field _selectedPath
+    field _selectedName
+    field <IsFileSelected>k__BackingField
+    field <IsFolderSelected>k__BackingField
+    field <IsEdit>k__BackingField
+    field <SelectedAccessLink>k__BackingField
+    field <QuickAccessLinks>k__BackingField
+    field _accessLinkType
+    field btnCancel
+    field DownButton
+    field lblAdd
+    field _contentLoaded
+    field PropertyChanged
+    get_SelectedPath() : ?
+    set_SelectedPath() : ?
+    get_SelectedName() : ?
+    set_SelectedName() : ?
+    get_IsFileSelected() : ?
+    set_IsFileSelected() : ?
+    get_IsFolderSelected() : ?
+    set_IsFolderSelected() : ?
+    get_IsEdit() : ?
+    get_SelectedAccessLink() : ?
+    get_QuickAccessLinks(System.Void, TypeDef#0) : ?et49
+    .ctor(?et49, System.Void, TypeDef#0) : ?et129
+    .ctor(?et49, System.Void, TypeDef#0) : ?et129
+    BtnCancel_OnClick(?et101) : ?et129
+    OnDoneButtonClick(?et101) : ?et129
+    SelectPath_OnClick(?et101) : ?et129
+    GetResultType() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    add_PropertyChanged() : ?et81
+    remove_PropertyChanged() : ?et81
+    OnPropertyChanged() : ?
+    OnPropertyChanged() : ?
+    SetProperty() : !!3584
+    SetProperty(TypeRef#125853536, ?et0, System.String) : !!5376
+    SetProperty(TypeSpec#6316100<>) : ?et0
+    SetProperty(TypeSpec#6250564<?et129, ?et129, System.Void, !!3584, ?, ?>) : ?et0
+    SetProperty(!!5376, TypeRef#125870432, ?et0, !!3585) : System.Void
+    SetProperty(TypeSpec#6250564<TypeSpec#10575940<System.String>, ?, ?, ?, ?, ?, ?, ?, ?, ?>) : System.Void
+    SetPropertyAndNotifyOnCompletion(?et224, TypeDef#0) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et224, TypeRef#75841632, ?et129, ?et129, System.Void, TypeDef#0) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et228, System.Void, !!5376, TypeRef#125846368, ?et0, System.String) : ?et129
+    SetPropertyAndNotifyOnCompletion(?et228, System.Void, !!5376, TypeRef#125846368, ?et0, TypeSpec#6316100<System.Void, !!3584, ?, ?>) : ?et129
+    SetPropertyAndNotifyOnCompletion(System.Void, !!7680, ?et0, TypeSpec#6316100<>) : ?et220
+    .cctor() : ?
+    <OnDoneButtonClick>b__30_0() : ?
+    <OnDoneButtonClick>g__AddNewAccessLink|30_1() : ?
+
+## Peter (6)
+- HookEventArgs  [methods=1 fields=3 flags=0x100001]
+    field HookCode
+    field wParam
+    field lParam
+    .ctor() : ?
+- HookType  [methods=0 fields=16 flags=0x101]
+    field value__
+    field WH_JOURNALRECORD
+    field WH_JOURNALPLAYBACK
+    field WH_KEYBOARD
+    field WH_GETMESSAGE
+    field WH_CALLWNDPROC
+    field WH_CBT
+    field WH_SYSMSGFILTER
+    field WH_MOUSE
+    field WH_HARDWARE
+    field WH_DEBUG
+    field WH_SHELL
+    field WH_FOREGROUNDIDLE
+    field WH_CALLWNDPROCRET
+    field WH_KEYBOARD_LL
+    field WH_MOUSE_LL
+- LocalWindowsHook  [methods=11 fields=4 flags=0x100001]
+    field m_hhook
+    field m_filterFunc
+    field m_hookType
+    field HookInvoked
+    add_HookInvoked() : ?et88
+    remove_HookInvoked() : ?et88
+    OnHookInvoked() : ?
+    .ctor() : ?
+    .ctor() : TypeDef#0
+    CoreHookProc() : System.IntPtr
+    Install() : ?
+    Uninstall() : ?
+    SetWindowsHookEx() : TypeRef#33953056
+    UnhookWindowsHookEx() : ?
+    CallNextHookEx(System.IntPtr) : System.IntPtr
+- ShellContextMenu  [methods=22 fields=18 flags=0x100001]
+    field _oContextMenu
+    field _oContextMenu2
+    field _oContextMenu3
+    field _oDesktopFolder
+    field _oParentFolder
+    field _arrPIDLs
+    field _strParentFolder
+    field MAX_PATH
+    field CMD_FIRST
+    field CMD_LAST
+    field S_OK
+    field S_FALSE
+    field cbMenuItemInfo
+    field cbInvokeCommand
+    field IID_IShellFolder
+    field IID_IContextMenu
+    field IID_IContextMenu2
+    field IID_IContextMenu3
+    .ctor() : ?
+    Finalize() : ?
+    GetContextMenuInterfaces(System.IntPtr[], System.IntPtr&) : ?et68
+    WndProc() : ?et113
+    InvokeCommand(System.UInt32, System.String, TypeDef#0) : ?et72
+    ReleaseAll() : ?
+    GetDesktopFolder() : ?
+    GetParentFolder() : System.String
+    GetPIDLs() : TypeDef#0
+    GetPIDLs() : TypeDef#0
+    FreePIDLs() : ?
+    InvokeContextMenuDefault() : ?et125
+    ShowContextMenu(TypeDef#0) : ?et125
+    ShowContextMenu(?et129, TypeDef#0) : ?et128
+    ShowContextMenu() : ?
+    SHGetDesktopFolder() : ?
+    StrRetToBuf() : TypeDef#0
+    TrackPopupMenuEx(?) : ?et129
+    CreatePopupMenu() : ?
+    DestroyMenu() : ?
+    GetMenuDefaultItem() : System.UInt32
+    .cctor() : ?
+- ShellContextMenuException  [methods=2 fields=0 flags=0x100001]
+    .ctor() : ?
+    .ctor() : ?
+- ShellHelper  [methods=2 fields=0 flags=0x100180]
+    HiWord() : ?
+    LoWord() : ?

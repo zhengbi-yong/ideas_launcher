@@ -1,0 +1,84 @@
+elevated: true
+manage-volume privilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0 luid=00000000:0000001c
+token privileges:
+    luid:00000000:00000000 attributes=0x3
+    luid:00000000:00000000 attributes=0x5
+    luid:00000000:00000000 attributes=0x7
+    luid:00000000:00000000 attributes=0x8
+    luid:00000000:00000000 attributes=0x9
+    luid:00000000:00000000 attributes=0xa
+    luid:00000000:00000000 attributes=0xb
+    luid:00000000:00000000 attributes=0xc
+    luid:00000000:00000000 attributes=0xd
+    luid:00000000:00000000 attributes=0xe
+    luid:00000000:00000000 attributes=0xf
+    luid:00000000:00000000 attributes=0x11
+    luid:00000000:00000000 attributes=0x12
+    luid:00000000:00000000 attributes=0x13
+    luid:00000000:00000000 attributes=0x14
+    luid:00000000:00000000 attributes=0x16
+    luid:00000000:00000000 attributes=0x17
+    luid:00000000:00000003 attributes=0x18
+    luid:00000000:00000000 attributes=0x19
+    luid:00000000:00000000 attributes=0x1c
+    luid:00000000:00000002 attributes=0x1d
+    luid:00000000:00000003 attributes=0x1e
+    luid:00000000:00000003 attributes=0x21
+    luid:00000000:00000000 attributes=0x22
+    luid:00000000:00000000 attributes=0x23
+    luid:00000000:00000000 attributes=0x24
+    luid:00000000:00000000 attributes=0x0
+raw token privilege buffer: 328 bytes
+    1b 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00
+    03 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00
+    00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00
+    00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00
+    09 00 00 00 00 00 00 00 00 00 00 00 0a 00 00 00
+    00 00 00 00 00 00 00 00 0b 00 00 00 00 00 00 00
+    00 00 00 00 0c 00 00 00 00 00 00 00 00 00 00 00
+    0d 00 00 00 00 00 00 00 00 00 00 00 0e 00 00 00
+    SeChangeNotifyPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeBackupPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeRestorePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeManageVolumePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeTakeOwnershipPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+NTFS volumes: 2
+  \\.\C: C:\ label="home"
+    journal id=0x1dceb71cd496ff0 first=0x7e2000000 next=0x7f3f83120 max_size=268435456
+  \\.\D: D:\ label="disk"
+    journal: unavailable
+  C:\ -> 3184181 entries (276160 folders, 2908021 files) read straight off the disk in 175.1285233s (3184181 with a known size)
+      frn=0x7000000000011 parent=0x3c9ad size=0 ModuleInterface
+      frn=0x2000000000013 parent=0xe7c size=211106232532992 Amcache.hve.LOG1
+      frn=0x2000000000014 parent=0xdea size=0 PowerGrid
+      frn=0x2000000000015 parent=0x1609 size=0 D3DSCache
+      frn=0x4000000000016 parent=0x2b size=4 F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.lock
+  D:\ -> 0 entries (0 folders, 0 files) read straight off the disk in 3.0867ms (0 with a known size)
+the enumeration parameter shapes are a diagnostic; skipping them
+index built: 3184181 entries in 1.2380219s
+index saved: 263689953 bytes in 631.7278ms
+index loaded back: 3184181 entries in 455.8322ms
+  query "report" -> 5 hits in 14.279ms
+      Reporters  C:\Reporters
+      Reporting  C:\Reporting
+      Reporting  C:\Reporting
+  query "*.pdf" -> 5 hits in 13.5452ms
+      W2.3W.pdf  C:\W2.3W.pdf
+      1.BACA.pdf  C:\1.BACA.pdf
+      1.EMLA.pdf  C:\1.EMLA.pdf
+  query "folder:" -> 5 hits in 33.5517ms
+      +b  C:\+b
+      +s  C:\+s
+      .2  C:\.2
+  query "config" -> 5 hits in 6.7083ms
+      Configure  C:\Configure
+      config-ha  C:\config-ha
+      config_v1  C:\config_v1
+  query "everything" -> 5 hits in 1.8019ms
+      Everything  C:\Everything
+      everything  C:\everything
+      EverythingSDK  C:\EverythingSDK
+  query "README" -> 5 hits in 9.1062ms
+      README-ar  C:\README-ar
+      README-en  C:\README-en
+      README_CG  C:\README_CG

@@ -1,0 +1,431 @@
+# Types in Flow.Launcher.Plugin.BrowserBookmark
+
+
+## (global) (24)
+- <<SetPropertyAndNotifyOnCompletion>g__MonitorTask|0>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__5_0
+    .cctor() : ?
+    .ctor() : ?
+    <GetBookmarksFromPath>b__5_0(?et129) : ?et128
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__5_0
+    .cctor() : ?
+    .ctor() : ?
+    <GetProfileIniPath>b__5_0() : ?
+- <>c  [methods=6 fields=5 flags=0x102103]
+    field <>9
+    field <>9__11_1
+    field <>9__11_2
+    field <>9__16_1
+    field <>9__16_2
+    .cctor() : ?
+    .ctor() : ?
+    <Query>b__11_1() : ?et233
+    <Query>b__11_2() : TypeDef#0
+    <RegisterBookmarkFile>b__16_1(System.Double) : ?et129
+    <RegisterBookmarkFile>b__16_2(TypeDef#0) : ?et129
+- <>c  [methods=8 fields=7 flags=0x102103]
+    field <>9
+    field <>9__10_0
+    field <>9__13_0
+    field <>9__16_0
+    field <>9__20_0
+    field <>9__21_0
+    field <>9__25_0
+    .cctor() : ?
+    .ctor() : ?
+    <set_LoadChromeBookmark>b__10_0() : ?
+    <set_LoadFirefoxBookmark>b__13_0() : ?
+    <set_LoadEdgeBookmark>b__16_0() : ?
+    <NewCustomBrowser>b__20_0() : ?
+    <DeleteCustomBrowser>b__21_0() : ?
+    <EditSelectedCustomBrowser>b__25_0() : ?
+- <>c__DisplayClass11_0  [methods=2 fields=1 flags=0x100103]
+    field param
+    .ctor() : ?
+    <Query>b__0() : TypeDef#0
+- <>c__DisplayClass11_1  [methods=2 fields=1 flags=0x100103]
+    field c
+    .ctor() : ?
+    <Query>b__3() : TypeDef#0<>
+- <>c__DisplayClass11_2  [methods=2 fields=1 flags=0x100103]
+    field c
+    .ctor() : ?
+    <Query>b__4() : TypeDef#0<>
+- <>c__DisplayClass16_0  [methods=2 fields=1 flags=0x100103]
+    field directory
+    .ctor() : ?
+    <RegisterBookmarkFile>b__0() : ?et229
+- <>c__DisplayClass22_0  [methods=2 fields=1 flags=0x100103]
+    field selectedResult
+    .ctor() : ?
+    <LoadContextMenus>b__0() : TypeDef#0<>
+- <>c__DisplayClass4_0  [methods=2 fields=3 flags=0x100103]
+    field profileBookmarks
+    field faviconDbPath
+    field <>4__this
+    .ctor() : ?
+    <LoadBookmarks>b__0() : ?
+- <>c__DisplayClass46_0`1  [methods=2 fields=5 flags=0x100103]
+    field newValue
+    field taskNotifier
+    field <>4__this
+    field propertyName
+    field callback
+    .ctor() : ?
+    <SetPropertyAndNotifyOnCompletion>g__MonitorTask|0() : ?
+- <>c__DisplayClass5_0  [methods=2 fields=3 flags=0x100103]
+    field <>4__this
+    field bookmarks
+    field faviconDbPath
+    .ctor() : ?
+    <GetBookmarksFromPath>b__1() : ?
+- <>c__DisplayClass6_0  [methods=2 fields=2 flags=0x100103]
+    field bookmarks
+    field <>4__this
+    .ctor() : ?
+    <LoadFaviconsFromDb>b__0() : ?
+- <>c__DisplayClass6_1  [methods=2 fields=3 flags=0x100103]
+    field tempDbPath
+    field savedPaths
+    field CS$<>8__locals1
+    .ctor() : ?
+    <LoadFaviconsFromDb>b__1() : ?
+- <>c__DisplayClass8_0  [methods=2 fields=2 flags=0x100103]
+    field bookmarks
+    field <>4__this
+    .ctor() : ?
+    <LoadFaviconsFromDb>b__0() : ?
+- <>c__DisplayClass8_1  [methods=2 fields=3 flags=0x100103]
+    field tempDbPath
+    field savedPaths
+    field CS$<>8__locals1
+    .ctor() : ?
+    <LoadFaviconsFromDb>b__1() : ?
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <MonitorRefreshQueueAsync>d__14  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <reader>5__2
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et33
+- <Select>d__0`1  [methods=8 fields=7 flags=0x100103]
+    field <>1__state
+    field <>2__current
+    field <>l__initialThreadId
+    field projection
+    field <>3__projection
+    field reader
+    field <>3__reader
+    .ctor() : ?
+    System.IDisposable.Dispose() : ?
+    MoveNext() : ?
+    System.Collections.Generic.IEnumerator<T>.get_Current() : ?
+    System.Collections.IEnumerator.Reset() : ?
+    System.Collections.IEnumerator.get_Current() : ?
+    System.Collections.Generic.IEnumerable<T>.GetEnumerator(System.Void, !0) : ?et173
+    System.Collections.IEnumerable.GetEnumerator() : ?
+- BookmarkAttributes  [methods=3 fields=1 flags=0x100005]
+    field <Url>k__BackingField
+    get_Url() : ?
+    set_Url() : ?
+    .ctor() : ?
+- ITaskNotifier`1  [methods=2 fields=0 flags=0x1000a3]
+    get_Task() : ?
+    set_Task() : ?
+- TaskNotifier  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.BrowserBookmark.Views.SettingsControl.ITaskNotifier<System.Threading.Tasks.Task>.get_Task() : ?
+    Flow.Launcher.Plugin.BrowserBookmark.Views.SettingsControl.ITaskNotifier<System.Threading.Tasks.Task>.set_Task() : ?et245
+    op_Implicit() : TypeDef#0
+- TaskNotifier`1  [methods=4 fields=1 flags=0x100104]
+    field task
+    .ctor() : ?
+    Flow.Launcher.Plugin.BrowserBookmark.Views.SettingsControl.ITaskNotifier<System.Threading.Tasks.Task<T>>.get_Task(System.Void, !0) : ?et173
+    Flow.Launcher.Plugin.BrowserBookmark.Views.SettingsControl.ITaskNotifier<System.Threading.Tasks.Task<T>>.set_Task(?et173, System.Void, !0) : ?et129
+    op_Implicit(System.Void, !5376, TypeDef#79718688, ?et0) : ?et173
+
+## Flow.Launcher.Plugin.BrowserBookmark (11)
+- ChromeBookmarkLoader  [methods=3 fields=0 flags=0x100001]
+    GetBookmarks(TypeDef#0) : System.Void
+    LoadChromeBookmarks(TypeDef#0) : System.Void
+    .ctor() : ?
+- ChromiumBookmarkLoader  [methods=8 fields=2 flags=0x100081]
+    field ClassName
+    field _faviconCacheDir
+    .ctor() : ?
+    GetBookmarks(TypeDef#0) : System.Void
+    LoadBookmarks(TypeDef#0) : System.Void
+    LoadBookmarksFromFile(TypeDef#0) : System.Void
+    EnumerateRoot() : TypeSpec#75519812<>
+    EnumerateFolderBookmark() : TypeSpec#75519812<>
+    LoadFaviconsFromDb() : TypeRef#251953232
+    .cctor() : ?
+- CustomChromiumBookmarkLoader  [methods=8 fields=3 flags=0x100001]
+    field <BrowserDataPath>k__BackingField
+    field <BookmarkFilePath>k__BackingField
+    field <BrowserName>k__BackingField
+    .ctor() : ?
+    get_BrowserDataPath() : ?
+    set_BrowserDataPath(System.String) : System.Void
+    get_BookmarkFilePath() : ?
+    set_BookmarkFilePath(System.String) : System.Void
+    get_BrowserName() : ?
+    set_BrowserName(System.String) : System.Void
+    GetBookmarks(TypeDef#0) : System.Void
+- CustomFirefoxBookmarkLoader  [methods=6 fields=2 flags=0x100001]
+    field <BrowserDataPath>k__BackingField
+    field <BrowserName>k__BackingField
+    .ctor() : ?
+    get_BrowserDataPath() : ?
+    set_BrowserDataPath(System.String) : System.Void
+    get_BrowserName() : ?
+    set_BrowserName(System.String) : System.Void
+    GetBookmarks(TypeDef#0) : System.Void
+- EdgeBookmarkLoader  [methods=3 fields=0 flags=0x100001]
+    LoadEdgeBookmarks(TypeDef#0) : System.Void
+    GetBookmarks(TypeDef#0) : System.Void
+    .ctor() : ?
+- Extensions  [methods=1 fields=0 flags=0x100181]
+    Select(!!4608, ?et128, ?et129, TypeSpec#10641412<?et0>) : System.Void
+- FirefoxBookmarkLoader  [methods=5 fields=0 flags=0x100001]
+    GetBookmarks(TypeDef#0) : System.Void
+    get_PlacesPath() : ?
+    get_MsixPlacesPath() : ?
+    GetProfileIniPath() : ?
+    .ctor() : ?
+- FirefoxBookmarkLoaderBase  [methods=5 fields=3 flags=0x100081]
+    field ClassName
+    field _faviconCacheDir
+    field QueryAllBookmarks
+    .ctor() : ?
+    GetBookmarks(TypeDef#0) : System.Void
+    GetBookmarksFromPath(TypeDef#0) : System.Void
+    LoadFaviconsFromDb() : TypeRef#251953232
+    .cctor() : ?
+- IBookmarkLoader  [methods=1 fields=0 flags=0x1000a1]
+    GetBookmarks(TypeDef#0) : System.Void
+- Localize  [methods=23 fields=0 flags=0x100181]
+    flowlauncher_plugin_browserbookmark_plugin_name() : ?
+    flowlauncher_plugin_browserbookmark_plugin_description() : ?
+    flowlauncher_plugin_browserbookmark_copy_failed() : ?
+    flowlauncher_plugin_browserbookmark_bookmarkDataSetting() : ?
+    flowlauncher_plugin_browserbookmark_settings_openBookmarks() : ?
+    flowlauncher_plugin_browserbookmark_settings_newWindow() : ?
+    flowlauncher_plugin_browserbookmark_settings_newTab() : ?
+    flowlauncher_plugin_browserbookmark_settings_setBrowserFromPath() : ?
+    flowlauncher_plugin_browserbookmark_settings_choose() : ?
+    flowlauncher_plugin_browserbookmark_copyurl_title() : ?
+    flowlauncher_plugin_browserbookmark_copyurl_subtitle() : ?
+    flowlauncher_plugin_browserbookmark_loadBrowserFrom() : ?
+    flowlauncher_plugin_browserbookmark_browserName() : ?
+    flowlauncher_plugin_browserbookmark_browserBookmarkDataDirectory() : ?
+    flowlauncher_plugin_browserbookmark_addBrowserBookmark() : ?
+    flowlauncher_plugin_browserbookmark_editBrowserBookmark() : ?
+    flowlauncher_plugin_browserbookmark_removeBrowserBookmark() : ?
+    flowlauncher_plugin_browserbookmark_browseBrowserBookmark() : ?
+    flowlauncher_plugin_browserbookmark_others() : ?
+    flowlauncher_plugin_browserbookmark_browserEngine() : ?
+    flowlauncher_plugin_browserbookmark_guideMessage01() : ?
+    flowlauncher_plugin_browserbookmark_guideMessage02() : ?
+    flowlauncher_plugin_browserbookmark_enable_favicons() : ?
+- Main  [methods=17 fields=9 flags=0x100001]
+    field ClassName
+    field _faviconCacheDir
+    field <Context>k__BackingField
+    field _settings
+    field _cachedBookmarks
+    field _initialized
+    field _refreshQueue
+    field _fileMonitorSemaphore
+    field Watchers
+    get_Context() : ?
+    set_Context() : ?et217
+    Init() : ?et217
+    LoadBookmarksIfEnabled() : ?
+    Query(TypeDef#537180768, ?et237) : System.Void
+    MonitorRefreshQueueAsync() : ?
+    RegisterBookmarkFile() : ?
+    ReloadData() : ?
+    ReloadAllBookmarks() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    CreateSettingPanel() : ?
+    LoadContextMenus(TypeDef#537180768, ?et233) : System.Void
+    Dispose() : ?
+    DisposeFileWatchers() : ?
+    .ctor() : ?
+    .cctor() : ?
+
+## Flow.Launcher.Plugin.BrowserBookmark.Commands (1)
+- BookmarkLoader  [methods=2 fields=0 flags=0x100180]
+    MatchProgram() : TypeDef#0
+    LoadAllBookmarks(TypeDef#0) : System.Void
+
+## Flow.Launcher.Plugin.BrowserBookmark.Helper (1)
+- FaviconHelper  [methods=4 fields=1 flags=0x100181]
+    field ClassName
+    LoadFaviconsFromDb() : TypeSpec#6840388<>
+    SaveBitmapData() : System.String
+    TryConvertToWebp() : System.Byte
+    .cctor() : ?
+
+## Flow.Launcher.Plugin.BrowserBookmark.Models (5)
+- Bookmark  [methods=22 fields=5 flags=0x100001]
+    field <Name>k__BackingField
+    field <Url>k__BackingField
+    field <Source>k__BackingField
+    field <CustomBrowsers>k__BackingField
+    field <FaviconPath>k__BackingField
+    .ctor() : System.String
+    get_EqualityContract() : ?
+    get_Name() : ?
+    set_Name(System.String) : System.Void
+    get_Url() : ?
+    set_Url(System.String) : System.Void
+    get_Source() : ?
+    set_Source(System.String) : System.Void
+    GetHashCode() : ?
+    Equals() : ?
+    get_CustomBrowsers(TypeDef#0) : System.Void
+    set_CustomBrowsers(TypeDef#0) : System.Void
+    get_FaviconPath() : ?
+    set_FaviconPath() : ?
+    ToString() : ?
+    PrintMembers() : ?et201
+    op_Inequality() : TypeDef#0
+    op_Equality() : TypeDef#0
+    Equals() : ?
+    <Clone>$() : ?
+    .ctor() : ?
+    Deconstruct(System.String&) : System.String&
+- BrowserType  [methods=0 fields=3 flags=0x101]
+    field value__
+    field Chromium
+    field Firefox
+- BrowserTypeLocalized  [methods=14 fields=5 flags=0x100001]
+    field <Value>k__BackingField
+    field _display
+    field <LocalizationKey>k__BackingField
+    field <LocalizationValue>k__BackingField
+    field PropertyChanged
+    get_Value() : ?
+    set_Value(TypeDef#0) : System.Void
+    get_Display() : ?
+    set_Display() : ?
+    get_LocalizationKey() : ?
+    set_LocalizationKey() : ?
+    get_LocalizationValue() : ?
+    set_LocalizationValue() : ?
+    GetValues(TypeDef#0) : System.Void
+    UpdateLabels(TypeDef#0) : System.Void
+    add_PropertyChanged() : ?et125
+    remove_PropertyChanged() : ?et125
+    OnPropertyChanged() : ?
+    .ctor() : ?
+- CustomBrowser  [methods=8 fields=4 flags=0x100001]
+    field _name
+    field _dataDirectoryPath
+    field _browserType
+    field <AllBrowserTypes>k__BackingField
+    get_Name() : ?
+    set_Name() : ?
+    get_DataDirectoryPath() : ?
+    set_DataDirectoryPath() : ?
+    get_AllBrowserTypes(TypeDef#0) : System.Void
+    get_BrowserType() : ?
+    set_BrowserType() : ?
+    .ctor() : ?
+- Settings  [methods=15 fields=7 flags=0x100001]
+    field <OpenInNewBrowserWindow>k__BackingField
+    field <BrowserPath>k__BackingField
+    field <EnableFavicons>k__BackingField
+    field <LoadChromeBookmark>k__BackingField
+    field <LoadFirefoxBookmark>k__BackingField
+    field <LoadEdgeBookmark>k__BackingField
+    field <CustomChromiumBrowsers>k__BackingField
+    get_OpenInNewBrowserWindow() : ?
+    set_OpenInNewBrowserWindow() : ?
+    get_BrowserPath() : ?
+    set_BrowserPath() : ?
+    get_EnableFavicons() : ?
+    set_EnableFavicons() : ?
+    get_LoadChromeBookmark() : ?
+    set_LoadChromeBookmark() : ?
+    get_LoadFirefoxBookmark() : ?
+    set_LoadFirefoxBookmark() : ?
+    get_LoadEdgeBookmark() : ?
+    set_LoadEdgeBookmark() : ?
+    get_CustomChromiumBrowsers(System.Void, TypeDef#0) : ?et221
+    set_CustomChromiumBrowsers(?et221, System.Void, TypeDef#0) : ?et129
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.BrowserBookmark.Views (2)
+- CustomBrowserSettingWindow  [methods=7 fields=6 flags=0x100001]
+    field _currentCustomBrowser
+    field PathTextBox
+    field btnCancel
+    field btnConfirm
+    field lblAdd
+    field _contentLoaded
+    .ctor() : ?
+    ConfirmEditCustomBrowser(?et85) : ?et129
+    CancelEditCustomBrowser(?et85) : ?et129
+    WindowKeyDown(?et89) : ?et129
+    OnSelectPathClick(?et85) : ?et129
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- SettingsControl  [methods=35 fields=6 flags=0x100001]
+    field <Settings>k__BackingField
+    field <SelectedCustomBrowser>k__BackingField
+    field CustomBrowsersList
+    field CustomBrowsers
+    field _contentLoaded
+    field PropertyChanged
+    get_Settings() : ?
+    get_SelectedCustomBrowser() : ?
+    set_SelectedCustomBrowser() : ?
+    .ctor() : ?
+    get_LoadChromeBookmark() : ?
+    set_LoadChromeBookmark() : ?
+    get_LoadFirefoxBookmark() : ?
+    set_LoadFirefoxBookmark() : ?
+    get_LoadEdgeBookmark() : ?
+    set_LoadEdgeBookmark() : ?
+    get_OpenInNewBrowserWindow() : ?
+    set_OpenInNewBrowserWindow() : ?
+    NewCustomBrowser(?et85) : ?et129
+    DeleteCustomBrowser(?et85) : ?et129
+    MouseDoubleClickOnSelectedCustomBrowser(?et137) : ?et129
+    Others_Click(?et85) : ?et129
+    EditCustomBrowser(?et85) : ?et129
+    EditSelectedCustomBrowser() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    add_PropertyChanged() : ?et125
+    remove_PropertyChanged() : ?et125
+    OnPropertyChanged() : ?et145
+    OnPropertyChanged() : ?
+    SetProperty() : !!3584
+    SetProperty(TypeRef#125855584, ?et0, System.String) : !!5376
+    SetProperty(TypeSpec#6840388<>) : ?et0
+    SetProperty(TypeSpec#6774852<?et129, ?et161, System.Void, !!3584, ?, ?>) : ?et0
+    SetProperty(!!5376, TypeRef#125872480, ?et0, !!3585) : System.Void
+    SetProperty(TypeSpec#6774852<TypeSpec#11100228<System.String>, ?, ?, ?, ?, ?, ?, ?, ?, ?>) : System.Void
+    SetPropertyAndNotifyOnCompletion(?et160, TypeDef#0) : ?et128
+    SetPropertyAndNotifyOnCompletion(?et160, TypeDef#75857248, ?et129, ?et161, System.Void, TypeDef#0) : ?et128
+    SetPropertyAndNotifyOnCompletion(?et164, System.Void, !!5376, TypeRef#125856608, ?et0, System.String) : ?et128
+    SetPropertyAndNotifyOnCompletion(?et164, System.Void, !!5376, TypeRef#125856608, ?et0, TypeSpec#6840388<System.Void, !!3584, ?, ?>) : ?et128
+    SetPropertyAndNotifyOnCompletion(System.Void, !!7680, ?et0, TypeSpec#6840388<>) : ?et156

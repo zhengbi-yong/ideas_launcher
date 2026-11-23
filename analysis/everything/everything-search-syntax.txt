@@ -1,0 +1,463 @@
+Searching - voidtools
+Home
+Downloads
+FAQ
+Support
+Forums
+Donate
+Contact
+Everything
+Installing Everything
+Using Everything
+Command Line Interface
+Command Line Options
+Customizing
+ETP
+Everything Service
+File Lists
+Folder Indexing
+HTTP
+Indexes
+INI
+Keyboard Shortcuts
+Multiple Instances
+Options
+Previous Versions
+Recent Changes
+Results
+Run History
+SDK
+Search History
+Searching
+Supported Languages
+Translating
+Troubleshooting
+Uninstalling Everything
+What's New
+Searching
+Use the search edit to type in a search.
+Type in a partial filename, files and folders matching your partial filename search will be instantly displayed in the result list.
+For example, to find files and folders with the text reports in the filename, search for:
+reports
+To limit the results to a drive, simply search for that drive, for example, to find files and folders on your D: drive, search for:
+d:
+Include the path to limit the results to a folder, for example, to find files and folders in the folder D:\Downloads, search for:
+d:\downloads\
+Use double quotes to escape spaces, for example, to find files and folders in C:\Program Files, search for:
+"c:\program files\"
+Use \ to search for partial paths, for example, to find files and folders in a folder ending with documents, search for:
+documents\
+Use a space to combine searches, for example, to find files and folders containing the text order, located in the folder starting with work, search for:
+\work order
+Syntax
+Operators
+space | AND |
+| | OR |
+! | NOT |
+< > | Grouping |
+" " | Search for an exact phrase |
+Wildcards
+* | Matches zero of more characters. |
+? | Matches one character. |
+Wildcards match the whole filename. Disable Match whole filename when using wildcards to match wilcards anywhere in the filename.
+Macros
+quot: | Literal double quote " |
+apos: | Literal apostrophe ' |
+amp: | Literal ampersand & |
+lt: | Literal less than < |
+gt: | Literal greater than > |
+#<n>: | Literal unicode character <n> in decimal. |
+#x<n>: | Literal unicode character <n> in hexadecimal. |
+audio: | Search for audio files. |
+zip: | Search for compressed files. |
+doc: | Search for document files. |
+exe: | Search for executable files. |
+pic: | Search for picture files. |
+video: | Search for video files. |
+Modifiers
+Functions and regular search terms can be prefixed with a modifier.
+ascii:
+utf8:
+noascii: | Enable or disable fast ASCII case comparisons. |
+case:
+nocase: | Match or ignore case. |
+diacritics:
+nodiacritics: | Match or ignore accent marks. |
+file:
+files:
+nofileonly: | Match files only. |
+folder:
+folders:
+nofolderonly: | Match folders only. |
+path:
+nopath: | Match the full path and file name or just the filename. |
+regex:
+noregex: | Enable or disable regex. |
+wfn:
+wholefilename:
+nowfn:
+nowholefilename:
+exact: | Match the whole filename or match anywhere in the filename. |
+wholeword:
+ww:
+nowholeword:
+noww: | Match whole words or match anywhere in the filename. |
+wildcards:
+nowildcards: | Enable or disable wildcards. |
+Functions
+album:<album> | Search for the ID3 or FLAC album. |
+artist:<artist> | Search for the ID3 or FLAC artist. |
+attrib:<attributes>
+attributes:<attributes> | Search for files and folders with the specified file attributes. |
+bitdepth:<bitdepth> | Find images with the specified bits per pixel. |
+child:<filename> | Search for folders that contain a child file or folder with a matching filename. |
+childcount:<count> | Search for folders that contain the specified number of subfolders and files. |
+childfilecount:<count> | Search for folders that contain the specified number of files. |
+childfoldercount:<count> | Search for folders that contain the specified number of subfolders. |
+comment:<comment> | Search for the ID3 or FLAC comment. |
+content:
+ansicontent:
+utf8content:
+utf16content:
+utf16becontent: | Search file content. |
+count:<max> | Limit the number of results to max. |
+dateaccessed:<date>
+da:<date> | Search for files and folders with the specified date accessed. |
+datecreated:<date>
+dc:<date> | Search for files and folders with the specified date created. |
+datemodified:<date>
+dm:<date> | Search for files and folders with the specified date modified. |
+daterun:<date>
+dr:<date> | Search for files and folders with the specified date run. |
+depth:<count>
+parents:<count> | Search for files and folders with the specified folder depth. |
+dimension:<width>x<height> | Find images with the specified width and height. |
+dupe:
+namepartdupe:
+attribdupe:
+dadupe:
+dcdupe:
+dmdupe:
+sizedupe: | Search for duplicated files. |
+empty: | Search for empty folders. |
+endwith:<text> | Filenames (including extension) ending with text. |
+ext:<list> | Search for files with a matching extension in the specified semicolon delimited extension list. |
+filelist:<list> | Search for a list of file names in the specified pipe (|) delimited file list. |
+filelistfilename:<filename> | Search for files and folders belonging to the file list filename. |
+frn:<frnlist> | Search for files and folders with the specified semicolon delimited File Reference Numbers. |
+fsi:<index> | Search for files and folders in the specified zero based internal file system index. |
+genre:<genre> | Search for the ID3 or FLAC genre. |
+height:<height> | Search for images with the specified height in pixels. |
+len:<length> | Search for files and folders that match the specified filename length. |
+orientation:<type> | Search for images with the specified orientation (landscape or portrait). |
+parent:<path>
+infolder:<path>
+nosubfolders:<path> | Search for files and folders in the specified path, excluding subfolders. |
+recentchange:<date>
+rc:<date> | Search for files and folders with the specified recently changed date. |
+root: | Search for files and folders with no parent folder. |
+runcount:<count> | Search for files and folders with the specified run count. |
+shell:<name> | Search for a known shell folder name, including subfolders and files. |
+size:<size> | Search for files with the specified size in bytes. |
+startwith:<text> | Search for filenames starting with text. |
+title:<title> | Search for the ID3 or FLAC title. |
+type:<type> | Search for files and folders with the specified type. |
+width:<width> | Search for images with the specified width in pixels. |
+Function syntax
+function:value | Equal to value. |
+function:<=value | Less than or equal to value. |
+function:<value | Less than value. |
+function:=value | Equal to value. |
+function:>value | Greater than value. |
+function:>=value | Greater than or equal to value. |
+function:start..end | Is in the range of values from start to end. |
+function:start-end | Is in the range of values from start to end. |
+Size Syntax:
+size[kb|mb|gb]
+Size Constants:
+empty |  |
+tiny | 0 KB < size <= 10 KB |
+small | 10 KB < size <= 100 KB |
+medium | 100 KB < size <= 1 MB |
+large | 1 MB < size <= 16 MB |
+huge | 16 MB < size <= 128 MB |
+gigantic | size > 128 MB |
+unknown |  |
+Date Syntax:
+year
+month/year or year/month depending on locale settings
+day/month/year, month/day/year or year/month/day depending on locale settings
+YYYY[-MM[-DD[Thh[:mm[:ss[.sss]]]]]]
+YYYYMM[DD[Thh[mm[ss[.sss]]]]]
+Date Constants:
+today
+yesterday
+<last|past|prev|current|this|coming|next><year|month|week>
+<last|past|prev|coming|next><x><years|months|weeks>
+<last|past|prev|coming|next><x><hours|minutes|mins|seconds|secs>
+january|february|march|april|may|june|july|august|september|october|november|december
+jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec
+sunday|monday|tuesday|wednesday|thursday|friday|saturday
+sun|mon|tue|wed|thu|fri|sat
+unknown
+Attribute Constants:
+A | Archive |
+C | Compressed |
+D | Directory |
+E | Encrypted |
+H | Hidden |
+I | Not content indexed |
+L | Reparse point |
+N | Normal |
+O | Offline |
+P | Sparse file |
+R | Read only |
+S | System |
+T | Temporary |
+V | Device |
+Search options
+Search options can be toggled from the Search menu.
+Enabled search options are displayed in the right of the status bar. Double click the status bar part to disable the search option. Right click the status bar to show a list of search options.
+Match Case
+Match or ignore case.
+Match Whole Words
+Match whole words or allow the match to occur any where in the filename.
+Match Path
+match against the full path and filename or just the filename.
+Match Diacritics.
+Match or ignore accent marks.
+Enable Regex
+Enable or disable regular expressions.
+Everything
+Audio
+Compressed
+Document
+Executable
+Folder
+Picture
+Video
+Match the specified type only. See Filters for more information.
+Advanced Search
+Use the Everything advanced search to help build a more complex search.
+To show the advanced search dialog:
+In "Everything", from the Search menu, click Advanced Search.
+Content Searching
+Warning: content searching is extremely slow.
+File content is not indexed.
+Please combine content: functions with other filters for the best performance.
+Content search functions:
+content:<text> | Search file content using the associated iFilter. If no iFilter exists UTF-8 content is used. |
+ansicontent:<text> | File contents are treated as ANSI text. |
+utf8content:<text> | File contents are treated as UTF-8 text. |
+utf16content:<text> | File contents are treated as UTF-16 (Unicode) text. |
+utf16becontent:<text> | File contents are treated as UTF-16 (Big Endian) text. |
+Example, find emails, modified this week, containing the text "banana":
+*.eml dm:thisweek content:banana
+* Note: content: is used last in the search above, this means Everything will only search the content of files that matched the previous search *.eml dm:thisweek
+ID3 Tags
+The following search functions can be used to search for ID3 tags and FLAC tags:
+track:<track> | Track number or track range. |
+year:<year> | Tear or year range. |
+title:<title> | Song title. |
+artist:<artist> | Song Artist. |
+album:<album> | Album name. |
+comment:<comment> | Track comment. |
+genre:<genre> | Track genre. |
+ID3v1 is fully supported.
+ID3v2, ID3v2.3 and ID3v2.4 are loosely supported.
+ID3 tags and FLAC tags are not indexed. Searching for ID3 tags and FLAC tags is slow, combine with other searches for the best performance.
+Only ID3 tags in mp3 files are currently supported.
+Examples:
+year:2002..2005
+genre:electronic
+regex:album:^[a-n]
+wildcards:title:red*
+track:>10
+year:>=2000
+Image information
+The following functions can be used to search for image dimensions
+width:<width> | The width of the image in pixels. |
+height:<height> | The height of the image in pixels. |
+dimensions:<width>x<height> | The width and height of the image in pixels. Use a x to separate the width and height. |
+orientation:<type> | <type> can landscape or portrait. |
+bitdepth:<bitdepth> | Find images with the specified bits per pixel. |
+Image information is not indexed. Searching for image information is slow, combine with other searches for the best performance.
+Only jpg, png, gif and bmp files are supported.
+Examples:
+width:>2560
+width:800..1920
+height:600..1080
+dimensions:800x600..1920x1080
+Duplicated Files
+The following functions can be used to search for duplicated files.
+dupe: | Find files and folders with the same filename. |
+attribdupe: | Find files and folders with the same attributes. Sort by attributes for the best results. |
+dadupe: | Find files and folders with the same date accessed. Sort by date accessed for the best results. |
+dcdupe: | Find files and folders with the same date created. Sort by date created for the best results. |
+dmdupe: | Find files and folders with the same date modified. Sort by date modified for the best results. |
+namepartdupe: | Find files and folders with the same name part (excluding extension). |
+sizedupe: | Find files and folders with the same size. Sort by size for the best results. |
+Duplicates are found in the ENTIRE index, not the current results.
+Search and sort results by the same dupe type for the best results.
+Everything does not check file contents. Use the dupe finding functions as a guide only.
+Examples:
+dupe: .mp4
+size:>1gb sizedupe:
+Filters
+Filters are predefined searches. Only one filter can be active at a time. Filters can be toggled from the Search menu.
+To create a new filter:
+In Everything, from the Search menu, click Add to filters....
+Type in a Name.
+Click OK.
+To edit an existing filter:
+In Everything, from the Search menu, click Organize filters....
+Select a filter.
+Click Edit.
+To create a search macro:
+In Everything, from the Search menu, click Organize filters....
+Select a filter.
+Click Edit.
+Set macro to your search shortcut, for example: photos
+The photos: search will now be replaced with this filter's search.
+Click OK.
+Click OK.
+To create a filter keyboard shortcut:
+In Everything, from the Search menu, click Organize filters....
+Select a filter.
+Click Edit.
+Click to the right of Keyboard shortcut and press a new keyboard shortcut.
+Click OK.
+Click OK.
+Filters can be accessed from the Search menu, filter bar (View -> Filters), right clicking the status bar, filter macro or filter keyboard shortcut.
+Bookmarks
+Bookmarks can save the current search, filter, sort and index.
+To create a new bookmark from the current search:
+In Everything, from the Bookmarks menu, click Add to bookmarks....
+Type in a Name.
+Click OK.
+To organize bookmarks:
+In Everything, from the Bookmarks menu, click Organize bookmarks....
+Home Search
+The home search is the default search when you first open an Everything search window.
+The home search can be opened by pressing Alt + Home.
+To change the home search settings:
+In Everything, from the Tools menu, click Options.
+Click the '''Home''' tab.
+Set the desired search, search options, sort order and view options.
+Click OK.
+Macros
+Custom macros can be defined by filters and bookmarks.
+To create a custom filter macro:
+Create a new filter or edit an existing one.
+Type in a macro name, for example:
+foo
+Click OK.
+Click OK.
+Searching for foo: will now be replaced by the filter's search.
+Regex
+Regex overrides the search syntax. Search operators, wildcards, macros, modifiers and functions do not work in regex mode.
+Regex must be enabled from the Search menu or prefix the search with regex:
+When using the regex: modifier, please escape | and space with double quotes.
+a|b | Matches a or b |
+gr(a|e)y | Matches gray or grey |
+. | Matches any single character |
+[abc] | Matches a single character a, b or c |
+[^abc] | Matches any single character except a, b or c |
+[a-z] | Matches a single charactor in the range a to z |
+[a-zA-Z] | Matches a single charactor in the range a to z or A to Z |
+^ | Matches the start of the filename |
+$ | Matches the end of the filename |
+* | Matches the preceding element zero or more times |
+? | Matches the preceding element zero or one times |
++ | Matches the preceding element one or more times |
+{x} | Matches the preceding element x times |
+{x,} | Matches the preceding element x or more times |
+{x,y} | Matches the preceding element between x and y times |
+\ | Escape special character |
+Search Commands
+The following search commands are special searches that can be activated by typing in the search and pressing ENTER.
+Search | Action |
+about: | Show the About dialog. |
+about:config | Open your Everything.ini |
+about:credits | Show the Everything credits dialog. |
+about:home | Open the home search. |
+about:licence
+about:license | Show the Everything licence agreement. |
+about:options
+about:preferences | Show the Everything options. |
+/close | Close the Everything search window. |
+/closeall | Close all Everything search windows. |
+/command <id> | Run the specified command ID. |
+/config_save | Show a save as dialog to backup the Everything.ini. |
+/config_save <filename> | Backup the Everything.ini to the specified filename. |
+/config_load | Show a open file dialog to load the Everything.ini. |
+/config_load <filename> | Load the Everything.ini from the specified filename. |
+/debug
+/console | Enable debug mode. |
+/debug_log | Enable debug mode and start debug logging. |
+/help | Show the help window. |
+/monitor_pause | Stops NTFS, ReFS, file lists and folder monitors. Monitors are not started again until specified with /monitor_resume. |
+/monitor_resume | Starts NTFS, ReFS, file lists and folder monitors. |
+/quit
+/exit | Exit Everything |
+/rebuild
+/reindex | Force a rebuild |
+/restart | Restart Everything |
+/verbose | Enable verbose debugging. |
+/update | Update all folder indexes now. |
+/update <folder index> | Update the specifed folder index by path now. |
+/<ini option> | Show the current setting for the specified ini option in the statusbar. Use the TAB key to auto complete. |
+/<ini option>=<value> | Set the specified ini option to the specified value. The new value is shown in the status bar if successful. |
+For example, to change the status bar selected item format to full path and filename, type in the following search and press ENTER:
+/statusbar_selected_item_format=$f
+Changing some ini options will require a restart.
+Limiting results
+To limit the number of results shown, use the count: search function.
+For example to limit the number of results shown to 100, include at the start of your search:
+count:100
+Examples
+Search for ABC and 123:
+ABC 123
+Search for ABC or 123:
+ABC|123
+Search for everything except ABC:
+!ABC
+Search for uppercase ABC
+case:ABC
+Search for mp3 files:
+*.mp3
+Search for mp3 files on the D: or E: drive:
+d:|e: *.mp3
+Search for jpg or png files on the D: drive:
+d: *.jpg|*.png
+Search for files or folders with no extension:
+!.
+Search for files only:
+file:
+Search for folders only:
+folder:
+Limit the search to a single folder:
+parent:c:\windows
+Find files larger than 1MB:
+size:>1mb
+Instantly find files that have changed today:
+dm:today
+Find files and folders modified this week:
+dm:thisweek
+Find files and folders modified from the 1st August 2014 to 31st August 2014:
+dm:1/8/2014-31/8/2014
+or:
+dm:8/1/2014-8/31/2014
+Depending on your locale settings.
+Find folders in D:\music that do not contain an mp3 file:
+d:\music\ !child:mp3
+Find filenames with non-ASCII characters:
+regex:[^\x00-\x7f]
+See also
+Search menu
+Search command line options
+Search options
+Search keyboard shortcuts
+About voidtools
+Language
+© 2020 - Privacy

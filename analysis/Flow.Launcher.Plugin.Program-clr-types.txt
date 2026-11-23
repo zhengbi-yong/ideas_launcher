@@ -1,0 +1,3325 @@
+# Types in Flow.Launcher.Plugin.Program
+
+
+## (global) (108)
+- __StaticArrayInitTypeSize=16  [methods=0 fields=0 flags=0x115]
+- _Anonymous_e__Struct  [methods=0 fields=2 flags=0x10010d]
+    field Lo
+    field Hi
+- _Anonymous_e__Struct  [methods=0 fields=2 flags=0x10010d]
+    field scale
+    field sign
+- _Anonymous_e__Struct  [methods=0 fields=2 flags=0x10010d]
+    field Lo32
+    field Mid32
+- _Anonymous_e__Struct_unmanaged  [methods=47 fields=5 flags=0x10010d]
+    field vt
+    field wReserved1
+    field wReserved2
+    field wReserved3
+    field Anonymous
+    get_llVal() : ?
+    get_lVal() : ?
+    get_bVal() : ?
+    get_iVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_bstrVal() : ?et136
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_parray(?et112) : ?et129
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_plVal() : ?
+    get_pllVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get___OBSOLETE__VARIANT_PBOOL(?et188) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?et196) : ?et128
+    get_byref() : ?
+    get_cVal() : ?et140
+    get_uiVal() : ?
+    get_ulVal() : ?
+    get_ullVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_pdecVal(?et144) : ?et128
+    get_pcVal() : ?et180
+    get_puiVal() : ?
+    get_pulVal() : ?
+    get_pullVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pvRecord() : ?
+    get_pRecInfo(?et212) : ?et128
+- _Anonymous_e__Struct_unmanaged  [methods=73 fields=5 flags=0x10010d]
+    field vt
+    field wReserved1
+    field wReserved2
+    field wReserved3
+    field Anonymous
+    get_cVal() : ?et140
+    get_bVal() : ?
+    get_iVal() : ?
+    get_uiVal() : ?
+    get_lVal() : ?
+    get_ulVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_hVal() : ?
+    get_uhVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_filetime() : ?et153
+    get_puuid(?et133) : ?et128
+    get_pclipdata(System.SByte) : ?et130
+    get_bstrVal() : ?et136
+    get_bstrblobVal() : ?et168
+    get_blob() : ?et240
+    get_pszVal() : ?et180
+    get_pwszVal() : ?et184
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_pStream(?et84) : ?et129
+    get_pStorage(System.Single) : ?et130
+    get_pVersionedStream(System.IntPtr) : ?et130
+    get_parray(?et112) : ?et129
+    get_cac() : ?et184
+    get_caub() : ?et244
+    get_cai() : ?et220
+    get_caui() : ?et252
+    get_cal() : ?et224
+    get_caul() : ?et0
+    get_cah() : ?et216
+    get_cauh() : ?et248
+    get_caflt() : ?et212
+    get_cadbl() : ?et204
+    get_cabool() : ?et172
+    get_cascode() : ?et240
+    get_cacy() : ?et196
+    get_cadate() : ?et200
+    get_cafiletime() : ?et208
+    get_cauuid() : ?et192
+    get_caclipdata() : ?et188
+    get_cabstr() : ?et176
+    get_cabstrblob() : ?et180
+    get_calpstr() : ?et228
+    get_calpwstr() : ?et232
+    get_capropvar() : ?et236
+    get_pcVal() : ?et180
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_puiVal() : ?
+    get_plVal() : ?
+    get_pulVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get_pdecVal(?et144) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?[,]) : ?et130
+- _Anonymous_e__Struct_unmanaged  [methods=73 fields=5 flags=0x10010d]
+    field vt
+    field wReserved1
+    field wReserved2
+    field wReserved3
+    field Anonymous
+    get_cVal() : ?et140
+    get_bVal() : ?
+    get_iVal() : ?
+    get_uiVal() : ?
+    get_lVal() : ?
+    get_ulVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_hVal() : ?
+    get_uhVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_filetime() : ?et153
+    get_puuid(?et133) : ?et128
+    get_pclipdata(System.SByte) : ?et130
+    get_bstrVal() : ?et136
+    get_bstrblobVal() : ?et168
+    get_blob() : ?et240
+    get_pszVal() : ?et180
+    get_pwszVal() : ?et184
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_pStream(?et84) : ?et129
+    get_pStorage(System.Single) : ?et130
+    get_pVersionedStream(System.IntPtr) : ?et130
+    get_parray(?et112) : ?et129
+    get_cac() : ?et184
+    get_caub() : ?et244
+    get_cai() : ?et220
+    get_caui() : ?et252
+    get_cal() : ?et224
+    get_caul() : ?et0
+    get_cah() : ?et216
+    get_cauh() : ?et248
+    get_caflt() : ?et212
+    get_cadbl() : ?et204
+    get_cabool() : ?et172
+    get_cascode() : ?et240
+    get_cacy() : ?et196
+    get_cadate() : ?et200
+    get_cafiletime() : ?et208
+    get_cauuid() : ?et192
+    get_caclipdata() : ?et188
+    get_cabstr() : ?et176
+    get_cabstrblob() : ?et180
+    get_calpstr() : ?et228
+    get_calpwstr() : ?et232
+    get_capropvar() : ?et236
+    get_pcVal() : ?et180
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_puiVal() : ?
+    get_plVal() : ?
+    get_pulVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get_pdecVal(?et144) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?[,]) : ?et130
+- _Anonymous_e__Struct_unmanaged  [methods=0 fields=2 flags=0x10010d]
+    field pvRecord
+    field pRecInfo
+- _Anonymous_e__Union  [methods=0 fields=3 flags=0x100115]
+    field lptdesc
+    field lpadesc
+    field hreftype
+- _Anonymous_e__Union  [methods=77 fields=2 flags=0x100115]
+    field Anonymous
+    field decVal
+    get_vt() : ?et192
+    get_wReserved1() : ?
+    get_wReserved2() : ?
+    get_wReserved3() : ?
+    get_cVal() : ?et140
+    get_bVal() : ?
+    get_iVal() : ?
+    get_uiVal() : ?
+    get_lVal() : ?
+    get_ulVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_hVal() : ?
+    get_uhVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_filetime() : ?et153
+    get_puuid(?et133) : ?et128
+    get_pclipdata(System.SByte) : ?et130
+    get_bstrVal() : ?et136
+    get_bstrblobVal() : ?et168
+    get_blob() : ?et240
+    get_pszVal() : ?et180
+    get_pwszVal() : ?et184
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_pStream(?et84) : ?et129
+    get_pStorage(System.Single) : ?et130
+    get_pVersionedStream(System.IntPtr) : ?et130
+    get_parray(?et112) : ?et129
+    get_cac() : ?et184
+    get_caub() : ?et244
+    get_cai() : ?et220
+    get_caui() : ?et252
+    get_cal() : ?et224
+    get_caul() : ?et0
+    get_cah() : ?et216
+    get_cauh() : ?et248
+    get_caflt() : ?et212
+    get_cadbl() : ?et204
+    get_cabool() : ?et172
+    get_cascode() : ?et240
+    get_cacy() : ?et196
+    get_cadate() : ?et200
+    get_cafiletime() : ?et208
+    get_cauuid() : ?et192
+    get_caclipdata() : ?et188
+    get_cabstr() : ?et176
+    get_cabstrblob() : ?et180
+    get_calpstr() : ?et228
+    get_calpwstr() : ?et232
+    get_capropvar() : ?et236
+    get_pcVal() : ?et180
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_puiVal() : ?
+    get_plVal() : ?
+    get_pulVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get_pdecVal(?et144) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?[,]) : ?et130
+- _Anonymous_e__Union_unmanaged  [methods=51 fields=2 flags=0x100115]
+    field Anonymous
+    field decVal
+    get_vt() : ?et192
+    get_wReserved1() : ?
+    get_wReserved2() : ?
+    get_wReserved3() : ?
+    get_llVal() : ?
+    get_lVal() : ?
+    get_bVal() : ?
+    get_iVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_bstrVal() : ?et136
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_parray(?et112) : ?et129
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_plVal() : ?
+    get_pllVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get___OBSOLETE__VARIANT_PBOOL(?et188) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?et196) : ?et128
+    get_byref() : ?
+    get_cVal() : ?et140
+    get_uiVal() : ?
+    get_ulVal() : ?
+    get_ullVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_pdecVal(?et144) : ?et128
+    get_pcVal() : ?et180
+    get_puiVal() : ?
+    get_pulVal() : ?
+    get_pullVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pvRecord() : ?
+    get_pRecInfo(?et212) : ?et128
+- _Anonymous_e__Union_unmanaged  [methods=0 fields=2 flags=0x100115]
+    field idldesc
+    field paramdesc
+- _Anonymous_e__Union_unmanaged  [methods=0 fields=2 flags=0x100115]
+    field oInst
+    field lpvarValue
+- _Anonymous_e__Union_unmanaged  [methods=77 fields=2 flags=0x100115]
+    field Anonymous
+    field decVal
+    get_vt() : ?et192
+    get_wReserved1() : ?
+    get_wReserved2() : ?
+    get_wReserved3() : ?
+    get_cVal() : ?et140
+    get_bVal() : ?
+    get_iVal() : ?
+    get_uiVal() : ?
+    get_lVal() : ?
+    get_ulVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_hVal() : ?
+    get_uhVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_filetime() : ?et153
+    get_puuid(?et133) : ?et128
+    get_pclipdata(System.SByte) : ?et130
+    get_bstrVal() : ?et136
+    get_bstrblobVal() : ?et168
+    get_blob() : ?et240
+    get_pszVal() : ?et180
+    get_pwszVal() : ?et184
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_pStream(?et84) : ?et129
+    get_pStorage(System.Single) : ?et130
+    get_pVersionedStream(System.IntPtr) : ?et130
+    get_parray(?et112) : ?et129
+    get_cac() : ?et184
+    get_caub() : ?et244
+    get_cai() : ?et220
+    get_caui() : ?et252
+    get_cal() : ?et224
+    get_caul() : ?et0
+    get_cah() : ?et216
+    get_cauh() : ?et248
+    get_caflt() : ?et212
+    get_cadbl() : ?et204
+    get_cabool() : ?et172
+    get_cascode() : ?et240
+    get_cacy() : ?et196
+    get_cadate() : ?et200
+    get_cafiletime() : ?et208
+    get_cauuid() : ?et192
+    get_caclipdata() : ?et188
+    get_cabstr() : ?et176
+    get_cabstrblob() : ?et180
+    get_calpstr() : ?et228
+    get_calpwstr() : ?et232
+    get_capropvar() : ?et236
+    get_pcVal() : ?et180
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_puiVal() : ?
+    get_plVal() : ?
+    get_pulVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get_pdecVal(?et144) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?[,]) : ?et130
+- _Anonymous_e__Union_unmanaged  [methods=2 fields=46 flags=0x100115]
+    field llVal
+    field lVal
+    field bVal
+    field iVal
+    field fltVal
+    field dblVal
+    field boolVal
+    field __OBSOLETE__VARIANT_BOOL
+    field scode
+    field cyVal
+    field date
+    field bstrVal
+    field punkVal
+    field pdispVal
+    field parray
+    field pbVal
+    field piVal
+    field plVal
+    field pllVal
+    field pfltVal
+    field pdblVal
+    field pboolVal
+    field __OBSOLETE__VARIANT_PBOOL
+    field pscode
+    field pcyVal
+    field pdate
+    field pbstrVal
+    field ppunkVal
+    field ppdispVal
+    field pparray
+    field pvarVal
+    field byref
+    field cVal
+    field uiVal
+    field ulVal
+    field ullVal
+    field intVal
+    field uintVal
+    field pdecVal
+    field pcVal
+    field puiVal
+    field pulVal
+    field pullVal
+    field pintVal
+    field puintVal
+    field Anonymous
+    get_pvRecord() : ?
+    get_pRecInfo(?et212) : ?et128
+- _Anonymous_e__Union_unmanaged  [methods=0 fields=73 flags=0x100115]
+    field cVal
+    field bVal
+    field iVal
+    field uiVal
+    field lVal
+    field ulVal
+    field intVal
+    field uintVal
+    field hVal
+    field uhVal
+    field fltVal
+    field dblVal
+    field boolVal
+    field __OBSOLETE__VARIANT_BOOL
+    field scode
+    field cyVal
+    field date
+    field filetime
+    field puuid
+    field pclipdata
+    field bstrVal
+    field bstrblobVal
+    field blob
+    field pszVal
+    field pwszVal
+    field punkVal
+    field pdispVal
+    field pStream
+    field pStorage
+    field pVersionedStream
+    field parray
+    field cac
+    field caub
+    field cai
+    field caui
+    field cal
+    field caul
+    field cah
+    field cauh
+    field caflt
+    field cadbl
+    field cabool
+    field cascode
+    field cacy
+    field cadate
+    field cafiletime
+    field cauuid
+    field caclipdata
+    field cabstr
+    field cabstrblob
+    field calpstr
+    field calpwstr
+    field capropvar
+    field pcVal
+    field pbVal
+    field piVal
+    field puiVal
+    field plVal
+    field pulVal
+    field pintVal
+    field puintVal
+    field pfltVal
+    field pdblVal
+    field pboolVal
+    field pdecVal
+    field pscode
+    field pcyVal
+    field pdate
+    field pbstrVal
+    field ppunkVal
+    field ppdispVal
+    field pparray
+    field pvarVal
+- _Anonymous_e__Union_unmanaged  [methods=0 fields=73 flags=0x100115]
+    field cVal
+    field bVal
+    field iVal
+    field uiVal
+    field lVal
+    field ulVal
+    field intVal
+    field uintVal
+    field hVal
+    field uhVal
+    field fltVal
+    field dblVal
+    field boolVal
+    field __OBSOLETE__VARIANT_BOOL
+    field scode
+    field cyVal
+    field date
+    field filetime
+    field puuid
+    field pclipdata
+    field bstrVal
+    field bstrblobVal
+    field blob
+    field pszVal
+    field pwszVal
+    field punkVal
+    field pdispVal
+    field pStream
+    field pStorage
+    field pVersionedStream
+    field parray
+    field cac
+    field caub
+    field cai
+    field caui
+    field cal
+    field caul
+    field cah
+    field cauh
+    field caflt
+    field cadbl
+    field cabool
+    field cascode
+    field cacy
+    field cadate
+    field cafiletime
+    field cauuid
+    field caclipdata
+    field cabstr
+    field cabstrblob
+    field calpstr
+    field calpwstr
+    field capropvar
+    field pcVal
+    field pbVal
+    field piVal
+    field puiVal
+    field plVal
+    field pulVal
+    field pintVal
+    field puintVal
+    field pfltVal
+    field pdblVal
+    field pboolVal
+    field pdecVal
+    field pscode
+    field pcyVal
+    field pdate
+    field pbstrVal
+    field ppunkVal
+    field ppdispVal
+    field pparray
+    field pvarVal
+- _Anonymous1_e__Union  [methods=2 fields=2 flags=0x100115]
+    field Anonymous
+    field signscale
+    get_scale() : ?
+    get_sign() : ?
+- _Anonymous2_e__Union  [methods=2 fields=2 flags=0x100115]
+    field Anonymous
+    field Lo64
+    get_Lo32() : ?
+    get_Mid32() : ?
+- <<ExceptDisabledSource>g__ExceptDisabledSourceEnumerable|76_0>d`1  [methods=9 fields=9 flags=0x100103]
+    field <>1__state
+    field <>2__current
+    field <>l__initialThreadId
+    field elements
+    field <>3__elements
+    field selector
+    field <>3__selector
+    field <set>5__2
+    field <>7__wrap2
+    .ctor() : ?
+    System.IDisposable.Dispose() : ?
+    MoveNext() : ?
+    <>m__Finally1() : ?
+    System.Collections.Generic.IEnumerator<TSource>.get_Current() : ?
+    System.Collections.IEnumerator.Reset() : ?
+    System.Collections.IEnumerator.get_Current() : ?
+    System.Collections.Generic.IEnumerable<TSource>.GetEnumerator(System.Void, !0) : ?et113
+    System.Collections.IEnumerable.GetEnumerator() : ?
+- <<IndexProgramsAsync>b__36_0>d  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<IndexProgramsAsync>b__36_1>d  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<InitAsync>b__0>d  [methods=2 fields=7 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <pluginCacheDirectory>5__2
+    field <>u__1
+    field <>u__2
+    field <>u__3
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<InitAsync>b__33_1>d  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<LoadContextMenus>b__1>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<QueryAsync>b__0>d  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field entry
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<QueryAsync>b__1>d  [methods=2 fields=8 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>8__1
+    field <win32s>5__2
+    field <win32LockAcquired>5__3
+    field <uwpsLockAcquired>5__4
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <>c  [methods=13 fields=12 flags=0x102103]
+    field <>9
+    field <>9__30_2
+    field <>9__30_3
+    field <>9__30_4
+    field <>9__30_6
+    field <>9__33_1
+    field <>9__36_2
+    field <>9__36_0
+    field <>9__36_3
+    field <>9__36_1
+    field <>9__42_2
+    field <>9__42_4
+    .cctor() : ?
+    .ctor() : ?
+    <QueryAsync>b__30_2() : ?et84
+    <QueryAsync>b__30_3() : ?et84
+    <QueryAsync>b__30_4() : ?et84
+    <QueryAsync>b__30_6() : ?et64
+    <InitAsync>b__33_1() : ?
+    <IndexProgramsAsync>b__36_0() : ?
+    <IndexProgramsAsync>b__36_2() : ?
+    <IndexProgramsAsync>b__36_1() : ?
+    <IndexProgramsAsync>b__36_3() : ?
+    <DisableProgramAsync>b__42_2() : ?
+    <DisableProgramAsync>b__42_4() : ?
+- <>c  [methods=7 fields=6 flags=0x102103]
+    field <>9
+    field <>9__44_0
+    field <>9__44_1
+    field <>9__44_2
+    field <>9__45_0
+    field <>9__45_1
+    .cctor() : ?
+    .ctor() : ?
+    <GetSuffixes>b__44_0() : ?
+    <GetSuffixes>b__44_1() : ?
+    <GetSuffixes>b__44_2() : ?
+    <GetProtocols>b__45_0() : ?
+    <GetProtocols>b__45_1() : ?
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__39_1
+    field <>9__51_0
+    .cctor() : ?
+    .ctor() : ?
+    <DeleteProgramSources>b__39_1() : ?et52
+    <HasMoreOrEqualEnabledItems>b__51_0() : ?et52
+- <>c  [methods=11 fields=10 flags=0x102103]
+    field <>9
+    field <>9__1_0
+    field <>9__1_1
+    field <>9__1_3
+    field <>9__1_4
+    field <>9__3_0
+    field <>9__4_0
+    field <>9__5_0
+    field <>9__5_1
+    field <>9__5_2
+    .cctor() : ?
+    .ctor() : ?
+    <DisplayAllProgramsAsync>b__1_0() : ?et88
+    <DisplayAllProgramsAsync>b__1_1() : TypeDef#0
+    <DisplayAllProgramsAsync>b__1_3() : ?et84
+    <DisplayAllProgramsAsync>b__1_4() : TypeDef#0
+    <StoreDisabledInSettings>b__3_0() : ?et52
+    <RemoveDisabledFromSettings>b__4_0() : ?et52
+    <IsReindexRequiredAsync>b__5_0() : ?et52
+    <IsReindexRequiredAsync>b__5_1() : ?et52
+    <IsReindexRequiredAsync>b__5_2() : ?et52
+- <>c  [methods=8 fields=7 flags=0x102103]
+    field <>9
+    field <>9__25_0
+    field <>9__25_1
+    field <>9__27_0
+    field <>9__30_0
+    field <>9__30_1
+    field <>9__30_2
+    .cctor() : ?
+    .ctor() : ?
+    <All>b__25_0() : TypeRef#354452608<>
+    <All>b__25_1() : ?et84
+    <CurrentUserPackages>b__27_0() : ?et109
+    <WatchPackageChangeAsync>b__30_0(TypeDef#0) : ?et101
+    <WatchPackageChangeAsync>b__30_1(TypeDef#0) : ?et101
+    <WatchPackageChangeAsync>b__30_2(TypeDef#0) : ?et101
+- <>c  [methods=16 fields=15 flags=0x102103]
+    field <>9
+    field <>9__56_1
+    field <>9__70_0
+    field <>9__71_2
+    field <>9__75_0
+    field <>9__78_0
+    field <>9__78_3
+    field <>9__79_0
+    field <>9__79_1
+    field <>9__85_0
+    field <>9__88_0
+    field <>9__88_1
+    field <>9__90_0
+    field <>9__90_2
+    field <>9__90_1
+    .cctor() : ?
+    .ctor() : ?
+    <Match>b__56_1() : ?et193
+    <PATHPrograms>b__70_0() : ?
+    <AppPathsPrograms>b__71_2() : ?et88
+    <ExceptDisabledSource>b__75_0() : ?
+    <ProgramsHasher>b__78_0() : ?et88
+    <ProgramsHasher>b__78_3() : ?et88
+    <All>b__79_0() : ?et52
+    <All>b__79_1() : ?et88
+    <WatchProgramUpdate>b__85_0() : ?
+    <WatchDirectory>b__88_0(?et241) : ?et130
+    <WatchDirectory>b__88_1(?et241) : ?et130
+    <GetCommonParents>b__90_0() : ?et52
+    <GetCommonParents>b__90_2() : ?et52
+    <GetCommonParents>b__90_1() : ?
+- <>c__76`1  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__76_1
+    .cctor() : ?
+    .ctor() : ?
+    <ExceptDisabledSource>b__76_1() : ?et52
+- <>c__DisplayClass1_0  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <DisplayAllProgramsAsync>b__2() : ?et52
+- <>c__DisplayClass1_1  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <DisplayAllProgramsAsync>b__5() : ?et52
+- <>c__DisplayClass2_0  [methods=1 fields=1 flags=0x100103]
+    field status
+    .ctor() : ?
+- <>c__DisplayClass2_1  [methods=2 fields=2 flags=0x100103]
+    field program
+    field CS$<>8__locals1
+    .ctor() : ?
+    <SetProgramSourcesStatusAsync>b__0() : ?et52
+- <>c__DisplayClass2_2  [methods=2 fields=2 flags=0x100103]
+    field program
+    field CS$<>8__locals2
+    .ctor() : ?
+    <SetProgramSourcesStatusAsync>b__1() : ?et52
+- <>c__DisplayClass2_3  [methods=2 fields=2 flags=0x100103]
+    field program
+    field CS$<>8__locals3
+    .ctor() : ?
+    <SetProgramSourcesStatusAsync>b__2() : ?et52
+- <>c__DisplayClass25_0  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <All>b__2() : ?et52
+- <>c__DisplayClass3_0  [methods=3 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <StoreDisabledInSettings>b__1() : ?et52
+    <StoreDisabledInSettings>b__2() : ?et52
+- <>c__DisplayClass30_0  [methods=5 fields=6 flags=0x100103]
+    field token
+    field <>4__this
+    field query
+    field <>9__7
+    field <>9__8
+    field <>9__1
+    .ctor() : ?
+    <QueryAsync>b__0(TypeSpec#4743236<?et129, ?et141>) : System.Void
+    <QueryAsync>b__1(TypeSpec#4743236<>) : System.Void
+    <QueryAsync>b__7() : TypeDef#0
+    <QueryAsync>b__8() : ?et49
+- <>c__DisplayClass30_1  [methods=2 fields=1 flags=0x100103]
+    field uwpsDirectories
+    .ctor() : ?
+    <QueryAsync>b__5() : ?et64
+- <>c__DisplayClass32_0  [methods=2 fields=1 flags=0x100103]
+    field location
+    .ctor() : ?
+    <HideDuplicatedWindowsAppFilter>b__0() : ?
+- <>c__DisplayClass33_0  [methods=2 fields=3 flags=0x100103]
+    field context
+    field _win32sCount
+    field _uwpsCount
+    .ctor() : ?
+    <InitAsync>b__0() : ?
+- <>c__DisplayClass35_0  [methods=2 fields=1 flags=0x100103]
+    field location
+    .ctor() : ?
+    <DuplicateSource>b__0() : ?et52
+- <>c__DisplayClass39_0  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <DeleteProgramSources>b__2() : ?et52
+- <>c__DisplayClass40_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field api
+    .ctor() : ?
+    <Result>b__0() : ?et153
+- <>c__DisplayClass40_1  [methods=2 fields=2 flags=0x100103]
+    field shouldRunElevated
+    field CS$<>8__locals1
+    .ctor() : ?
+    <Result>b__1() : ?
+- <>c__DisplayClass41_0  [methods=3 fields=2 flags=0x100103]
+    field program
+    field <>9__1
+    .ctor() : ?
+    <LoadContextMenus>b__0() : ?et153
+    <LoadContextMenus>b__1() : ?
+- <>c__DisplayClass42_0  [methods=4 fields=1 flags=0x100103]
+    field programToDelete
+    .ctor() : ?
+    <DisableProgramAsync>b__0() : ?et52
+    <DisableProgramAsync>b__1() : ?et84
+    <DisableProgramAsync>b__3() : ?et88
+- <>c__DisplayClass45_0  [methods=2 fields=1 flags=0x100103]
+    field directory
+    .ctor() : ?
+    <programSourceView_Drop>b__0() : ?et52
+- <>c__DisplayClass5_0  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <IsReindexRequiredAsync>b__3() : ?et84
+- <>c__DisplayClass5_1  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <IsReindexRequiredAsync>b__4() : ?et88
+- <>c__DisplayClass5_2  [methods=2 fields=1 flags=0x100103]
+    field t1
+    .ctor() : ?
+    <IsReindexRequiredAsync>b__5() : ?et52
+- <>c__DisplayClass55_0  [methods=2 fields=1 flags=0x100103]
+    field x
+    .ctor() : ?
+    <IsAllItemsUserAdded>b__1() : ?et52
+- <>c__DisplayClass56_0  [methods=2 fields=1 flags=0x100103]
+    field query
+    .ctor() : ?
+    <Match>b__0() : System.String
+- <>c__DisplayClass57_0  [methods=2 fields=1 flags=0x100103]
+    field info
+    .ctor() : ?
+    <Result>b__1() : ?
+- <>c__DisplayClass58_0  [methods=2 fields=1 flags=0x100103]
+    field info
+    .ctor() : ?
+    <ContextMenus>b__1() : ?
+- <>c__DisplayClass58_1  [methods=2 fields=1 flags=0x100103]
+    field info
+    .ctor() : ?
+    <ContextMenus>b__3() : ?
+- <>c__DisplayClass59_0  [methods=2 fields=2 flags=0x100103]
+    field api
+    field <>4__this
+    .ctor() : ?
+    <OpenTargetFolderContextMenuResult>b__0() : ?et153
+- <>c__DisplayClass66_0  [methods=2 fields=1 flags=0x100103]
+    field suffixes
+    .ctor() : ?
+    <EnumerateProgramsInDir>b__0() : ?
+- <>c__DisplayClass68_0  [methods=3 fields=2 flags=0x100103]
+    field suffixes
+    field protocols
+    .ctor() : ?
+    <UnregisteredPrograms>b__0() : TypeDef#0<>
+    <UnregisteredPrograms>b__1() : System.String
+- <>c__DisplayClass69_0  [methods=4 fields=3 flags=0x100103]
+    field suffixes
+    field startupPaths
+    field protocols
+    .ctor() : ?
+    <StartMenuPrograms>b__0() : TypeDef#0<>
+    <StartMenuPrograms>b__1() : ?
+    <StartMenuPrograms>b__2() : System.String
+- <>c__DisplayClass69_1  [methods=2 fields=1 flags=0x100103]
+    field x
+    .ctor() : ?
+    <StartMenuPrograms>b__3() : ?
+- <>c__DisplayClass70_0  [methods=4 fields=3 flags=0x100103]
+    field commonParents
+    field suffixes
+    field protocols
+    .ctor() : ?
+    <PATHPrograms>b__1() : ?
+    <PATHPrograms>b__2() : TypeDef#0<>
+    <PATHPrograms>b__3() : System.String
+- <>c__DisplayClass70_1  [methods=2 fields=1 flags=0x100103]
+    field x
+    .ctor() : ?
+    <PATHPrograms>b__4() : ?
+- <>c__DisplayClass71_0  [methods=3 fields=2 flags=0x100103]
+    field suffixes
+    field protocols
+    .ctor() : ?
+    <AppPathsPrograms>b__0() : ?
+    <AppPathsPrograms>b__1() : System.String
+- <>c__DisplayClass72_0  [methods=2 fields=1 flags=0x100103]
+    field root
+    .ctor() : ?
+    <GetPathFromRegistry>b__0() : ?
+- <>c__DisplayClass78_0  [methods=3 fields=2 flags=0x100103]
+    field startMenuPaths
+    field <>9__2
+    .ctor() : ?
+    <ProgramsHasher>b__1() : TypeRef#371229824<System.Boolean, System.String, TypeDef#0, ?, ?>
+    <ProgramsHasher>b__2() : ?et88
+- <>c__DisplayClass78_1  [methods=2 fields=1 flags=0x100103]
+    field g
+    .ctor() : ?
+    <ProgramsHasher>b__4() : ?
+- <>c__DisplayClass90_0  [methods=2 fields=1 flags=0x100103]
+    field source
+    .ctor() : ?
+    <GetCommonParents>b__3() : ?et52
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__Start
+- <>O  [methods=0 fields=3 flags=0x100183]
+    field <0>__Start
+    field <1>__RunAsDifferentUser
+    field <2>__MonitorDirectoryChangeAsync
+- <>y__InlineArray2`1  [methods=0 fields=1 flags=0x100100]
+    field _element0
+- <btnDeleteProgramSource_OnClick>d__54  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <btnLoadAllProgramSource_OnClick>d__46  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <btnProgramSourceStatus_OnClick>d__47  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <selectedItems>5__2
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <DisableProgramAsync>d__42  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field programToDelete
+    field <>8__1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <DisplayAllProgramsAsync>d__1  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <DistinctBy>d__77`2  [methods=9 fields=9 flags=0x100103]
+    field <>1__state
+    field <>2__current
+    field <>l__initialThreadId
+    field source
+    field <>3__source
+    field selector
+    field <>3__selector
+    field <set>5__2
+    field <>7__wrap2
+    .ctor() : ?
+    System.IDisposable.Dispose() : ?
+    MoveNext() : ?
+    <>m__Finally1() : ?
+    System.Collections.Generic.IEnumerator<T>.get_Current() : ?
+    System.Collections.IEnumerator.Reset() : ?
+    System.Collections.IEnumerator.get_Current() : ?
+    System.Collections.Generic.IEnumerable<T>.GetEnumerator(System.Void, !0) : ?et113
+    System.Collections.IEnumerable.GetEnumerator() : ?
+- <EditProgramSource>d__41  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field selectedProgramSource
+    field <>4__this
+    field <selectedIndex>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <IndexProgramsAsync>d__36  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <IndexUwpProgramsAsync>d__35  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field resetCache
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <IndexWin32ProgramsAsync>d__34  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field resetCache
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <InitAsync>d__33  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field context
+    field <>8__1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <IsReindexRequiredAsync>d__5  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field selectedItems
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <MonitorDirectoryChangeAsync>d__87  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <reader>5__2
+    field <>u__1
+    field <>u__2
+    field <>u__3
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <PrivateImplementationDetails>  [methods=2 fields=9 flags=0x100]
+    field 0D203FE8B7BA52FE10BFE3D6CB5AD7FC4E575A173821EE7A3FFE3E1693839D48
+    field 1BC945957C9B894D19C1948788306B98CE4B0B879D8AB4776A634F62AEC21C66
+    field 4F1B0631EAA4DCF9F74F50F039F0D49533043481168E3BAE2E255AC8B15F2822
+    field 7B4F1D7412B7DFC24FFE1CF44B8D12769B931AC4EF2742500FD85F50E1190973
+    field 94E533E1CACA7CE05541668BF5235540C85083FB4468E1B29F76BC4B41B57083
+    field 9534D94C140FA623FAAC6F09F8A21B99D9189ADD1F39F17241A01DD526CFB0DD
+    field 956983314112529A3256F04B38F9B5ECD2BD5A4562A18FC55DB39A119900F92F
+    field B7A5F1B43761BC643A756AD0CE1734B854F59A8AC350D0C8A6487A9B51EC60BB
+    field C0B8112A8998B72D19D314C4B80A0734CDD386CB917D2627CD68CC17D6080B65
+    InlineArrayAsReadOnlySpan(!!2048) : !!4097
+    InlineArrayElementRef() : !!2048
+- <QueryAsync>d__30  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field token
+    field <>4__this
+    field query
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ReIndexing>d__37  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ReloadDataAsync>d__44  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SetProgramSourcesStatusAsync>d__2  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field status
+    field selectedProgramSourcesToDisable
+    field <>8__1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <Value>e__FixedBuffer  [methods=0 fields=1 flags=0x11010a]
+    field FixedElementField
+- <Value>e__FixedBuffer  [methods=0 fields=1 flags=0x11010a]
+    field FixedElementField
+- <WatchPackageChangeAsync>d__30  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- PackageVersion  [methods=0 fields=5 flags=0x102]
+    field value__
+    field Windows10
+    field Windows81
+    field Windows8
+    field Unknown
+- Vtbl  [methods=0 fields=19 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field RecordInit_4
+    field RecordClear_5
+    field RecordCopy_6
+    field GetGuid_7
+    field GetName_8
+    field GetSize_9
+    field GetTypeInfo_10
+    field GetField_11
+    field GetFieldNoCopy_12
+    field PutField_13
+    field PutFieldNoCopy_14
+    field GetFieldNames_15
+    field IsMatchingType_16
+    field RecordCreate_17
+    field RecordCreateCopy_18
+    field RecordDestroy_19
+- Vtbl  [methods=0 fields=7 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field GetTypeInfoCount_4
+    field GetTypeInfo_5
+    field GetIDsOfNames_6
+    field Invoke_7
+- Vtbl  [methods=0 fields=14 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field Read_4
+    field Write_5
+    field Seek_6
+    field SetSize_7
+    field CopyTo_8
+    field Commit_9
+    field Revert_10
+    field LockRegion_11
+    field UnlockRegion_12
+    field Stat_13
+    field Clone_14
+- Vtbl  [methods=0 fields=5 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field Bind_4
+    field BindType_5
+- Vtbl  [methods=0 fields=22 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field GetTypeAttr_4
+    field GetTypeComp_5
+    field GetFuncDesc_6
+    field GetVarDesc_7
+    field GetNames_8
+    field GetRefTypeOfImplType_9
+    field GetImplTypeFlags_10
+    field GetIDsOfNames_11
+    field Invoke_12
+    field GetDocumentation_13
+    field GetDllEntry_14
+    field GetRefTypeInfo_15
+    field AddressOfMember_16
+    field CreateInstance_17
+    field GetMops_18
+    field GetContainingTypeLib_19
+    field ReleaseTypeAttr_20
+    field ReleaseFuncDesc_21
+    field ReleaseVarDesc_22
+- Vtbl  [methods=0 fields=13 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field GetTypeInfoCount_4
+    field GetTypeInfo_5
+    field GetTypeInfoType_6
+    field GetTypeInfoOfGuid_7
+    field GetLibAttr_8
+    field GetTypeComp_9
+    field GetDocumentation_10
+    field IsName_11
+    field FindName_12
+    field ReleaseTLibAttr_13
+- Vtbl  [methods=0 fields=3 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+- Vtbl  [methods=0 fields=7 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field Next_4
+    field Skip_5
+    field Reset_6
+    field Clone_7
+- Vtbl  [methods=0 fields=18 flags=0x10010d]
+    field QueryInterface_1
+    field AddRef_2
+    field Release_3
+    field CreateStream_4
+    field OpenStream_5
+    field CreateStorage_6
+    field OpenStorage_7
+    field CopyTo_8
+    field MoveElementTo_9
+    field Commit_10
+    field Revert_11
+    field EnumElements_12
+    field DestroyElement_13
+    field RenameElement_14
+    field SetElementTimes_15
+    field SetClass_16
+    field SetStateBits_17
+    field Stat_18
+
+## Flow.Launcher.Plugin.Program (5)
+- AddProgramSource  [methods=6 fields=6 flags=0x100001]
+    field ViewModel
+    field Directory
+    field Chkbox
+    field btnCancel
+    field btnAdd
+    field _contentLoaded
+    .ctor() : ?et60
+    BrowseButton_Click(?et241) : ?et128
+    BtnCancel_OnClick(?et241) : ?et128
+    BtnAdd_OnClick(?et241) : ?et128
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- Main  [methods=28 fields=18 flags=0x100001]
+    field ClassName
+    field Win32CacheName
+    field UwpCacheName
+    field <_win32s>k__BackingField
+    field <_uwps>k__BackingField
+    field <_settings>k__BackingField
+    field _win32sLock
+    field _uwpsLock
+    field <Context>k__BackingField
+    field _lastIndexTimeLock
+    field emptyResults
+    field cacheOptions
+    field cache
+    field commonUninstallerNames
+    field commonUninstallerPrefixs
+    field ExeUninstallerSuffix
+    field InkUninstallerSuffix
+    field WindowsAppPath
+    get__win32s(System.Void, TypeDef#0) : ?et33
+    set__win32s(?et33, System.Void, TypeDef#0) : ?et129
+    get__uwps(System.Void, TypeDef#0) : ?et33
+    set__uwps(?et33, System.Void, TypeDef#0) : ?et129
+    get__settings() : ?
+    set__settings() : ?et40
+    get_Context() : ?
+    set_Context() : ?et41
+    QueryAsync(TypeSpec#4743236<?et129, ?et69, TypeDef#0, ?, ?>) : System.Void
+    HideUninstallersFilter() : ?et64
+    HideDuplicatedWindowsAppFilter(System.String[]) : ?et64
+    InitAsync() : TypeDef#0
+    IndexWin32ProgramsAsync() : System.Boolean
+    IndexUwpProgramsAsync() : System.Boolean
+    IndexProgramsAsync() : ?
+    ResetCache() : ?
+    CreateSettingPanel() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    LoadContextMenus(System.Void, TypeRef#541363296, ?et49) : ?et33
+    DisableProgramAsync(System.Boolean, TypeDef#0) : System.Void
+    StartProcess(?et93, System.Boolean, TypeRef#541366368, ?et101, TypeDef#0) : ?et129
+    ReloadDataAsync() : ?
+    Dispose() : ?
+    .ctor() : ?
+    .cctor() : ?
+    <InitAsync>g__MoveFile|33_3() : ?
+    <InitAsync>g__WatchProgramUpdate|33_2() : ?
+- ProgramSuffixes  [methods=14 fields=20 flags=0x100001]
+    field context
+    field _settings
+    field <SuffixesStatus>k__BackingField
+    field <ProtocolsStatus>k__BackingField
+    field <UseCustomSuffixes>k__BackingField
+    field <UseCustomProtocols>k__BackingField
+    field WindowArea
+    field apprefMS
+    field exe
+    field lnk
+    field CustomFiles
+    field tbSuffixes
+    field steam
+    field epic
+    field http
+    field CustomProtocol
+    field tbProtocols
+    field btnReset
+    field btnCancel
+    field _contentLoaded
+    get_SuffixesStatus(System.Boolean, System.String, System.Boolean) : ?et169
+    set_SuffixesStatus(?et169, System.Boolean, System.String, System.Boolean) : ?et129
+    get_ProtocolsStatus(System.Boolean, System.String, System.Boolean) : ?et169
+    set_ProtocolsStatus(?et169, System.Boolean, System.String, System.Boolean) : ?et129
+    get_UseCustomSuffixes() : ?
+    set_UseCustomSuffixes() : ?
+    get_UseCustomProtocols() : ?
+    set_UseCustomProtocols() : ?
+    .ctor(TypeDef#0) : ?et41
+    BtnCancel_OnClick(?et241) : ?et128
+    BtnAdd_OnClick(?et241) : ?et128
+    BtnReset_OnClick(?et241) : ?et128
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- Settings  [methods=42 fields=20 flags=0x100001]
+    field <LastIndexTime>k__BackingField
+    field <ProgramSources>k__BackingField
+    field <DisabledProgramSources>k__BackingField
+    field <ProgramSuffixes>k__BackingField
+    field <CustomSuffixes>k__BackingField
+    field <CustomProtocols>k__BackingField
+    field <BuiltinSuffixesStatus>k__BackingField
+    field <BuiltinProtocolsStatus>k__BackingField
+    field <BuiltinProtocols>k__BackingField
+    field <UseCustomSuffixes>k__BackingField
+    field <UseCustomProtocols>k__BackingField
+    field <EnableStartMenuSource>k__BackingField
+    field <EnableDescription>k__BackingField
+    field <HideAppsPath>k__BackingField
+    field <HideUninstallers>k__BackingField
+    field <EnableRegistrySource>k__BackingField
+    field <EnablePathSource>k__BackingField
+    field <EnableUWP>k__BackingField
+    field <HideDuplicatedWindowsApp>k__BackingField
+    field SuffixSeparator
+    get_LastIndexTime() : ?
+    set_LastIndexTime() : ?et161
+    get_ProgramSources(System.Void, TypeDef#0) : ?et33
+    set_ProgramSources(?et33, System.Void, TypeDef#0) : ?et129
+    get_DisabledProgramSources(System.Void, TypeDef#0) : ?et33
+    set_DisabledProgramSources(?et33, System.Void, TypeDef#0) : ?et129
+    get_ProgramSuffixes() : ?
+    set_ProgramSuffixes() : ?
+    get_CustomSuffixes() : ?
+    set_CustomSuffixes() : ?
+    get_CustomProtocols() : ?
+    set_CustomProtocols() : ?
+    get_BuiltinSuffixesStatus(System.Boolean, System.String, System.Boolean) : ?et169
+    set_BuiltinSuffixesStatus(?et169, System.Boolean, System.String, System.Boolean) : ?et129
+    get_BuiltinProtocolsStatus(System.Boolean, System.String, System.Boolean) : ?et169
+    set_BuiltinProtocolsStatus(?et169, System.Boolean, System.String, System.Boolean) : ?et129
+    get_BuiltinProtocols(System.Boolean, System.String, System.String) : ?et169
+    set_BuiltinProtocols(?et169, System.Boolean, System.String, System.String) : ?et129
+    get_UseCustomSuffixes() : ?
+    set_UseCustomSuffixes() : ?
+    get_UseCustomProtocols() : ?
+    set_UseCustomProtocols() : ?
+    GetSuffixes() : ?
+    GetProtocols() : ?
+    RemoveRedundantSuffixes() : ?
+    get_EnableStartMenuSource() : ?
+    set_EnableStartMenuSource() : ?
+    get_EnableDescription() : ?
+    set_EnableDescription() : ?
+    get_HideAppsPath() : ?
+    set_HideAppsPath() : ?
+    get_HideUninstallers() : ?
+    set_HideUninstallers() : ?
+    get_EnableRegistrySource() : ?
+    set_EnableRegistrySource() : ?
+    get_EnablePathSource() : ?
+    set_EnablePathSource() : ?
+    get_EnableUWP() : ?
+    set_EnableUWP() : ?
+    get_HideDuplicatedWindowsApp() : ?
+    set_HideDuplicatedWindowsApp() : ?
+    .ctor() : ?
+- SuffixesConvert  [methods=4 fields=0 flags=0x100001]
+    Convert(System.Object, TypeDef#0) : ?et89
+    ConvertBack(System.Object, TypeDef#0) : ?et89
+    ProvideValue() : ?et209
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Program.Logger (1)
+- ProgramLogger  [methods=5 fields=1 flags=0x100180]
+    field DirectoryName
+    LogException(System.String, TypeDef#0) : System.String
+    LogException(?et85) : ?et129
+    LogDebug(System.String) : System.String
+    IsKnownWinProgramError(System.String) : ?et85
+    IsKnownUWPProgramError(System.String) : ?et85
+
+## Flow.Launcher.Plugin.Program.Programs (7)
+- IProgram  [methods=7 fields=0 flags=0x1000a1]
+    ContextMenus(System.Void, TypeRef#545557600, ?et37) : ?et33
+    Result(TypeDef#0) : System.String
+    get_UniqueIdentifier() : ?
+    set_UniqueIdentifier() : ?
+    get_Name() : ?
+    get_Location() : ?
+    get_Enabled() : ?
+- ShellLinkReader  [methods=4 fields=1 flags=0x100181]
+    field E_FAIL
+    Read() : System.String
+    retrieveTargetPath() : System.String
+    retrieveDescription() : System.String
+    retrieveArguments(System.String) : ?et128
+- ShellLinkReadResult  [methods=15 fields=3 flags=0x100109]
+    field <TargetPath>k__BackingField
+    field <Description>k__BackingField
+    field <Arguments>k__BackingField
+    .ctor() : System.String
+    get_TargetPath() : ?
+    set_TargetPath(System.String) : System.Void
+    get_Description() : ?
+    set_Description(System.String) : System.Void
+    get_Arguments() : ?
+    set_Arguments(System.String) : System.Void
+    ToString() : ?
+    PrintMembers() : ?et61
+    op_Inequality(TypeDef#0) : ?et72
+    op_Equality(TypeDef#0) : ?et72
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?et72
+    Deconstruct(System.String&) : System.String&
+- ShellLocalization  [methods=2 fields=0 flags=0x100181]
+    GetLocalizedName() : ?
+    GetLocalizedPath() : ?
+- UWPApp  [methods=37 fields=9 flags=0x1]
+    field _uid
+    field <DisplayName>k__BackingField
+    field <Description>k__BackingField
+    field <UserModelId>k__BackingField
+    field <Location>k__BackingField
+    field <Enabled>k__BackingField
+    field <CanRunElevated>k__BackingField
+    field <LogoPath>k__BackingField
+    field <PreviewImagePath>k__BackingField
+    get_UniqueIdentifier() : ?
+    set_UniqueIdentifier() : ?
+    get_DisplayName() : ?
+    set_DisplayName() : ?
+    get_Description() : ?
+    set_Description() : ?
+    get_UserModelId() : ?
+    set_UserModelId() : ?
+    get_Name() : ?
+    get_Location() : ?
+    set_Location() : ?
+    get_Enabled() : ?
+    set_Enabled() : ?
+    get_CanRunElevated() : ?
+    set_CanRunElevated() : ?
+    get_LogoPath() : ?
+    set_LogoPath() : ?
+    get_PreviewImagePath() : ?
+    set_PreviewImagePath() : ?
+    .ctor() : ?
+    .ctor(TypeDef#0) : ?et117
+    Result(TypeDef#0) : System.String
+    ContextMenus(System.Void, TypeRef#545557600, ?et37) : ?et33
+    Launch() : ?
+    IfAppCanRunElevated() : ?et133
+    LogoPathFromUri(System.Int32) : TypeSpec#33590624
+    ToString() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    .cctor() : ?
+    MemoryPack.IMemoryPackFormatterRegister.RegisterFormatter() : ?
+    MemoryPack.IMemoryPackable<Flow.Launcher.Plugin.Program.Programs.UWPApp>.Serialize(?et81, System.Void, !!4096, TypeDef#0) : ?et130
+    MemoryPack.IMemoryPackable<Flow.Launcher.Plugin.Program.Programs.UWPApp>.Deserialize(?et93, TypeDef#0&) : ?et130
+    <ContextMenus>b__41_0() : ?et153
+    <ContextMenus>b__41_1() : ?et153
+    <ContextMenus>b__41_2() : ?
+    <LogoPathFromUri>g__TryToFindLogo|44_0() : System.Int32
+- UWPPackage  [methods=23 fields=10 flags=0x1]
+    field <Name>k__BackingField
+    field <FullName>k__BackingField
+    field <FamilyName>k__BackingField
+    field <Location>k__BackingField
+    field <Apps>k__BackingField
+    field versionFromNamespace
+    field smallLogoNameFromVersion
+    field bigLogoNameFromVersion
+    field PackageChangeChannel
+    field catalog
+    get_Name() : ?
+    get_FullName() : ?
+    get_FamilyName() : ?
+    get_Location() : ?
+    set_Location() : ?
+    get_Apps() : ?et84
+    set_Apps(?et84) : ?et130
+    .ctor() : ?
+    .ctor() : ?et109
+    InitAppsInPackage() : ?et109
+    GetManifestXml() : ?
+    GetPackageVersionFromManifest() : TypeDef#0
+    All(TypeDef#0) : ?et84
+    SupportUWP() : ?
+    CurrentUserPackages() : TypeRef#459310208<>
+    WatchPackageChangeAsync() : ?
+    ToString() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    .cctor() : ?
+    MemoryPack.IMemoryPackFormatterRegister.RegisterFormatter() : ?
+    MemoryPack.IMemoryPackable<Flow.Launcher.Plugin.Program.Programs.UWPPackage>.Serialize(?et81, System.Void, !!4096, TypeDef#0) : ?et130
+    MemoryPack.IMemoryPackable<Flow.Launcher.Plugin.Program.Programs.UWPPackage>.Deserialize(?et93, TypeDef#0&) : ?et130
+- Win32  [methods=69 fields=18 flags=0x1]
+    field <Name>k__BackingField
+    field <IcoPath>k__BackingField
+    field <FullPath>k__BackingField
+    field <LnkResolvedPath>k__BackingField
+    field <Args>k__BackingField
+    field <ParentDirectory>k__BackingField
+    field <ExecutableName>k__BackingField
+    field <Description>k__BackingField
+    field <Valid>k__BackingField
+    field <Enabled>k__BackingField
+    field <LocalizedName>k__BackingField
+    field ShortcutExtension
+    field UrlExtension
+    field ExeExtension
+    field _uid
+    field Default
+    field Watchers
+    field indexQueue
+    get_Name() : ?
+    set_Name() : ?
+    get_UniqueIdentifier() : ?
+    set_UniqueIdentifier() : ?
+    get_IcoPath() : ?
+    set_IcoPath() : ?
+    get_FullPath() : ?
+    set_FullPath() : ?
+    get_LnkResolvedPath() : ?
+    set_LnkResolvedPath() : ?
+    get_ExecutablePath() : ?
+    get_Args() : ?
+    set_Args() : ?
+    get_ParentDirectory() : ?
+    set_ParentDirectory() : ?
+    get_ExecutableName() : ?
+    set_ExecutableName() : ?
+    get_Description() : ?
+    set_Description() : ?
+    get_Valid() : ?
+    set_Valid() : ?
+    get_Enabled() : ?
+    set_Enabled() : ?
+    get_Location() : ?
+    get_LocalizedName() : ?
+    set_LocalizedName() : ?
+    Match(TypeSpec#7495812<>) : System.String
+    Result(TypeDef#0) : System.String
+    ContextMenus(System.Void, TypeRef#545557600, ?et37) : ?et33
+    OpenTargetFolderContextMenuResult() : TypeDef#0
+    ToString() : ?
+    Win32Program() : System.String
+    LnkProgram() : System.String
+    UrlProgram(System.String[]) : System.String
+    ExeProgram() : System.String
+    EnumerateProgramsInDir() : TypeRef#121865088<>
+    Extension() : ?
+    UnregisteredPrograms() : TypeRef#371229824<System.Void, System.String, System.String[], System.String[], ?, ?>
+    StartMenuPrograms() : TypeRef#371229824<>
+    PATHPrograms() : TypeRef#371229824<TypeSpec#4743236<>, ?, ?, ?, ?, ?>
+    AppPathsPrograms() : TypeRef#371229824<>
+    GetPathFromRegistry() : TypeRef#545555328<>
+    GetProgramPathFromRegistrySubKeys(System.String) : ?et213
+    GetProgramFromPath(System.String[]) : System.String
+    ExceptDisabledSource() : TypeRef#75842432<>
+    ExceptDisabledSource(!!5376, TypeSpec#125846880, ?et0, TypeSpec#9920580<>) : System.Void
+    DistinctBy(!!5376, TypeSpec#125846880, ?et0, TypeSpec#9920580<>) : System.Void
+    ProgramsHasher() : TypeRef#371229824<System.Void, TypeDef#0, ?, ?>
+    All(TypeDef#0) : ?et88
+    GetHashCode() : ?
+    Equals() : ?et88
+    Equals() : ?
+    GetStartMenuPaths() : TypeDef#0<>
+    GetStartupPaths() : TypeDef#0<>
+    WatchProgramUpdate() : ?et40
+    MonitorDirectoryChangeAsync() : ?
+    WatchDirectory() : System.String
+    Dispose() : ?
+    GetCommonParents(System.Void, System.String, TypeSpec#4546692<>) : ?et33
+    .cctor() : ?
+    MemoryPack.IMemoryPackFormatterRegister.RegisterFormatter() : ?
+    MemoryPack.IMemoryPackable<Flow.Launcher.Plugin.Program.Programs.Win32>.Serialize(?et81, System.Void, !!4096, TypeDef#0) : ?et130
+    MemoryPack.IMemoryPackable<Flow.Launcher.Plugin.Program.Programs.Win32>.Deserialize(?et93, TypeDef#0&) : ?et130
+    .ctor() : ?
+    <Result>b__57_0() : ?et153
+    <ContextMenus>b__58_0() : ?et153
+    <ContextMenus>b__58_2() : ?et153
+    <ContextMenus>b__58_4() : ?et153
+    <ExceptDisabledSource>g__ExceptDisabledSourceEnumerable|76_0(!!5376, TypeSpec#125846880, ?et0, TypeSpec#9920580<>) : System.Void
+
+## Flow.Launcher.Plugin.Program.ViewModels (1)
+- AddProgramSourceViewModel  [methods=21 fields=9 flags=0x100001]
+    field Settings
+    field enabled
+    field location
+    field <Source>k__BackingField
+    field <API>k__BackingField
+    field <AddBtnText>k__BackingField
+    field LocationModified
+    field StatusModified
+    field <IsCustomSource>k__BackingField
+    get_Enabled() : ?
+    set_Enabled() : ?
+    get_Location() : ?
+    set_Location() : ?
+    get_Source() : ?
+    set_Source(TypeDef#0) : System.Void
+    get_API() : ?
+    set_API(TypeDef#0) : System.Void
+    get_AddBtnText() : ?
+    set_AddBtnText(System.String) : System.Void
+    get_IsCustomSource() : ?
+    set_IsCustomSource(System.Boolean) : System.Void
+    get_IsNotCustomSource() : ?
+    .ctor(TypeDef#0) : ?et41
+    .ctor(TypeSpec#545557024, ?et52) : ?et41
+    Browse() : ?
+    AddProgramSource(System.Boolean, System.Boolean, System.String) : ?et53
+    UpdateProgramSource(System.Boolean, System.Boolean, System.String) : ?et53
+    AddOrUpdate(System.Boolean, System.Boolean, System.String) : ?et53
+    DuplicateSource() : ?
+    <.ctor>b__30_0() : ?et52
+
+## Flow.Launcher.Plugin.Program.Views (1)
+- ProgramSetting  [methods=46 fields=20 flags=0x100001]
+    field context
+    field _settings
+    field _lastHeaderClicked
+    field _lastDirection
+    field <ProgramSettingDisplayList>k__BackingField
+    field UWPEnabled
+    field StartMenuEnabled
+    field RegistryEnabled
+    field PATHEnabled
+    field btnLoadAllProgramSource
+    field btnProgramSuffixes
+    field btnReindex
+    field indexingPanel
+    field progressBarIndexing
+    field programSourceView
+    field btnProgramSourceStatus
+    field btnEditProgramSource
+    field btnDeleteProgramSource
+    field btnAddProgramSource
+    field _contentLoaded
+    get_ProgramSettingDisplayList(System.Void, TypeDef#0) : ?et33
+    set_ProgramSettingDisplayList(?et33, System.Void, TypeDef#0) : ?et129
+    get_EnableDescription() : ?
+    set_EnableDescription() : ?
+    get_HideAppsPath() : ?
+    set_HideAppsPath() : ?
+    get_HideUninstallers() : ?
+    set_HideUninstallers() : ?
+    get_HideDuplicatedWindowsApp() : ?
+    set_HideDuplicatedWindowsApp() : ?
+    get_EnableRegistrySource() : ?
+    set_EnableRegistrySource() : ?
+    get_EnableStartMenuSource() : ?
+    set_EnableStartMenuSource() : ?
+    get_EnablePATHSource() : ?
+    set_EnablePATHSource() : ?
+    get_EnableUWP() : ?
+    set_EnableUWP() : ?
+    get_ShowUWPCheckbox() : ?
+    .ctor(TypeDef#0) : ?et41
+    Setting_Loaded(?et241) : ?et128
+    ViewRefresh() : ?
+    ReIndexing() : ?
+    btnAddProgramSource_OnClick(?et241) : ?et128
+    DeleteProgramSources(?et33, System.Void, TypeDef#0) : ?et129
+    btnEditProgramSource_OnClick(?et241) : ?et128
+    EditProgramSource() : ?et52
+    btnReindex_Click(?et241) : ?et128
+    BtnProgramSuffixes_OnClick(?et241) : ?et128
+    programSourceView_DragEnter(?et241) : ?et129
+    programSourceView_Drop(?et241) : ?et129
+    btnLoadAllProgramSource_OnClick(?et241) : ?et128
+    btnProgramSourceStatus_OnClick(?et241) : ?et128
+    ProgramSourceView_PreviewMouseRightButtonUp(?et245) : ?et129
+    GridViewColumnHeaderClickedHandler(?et241) : ?et128
+    Sort(?et221) : ?et129
+    HasMoreOrEqualEnabledItems(?et33, System.Void, TypeDef#0) : ?et129
+    programSourceView_SelectionChanged(?et253) : ?et129
+    programSourceView_MouseDoubleClick(?et245) : ?et129
+    btnDeleteProgramSource_OnClick(?et241) : ?et128
+    IsAllItemsUserAdded(?et33, System.Void, TypeDef#0) : ?et129
+    ListView_SizeChanged(System.Void) : ?et130
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    <DeleteProgramSources>b__39_0() : ?et52
+    <IsAllItemsUserAdded>b__55_0() : ?et52
+
+## Flow.Launcher.Plugin.Program.Views.Commands (1)
+- ProgramSettingDisplay  [methods=6 fields=0 flags=0x100180]
+    LoadProgramSources(System.Void, TypeDef#0) : ?et33
+    DisplayAllProgramsAsync() : ?
+    SetProgramSourcesStatusAsync() : TypeSpec#4743236<>
+    StoreDisabledInSettings() : ?
+    RemoveDisabledFromSettings() : ?
+    IsReindexRequiredAsync(System.Boolean, TypeSpec#4743236<>) : System.Void
+
+## Flow.Launcher.Plugin.Program.Views.Models (1)
+- ProgramSource  [methods=14 fields=4 flags=0x100001]
+    field name
+    field loc
+    field uniqueIdentifier
+    field <Enabled>k__BackingField
+    get_Location() : ?
+    set_Location() : ?
+    get_Name() : ?
+    set_Name() : ?
+    get_Enabled() : ?
+    set_Enabled() : ?
+    get_UniqueIdentifier() : ?
+    set_UniqueIdentifier() : ?
+    .ctor(System.String) : System.Boolean
+    .ctor() : ?
+    .ctor() : ?et64
+    Equals() : ?
+    Equals() : ?et64
+    GetHashCode() : ?
+
+## Windows.Win32 (20)
+- __char_14  [methods=10 fields=2 flags=0x110108]
+    field SpanLength
+    field Value
+    get_Length() : ?
+    get_Item() : ?
+    AsSpan(System.Char) : System.Void
+    AsReadOnlySpan(System.Char) : System.Void
+    Equals(System.Void, System.Char) : ?et109
+    Equals() : ?
+    ToString() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Implicit() : TypeDef#0
+- __char_260  [methods=10 fields=2 flags=0x110108]
+    field SpanLength
+    field Value
+    get_Length() : ?
+    get_Item() : ?
+    AsSpan(System.Char) : System.Void
+    AsReadOnlySpan(System.Char) : System.Void
+    Equals(System.Void, System.Char) : ?et109
+    Equals() : ?
+    ToString() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Implicit() : TypeDef#0
+- FreeLibrarySafeHandle  [methods=5 fields=1 flags=0x100000]
+    field INVALID_HANDLE_VALUE
+    .ctor() : ?
+    .ctor() : ?
+    get_IsInvalid() : ?
+    ReleaseHandle() : ?
+    .cctor() : ?
+- IComIID  [methods=1 fields=0 flags=0x1000a0]
+    get_Guid() : TypeDef#0&
+- InlineArrayIndexerExtensions  [methods=3 fields=0 flags=0x100180]
+    SliceAtNull(System.Char, TypeRef#12606276<>) : System.Void
+    ReadOnlyItemRef(TypeDef#0&) : System.Char&
+    ReadOnlyItemRef(TypeDef#0&) : System.Char&
+- PInvoke  [methods=16 fields=3 flags=0x100180]
+    field PKEY_Link_Arguments
+    field INFOTIPSIZE
+    field MAX_PATH
+    FreeLibrary() : TypeDef#0
+    CloseHandle() : TypeDef#0
+    LoadLibraryEx() : TypeDef#0
+    LoadLibraryEx(?et148, TypeDef#0) : TypeDef#537160480
+    ExpandEnvironmentStrings() : TypeDef#0
+    ExpandEnvironmentStrings(TypeDef#0) : ?et172
+    CoTaskMemFree() : ?
+    PropVariantClear() : TypeDef#0&
+    SysFreeString() : ?et136
+    SHGetLocalizedName(TypeRef#12606020<>) : System.String
+    SHGetLocalizedName(?et184, System.UInt32, System.Int32*) : TypeDef#537160480
+    SHCreateItemFromParsingName(?et0) : TypeRef#126093088
+    SHCreateItemFromParsingName(System.Object, TypeDef#117711200*) : TypeDef#541371168
+    LoadString(TypeRef#12606020<>) : System.UInt32
+    LoadString(System.UInt32, TypeDef#0) : ?et152
+    .cctor() : ?
+- SysFreeStringSafeHandle  [methods=5 fields=1 flags=0x100000]
+    field INVALID_HANDLE_VALUE
+    .ctor() : ?
+    .ctor() : ?
+    get_IsInvalid() : ?
+    ReleaseHandle() : ?
+    .cctor() : ?
+- System_Com_IBindCtx_Extensions  [methods=2 fields=0 flags=0x100180]
+    SetBindOptions(TypeDef#0&) : System.Object
+    GetBindOptions(TypeDef#0&) : System.Object
+- System_Com_IEnumMoniker_Extensions  [methods=2 fields=0 flags=0x100180]
+    Next(?et129, ?et52, System.UInt32&) : TypeRef#75975456
+    Next(?et129, ?et52) : TypeRef#75975456
+- System_Com_IEnumString_Extensions  [methods=2 fields=0 flags=0x100180]
+    Next(?et105, System.Void, TypeDef#38022688) : TypeRef#71650336
+    Next(?et105, System.Void, TypeDef#0) : TypeRef#71650336
+- System_Com_IMoniker_Extensions  [methods=5 fields=0 flags=0x100180]
+    GetClassID(TypeDef#0&) : ?et52
+    BindToObject(?et52, !!0&) : TypeRef#541361952
+    BindToStorage(?et52, !!0&) : TypeRef#541361952
+    GetTimeOfLastChange(TypeRef#541361952, ?et52, TypeDef#0&) : ?et52
+    GetDisplayName(TypeRef#541361952, ?et52, TypeDef#0&) : ?et52
+- System_Com_IPersist_Extensions  [methods=1 fields=0 flags=0x100180]
+    GetClassID(TypeDef#0&) : ?et64
+- System_Com_IPersistStream_Extensions  [methods=1 fields=0 flags=0x100180]
+    GetClassID(TypeDef#0&) : ?et68
+- System_Com_IRunningObjectTable_Extensions  [methods=2 fields=0 flags=0x100180]
+    NoteChangeTime(System.UInt32, TypeDef#0&) : ?et72
+    GetTimeOfLastChange(TypeRef#71568672, ?et128, ?et153) : ?et72
+- System_Com_ISequentialStream_Extensions  [methods=4 fields=0 flags=0x100180]
+    Read(?et105, System.Void, System.Byte, System.UInt32&) : TypeRef#71652128
+    Read(?et105, System.Void, System.Byte) : TypeRef#71652128
+    Write(?et109, System.Void, System.Byte, System.UInt32&) : TypeRef#71652128
+    Write(?et109, System.Void, System.Byte) : TypeRef#71652128
+- System_Com_IStream_Extensions  [methods=9 fields=0 flags=0x100180]
+    Read(?et105, System.Void, System.Byte, System.UInt32&) : TypeRef#71652384
+    Read(?et105, System.Void, System.Byte) : TypeRef#71652384
+    Write(?et109, System.Void, System.Byte, System.UInt32&) : TypeRef#71652384
+    Write(?et109, System.Void, System.Byte) : TypeRef#71652384
+    Seek(System.Int64, TypeDef#46409568) : ?et80
+    Seek(System.Int64, TypeDef#0) : ?et80
+    CopyTo(TypeRef#67294240, System.UInt64, System.UInt64&) : ?et80
+    CopyTo(TypeDef#0) : ?et80
+    Stat(TypeRef#541351712&, ?et120) : ?et80
+- UI_Shell_IShellItem_Extensions  [methods=3 fields=0 flags=0x100180]
+    BindToHandler(System.Object, TypeDef#126099808&, ?et0) : ?et129
+    GetDisplayName(?et184) : TypeDef#537150491
+    GetAttributes(?et128, ?et200) : TypeDef#71578144
+- UI_Shell_IShellLinkW_Extensions  [methods=14 fields=0 flags=0x100180]
+    GetPath() : TypeRef#12606020<>
+    GetIDList() : TypeDef#0*&
+    SetIDList() : TypeDef#0&
+    GetDescription() : TypeRef#12606020<>
+    SetDescription() : System.String
+    GetWorkingDirectory() : TypeRef#12606020<>
+    SetWorkingDirectory() : System.String
+    GetArguments() : TypeRef#12606020<>
+    SetArguments() : System.String
+    GetShowCmd() : TypeDef#0&
+    GetIconLocation() : TypeRef#12606020<>
+    SetIconLocation(System.Int32) : System.String
+    SetRelativePath(System.UInt32) : System.String
+    SetPath() : System.String
+- UI_Shell_PropertiesSystem_IPropertyStore_Extensions  [methods=3 fields=0 flags=0x100180]
+    GetAt(System.UInt32, TypeDef#0&) : ?et128
+    GetValue(TypeDef#71576608&, ?et130, ?&) : ?et128
+    SetValue(TypeDef#71576608&, ?et130, ?&) : ?et128
+- VariableLengthInlineArray`1  [methods=2 fields=1 flags=0x100108]
+    field e0
+    get_Item() : System.Int32
+    AsSpan(!2048) : System.Void
+
+## Windows.Win32.Foundation (15)
+- BOOL  [methods=12 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit() : ?et132
+    op_Explicit() : System.Int32
+    op_Equality(TypeDef#0) : ?et132
+    op_Inequality(TypeDef#0) : ?et132
+    Equals() : ?et132
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    .ctor() : ?
+    op_Implicit() : ?et132
+    op_Implicit() : System.Boolean
+- BSTR  [methods=16 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    op_Implicit(?et136) : ?et128
+    op_Explicit() : System.Char*
+    op_Equality(TypeDef#0) : ?et136
+    op_Inequality(TypeDef#0) : ?et136
+    Equals() : ?et136
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et136
+    op_Explicit() : System.IntPtr
+    op_Explicit() : System.UIntPtr
+    get_Length() : ?
+    op_Implicit(System.Char, TypeDef#0) : System.Void
+    AsSpan(System.Char) : System.Void
+- CHAR  [methods=9 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit() : ?et140
+    op_Explicit() : System.SByte
+    op_Equality(TypeDef#0) : ?et140
+    op_Inequality(TypeDef#0) : ?et140
+    Equals() : ?et140
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- DECIMAL  [methods=9 fields=4 flags=0x100108]
+    field wReserved
+    field Anonymous1
+    field Hi32
+    field Anonymous2
+    .ctor() : ?et201
+    op_Implicit() : TypeDef#0
+    op_Implicit() : TypeDef#0
+    get_scale() : ?
+    get_sign() : ?
+    get_signscale() : ?
+    get_Lo32() : ?
+    get_Mid32() : ?
+    get_Lo64() : ?
+- HANDLE  [methods=15 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit(?et148) : ?et128
+    op_Explicit() : System.Void*
+    op_Equality(TypeDef#0) : ?et148
+    op_Inequality(TypeDef#0) : ?et148
+    Equals() : ?et148
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et148
+    op_Explicit() : System.IntPtr
+    op_Explicit() : System.UIntPtr
+- HINSTANCE  [methods=16 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit(?et152) : ?et128
+    op_Explicit() : System.Void*
+    op_Equality(TypeDef#0) : ?et152
+    op_Inequality(TypeDef#0) : ?et152
+    Equals() : ?et152
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et152
+    op_Explicit() : System.IntPtr
+    op_Explicit() : System.UIntPtr
+    op_Implicit() : TypeDef#0
+- HMODULE  [methods=16 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit(?et156) : ?et128
+    op_Explicit() : System.Void*
+    op_Equality(TypeDef#0) : ?et156
+    op_Inequality(TypeDef#0) : ?et156
+    Equals() : ?et156
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et156
+    op_Explicit() : System.IntPtr
+    op_Explicit() : System.UIntPtr
+    op_Implicit() : TypeDef#0
+- HRESULT  [methods=17 fields=2 flags=0x100108]
+    field Value
+    field S_OK
+    .ctor() : ?
+    op_Implicit() : ?et160
+    op_Explicit() : System.Int32
+    op_Equality(TypeDef#0) : ?et160
+    op_Inequality(TypeDef#0) : ?et160
+    Equals() : ?et160
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et160
+    op_Explicit() : System.UInt32
+    get_Succeeded() : ?
+    get_Failed() : ?
+    ThrowOnFailure() : System.IntPtr
+    get_DebuggerDisplay() : ?
+    ToString(?et205) : ?et128
+    .cctor() : ?
+- HWND  [methods=16 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit(?et164) : ?et128
+    op_Explicit() : System.Void*
+    op_Equality(TypeDef#0) : ?et164
+    op_Inequality(TypeDef#0) : ?et164
+    Equals() : ?et164
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et164
+    op_Explicit() : System.IntPtr
+    op_Explicit() : System.UIntPtr
+    op_Implicit() : TypeDef#0
+- PCSTR  [methods=10 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit(?et168) : ?et128
+    op_Explicit() : System.Byte*
+    Equals() : ?et168
+    Equals() : ?
+    GetHashCode() : ?
+    get_Length() : ?
+    ToString() : ?
+    AsSpan(System.Byte) : System.Void
+    get_DebuggerDisplay() : ?
+- PCWSTR  [methods=10 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Explicit(?et172) : ?et128
+    op_Implicit() : System.Char*
+    Equals() : ?et172
+    Equals() : ?
+    GetHashCode() : ?
+    get_Length() : ?
+    ToString() : ?
+    AsSpan(System.Char) : System.Void
+    get_DebuggerDisplay() : ?
+- PROPERTYKEY  [methods=0 fields=2 flags=0x100108]
+    field fmtid
+    field pid
+- PSTR  [methods=14 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    op_Implicit(?et180) : ?et128
+    op_Implicit() : System.Byte*
+    op_Equality(TypeDef#0) : ?et180
+    op_Inequality(TypeDef#0) : ?et180
+    Equals() : ?et180
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : TypeDef#0
+    get_Length() : ?
+    AsSpan(System.Byte) : System.Void
+    get_DebuggerDisplay() : ?
+- PWSTR  [methods=14 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    op_Implicit(?et184) : ?et128
+    op_Implicit() : System.Char*
+    op_Equality(TypeDef#0) : ?et184
+    op_Inequality(TypeDef#0) : ?et184
+    Equals() : ?et184
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : TypeDef#0
+    get_Length() : ?
+    AsSpan(System.Char) : System.Void
+    get_DebuggerDisplay() : ?
+- VARIANT_BOOL  [methods=13 fields=3 flags=0x100108]
+    field Value
+    field VARIANT_TRUE
+    field VARIANT_FALSE
+    .ctor() : ?
+    op_Implicit() : ?et188
+    op_Explicit() : System.Int16
+    op_Equality(TypeDef#0) : ?et188
+    op_Inequality(TypeDef#0) : ?et188
+    Equals() : ?et188
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    .ctor() : ?
+    op_Implicit() : ?et188
+    op_Implicit() : System.Boolean
+    .cctor() : ?
+
+## Windows.Win32.Storage.FileSystem (1)
+- WIN32_FIND_DATAW  [methods=0 fields=10 flags=0x100108]
+    field dwFileAttributes
+    field ftCreationTime
+    field ftLastAccessTime
+    field ftLastWriteTime
+    field nFileSizeHigh
+    field nFileSizeLow
+    field dwReserved0
+    field dwReserved1
+    field cFileName
+    field cAlternateFileName
+
+## Windows.Win32.System.Com (49)
+- ADVANCED_FEATURE_FLAGS  [methods=0 fields=13 flags=0x100]
+    field value__
+    field FADF_AUTO
+    field FADF_STATIC
+    field FADF_EMBEDDED
+    field FADF_FIXEDSIZE
+    field FADF_RECORD
+    field FADF_HAVEIID
+    field FADF_HAVEVARTYPE
+    field FADF_BSTR
+    field FADF_UNKNOWN
+    field FADF_DISPATCH
+    field FADF_VARIANT
+    field FADF_RESERVED
+- BIND_OPTS  [methods=0 fields=4 flags=0x100108]
+    field cbStruct
+    field grfFlags
+    field grfMode
+    field dwTickCountDeadline
+- BINDPTR_unmanaged  [methods=0 fields=3 flags=0x100110]
+    field lpfuncdesc
+    field lpvardesc
+    field lptcomp
+- BLOB  [methods=0 fields=2 flags=0x100108]
+    field cbSize
+    field pBlobData
+- CALLCONV  [methods=0 fields=12 flags=0x100]
+    field value__
+    field CC_FASTCALL
+    field CC_CDECL
+    field CC_MSCPASCAL
+    field CC_PASCAL
+    field CC_MACPASCAL
+    field CC_STDCALL
+    field CC_FPFASTCALL
+    field CC_SYSCALL
+    field CC_MPWCDECL
+    field CC_MPWPASCAL
+    field CC_MAX
+- CY  [methods=2 fields=2 flags=0x100110]
+    field Anonymous
+    field int64
+    get_Lo() : ?
+    get_Hi() : ?
+- DESCKIND  [methods=0 fields=7 flags=0x100]
+    field value__
+    field DESCKIND_NONE
+    field DESCKIND_FUNCDESC
+    field DESCKIND_VARDESC
+    field DESCKIND_TYPECOMP
+    field DESCKIND_IMPLICITAPPOBJ
+    field DESCKIND_MAX
+- DISPATCH_FLAGS  [methods=0 fields=5 flags=0x100]
+    field value__
+    field DISPATCH_METHOD
+    field DISPATCH_PROPERTYGET
+    field DISPATCH_PROPERTYPUT
+    field DISPATCH_PROPERTYPUTREF
+- DISPPARAMS_unmanaged  [methods=0 fields=4 flags=0x100108]
+    field rgvarg
+    field rgdispidNamedArgs
+    field cArgs
+    field cNamedArgs
+- ELEMDESC_unmanaged  [methods=2 fields=2 flags=0x100108]
+    field tdesc
+    field Anonymous
+    get_idldesc() : ?et36
+    get_paramdesc() : ?et220
+- EXCEPINFO_unmanaged  [methods=0 fields=9 flags=0x100108]
+    field wCode
+    field wReserved
+    field bstrSource
+    field bstrDescription
+    field bstrHelpFile
+    field dwHelpContext
+    field pvReserved
+    field pfnDeferredFillIn
+    field scode
+- FUNCDESC_unmanaged  [methods=0 fields=12 flags=0x100108]
+    field memid
+    field lprgscode
+    field lprgelemdescParam
+    field funckind
+    field invkind
+    field callconv
+    field cParams
+    field cParamsOpt
+    field oVft
+    field cScodes
+    field elemdescFunc
+    field wFuncFlags
+- FUNCFLAGS  [methods=0 fields=14 flags=0x100]
+    field value__
+    field FUNCFLAG_FRESTRICTED
+    field FUNCFLAG_FSOURCE
+    field FUNCFLAG_FBINDABLE
+    field FUNCFLAG_FREQUESTEDIT
+    field FUNCFLAG_FDISPLAYBIND
+    field FUNCFLAG_FDEFAULTBIND
+    field FUNCFLAG_FHIDDEN
+    field FUNCFLAG_FUSESGETLASTERROR
+    field FUNCFLAG_FDEFAULTCOLLELEM
+    field FUNCFLAG_FUIDEFAULT
+    field FUNCFLAG_FNONBROWSABLE
+    field FUNCFLAG_FREPLACEABLE
+    field FUNCFLAG_FIMMEDIATEBIND
+- FUNCKIND  [methods=0 fields=6 flags=0x100]
+    field value__
+    field FUNC_VIRTUAL
+    field FUNC_PUREVIRTUAL
+    field FUNC_NONVIRTUAL
+    field FUNC_STATIC
+    field FUNC_DISPATCH
+- IBindCtx  [methods=10 fields=0 flags=0x1010a0]
+    RegisterObjectBound() : ?
+    RevokeObjectBound() : ?
+    ReleaseBoundObjects() : ?
+    SetBindOptions(?et236) : ?et128
+    GetBindOptions(?et236) : ?et128
+    GetRunningObjectTable(?et72) : ?et129
+    RegisterObjectParam(System.Object) : ?et184
+    GetObjectParam(System.Object&) : ?et184
+    EnumObjectParam(?et48) : ?et129
+    RevokeObjectParam() : ?et184
+- IDispatch_unmanaged  [methods=13 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    GetTypeInfoCount() : ?
+    GetTypeInfo() : TypeDef#0*&
+    GetIDsOfNames(?et133, TypeRef#71326532<System.Int32>) : ?et128
+    GetIDsOfNames(?et133, TypeDef#37908000*, System.Int32&) : ?et128
+    Invoke(?et129, ?et0, TypeRef#71565600&, ?et128, ?et196, TypeRef#38011680&) : TypeDef#71459168
+    Invoke(?et129, ?et0, TypeRef#71565600&, ?et128, ?et196, TypeDef#0&) : TypeDef#71459168
+    Invoke(?et129, ?et0, TypeRef#71565600&, ?et128, ?et196, TypeRef#37995296&) : TypeDef#71459168
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- IDLDESC  [methods=0 fields=2 flags=0x100108]
+    field dwReserved
+    field wIDLFlags
+- IDLFLAGS  [methods=0 fields=6 flags=0x100]
+    field value__
+    field IDLFLAG_NONE
+    field IDLFLAG_FIN
+    field IDLFLAG_FOUT
+    field IDLFLAG_FLCID
+    field IDLFLAG_FRETVAL
+- IEnumMoniker  [methods=4 fields=0 flags=0x1010a0]
+    Next(TypeRef#37997856[]) : System.UInt32
+    Skip() : System.UInt32
+    Reset() : ?
+    Clone(?et44) : ?et129
+- IEnumString  [methods=4 fields=0 flags=0x1010a0]
+    Next(TypeDef#38006304*) : System.UInt32
+    Skip() : System.UInt32
+    Reset() : ?
+    Clone(?et48) : ?et129
+- IMoniker  [methods=20 fields=0 flags=0x1010a0]
+    GetClassID(?et133) : ?et128
+    IsDirty() : ?
+    Load() : ?et80
+    Save(TypeDef#0) : ?et80
+    GetSizeMax() : ?
+    BindToObject(TypeRef#71552288, ?et128, ?et133, System.Object&) : System.Object
+    BindToStorage(TypeRef#71552288, ?et128, ?et133, System.Object&) : System.Object
+    Reduce(System.UInt32, TypeRef#75762976&, ?et129, ?et52) : System.Object
+    ComposeWith(TypeDef#75768096, ?et129, ?et52) : ?et52
+    Enum(TypeDef#0&) : ?et132
+    IsEqual() : TypeDef#0
+    Hash() : ?
+    IsRunning(TypeRef#541363488, ?et52) : System.Object
+    GetTimeOfLastChange(TypeRef#71552288, ?et128, ?et153) : System.Object
+    Inverse(?et52) : ?et129
+    CommonPrefixWith(TypeDef#0&) : ?et52
+    RelativePathTo(TypeDef#0&) : ?et52
+    GetDisplayName(TypeRef#71552288, ?et128, ?et184) : System.Object
+    ParseDisplayName(TypeRef#537152800, ?et184, System.UInt32&, TypeDef#0&) : System.Object
+    IsSystemMoniker() : ?
+- IMPLTYPEFLAGS  [methods=0 fields=5 flags=0x100]
+    field value__
+    field IMPLTYPEFLAG_FDEFAULT
+    field IMPLTYPEFLAG_FSOURCE
+    field IMPLTYPEFLAG_FRESTRICTED
+    field IMPLTYPEFLAG_FDEFAULTVTABLE
+- INVOKEKIND  [methods=0 fields=5 flags=0x100]
+    field value__
+    field INVOKE_FUNC
+    field INVOKE_PROPERTYGET
+    field INVOKE_PROPERTYPUT
+    field INVOKE_PROPERTYPUTREF
+- IPersist  [methods=1 fields=0 flags=0x1010a0]
+    GetClassID(?et133) : ?et128
+- IPersistStream  [methods=5 fields=0 flags=0x1010a0]
+    GetClassID(?et133) : ?et128
+    IsDirty() : ?
+    Load() : ?et80
+    Save(TypeDef#0) : ?et80
+    GetSizeMax() : ?
+- IRunningObjectTable  [methods=7 fields=0 flags=0x1010a0]
+    Register(System.Object, TypeRef#38014240) : ?et108
+    Revoke() : ?
+    IsRunning() : ?et52
+    GetObject(System.Object&) : ?et52
+    NoteChangeTime() : TypeDef#0
+    GetTimeOfLastChange(TypeDef#0*) : ?et52
+    EnumRunning(?et44) : ?et129
+- ISequentialStream  [methods=2 fields=0 flags=0x1010a0]
+    Read(System.UInt32, System.UInt32*) : System.Void*
+    Write(System.UInt32, System.UInt32*) : System.Void*
+- IStream  [methods=11 fields=0 flags=0x1010a0]
+    Read(System.UInt32, System.UInt32*) : System.Void*
+    Write(System.UInt32, System.UInt32*) : System.Void*
+    Seek(?et157, System.UInt64*) : ?et128
+    SetSize() : ?
+    CopyTo(System.UInt64, System.UInt64*, System.UInt64*) : ?et80
+    Commit() : ?et128
+    Revert() : ?
+    LockRegion() : TypeDef#0
+    UnlockRegion() : System.UInt32
+    Stat(?et124, TypeDef#0) : ?et129
+    Clone(?et80) : ?et129
+- IStream_unmanaged  [methods=26 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    Read() : TypeRef#20994628<>
+    Read() : TypeRef#20994628<>
+    Read(System.UInt32, System.UInt32*) : System.Void*
+    Write() : TypeRef#20994884<>
+    Write() : TypeRef#20994884<>
+    Write(System.UInt32, System.UInt32*) : System.Void*
+    Seek(?et157, System.UInt64&) : ?et128
+    Seek(?et157) : ?et128
+    Seek(?et157, System.UInt64*) : ?et128
+    SetSize() : ?
+    CopyTo(?et84, System.UInt64, System.UInt64&, System.UInt64&) : ?et129
+    CopyTo(?et84, System.UInt64) : ?et129
+    CopyTo(?et84, System.UInt64, System.UInt64*, System.UInt64*) : ?et129
+    Commit() : ?
+    Revert() : ?
+    LockRegion() : System.UInt32
+    UnlockRegion() : System.UInt32
+    Stat(?et124, System.UInt32) : ?et129
+    Stat(?et124, System.UInt32) : ?et129
+    Clone() : TypeDef#0
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- ITypeComp_unmanaged  [methods=9 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    Bind(System.UInt32, System.UInt16, TypeRef#71571232*&, ?et128, ?et252, TypeDef#0&) : ?et184
+    Bind(System.UInt32, System.UInt16, TypeRef#71554848*&, ?et128, ?et252, TypeDef#0&) : ?et184
+    BindType(System.UInt32, TypeRef#63182624*&, TypeDef#0) : ?et184
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- ITypeInfo_unmanaged  [methods=37 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    GetTypeAttr() : TypeDef#0
+    GetTypeAttr() : TypeDef#0
+    GetTypeComp() : TypeDef#0
+    GetFuncDesc() : TypeDef#0*
+    GetVarDesc() : TypeDef#0*
+    GetNames(?et136, System.UInt32&) : TypeRef#537149530
+    GetNames(System.UInt32) : TypeDef#67265056
+    GetRefTypeOfImplType() : System.UInt32
+    GetImplTypeFlags() : TypeDef#0
+    GetImplTypeFlags() : TypeDef#0
+    GetIDsOfNames(System.Void, TypeDef#33828384) : ?et109
+    GetIDsOfNames(?et184, System.UInt32, System.Int32&) : ?et128
+    Invoke(TypeRef#71565344, ?et129, System.SByte, TypeDef#71577888&, ?et129, System.Single, System.UInt32&) : System.Int32
+    GetDocumentation(System.UInt32&, TypeDef#0&) : TypeDef#134513672
+    GetDocumentation() : System.UInt32
+    GetDocumentation(?et128, ?et136, System.UInt32&, TypeDef#0*) : TypeDef#71557664
+    GetDllEntry(?et60, TypeDef#134513672&, System.UInt16&) : ?et129
+    GetDllEntry(?et60, System.UInt16&) : ?et129
+    GetDllEntry(?et60, TypeDef#71557664*, ?et128, ?et136, System.UInt16&) : ?et129
+    GetRefTypeInfo() : TypeDef#0*
+    AddressOfMember(?et60, System.Void*&) : ?et129
+    AddressOfMember(?et60, System.Void**) : ?et129
+    CreateInstance(!!0&) : ?et100
+    CreateInstance(?et100, TypeDef#63168864*, System.Void) : ?et129
+    GetMops() : TypeDef#0
+    GetMops() : TypeDef#0
+    GetContainingTypeLib() : TypeRef#38017056
+    ReleaseTypeAttr(?et144) : ?et129
+    ReleaseTypeAttr(?et144) : ?et129
+    ReleaseFuncDesc(?&) : ?et129
+    ReleaseVarDesc(?et156) : ?et129
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- ITypeLib_unmanaged  [methods=24 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    GetTypeInfoCount() : ?
+    GetTypeInfo() : TypeDef#0*
+    GetTypeInfoType() : TypeDef#0
+    GetTypeInfoType() : TypeDef#0
+    GetTypeInfoOfGuid(?et133, TypeDef#0*&) : ?et128
+    GetTypeInfoOfGuid(?et133, TypeDef#0*&) : ?et128
+    GetLibAttr() : TypeDef#0
+    GetLibAttr() : TypeDef#0
+    GetTypeComp() : TypeDef#0
+    GetDocumentation(System.UInt32&, TypeDef#0&) : TypeDef#134513672
+    GetDocumentation() : System.UInt32
+    GetDocumentation(?et128, ?et136, System.UInt32&, TypeDef#0*) : TypeDef#71557664
+    IsName(TypeDef#0&) : TypeRef#37797978
+    IsName(System.UInt32, TypeDef#0*) : ?et184
+    FindName(TypeRef#33822496*&, System.UInt16&) : TypeRef#37797978
+    FindName(System.UInt32, TypeRef#33822496*&, System.UInt16&) : ?et184
+    ReleaseTLibAttr(?et140) : ?et129
+    ReleaseTLibAttr(?et140) : ?et129
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- IUnknown  [methods=6 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- LOCKTYPE  [methods=0 fields=4 flags=0x100]
+    field value__
+    field LOCK_WRITE
+    field LOCK_EXCLUSIVE
+    field LOCK_ONLYONCE
+- ROT_FLAGS  [methods=0 fields=3 flags=0x100]
+    field value__
+    field ROTFLAGS_REGISTRATIONKEEPSALIVE
+    field ROTFLAGS_ALLOWANYCLIENT
+- SAFEARRAY  [methods=1 fields=6 flags=0x100108]
+    field cDims
+    field fFeatures
+    field cbElements
+    field cLocks
+    field pvData
+    field rgsabound
+    SizeOf() : ?
+- SAFEARRAYBOUND  [methods=0 fields=2 flags=0x100108]
+    field cElements
+    field lLbound
+- STATFLAG  [methods=0 fields=4 flags=0x100]
+    field value__
+    field STATFLAG_DEFAULT
+    field STATFLAG_NONAME
+    field STATFLAG_NOOPEN
+- STATSTG  [methods=2 fields=11 flags=0x100108]
+    field pwcsName
+    field type
+    field cbSize
+    field mtime
+    field ctime
+    field atime
+    field grfMode
+    field _grfLocksSupported
+    field clsid
+    field grfStateBits
+    field reserved
+    get_grfLocksSupported() : ?
+    set_grfLocksSupported() : ?et104
+- STGC  [methods=0 fields=6 flags=0x100]
+    field value__
+    field STGC_DEFAULT
+    field STGC_OVERWRITE
+    field STGC_ONLYIFCURRENT
+    field STGC_DANGEROUSLYCOMMITMERELYTODISKCACHE
+    field STGC_CONSOLIDATE
+- STGM  [methods=0 fields=19 flags=0x100]
+    field value__
+    field STGM_DIRECT
+    field STGM_TRANSACTED
+    field STGM_SIMPLE
+    field STGM_READ
+    field STGM_WRITE
+    field STGM_READWRITE
+    field STGM_SHARE_DENY_NONE
+    field STGM_SHARE_DENY_READ
+    field STGM_SHARE_DENY_WRITE
+    field STGM_SHARE_EXCLUSIVE
+    field STGM_PRIORITY
+    field STGM_DELETEONRELEASE
+    field STGM_NOSCRATCH
+    field STGM_CREATE
+    field STGM_CONVERT
+    field STGM_FAILIFTHERE
+    field STGM_NOSNAPSHOT
+    field STGM_DIRECT_SWMR
+- SYSKIND  [methods=0 fields=5 flags=0x100]
+    field value__
+    field SYS_WIN16
+    field SYS_WIN32
+    field SYS_MAC
+    field SYS_WIN64
+- TLIBATTR  [methods=0 fields=6 flags=0x100108]
+    field guid
+    field lcid
+    field syskind
+    field wMajorVerNum
+    field wMinorVerNum
+    field wLibFlags
+- TYPEATTR  [methods=0 fields=18 flags=0x100108]
+    field guid
+    field lcid
+    field dwReserved
+    field memidConstructor
+    field memidDestructor
+    field lpstrSchema
+    field cbSizeInstance
+    field typekind
+    field cFuncs
+    field cVars
+    field cImplTypes
+    field cbSizeVft
+    field cbAlignment
+    field wTypeFlags
+    field wMajorVerNum
+    field wMinorVerNum
+    field tdescAlias
+    field idldescType
+- TYPEDESC  [methods=3 fields=2 flags=0x100108]
+    field Anonymous
+    field vt
+    get_lptdesc(?et148) : ?et129
+    get_lpadesc(?et208) : ?et128
+    get_hreftype() : ?
+- TYPEKIND  [methods=0 fields=10 flags=0x100]
+    field value__
+    field TKIND_ENUM
+    field TKIND_RECORD
+    field TKIND_MODULE
+    field TKIND_INTERFACE
+    field TKIND_DISPATCH
+    field TKIND_COCLASS
+    field TKIND_ALIAS
+    field TKIND_UNION
+    field TKIND_MAX
+- VARDESC_unmanaged  [methods=2 fields=6 flags=0x100108]
+    field memid
+    field lpstrSchema
+    field Anonymous
+    field elemdescVar
+    field wVarFlags
+    field varkind
+    get_oInst() : ?
+    get_lpvarValue(?et196) : ?et128
+- VARFLAGS  [methods=0 fields=14 flags=0x100]
+    field value__
+    field VARFLAG_FREADONLY
+    field VARFLAG_FSOURCE
+    field VARFLAG_FBINDABLE
+    field VARFLAG_FREQUESTEDIT
+    field VARFLAG_FDISPLAYBIND
+    field VARFLAG_FDEFAULTBIND
+    field VARFLAG_FHIDDEN
+    field VARFLAG_FRESTRICTED
+    field VARFLAG_FDEFAULTCOLLELEM
+    field VARFLAG_FUIDEFAULT
+    field VARFLAG_FNONBROWSABLE
+    field VARFLAG_FREPLACEABLE
+    field VARFLAG_FIMMEDIATEBIND
+- VARKIND  [methods=0 fields=5 flags=0x100]
+    field value__
+    field VAR_PERINSTANCE
+    field VAR_STATIC
+    field VAR_CONST
+    field VAR_DISPATCH
+
+## Windows.Win32.System.Com.StructuredStorage (29)
+- BSTRBLOB  [methods=0 fields=2 flags=0x100108]
+    field cbSize
+    field pData
+- CABOOL  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CABSTR  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CABSTRBLOB  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAC  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CACLIPDATA  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CACLSID  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CACY  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CADATE  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CADBL  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAFILETIME  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAFLT  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAH  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAI  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAL  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CALPSTR  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CALPWSTR  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAPROPVARIANT_unmanaged  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CASCODE  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAUB  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAUH  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAUI  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CAUL  [methods=0 fields=2 flags=0x100108]
+    field cElems
+    field pElems
+- CLIPDATA  [methods=0 fields=3 flags=0x100108]
+    field cbSize
+    field ulClipFmt
+    field pClipData
+- IEnumSTATSTG_unmanaged  [methods=12 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    Next(System.Void, TypeRef#38018848) : ?et105
+    Next(System.Void, TypeDef#0) : ?et105
+    Next() : TypeRef#38002464
+    Skip() : ?
+    Reset() : ?
+    Clone() : TypeDef#0
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- IStorage_unmanaged  [methods=33 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    CreateStream(?et132, System.UInt32, System.UInt32, TypeDef#0*&) : ?et129
+    CreateStream(TypeRef#37904672, TypeDef#0*&) : ?et172
+    OpenStream(?et132, System.UInt32, TypeDef#0*&) : ?et129
+    OpenStream(System.Void*, TypeRef#67264800, TypeDef#0*) : ?et172
+    CreateStorage(?et132, System.UInt32, System.UInt32, TypeDef#0*&) : ?et129
+    CreateStorage(TypeRef#37904672, TypeDef#0*&) : ?et172
+    OpenStorage(?et132, System.UInt16*&, System.UInt32, TypeDef#0*&) : TypeSpec#541344544
+    OpenStorage(TypeSpec#541344544*, ?et132, System.UInt16**, System.UInt32, TypeDef#0*&) : ?et172
+    CopyTo(System.Void, TypeDef#63185248, System.UInt16, TypeDef#0*) : ?et109
+    CopyTo(System.UInt16, TypeDef#0*) : TypeDef#63168864
+    MoveElementTo() : TypeSpec#37978912
+    MoveElementTo(TypeSpec#537150240*, ?et172, System.UInt32) : ?et172
+    Commit() : ?
+    Revert() : ?
+    EnumElements() : TypeDef#0
+    EnumElements(System.UInt32, TypeDef#0*&) : System.Void
+    DestroyElement() : ?
+    DestroyElement() : ?et172
+    RenameElement() : ?
+    RenameElement(TypeDef#0) : ?et172
+    SetElementTimes(?et128, ?et153, TypeDef#0&) : TypeDef#71575136
+    SetElementTimes(TypeDef#71558752*, ?et128, ?et153, TypeDef#0*) : ?et172
+    SetClass(?et133) : ?et128
+    SetClass(?et133) : ?et128
+    SetStateBits() : ?
+    Stat(?et124, System.UInt32) : ?et129
+    Stat(?et124, System.UInt32) : ?et129
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- PROPVARIANT  [methods=78 fields=1 flags=0x100108]
+    field Anonymous
+    get_vt() : ?et192
+    get_wReserved1() : ?
+    get_wReserved2() : ?
+    get_wReserved3() : ?
+    get_cVal() : ?et140
+    get_bVal() : ?
+    get_iVal() : ?
+    get_uiVal() : ?
+    get_lVal() : ?
+    get_ulVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_hVal() : ?
+    get_uhVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_filetime() : ?et153
+    get_puuid(?et133) : ?et128
+    get_pclipdata(System.SByte) : ?et130
+    get_bstrVal() : ?et136
+    get_bstrblobVal() : ?et168
+    get_blob() : ?et240
+    get_pszVal() : ?et180
+    get_pwszVal() : ?et184
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_pStream(?et84) : ?et129
+    get_pStorage(System.Single) : ?et130
+    get_pVersionedStream(System.IntPtr) : ?et130
+    get_parray(?et112) : ?et129
+    get_cac() : ?et184
+    get_caub() : ?et244
+    get_cai() : ?et220
+    get_caui() : ?et252
+    get_cal() : ?et224
+    get_caul() : ?et0
+    get_cah() : ?et216
+    get_cauh() : ?et248
+    get_caflt() : ?et212
+    get_cadbl() : ?et204
+    get_cabool() : ?et172
+    get_cascode() : ?et240
+    get_cacy() : ?et196
+    get_cadate() : ?et200
+    get_cafiletime() : ?et208
+    get_cauuid() : ?et192
+    get_caclipdata() : ?et188
+    get_cabstr() : ?et176
+    get_cabstrblob() : ?et180
+    get_calpstr() : ?et228
+    get_calpwstr() : ?et232
+    get_capropvar() : ?et236
+    get_pcVal() : ?et180
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_puiVal() : ?
+    get_plVal() : ?
+    get_pulVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get_pdecVal(?et144) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?[,]) : ?et130
+    get_decVal() : ?et144
+- PROPVARIANT_unmanaged  [methods=78 fields=1 flags=0x100108]
+    field Anonymous
+    get_vt() : ?et192
+    get_wReserved1() : ?
+    get_wReserved2() : ?
+    get_wReserved3() : ?
+    get_cVal() : ?et140
+    get_bVal() : ?
+    get_iVal() : ?
+    get_uiVal() : ?
+    get_lVal() : ?
+    get_ulVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_hVal() : ?
+    get_uhVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_filetime() : ?et153
+    get_puuid(?et133) : ?et128
+    get_pclipdata(System.SByte) : ?et130
+    get_bstrVal() : ?et136
+    get_bstrblobVal() : ?et168
+    get_blob() : ?et240
+    get_pszVal() : ?et180
+    get_pwszVal() : ?et184
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_pStream(?et84) : ?et129
+    get_pStorage(System.Single) : ?et130
+    get_pVersionedStream(System.IntPtr) : ?et130
+    get_parray(?et112) : ?et129
+    get_cac() : ?et184
+    get_caub() : ?et244
+    get_cai() : ?et220
+    get_caui() : ?et252
+    get_cal() : ?et224
+    get_caul() : ?et0
+    get_cah() : ?et216
+    get_cauh() : ?et248
+    get_caflt() : ?et212
+    get_cadbl() : ?et204
+    get_cabool() : ?et172
+    get_cascode() : ?et240
+    get_cacy() : ?et196
+    get_cadate() : ?et200
+    get_cafiletime() : ?et208
+    get_cauuid() : ?et192
+    get_caclipdata() : ?et188
+    get_cabstr() : ?et176
+    get_cabstrblob() : ?et180
+    get_calpstr() : ?et228
+    get_calpwstr() : ?et232
+    get_capropvar() : ?et236
+    get_pcVal() : ?et180
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_puiVal() : ?
+    get_plVal() : ?
+    get_pulVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get_pdecVal(?et144) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?[,]) : ?et130
+    get_decVal() : ?et144
+- VERSIONEDSTREAM_unmanaged  [methods=0 fields=2 flags=0x100108]
+    field guidVersion
+    field pStream
+
+## Windows.Win32.System.LibraryLoader (1)
+- LOAD_LIBRARY_FLAGS  [methods=0 fields=15 flags=0x100]
+    field value__
+    field DONT_RESOLVE_DLL_REFERENCES
+    field LOAD_LIBRARY_AS_DATAFILE
+    field LOAD_WITH_ALTERED_SEARCH_PATH
+    field LOAD_IGNORE_CODE_AUTHZ_LEVEL
+    field LOAD_LIBRARY_AS_IMAGE_RESOURCE
+    field LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE
+    field LOAD_LIBRARY_REQUIRE_SIGNED_TARGET
+    field LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR
+    field LOAD_LIBRARY_SEARCH_APPLICATION_DIR
+    field LOAD_LIBRARY_SEARCH_USER_DIRS
+    field LOAD_LIBRARY_SEARCH_SYSTEM32
+    field LOAD_LIBRARY_SEARCH_DEFAULT_DIRS
+    field LOAD_LIBRARY_SAFE_CURRENT_DIRS
+    field LOAD_LIBRARY_SEARCH_SYSTEM32_NO_FORWARDER
+
+## Windows.Win32.System.Ole (5)
+- ARRAYDESC  [methods=1 fields=3 flags=0x100108]
+    field tdescElem
+    field cDims
+    field rgbounds
+    SizeOf() : ?
+- IRecordInfo_unmanaged  [methods=30 fields=2 flags=0x100108]
+    field lpVtbl
+    field IID_Guid
+    QueryInterface() : !!0
+    QueryInterface(System.Void) : TypeDef#63168864*
+    AddRef() : ?
+    Release() : ?
+    RecordInit() : ?
+    RecordClear() : ?
+    RecordCopy() : System.Void*
+    GetGuid(?et133) : ?et128
+    GetGuid(?et133) : ?et128
+    GetName() : ?
+    GetName(?et136) : ?et128
+    GetSize() : ?
+    GetTypeInfo() : TypeDef#0
+    GetField(TypeDef#0&) : System.String
+    GetField(?et128, ?et196) : TypeDef#71576352
+    GetFieldNoCopy(TypeDef#63189280&, System.Void) : System.String
+    GetFieldNoCopy(?et128, ?et196, System.Void**) : TypeDef#71576352
+    PutField(System.String, TypeDef#0&) : System.Void
+    PutField(TypeDef#71576352, ?et128, ?et196) : System.Void
+    PutFieldNoCopy(System.String, TypeDef#0&) : System.Void
+    PutFieldNoCopy(TypeDef#71576352, ?et128, ?et196) : System.Void
+    GetFieldNames() : TypeRef#71326276<>
+    GetFieldNames() : TypeDef#0*
+    IsMatchingType() : TypeDef#0*
+    RecordCreate() : ?
+    RecordCreateCopy() : System.Void*&
+    RecordCreateCopy() : System.Void**
+    RecordDestroy() : ?
+    Windows.Win32.IComIID.get_Guid() : TypeDef#0&
+    .cctor() : ?
+- PARAMDESC_unmanaged  [methods=0 fields=2 flags=0x100108]
+    field pparamdescex
+    field wParamFlags
+- PARAMDESCEX_unmanaged  [methods=0 fields=2 flags=0x100108]
+    field cBytes
+    field varDefaultValue
+- PARAMFLAGS  [methods=0 fields=9 flags=0x100]
+    field value__
+    field PARAMFLAG_NONE
+    field PARAMFLAG_FIN
+    field PARAMFLAG_FOUT
+    field PARAMFLAG_FLCID
+    field PARAMFLAG_FRETVAL
+    field PARAMFLAG_FOPT
+    field PARAMFLAG_FHASDEFAULT
+    field PARAMFLAG_FHASCUSTDATA
+
+## Windows.Win32.System.SystemServices (1)
+- SFGAO_FLAGS  [methods=0 fields=37 flags=0x100]
+    field value__
+    field SFGAO_CANCOPY
+    field SFGAO_CANMOVE
+    field SFGAO_CANLINK
+    field SFGAO_STORAGE
+    field SFGAO_CANRENAME
+    field SFGAO_CANDELETE
+    field SFGAO_HASPROPSHEET
+    field SFGAO_DROPTARGET
+    field SFGAO_CAPABILITYMASK
+    field SFGAO_PLACEHOLDER
+    field SFGAO_SYSTEM
+    field SFGAO_ENCRYPTED
+    field SFGAO_ISSLOW
+    field SFGAO_GHOSTED
+    field SFGAO_LINK
+    field SFGAO_SHARE
+    field SFGAO_READONLY
+    field SFGAO_HIDDEN
+    field SFGAO_DISPLAYATTRMASK
+    field SFGAO_FILESYSANCESTOR
+    field SFGAO_FOLDER
+    field SFGAO_FILESYSTEM
+    field SFGAO_HASSUBFOLDER
+    field SFGAO_CONTENTSMASK
+    field SFGAO_VALIDATE
+    field SFGAO_REMOVABLE
+    field SFGAO_COMPRESSED
+    field SFGAO_BROWSABLE
+    field SFGAO_NONENUMERATED
+    field SFGAO_NEWCONTENT
+    field SFGAO_CANMONIKER
+    field SFGAO_HASSTORAGE
+    field SFGAO_STREAM
+    field SFGAO_STORAGEANCESTOR
+    field SFGAO_STORAGECAPMASK
+    field SFGAO_PKEYSFGAOMASK
+
+## Windows.Win32.System.Variant (2)
+- VARENUM  [methods=0 fields=53 flags=0x100]
+    field value__
+    field VT_EMPTY
+    field VT_NULL
+    field VT_I2
+    field VT_I4
+    field VT_R4
+    field VT_R8
+    field VT_CY
+    field VT_DATE
+    field VT_BSTR
+    field VT_DISPATCH
+    field VT_ERROR
+    field VT_BOOL
+    field VT_VARIANT
+    field VT_UNKNOWN
+    field VT_DECIMAL
+    field VT_I1
+    field VT_UI1
+    field VT_UI2
+    field VT_UI4
+    field VT_I8
+    field VT_UI8
+    field VT_INT
+    field VT_UINT
+    field VT_VOID
+    field VT_HRESULT
+    field VT_PTR
+    field VT_SAFEARRAY
+    field VT_CARRAY
+    field VT_USERDEFINED
+    field VT_LPSTR
+    field VT_LPWSTR
+    field VT_RECORD
+    field VT_INT_PTR
+    field VT_UINT_PTR
+    field VT_FILETIME
+    field VT_BLOB
+    field VT_STREAM
+    field VT_STORAGE
+    field VT_STREAMED_OBJECT
+    field VT_STORED_OBJECT
+    field VT_BLOB_OBJECT
+    field VT_CF
+    field VT_CLSID
+    field VT_VERSIONED_STREAM
+    field VT_BSTR_BLOB
+    field VT_VECTOR
+    field VT_ARRAY
+    field VT_BYREF
+    field VT_RESERVED
+    field VT_ILLEGAL
+    field VT_ILLEGALMASKED
+    field VT_TYPEMASK
+- VARIANT_unmanaged  [methods=52 fields=1 flags=0x100108]
+    field Anonymous
+    get_vt() : ?et192
+    get_wReserved1() : ?
+    get_wReserved2() : ?
+    get_wReserved3() : ?
+    get_llVal() : ?
+    get_lVal() : ?
+    get_bVal() : ?
+    get_iVal() : ?
+    get_fltVal() : ?
+    get_dblVal() : ?
+    get_boolVal() : ?et188
+    get___OBSOLETE__VARIANT_BOOL() : ?et188
+    get_scode() : ?
+    get_cyVal() : ?et248
+    get_date() : ?
+    get_bstrVal() : ?et136
+    get_punkVal(?et100) : ?et129
+    get_pdispVal(?) : ?et129
+    get_parray(?et112) : ?et129
+    get_pbVal() : ?
+    get_piVal() : ?
+    get_plVal() : ?
+    get_pllVal() : ?
+    get_pfltVal() : ?
+    get_pdblVal() : ?
+    get_pboolVal(?et188) : ?et128
+    get___OBSOLETE__VARIANT_PBOOL(?et188) : ?et128
+    get_pscode() : ?
+    get_pcyVal(?et248) : ?et128
+    get_pdate() : ?
+    get_pbstrVal(?et136) : ?et128
+    get_ppunkVal() : TypeDef#0
+    get_ppdispVal() : TypeDef#0
+    get_pparray() : TypeDef#0
+    get_pvarVal(?et196) : ?et128
+    get_byref() : ?
+    get_cVal() : ?et140
+    get_uiVal() : ?
+    get_ulVal() : ?
+    get_ullVal() : ?
+    get_intVal() : ?
+    get_uintVal() : ?
+    get_pdecVal(?et144) : ?et128
+    get_pcVal() : ?et180
+    get_puiVal() : ?
+    get_pulVal() : ?
+    get_pullVal() : ?
+    get_pintVal() : ?
+    get_puintVal() : ?
+    get_pvRecord() : ?
+    get_pRecInfo(?et212) : ?et128
+    get_decVal() : ?et144
+
+## Windows.Win32.UI.Shell (6)
+- IShellItem  [methods=5 fields=0 flags=0x1010a0]
+    BindToHandler(TypeDef#71557472*, ?et128, ?et133, System.Object&) : System.Object
+    GetParent() : ?et96
+    GetDisplayName() : TypeDef#0*
+    GetAttributes(TypeDef#0*) : ?et200
+    Compare(System.Int32&) : System.UInt32
+- IShellLinkW  [methods=18 fields=0 flags=0x1010a0]
+    GetPath(System.Int32, TypeDef#0*) : ?et184
+    GetIDList() : TypeDef#0
+    SetIDList() : ?et120
+    GetDescription(System.Int32) : ?et184
+    SetDescription() : ?et172
+    GetWorkingDirectory(System.Int32) : ?et184
+    SetWorkingDirectory() : ?et172
+    GetArguments(System.Int32) : ?et184
+    SetArguments() : ?et172
+    GetHotkey() : ?
+    SetHotkey() : ?
+    GetShowCmd() : ?et92
+    SetShowCmd() : ?
+    GetIconLocation(System.Int32, System.Int32&) : ?et184
+    SetIconLocation(System.Int32) : ?et172
+    SetRelativePath(System.UInt32) : ?et172
+    Resolve(System.UInt32) : ?et164
+    SetPath() : ?et172
+- ShellLink  [methods=1 fields=0 flags=0x101000]
+    .ctor() : ?
+- SIGDN  [methods=0 fields=11 flags=0x100]
+    field value__
+    field SIGDN_NORMALDISPLAY
+    field SIGDN_PARENTRELATIVEPARSING
+    field SIGDN_DESKTOPABSOLUTEPARSING
+    field SIGDN_PARENTRELATIVEEDITING
+    field SIGDN_DESKTOPABSOLUTEEDITING
+    field SIGDN_FILESYSPATH
+    field SIGDN_URL
+    field SIGDN_PARENTRELATIVEFORADDRESSBAR
+    field SIGDN_PARENTRELATIVE
+    field SIGDN_PARENTRELATIVEFORUI
+- SLGP_FLAGS  [methods=0 fields=5 flags=0x100]
+    field value__
+    field SLGP_SHORTPATH
+    field SLGP_UNCPRIORITY
+    field SLGP_RAWPATH
+    field SLGP_RELATIVEPRIORITY
+- SLR_FLAGS  [methods=0 fields=16 flags=0x100]
+    field value__
+    field SLR_NONE
+    field SLR_NO_UI
+    field SLR_ANY_MATCH
+    field SLR_UPDATE
+    field SLR_NOUPDATE
+    field SLR_NOSEARCH
+    field SLR_NOTRACK
+    field SLR_NOLINKINFO
+    field SLR_INVOKE_MSI
+    field SLR_NO_UI_WITH_MSG_PUMP
+    field SLR_OFFER_DELETE_WITHOUT_FILE
+    field SLR_KNOWNFOLDER
+    field SLR_MACHINE_IN_LOCAL_TARGET
+    field SLR_UPDATE_MACHINE_AND_SID
+    field SLR_NO_OBJECT_ID
+
+## Windows.Win32.UI.Shell.Common (2)
+- ITEMIDLIST  [methods=0 fields=1 flags=0x100108]
+    field mkid
+- SHITEMID  [methods=1 fields=2 flags=0x100108]
+    field cb
+    field abID
+    SizeOf() : ?
+
+## Windows.Win32.UI.Shell.PropertiesSystem (1)
+- IPropertyStore  [methods=5 fields=0 flags=0x1010a0]
+    GetCount() : ?
+    GetAt() : TypeDef#0
+    GetValue(?et176, TypeDef#0&) : ?et128
+    SetValue(?et176, ?et130, ?&) : ?et128
+    Commit() : ?
+
+## Windows.Win32.UI.WindowsAndMessaging (1)
+- SHOW_WINDOW_CMD  [methods=0 fields=16 flags=0x100]
+    field value__
+    field SW_HIDE
+    field SW_SHOWNORMAL
+    field SW_NORMAL
+    field SW_SHOWMINIMIZED
+    field SW_SHOWMAXIMIZED
+    field SW_MAXIMIZE
+    field SW_SHOWNOACTIVATE
+    field SW_SHOW
+    field SW_MINIMIZE
+    field SW_SHOWMINNOACTIVE
+    field SW_SHOWNA
+    field SW_RESTORE
+    field SW_SHOWDEFAULT
+    field SW_FORCEMINIMIZE
+    field SW_MAX

@@ -1,0 +1,82 @@
+elevated: true
+manage-volume privilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0 luid=00000000:0000001c
+token privileges:
+    luid:00000000:00000000 attributes=0x3
+    luid:00000000:00000000 attributes=0x5
+    luid:00000000:00000000 attributes=0x7
+    luid:00000000:00000000 attributes=0x8
+    luid:00000000:00000000 attributes=0x9
+    luid:00000000:00000000 attributes=0xa
+    luid:00000000:00000000 attributes=0xb
+    luid:00000000:00000000 attributes=0xc
+    luid:00000000:00000000 attributes=0xd
+    luid:00000000:00000000 attributes=0xe
+    luid:00000000:00000000 attributes=0xf
+    luid:00000000:00000000 attributes=0x11
+    luid:00000000:00000000 attributes=0x12
+    luid:00000000:00000000 attributes=0x13
+    luid:00000000:00000000 attributes=0x14
+    luid:00000000:00000000 attributes=0x16
+    luid:00000000:00000000 attributes=0x17
+    luid:00000000:00000003 attributes=0x18
+    luid:00000000:00000000 attributes=0x19
+    luid:00000000:00000000 attributes=0x1c
+    luid:00000000:00000002 attributes=0x1d
+    luid:00000000:00000003 attributes=0x1e
+    luid:00000000:00000003 attributes=0x21
+    luid:00000000:00000000 attributes=0x22
+    luid:00000000:00000000 attributes=0x23
+    luid:00000000:00000000 attributes=0x24
+    luid:00000000:00000000 attributes=0x0
+raw token privilege buffer: 328 bytes
+    1b 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00
+    03 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00
+    00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00
+    00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00
+    09 00 00 00 00 00 00 00 00 00 00 00 0a 00 00 00
+    00 00 00 00 00 00 00 00 0b 00 00 00 00 00 00 00
+    00 00 00 00 0c 00 00 00 00 00 00 00 00 00 00 00
+    0d 00 00 00 00 00 00 00 00 00 00 00 0e 00 00 00
+    SeChangeNotifyPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeBackupPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeRestorePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeManageVolumePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeTakeOwnershipPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+NTFS volumes: 2
+  \\.\C: C:\ label="home"
+    journal id=0x1dceb71cd496ff0 first=0x7dc000000 next=0x7eddb5270 max_size=268435456
+  \\.\D: D:\ label="disk"
+    journal: unavailable
+  C:\ -> 505027 entries (87429 folders, 417598 files) in 383.2605623s
+      frn=0x13000000000128 parent=0x20000002b814f a5a9a0356a4ea790_0
+      frn=0x10b000000000129 parent=0x65000000015e2c f_000033
+      frn=0xd600000000012a parent=0x400000002b2cf LOG
+      frn=0x4900000000012b parent=0x2000000311544 LOG.old
+      frn=0x2100000000012c parent=0x300000030ee26 ef2f9a33f2bdeda4745007b06b03b3fd_thumb.jpg
+  D:\ -> error: the control code was rejected (38)
+the enumeration parameter shapes are a diagnostic; skipping them
+index built: 505027 entries in 195.5287ms
+index saved: 29868736 bytes in 84.496ms
+index loaded back: 505027 entries in 39.8256ms
+  query "report" -> 5 hits in 6.4377ms
+      Report  C:\Report
+      report  C:\844f114cdc5f463ca4ed0dc4d3fde7da\artifacts\report
+      report  C:\eb2a72adbd724bc8b598306b7d6ad1c8\artifacts\report
+  query "*.pdf" -> 5 hits in 9.3535ms
+      1.pdf  C:\jade\docbook\images\callouts\1.pdf
+      2.pdf  C:\jade\docbook\images\callouts\2.pdf
+      3.pdf  C:\jade\docbook\images\callouts\3.pdf
+  query "folder:" -> 5 hits in 8.343ms
+      0  C:\matlab\maps\mapdata\maptiles\NaturalEarth\darkwater\v1\5\0
+      0  C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\0
+      0  C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Windows\0
+  query "config" -> 5 hits in 2.8734ms
+      CONFIG  C:\Windows\Microsoft.NET\Framework\v2.0.50727\CONFIG
+      Config  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config
+      Config  C:\Config
+  query "everything" -> 1 hits in 913.8µs
+      Duck against everything.essentialsound  C:\Presets\EssentialSound\Default\music\Duck against everything.essentialsound
+  query "README" -> 5 hits in 3.4858ms
+      README  C:\EBWebView\Default\README
+      README  C:\8639ebdb8429bda672c00b09745d3a3c\profile_main\README
+      README  C:\8639ebdb8429bda672c00b09745d3a3c\profile_explorer\README

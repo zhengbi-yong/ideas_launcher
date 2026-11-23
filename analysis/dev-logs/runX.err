@@ -1,0 +1,160 @@
+[2026-11-02T06:53:00.449Z INFO  launcher_app::app] global hotkey active: Ctrl + Space
+[2026-11-02T06:53:00.450Z INFO  launcher_app::app] native window handle: 0x3915ba
+[2026-11-02T06:53:00.450Z INFO  launcher_app] launcher initialised in 289.7723ms
+[2026-11-02T06:53:00.452Z INFO  launcher_app::app] layout: viewport_rect=[[0.0 0.0] - [680.0 460.0]] ui.max_rect=[[0.0 0.0] - [680.0 460.0]] ui.min_rect=[[0.0 0.0] - [0.0 0.0]] size=[680.0 460.0]
+[2026-11-02T06:53:05.898Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:53:05.899Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:53:53.366Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:53:53.375Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:53:53.755Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:53:53.762Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:53:54.252Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:53:54.253Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:53:59.520Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:53:59.529Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:04.817Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:04.830Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:10.060Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:10.069Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:15.332Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:15.340Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:20.600Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:20.600Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:25.868Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:25.870Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:31.142Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:31.150Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:36.414Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:36.423Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:41.681Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:41.690Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:46.957Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:46.965Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:52.235Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:52.235Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:54:57.503Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:54:57.504Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:02.786Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:02.794Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:08.053Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:08.062Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:13.335Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:13.344Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:18.603Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:18.604Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:23.878Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:23.879Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:29.150Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:29.151Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:34.426Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:34.435Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:39.706Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:39.714Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:44.978Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:44.979Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:50.253Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:50.254Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:55:55.523Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:55:55.532Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:56:31.991Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:56:32.000Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:56:37.268Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:56:37.268Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:56:42.529Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:56:42.530Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:56:47.803Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:56:47.804Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:56:53.077Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:56:53.086Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:56:58.355Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:56:58.355Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:03.623Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:03.631Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:08.893Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:08.894Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:14.154Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:14.163Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:19.422Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:19.430Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:24.697Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:24.706Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:29.965Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:29.965Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:35.234Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:35.235Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:40.500Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:40.500Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:45.781Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:45.781Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:51.083Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:51.084Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:57:56.320Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:57:56.320Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:01.584Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:01.585Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:06.856Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:06.863Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:12.133Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:12.136Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:17.405Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:17.405Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:22.670Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:22.671Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:27.958Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:27.966Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:33.230Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:33.231Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:58:38.496Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:58:38.497Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:14.390Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:14.391Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:19.678Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:19.686Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:24.948Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:24.956Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:30.200Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:30.208Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:35.452Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:35.453Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:40.730Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:40.735Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:45.986Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:45.987Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:51.258Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:51.266Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:59:56.531Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:59:56.531Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:01.791Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:01.792Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:07.068Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:07.076Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:12.351Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:12.360Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:17.622Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:17.633Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:22.887Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:22.896Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:28.154Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:28.155Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:33.417Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:33.418Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:38.696Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:38.705Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:43.971Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:43.980Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:49.233Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:49.242Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:54.491Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:54.492Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:00:59.769Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:00:59.777Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:01:05.042Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:01:05.050Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:01:10.310Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:01:10.318Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:01:15.576Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:01:15.584Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:01:20.851Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:01:20.852Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:03:09.827Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:03:09.836Z INFO  launcher_app::app] hotkey fired

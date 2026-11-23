@@ -1,0 +1,1050 @@
+# Types in Flow.Launcher.Plugin
+
+
+## (global) (16)
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__4_0
+    .cctor() : ?
+    .ctor() : ?
+    <TryDeleteDirectoryRobust>b__4_0() : ?
+- <>c__DisplayClass0_0  [methods=2 fields=1 flags=0x100103]
+    field list
+    .ctor() : ?
+    <GetDisplayMonitors>b__0(TypeDef#0) : ?et80
+- <>c__DisplayClass1_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field query
+    .ctor() : ?
+    <Flow.Launcher.Plugin.IAsyncDialogJump.QueryDialogJumpAsync>b__0(System.Void, TypeDef#0) : ?et253
+- <>c__DisplayClass1_0  [methods=2 fields=2 flags=0x100103]
+    field nearestMonitor
+    field nearestMonitorInfo
+    .ctor() : ?
+    <GetNearestDisplayMonitor>b__0(TypeDef#0) : ?et80
+- <>c__DisplayClass2_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field context
+    .ctor() : ?
+    <Flow.Launcher.Plugin.IAsyncPlugin.InitAsync>b__0() : ?
+- <>c__DisplayClass2_0  [methods=2 fields=2 flags=0x100103]
+    field primaryMonitor
+    field primaryMonitorInfo
+    .ctor() : ?
+    <GetPrimaryDisplayMonitor>b__0(TypeDef#0) : ?et80
+- <>c__DisplayClass3_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field query
+    .ctor() : ?
+    <Flow.Launcher.Plugin.IAsyncPlugin.QueryAsync>b__0(System.Void, TypeDef#0) : ?et253
+- <>c__DisplayClass3_0  [methods=2 fields=2 flags=0x100103]
+    field cursorMonitor
+    field cursorMonitorInfo
+    .ctor() : ?
+    <GetCursorDisplayMonitor>b__0(TypeDef#0) : ?et80
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__Show
+- <>O  [methods=0 fields=2 flags=0x100183]
+    field <0>__CheckSecurityThread
+    field <1>__Start
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <Value>e__FixedBuffer  [methods=0 fields=1 flags=0x11010a]
+    field FixedElementField
+- EnumThreadDelegate  [methods=4 fields=0 flags=0x102]
+    .ctor() : ?
+    Invoke() : ?
+    BeginInvoke(TypeDef#0) : System.IntPtr
+    EndInvoke() : ?
+- FlowLauncherPlugin_ProcessedByFody  [methods=0 fields=2 flags=0x0]
+    field FodyVersion
+    field PropertyChanged
+- IconDelegate  [methods=4 fields=0 flags=0x102]
+    .ctor() : ?
+    Invoke() : ?
+    BeginInvoke(System.Object) : ?et105
+    EndInvoke() : TypeDef#0
+- PreviewInfo  [methods=23 fields=6 flags=0x100002]
+    field <PreviewImagePath>k__BackingField
+    field <IsMedia>k__BackingField
+    field <Description>k__BackingField
+    field <PreviewDelegate>k__BackingField
+    field <FilePath>k__BackingField
+    field <Default>k__BackingField
+    get_EqualityContract() : ?
+    get_PreviewImagePath() : ?
+    set_PreviewImagePath() : ?
+    get_IsMedia() : ?
+    set_IsMedia() : ?
+    get_Description() : ?
+    set_Description() : ?
+    get_PreviewDelegate() : ?
+    set_PreviewDelegate() : ?[,]
+    get_FilePath() : ?
+    set_FilePath() : ?
+    get_Default() : ?
+    ToString() : ?
+    PrintMembers() : ?et233
+    op_Inequality(TypeDef#0) : System.IntPtr
+    op_Equality(TypeDef#0) : System.IntPtr
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : System.IntPtr
+    <Clone>$() : ?
+    .ctor() : System.IntPtr
+    .ctor() : ?
+    .cctor() : ?
+
+## Flow.Launcher.Plugin (46)
+- ActionContext  [methods=3 fields=1 flags=0x100001]
+    field <SpecialKeyState>k__BackingField
+    get_SpecialKeyState() : ?
+    set_SpecialKeyState() : ?
+    .ctor() : ?
+- ActualApplicationThemeChangedEventArgs  [methods=3 fields=1 flags=0x100001]
+    field <IsDark>k__BackingField
+    get_IsDark() : ?
+    set_IsDark(System.Boolean) : System.Void
+    .ctor() : ?
+- ActualApplicationThemeChangedEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke(?et140) : ?et128
+    BeginInvoke(System.Object) : TypeDef#440705824
+    EndInvoke() : ?
+- AfterFlowLauncherQueryEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke() : ?et136
+    BeginInvoke(?et136, TypeDef#0) : ?et128
+    EndInvoke() : ?
+- AllowedLanguage  [methods=5 fields=10 flags=0x100181]
+    field Python
+    field PythonV2
+    field CSharp
+    field FSharp
+    field Executable
+    field ExecutableV2
+    field TypeScript
+    field TypeScriptV2
+    field JavaScript
+    field JavaScriptV2
+    IsDotNet() : ?
+    IsPython() : ?
+    IsNodeJs() : ?
+    IsExecutable() : ?
+    IsAllowed() : ?
+- BaseModel  [methods=4 fields=1 flags=0x100001]
+    field PropertyChanged
+    add_PropertyChanged() : ?et173
+    remove_PropertyChanged() : ?et173
+    OnPropertyChanged() : ?
+    .ctor() : ?
+- DialogJumpResult  [methods=5 fields=1 flags=0x100001]
+    field <DialogJumpPath>k__BackingField
+    get_DialogJumpPath() : ?
+    set_DialogJumpPath(System.String) : System.Void
+    Clone() : ?
+    From(System.String&) : ?et129
+    .ctor() : ?
+- FlowLauncherGlobalKeyboardEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke() : TypeDef#0
+    BeginInvoke(TypeDef#119162006) : System.Int32
+    EndInvoke() : ?
+- FlowLauncherKeyDownEventArgs  [methods=5 fields=2 flags=0x100001]
+    field <Query>k__BackingField
+    field <keyEventArgs>k__BackingField
+    get_Query() : ?
+    set_Query() : ?
+    get_keyEventArgs() : ?
+    set_keyEventArgs() : ?et221
+    .ctor() : ?
+- FlowLauncherKeyDownEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke() : ?et132
+    BeginInvoke(?et132, TypeDef#0) : ?et128
+    EndInvoke() : ?
+- FlowLauncherQueryEventArgs  [methods=3 fields=1 flags=0x100001]
+    field <Query>k__BackingField
+    get_Query() : ?
+    set_Query() : System.Single
+    .ctor() : ?
+- GlyphInfo  [methods=16 fields=2 flags=0x100001]
+    field <FontFamily>k__BackingField
+    field <Glyph>k__BackingField
+    .ctor() : ?
+    get_EqualityContract() : ?
+    get_FontFamily() : ?
+    set_FontFamily(System.String) : System.Void
+    get_Glyph() : ?
+    set_Glyph(System.String) : System.Void
+    ToString() : ?
+    PrintMembers() : ?et233
+    op_Inequality(TypeDef#0) : ?et148
+    op_Equality(TypeDef#0) : ?et148
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?et148
+    <Clone>$() : ?
+    .ctor() : ?et148
+    Deconstruct() : System.String&
+- IAsyncDialogJump  [methods=1 fields=0 flags=0x1000a1]
+    QueryDialogJumpAsync(System.Void, TypeSpec#8347652<System.Single, TypeDef#0, ?, ?>) : ?et249
+- IAsyncExternalPreview  [methods=4 fields=0 flags=0x1000a1]
+    OpenPreviewAsync(System.Boolean) : System.String
+    ClosePreviewAsync() : ?
+    SwitchPreviewAsync(System.Boolean) : System.String
+    AllowAlwaysPreview() : ?
+- IAsyncHomeQuery  [methods=1 fields=0 flags=0x1000a1]
+    HomeQueryAsync(System.Void, TypeSpec#8347652<?et129, System.Void>) : ?et249
+- IAsyncPlugin  [methods=2 fields=0 flags=0x1000a1]
+    QueryAsync(System.Void, TypeSpec#8347652<?et129, System.Single, TypeDef#0, ?, ?>) : ?et249
+    InitAsync() : TypeDef#0
+- IAsyncReloadable  [methods=1 fields=0 flags=0x1000a1]
+    ReloadDataAsync() : ?
+- IContextMenu  [methods=1 fields=0 flags=0x1000a1]
+    LoadContextMenus(System.Void, TypeRef#541361184, ?&) : ?et253
+- IDialogJump  [methods=2 fields=0 flags=0x1000a1]
+    QueryDialogJump(System.Void, TypeDef#52446361) : ?et253
+    Flow.Launcher.Plugin.IAsyncDialogJump.QueryDialogJumpAsync(System.Void, TypeSpec#8347652<System.Single, TypeDef#0, ?, ?>) : ?et249
+- IDialogJumpDialog  [methods=1 fields=0 flags=0x1000a1]
+    CheckDialogWindow() : System.IntPtr
+- IDialogJumpDialogWindow  [methods=2 fields=0 flags=0x1000a1]
+    get_Handle() : ?
+    GetCurrentTab() : ?
+- IDialogJumpDialogWindowTab  [methods=6 fields=0 flags=0x1000a1]
+    get_Handle() : ?
+    GetCurrentFolder() : ?
+    GetCurrentFile() : ?
+    JumpFolder() : ?
+    JumpFile() : ?
+    Open() : ?
+- IDialogJumpExplorer  [methods=1 fields=0 flags=0x1000a1]
+    CheckExplorerWindow() : System.IntPtr
+- IDialogJumpExplorerWindow  [methods=2 fields=0 flags=0x1000a1]
+    get_Handle() : ?
+    GetExplorerPath() : ?
+- IFeatures  [methods=0 fields=0 flags=0x1000a1]
+- IHomeQuery  [methods=2 fields=0 flags=0x1000a1]
+    HomeQuery(System.Void, TypeDef#0) : ?et253
+    Flow.Launcher.Plugin.IAsyncHomeQuery.HomeQueryAsync(System.Void, TypeSpec#8347652<?et129, System.Void>) : ?et249
+- IPlugin  [methods=4 fields=0 flags=0x1000a1]
+    Query(System.Void, TypeRef#541361184, System.Single) : ?et253
+    Init() : ?et0
+    Flow.Launcher.Plugin.IAsyncPlugin.InitAsync() : TypeDef#0
+    Flow.Launcher.Plugin.IAsyncPlugin.QueryAsync(System.Void, TypeSpec#8347652<?et129, System.Single, TypeDef#0, ?, ?>) : ?et249
+- IPluginI18n  [methods=3 fields=0 flags=0x1000a1]
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    OnCultureInfoChanged() : TypeDef#0<>
+- IPublicAPI  [methods=78 fields=0 flags=0x1000a1]
+    ChangeQuery() : ?
+    RestartApp() : ?
+    ShellRun() : ?
+    CopyToClipboard() : System.Boolean
+    SaveAppAllSettings() : ?
+    SavePluginSettings() : ?
+    ReloadAllPluginData() : ?
+    CheckForNewUpdate() : ?
+    ShowMsgError() : ?
+    ShowMsgErrorWithButton() : TypeDef#0
+    ShowMainWindow() : ?
+    FocusQueryTextBox() : ?
+    HideMainWindow() : ?
+    IsMainWindowVisible() : ?
+    add_VisibilityChanged() : ?
+    remove_VisibilityChanged() : ?
+    ShowMsg() : System.String
+    ShowMsg(System.Boolean) : System.String
+    ShowMsgWithButton() : TypeRef#58950752
+    ShowMsgWithButton(System.Boolean) : TypeRef#58950752
+    OpenSettingDialog() : ?
+    GetTranslation() : ?
+    GetAllPlugins(System.Void, TypeDef#0) : ?et253
+    GetAllInitializedPlugins(System.Void, TypeDef#0) : ?et253
+    RegisterGlobalKeyboardCallback(System.UIntPtr, System.SByte, System.Int32, System.Int32, TypeDef#0) : ?et129
+    RemoveGlobalKeyboardCallback(System.UIntPtr, System.SByte, System.Int32, System.Int32, TypeDef#0) : ?et129
+    FuzzySearch(System.String) : System.String
+    HttpGetStringAsync(System.Void, System.String, System.String, TypeDef#0) : ?et249
+    HttpGetStreamAsync(System.Void, TypeRef#71534432, ?et129, System.Void) : ?et249
+    HttpDownloadAsync(System.String, TypeSpec#4743236<>) : System.String
+    AddActionKeyword() : ?
+    RemoveActionKeyword() : ?
+    ActionKeywordAssigned() : ?
+    LogDebug() : System.String
+    LogInfo() : System.String
+    LogWarn() : System.String
+    LogError() : System.String
+    LogException() : TypeDef#0
+    LoadSettingJsonStorage() : ?
+    SaveSettingJsonStorage() : ?
+    OpenDirectory() : ?
+    OpenWebUrl(TypeRef#8410436<>) : ?et41
+    OpenWebUrl() : TypeDef#0
+    OpenUrl(TypeRef#8410436<>) : ?et41
+    OpenUrl() : TypeDef#0
+    OpenAppUri() : ?et41
+    OpenAppUri() : ?
+    ToggleGameMode() : ?
+    SetGameMode() : ?
+    IsGameModeOn() : ?
+    ReQuery() : ?
+    BackToQueryResults() : ?
+    ShowMsgBox(System.String, TypeRef#541346912, ?et53, TypeDef#0) : System.String
+    ShowProgressBoxAsync(TypeSpec#9330756<System.Void, System.Double, TypeRef#541360480, TypeDef#0, ?, ?, ?, ?>) : System.String
+    StartLoadingBar() : ?
+    StopLoadingBar() : ?
+    GetAvailableThemes(System.Void, TypeDef#0) : ?et253
+    GetCurrentTheme() : ?
+    SetCurrentTheme() : ?et60
+    SavePluginCaches() : ?
+    LoadCacheBinaryStorageAsync(!!3584, System.String, !!0) : System.Void
+    SaveCacheBinaryStorageAsync() : System.String
+    LoadImageAsync(System.Void, TypeRef#8622176, System.Boolean) : ?et61
+    UpdatePluginManifestAsync(System.Void, System.Boolean, System.Boolean, TypeDef#0) : ?et249
+    GetPluginManifest(System.Void, TypeDef#0) : ?et69
+    PluginModified() : ?
+    UpdatePluginAsync(System.Void, System.Boolean, TypeRef#541360416, System.Object, System.String) : ?et249
+    InstallPlugin(System.String) : System.Object
+    UninstallPluginAsync(System.Void, System.Boolean, TypeDef#0) : ?et249
+    StopwatchLogDebug() : TypeDef#0
+    StopwatchLogDebugAsync(System.Void, System.Int64, System.String, System.String, TypeSpec#4350020<>) : ?et249
+    StopwatchLogInfo() : TypeDef#0
+    StopwatchLogInfoAsync(System.Void, System.Int64, System.String, System.String, TypeSpec#4350020<>) : ?et249
+    IsApplicationDarkTheme() : ?
+    add_ActualApplicationThemeChanged() : ?
+    remove_ActualApplicationThemeChanged() : ?
+    GetDataDirectory() : ?
+    GetLogDirectory() : ?
+- IReloadable  [methods=1 fields=0 flags=0x1000a1]
+    ReloadData() : ?
+- IResultUpdated  [methods=2 fields=0 flags=0x1000a1]
+    add_ResultsUpdated() : ?et236
+    remove_ResultsUpdated() : ?et236
+- ISavable  [methods=1 fields=0 flags=0x1000a1]
+    Save() : ?
+- ISettingProvider  [methods=1 fields=0 flags=0x1000a1]
+    CreateSettingPanel() : ?
+- KeyEvent  [methods=0 fields=5 flags=0x101]
+    field value__
+    field WM_KEYDOWN
+    field WM_KEYUP
+    field WM_SYSKEYUP
+    field WM_SYSKEYDOWN
+- PluginInitContext  [methods=6 fields=2 flags=0x100001]
+    field <CurrentPluginMetadata>k__BackingField
+    field <API>k__BackingField
+    .ctor() : ?
+    .ctor(TypeDef#0) : System.SByte
+    get_CurrentPluginMetadata() : ?
+    set_CurrentPluginMetadata() : System.SByte
+    get_API() : ?
+    set_API() : ?et224
+- PluginMetadata  [methods=50 fields=24 flags=0x100001]
+    field <ID>k__BackingField
+    field <Name>k__BackingField
+    field <Author>k__BackingField
+    field <Version>k__BackingField
+    field <Language>k__BackingField
+    field <Description>k__BackingField
+    field <Website>k__BackingField
+    field <Disabled>k__BackingField
+    field <HomeDisabled>k__BackingField
+    field <ExecuteFilePath>k__BackingField
+    field <ExecuteFileName>k__BackingField
+    field <AssemblyName>k__BackingField
+    field _pluginDirectory
+    field <ActionKeyword>k__BackingField
+    field <ActionKeywords>k__BackingField
+    field <HideActionKeywordPanel>k__BackingField
+    field <SearchDelayTime>k__BackingField
+    field <IcoPath>k__BackingField
+    field <Priority>k__BackingField
+    field <InitTime>k__BackingField
+    field <AvgQueryTime>k__BackingField
+    field <QueryCount>k__BackingField
+    field <PluginSettingsDirectoryPath>k__BackingField
+    field <PluginCacheDirectoryPath>k__BackingField
+    get_ID() : ?
+    set_ID() : ?
+    get_Name() : ?
+    set_Name() : ?
+    get_Author() : ?
+    set_Author() : ?
+    get_Version() : ?
+    set_Version() : ?
+    get_Language() : ?
+    set_Language() : ?
+    get_Description() : ?
+    set_Description() : ?
+    get_Website() : ?
+    set_Website() : ?
+    get_Disabled() : ?
+    set_Disabled() : ?
+    get_HomeDisabled() : ?
+    set_HomeDisabled() : ?
+    get_ExecuteFilePath() : ?
+    set_ExecuteFilePath() : ?
+    get_ExecuteFileName() : ?
+    set_ExecuteFileName() : ?
+    get_AssemblyName() : ?
+    set_AssemblyName() : ?
+    get_PluginDirectory() : ?
+    set_PluginDirectory() : ?
+    get_ActionKeyword() : ?
+    set_ActionKeyword() : ?
+    get_ActionKeywords(System.Void, System.String) : ?et253
+    set_ActionKeywords(?et253, System.Void, System.String) : ?et128
+    get_HideActionKeywordPanel() : ?
+    set_HideActionKeywordPanel() : ?
+    get_SearchDelayTime(System.Int32) : System.Void
+    set_SearchDelayTime(System.Void, System.Int32) : ?et85
+    get_IcoPath() : ?
+    set_IcoPath() : ?
+    get_Priority() : ?
+    set_Priority() : ?
+    get_InitTime() : ?
+    set_InitTime() : ?
+    get_AvgQueryTime() : ?
+    set_AvgQueryTime() : ?
+    get_QueryCount() : ?
+    set_QueryCount() : ?
+    get_PluginSettingsDirectoryPath() : ?
+    set_PluginSettingsDirectoryPath() : ?
+    get_PluginCacheDirectoryPath() : ?
+    set_PluginCacheDirectoryPath() : ?
+    ToString() : ?
+    .ctor() : ?
+- PluginPair  [methods=8 fields=2 flags=0x100001]
+    field <Plugin>k__BackingField
+    field <Metadata>k__BackingField
+    get_Plugin() : ?
+    set_Plugin() : ?et164
+    get_Metadata() : ?
+    set_Metadata() : System.SByte
+    ToString() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    .ctor() : ?
+- Query  [methods=23 fields=11 flags=0x100001]
+    field <OriginalQuery>k__BackingField
+    field <TrimmedQuery>k__BackingField
+    field <IsReQuery>k__BackingField
+    field <IsHomeQuery>k__BackingField
+    field <Search>k__BackingField
+    field <SearchTerms>k__BackingField
+    field TermSeparator
+    field ActionKeywordSeparator
+    field GlobalPluginWildcardSign
+    field <ActionKeyword>k__BackingField
+    field _secondToEndSearch
+    get_OriginalQuery() : ?
+    set_OriginalQuery(System.String) : System.Void
+    get_RawQuery() : ?
+    set_RawQuery(System.String) : System.Void
+    get_TrimmedQuery() : ?
+    set_TrimmedQuery(System.String) : System.Void
+    get_IsReQuery() : ?
+    set_IsReQuery() : ?
+    get_IsHomeQuery() : ?
+    set_IsHomeQuery(System.Boolean) : System.Void
+    get_Search() : ?
+    set_Search(System.String) : System.Void
+    get_SearchTerms() : ?
+    set_SearchTerms(System.String[]) : System.Void
+    get_ActionKeyword() : ?
+    set_ActionKeyword(System.String) : System.Void
+    get_FirstSearch() : ?
+    get_SecondToEndSearch() : ?
+    get_SecondSearch() : ?
+    get_ThirdSearch() : ?
+    SplitSearch() : ?
+    ToString() : ?
+    .ctor() : ?
+- Result  [methods=58 fields=30 flags=0x100001]
+    field MaxScore
+    field _pluginDirectory
+    field _icoPath
+    field _copyText
+    field _badgeIcoPath
+    field <Title>k__BackingField
+    field <SubTitle>k__BackingField
+    field <ActionKeywordAssigned>k__BackingField
+    field <AutoCompleteText>k__BackingField
+    field <RoundedIcon>k__BackingField
+    field Icon
+    field BadgeIcon
+    field <Glyph>k__BackingField
+    field <Action>k__BackingField
+    field <AsyncAction>k__BackingField
+    field <Score>k__BackingField
+    field <TitleHighlightData>k__BackingField
+    field <OriginQuery>k__BackingField
+    field <ContextData>k__BackingField
+    field <PluginID>k__BackingField
+    field <TitleToolTip>k__BackingField
+    field <SubTitleToolTip>k__BackingField
+    field <PreviewPanel>k__BackingField
+    field <ProgressBar>k__BackingField
+    field <ProgressBarColor>k__BackingField
+    field <Preview>k__BackingField
+    field <AddSelectedCount>k__BackingField
+    field <RecordKey>k__BackingField
+    field <ShowBadge>k__BackingField
+    field <QuerySuggestionText>k__BackingField
+    get_Title() : ?
+    set_Title() : ?
+    get_SubTitle() : ?
+    set_SubTitle() : ?
+    get_ActionKeywordAssigned() : ?
+    set_ActionKeywordAssigned() : ?
+    get_CopyText() : ?
+    set_CopyText() : ?
+    get_AutoCompleteText() : ?
+    set_AutoCompleteText() : ?
+    get_IcoPath() : ?
+    set_IcoPath() : ?
+    get_BadgeIcoPath() : ?
+    set_BadgeIcoPath() : ?
+    get_RoundedIcon() : ?
+    set_RoundedIcon() : ?
+    get_Glyph() : ?
+    set_Glyph(TypeDef#0) : System.Void
+    get_Action(System.Boolean, TypeDef#0) : ?et57
+    set_Action(?et57, System.Boolean, TypeDef#0) : ?et129
+    get_AsyncAction(System.Boolean, TypeDef#541345109, ?et61, System.Void, System.Boolean) : ?et57
+    set_AsyncAction(?et57, System.Boolean, TypeDef#541345109, ?et61, System.Void, System.Boolean) : ?et129
+    get_Score() : ?
+    set_Score() : ?
+    get_TitleHighlightData(System.Void, System.Int32) : ?et97
+    set_TitleHighlightData(?et97, System.Void, System.Int32) : ?et129
+    get_OriginQuery() : ?
+    set_OriginQuery() : System.Single
+    get_PluginDirectory() : ?
+    set_PluginDirectory() : ?
+    get_ContextData() : ?
+    set_ContextData() : ?
+    get_PluginID() : ?
+    set_PluginID() : ?
+    get_TitleToolTip() : ?
+    set_TitleToolTip() : ?
+    get_SubTitleToolTip() : ?
+    set_SubTitleToolTip() : ?
+    get_PreviewPanel(System.Void, TypeDef#0) : ?et101
+    set_PreviewPanel(?et101, System.Void, TypeDef#0) : ?et129
+    get_ProgressBar(System.Int32) : System.Void
+    set_ProgressBar(System.Void, System.Int32) : ?et85
+    get_ProgressBarColor() : ?
+    set_ProgressBarColor() : ?
+    get_Preview() : ?
+    set_Preview() : System.IntPtr
+    get_AddSelectedCount() : ?
+    set_AddSelectedCount() : ?
+    get_RecordKey() : ?
+    set_RecordKey() : ?
+    get_ShowBadge() : ?
+    set_ShowBadge() : ?
+    get_QuerySuggestionText() : ?
+    set_QuerySuggestionText() : ?
+    ExecuteAsync(System.Void, System.Boolean, TypeDef#0) : ?et61
+    ToString() : ?
+    Clone() : ?
+    .ctor() : ?
+- ResultItemDropEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke(?et213) : TypeDef#537179232&
+    BeginInvoke(TypeDef#537179232&, ?et213, TypeDef#0) : ?et129
+    EndInvoke() : ?
+- ResultUpdatedEventArgs  [methods=3 fields=3 flags=0x100001]
+    field Results
+    field Query
+    field <Token>k__BackingField
+    get_Token() : ?
+    set_Token(TypeDef#0) : System.Void
+    .ctor() : ?
+- ResultUpdatedEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke(TypeDef#0) : ?et232
+    BeginInvoke(?et232, TypeDef#440712224, System.Object) : ?et128
+    EndInvoke() : ?
+- SpecialKeyState  [methods=11 fields=5 flags=0x100001]
+    field <CtrlPressed>k__BackingField
+    field <ShiftPressed>k__BackingField
+    field <AltPressed>k__BackingField
+    field <WinPressed>k__BackingField
+    field Default
+    get_CtrlPressed() : ?
+    set_CtrlPressed() : ?
+    get_ShiftPressed() : ?
+    set_ShiftPressed() : ?
+    get_AltPressed() : ?
+    set_AltPressed() : ?
+    get_WinPressed() : ?
+    set_WinPressed() : ?
+    ToModifierKeys() : ?
+    .ctor() : ?
+    .cctor() : ?
+- UserPlugin  [methods=40 fields=14 flags=0x100001]
+    field <ID>k__BackingField
+    field <Name>k__BackingField
+    field <Description>k__BackingField
+    field <Author>k__BackingField
+    field <Version>k__BackingField
+    field <Language>k__BackingField
+    field <Website>k__BackingField
+    field <UrlDownload>k__BackingField
+    field <UrlSourceCode>k__BackingField
+    field <LocalInstallPath>k__BackingField
+    field <IcoPath>k__BackingField
+    field <LatestReleaseDate>k__BackingField
+    field <DateAdded>k__BackingField
+    field <MinimumAppVersion>k__BackingField
+    get_EqualityContract() : ?
+    get_ID() : ?
+    set_ID() : ?
+    get_Name() : ?
+    set_Name() : ?
+    get_Description() : ?
+    set_Description() : ?
+    get_Author() : ?
+    set_Author() : ?
+    get_Version() : ?
+    set_Version() : ?
+    get_Language() : ?
+    set_Language() : ?
+    get_Website() : ?
+    set_Website() : ?
+    get_UrlDownload() : ?
+    set_UrlDownload() : ?
+    get_UrlSourceCode() : ?
+    set_UrlSourceCode() : ?
+    get_LocalInstallPath() : ?
+    set_LocalInstallPath() : ?
+    get_IcoPath() : ?
+    set_IcoPath() : ?
+    get_LatestReleaseDate(TypeDef#0) : System.Void
+    set_LatestReleaseDate(System.Void, TypeDef#0) : ?et85
+    get_DateAdded(TypeDef#0) : System.Void
+    set_DateAdded(System.Void, TypeDef#0) : ?et85
+    get_IsFromLocalInstallPath() : ?
+    get_MinimumAppVersion() : ?
+    set_MinimumAppVersion() : ?
+    ToString() : ?
+    PrintMembers() : ?et233
+    op_Inequality(TypeDef#0) : System.Object
+    op_Equality(TypeDef#0) : System.Object
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : System.Object
+    <Clone>$() : ?
+    .ctor() : System.Object
+    .ctor() : ?
+- VisibilityChangedEventArgs  [methods=3 fields=1 flags=0x100001]
+    field <IsVisible>k__BackingField
+    get_IsVisible() : ?
+    set_IsVisible(System.Boolean) : System.Void
+    .ctor() : ?
+- VisibilityChangedEventHandler  [methods=4 fields=0 flags=0x101]
+    .ctor() : ?
+    Invoke(?et128) : ?et128
+    BeginInvoke(System.Object) : TypeDef#440705056
+    EndInvoke() : ?
+
+## Flow.Launcher.Plugin.SharedCommands (3)
+- FilesFolders  [methods=18 fields=1 flags=0x100181]
+    field FileExplorerProgramName
+    CopyAll() : TypeSpec#9330756<>
+    VerifyBothFolderFilesEqual() : TypeSpec#9330756<>
+    RemoveFolderIfExists(TypeDef#0) : TypeRef#58756704
+    TryDeleteDirectoryRobust() : System.Int32
+    LocationExists() : ?
+    FileExists() : ?
+    FileOrLocationExists() : ?
+    OpenPath(TypeDef#0) : TypeRef#58756704
+    OpenFile(TypeSpec#9330756<>) : System.Boolean
+    IsZipFilePath() : ?
+    IsLocationPathString() : ?
+    GetPreviousExistingDirectory(?et57, System.Boolean, System.String, System.Boolean, System.String) : ?et129
+    ReturnPreviousDirectoryIfIncompleteString() : ?
+    PathContains() : System.Boolean
+    EnsureTrailingSlash() : ?
+    ValidateDirectory() : ?
+    ValidateDataDirectory() : ?
+    ResolveAbsolutePath() : ?
+- SearchWeb  [methods=3 fields=0 flags=0x100181]
+    GetDefaultBrowserPath() : ?
+    OpenInBrowserWindow(System.String) : System.Boolean
+    OpenInBrowserTab(System.String) : System.Boolean
+- ShellCommand  [methods=7 fields=1 flags=0x100181]
+    field containsSecurityWindow
+    RunAsDifferentUser() : TypeDef#0
+    CheckSecurityWindow() : ?
+    CheckSecurityThread(TypeDef#0) : ?et64
+    GetWindowTitle() : ?
+    SetProcessStartInfo(System.String, System.String, System.String, System.Boolean) : System.String
+    Execute() : ?et193
+    Execute(?et57, System.Boolean, TypeRef#541372512, ?et197, TypeDef#0) : ?et129
+
+## Flow.Launcher.Plugin.SharedModels (4)
+- MatchResult  [methods=15 fields=5 flags=0x100001]
+    field <Success>k__BackingField
+    field <Score>k__BackingField
+    field _rawScore
+    field <MatchData>k__BackingField
+    field <SearchPrecision>k__BackingField
+    .ctor(?et36) : ?et129
+    .ctor(?et36, TypeSpec#8347652<>) : ?et129
+    get_Success() : ?
+    set_Success() : ?
+    get_Score() : ?
+    set_Score() : ?
+    get_RawScore() : ?
+    set_RawScore() : ?
+    get_MatchData(System.Void, System.Int32) : ?et253
+    set_MatchData(?et253, System.Void, System.Int32) : ?et128
+    get_SearchPrecision() : ?
+    set_SearchPrecision() : ?et36
+    IsSearchPrecisionScoreMet() : ?
+    IsSearchPrecisionScoreMet() : ?
+    ScoreAfterSearchPrecisionFilter() : ?
+- MonitorInfo  [methods=11 fields=4 flags=0x100001]
+    field _monitor
+    field <Name>k__BackingField
+    field <Bounds>k__BackingField
+    field <WorkingArea>k__BackingField
+    GetDisplayMonitors(System.Void, TypeDef#0) : ?et97
+    GetNearestDisplayMonitor() : System.IntPtr
+    GetPrimaryDisplayMonitor() : ?
+    GetCursorDisplayMonitor() : ?
+    .ctor() : TypeDef#0*
+    get_Name() : ?
+    get_Bounds() : ?
+    get_WorkingArea() : ?
+    get_IsPrimary() : ?
+    ToString() : ?
+    GetMonitorInfo() : TypeDef#0&
+- SearchPrecisionScore  [methods=0 fields=4 flags=0x101]
+    field value__
+    field Regular
+    field Low
+    field None
+- ThemeData  [methods=14 fields=4 flags=0x100001]
+    field <FileNameWithoutExtension>k__BackingField
+    field <Name>k__BackingField
+    field <IsDark>k__BackingField
+    field <HasBlur>k__BackingField
+    get_FileNameWithoutExtension() : ?
+    set_FileNameWithoutExtension(System.String) : System.Void
+    get_Name() : ?
+    set_Name(System.String) : System.Void
+    get_IsDark(System.Boolean) : System.Void
+    set_IsDark(TypeRef#8410436<>) : System.Void
+    get_HasBlur(System.Boolean) : System.Void
+    set_HasBlur(TypeRef#8410436<>) : System.Void
+    .ctor() : TypeRef#8410436<System.Boolean>
+    op_Equality(TypeDef#0) : ?et60
+    op_Inequality(TypeDef#0) : ?et60
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+
+## Windows.Win32 (3)
+- __char_32  [methods=10 fields=2 flags=0x110108]
+    field SpanLength
+    field Value
+    get_Length() : ?
+    get_Item() : ?
+    AsSpan(System.Char) : System.Void
+    AsReadOnlySpan(System.Char) : System.Void
+    Equals(System.Void, System.Char) : ?et37
+    Equals() : ?
+    ToString() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Implicit() : TypeDef#0
+- InlineArrayIndexerExtensions  [methods=2 fields=0 flags=0x100180]
+    SliceAtNull(System.Char, TypeRef#12601668<>) : System.Void
+    ReadOnlyItemRef(TypeDef#0&) : System.Char
+- PInvoke  [methods=14 fields=4 flags=0x100180]
+    field WM_KEYDOWN
+    field WM_KEYUP
+    field WM_SYSKEYDOWN
+    field WM_SYSKEYUP
+    CloseHandle() : ?et60
+    EnumThreadWindows() : TypeDef#0
+    GetWindowText() : TypeRef#12600900<>
+    GetWindowText() : TypeDef#0
+    GetWindowTextLength() : ?
+    GetSystemMetrics() : ?
+    EnumDisplayMonitors(TypeRef#71324996<?et68>) : System.Object
+    EnumDisplayMonitors(TypeDef#71697556*, ?et68) : System.Object
+    MonitorFromWindow(TypeDef#0) : ?et64
+    GetMonitorInfo() : ?
+    GetMonitorInfo() : ?
+    GetCursorPos() : TypeDef#0
+    GetCursorPos() : TypeDef#0
+    MonitorFromPoint(TypeDef#0) : ?et93
+
+## Windows.Win32.Foundation (7)
+- BOOL  [methods=12 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    .ctor() : ?
+    op_Implicit() : ?
+    op_Implicit() : ?
+- HANDLE  [methods=15 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit() : ?et60
+    op_Explicit() : System.Void
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Explicit() : ?
+- HWND  [methods=16 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit() : ?et64
+    op_Explicit() : System.Void
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Explicit() : ?
+    op_Implicit() : ?et64
+- LPARAM  [methods=9 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit() : ?
+    op_Implicit() : ?
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- PCWSTR  [methods=10 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Explicit() : ?et72
+    op_Implicit() : System.Char
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    get_Length() : ?
+    ToString() : ?
+    AsSpan(System.Char) : System.Void
+    get_DebuggerDisplay() : ?
+- PWSTR  [methods=14 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    op_Implicit() : ?et76
+    op_Implicit() : System.Char
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et76
+    get_Length() : ?
+    AsSpan(System.Char) : System.Void
+    get_DebuggerDisplay() : ?
+- RECT  [methods=13 fields=4 flags=0x100108]
+    field left
+    field top
+    field right
+    field bottom
+    .ctor() : ?et149
+    .ctor() : TypeDef#0
+    .ctor(System.Int32) : System.Int32
+    FromXYWH(System.Int32, System.Int32) : System.Int32
+    get_Width() : ?
+    get_Height() : ?
+    get_IsEmpty() : ?
+    get_X() : ?
+    get_Y() : ?
+    get_Size() : ?
+    op_Implicit() : TypeDef#0
+    op_Implicit() : TypeDef#0
+    op_Implicit(?et149) : ?et128
+
+## Windows.Win32.Graphics.Gdi (6)
+- HDC  [methods=15 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit() : System.Object
+    op_Explicit() : System.Void
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Explicit() : ?
+- HMONITOR  [methods=15 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit() : ?
+    op_Explicit() : System.Void
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Explicit() : ?
+- MONITOR_FROM_FLAGS  [methods=0 fields=4 flags=0x100]
+    field value__
+    field MONITOR_DEFAULTTONEAREST
+    field MONITOR_DEFAULTTONULL
+    field MONITOR_DEFAULTTOPRIMARY
+- MONITORENUMPROC  [methods=4 fields=0 flags=0x100]
+    .ctor() : ?
+    Invoke(TypeDef#0) : ?et80
+    BeginInvoke(TypeDef#119162001) : ?et80
+    EndInvoke() : ?et101
+- MONITORINFO  [methods=0 fields=4 flags=0x100108]
+    field cbSize
+    field rcMonitor
+    field rcWork
+    field dwFlags
+- MONITORINFOEXW  [methods=0 fields=2 flags=0x100108]
+    field monitorInfo
+    field szDevice
+
+## Windows.Win32.UI.WindowsAndMessaging (2)
+- SYSTEM_METRICS_INDEX  [methods=0 fields=96 flags=0x100]
+    field value__
+    field SM_ARRANGE
+    field SM_CLEANBOOT
+    field SM_CMONITORS
+    field SM_CMOUSEBUTTONS
+    field SM_CONVERTIBLESLATEMODE
+    field SM_CXBORDER
+    field SM_CXCURSOR
+    field SM_CXDLGFRAME
+    field SM_CXDOUBLECLK
+    field SM_CXDRAG
+    field SM_CXEDGE
+    field SM_CXFIXEDFRAME
+    field SM_CXFOCUSBORDER
+    field SM_CXFRAME
+    field SM_CXFULLSCREEN
+    field SM_CXHSCROLL
+    field SM_CXHTHUMB
+    field SM_CXICON
+    field SM_CXICONSPACING
+    field SM_CXMAXIMIZED
+    field SM_CXMAXTRACK
+    field SM_CXMENUCHECK
+    field SM_CXMENUSIZE
+    field SM_CXMIN
+    field SM_CXMINIMIZED
+    field SM_CXMINSPACING
+    field SM_CXMINTRACK
+    field SM_CXPADDEDBORDER
+    field SM_CXSCREEN
+    field SM_CXSIZE
+    field SM_CXSIZEFRAME
+    field SM_CXSMICON
+    field SM_CXSMSIZE
+    field SM_CXVIRTUALSCREEN
+    field SM_CXVSCROLL
+    field SM_CYBORDER
+    field SM_CYCAPTION
+    field SM_CYCURSOR
+    field SM_CYDLGFRAME
+    field SM_CYDOUBLECLK
+    field SM_CYDRAG
+    field SM_CYEDGE
+    field SM_CYFIXEDFRAME
+    field SM_CYFOCUSBORDER
+    field SM_CYFRAME
+    field SM_CYFULLSCREEN
+    field SM_CYHSCROLL
+    field SM_CYICON
+    field SM_CYICONSPACING
+    field SM_CYKANJIWINDOW
+    field SM_CYMAXIMIZED
+    field SM_CYMAXTRACK
+    field SM_CYMENU
+    field SM_CYMENUCHECK
+    field SM_CYMENUSIZE
+    field SM_CYMIN
+    field SM_CYMINIMIZED
+    field SM_CYMINSPACING
+    field SM_CYMINTRACK
+    field SM_CYSCREEN
+    field SM_CYSIZE
+    field SM_CYSIZEFRAME
+    field SM_CYSMCAPTION
+    field SM_CYSMICON
+    field SM_CYSMSIZE
+    field SM_CYVIRTUALSCREEN
+    field SM_CYVSCROLL
+    field SM_CYVTHUMB
+    field SM_DBCSENABLED
+    field SM_DEBUG
+    field SM_DIGITIZER
+    field SM_IMMENABLED
+    field SM_MAXIMUMTOUCHES
+    field SM_MEDIACENTER
+    field SM_MENUDROPALIGNMENT
+    field SM_MIDEASTENABLED
+    field SM_MOUSEPRESENT
+    field SM_MOUSEHORIZONTALWHEELPRESENT
+    field SM_MOUSEWHEELPRESENT
+    field SM_NETWORK
+    field SM_PENWINDOWS
+    field SM_REMOTECONTROL
+    field SM_REMOTESESSION
+    field SM_SAMEDISPLAYFORMAT
+    field SM_SECURE
+    field SM_SERVERR2
+    field SM_SHOWSOUNDS
+    field SM_SHUTTINGDOWN
+    field SM_SLOWMACHINE
+    field SM_STARTER
+    field SM_SWAPBUTTON
+    field SM_SYSTEMDOCKED
+    field SM_TABLETPC
+    field SM_XVIRTUALSCREEN
+    field SM_YVIRTUALSCREEN
+- WNDENUMPROC  [methods=4 fields=0 flags=0x100]
+    .ctor() : ?
+    Invoke(TypeDef#0) : ?et64
+    BeginInvoke(TypeDef#119162001) : ?et64
+    EndInvoke() : ?et101

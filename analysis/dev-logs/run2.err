@@ -1,0 +1,4 @@
+[2026-11-02T05:48:53Z ERROR launcher_app::app] could not register the global hotkey: failed to register the global hotkey
+[2026-11-02T05:48:53Z INFO  launcher_app::app] global hotkey 'Alt + Space' registered: false
+[2026-11-02T05:48:53Z INFO  launcher_app::app] native window handle: 0x2915ba
+[2026-11-02T05:48:53Z INFO  launcher_app] launcher initialised in 243.3821ms

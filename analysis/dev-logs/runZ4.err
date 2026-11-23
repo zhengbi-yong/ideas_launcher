@@ -1,0 +1,80 @@
+[2026-11-02T07:15:58.243Z INFO  launcher_app::app] global hotkey active: Ctrl + Space
+[2026-11-02T07:15:58.245Z INFO  launcher_app::app] native window handle: 0x100d42
+[2026-11-02T07:15:58.246Z INFO  launcher_app] launcher initialised in 317.261ms
+[2026-11-02T07:15:58.247Z INFO  launcher_app::app] layout: viewport_rect=[[0.0 0.0] - [680.0 460.0]] ui.max_rect=[[0.0 0.0] - [680.0 460.0]] ui.min_rect=[[0.0 0.0] - [0.0 0.0]] size=[680.0 460.0]
+[2026-11-02T07:16:03.527Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:03.536Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:03.542Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:03.664Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:04.403Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:04.411Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:04.495Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:04.618Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:05.131Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:05.131Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:05.141Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:05.262Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:05.985Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:05.986Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:05.989Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:06.110Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:06.701Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:06.709Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:06.715Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:06.836Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:07.557Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:07.565Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:07.568Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:07.689Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:08.258Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:08.266Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:08.272Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:08.393Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:09.112Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:09.121Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:09.124Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:09.246Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:09.829Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:09.830Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:09.835Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:09.956Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:10.685Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:10.693Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:10.696Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:10.818Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:11.381Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:11.382Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:11.389Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:11.510Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:12.251Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:12.260Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:12.263Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:12.384Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:12.954Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:12.955Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:12.960Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:13.081Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:13.843Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:13.844Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:13.846Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:13.967Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:14.557Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:14.565Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:14.570Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:14.691Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:15.417Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:15.425Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:15.428Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:15.548Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:16.131Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:16.139Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:16.144Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:16.265Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000
+[2026-11-02T07:16:16.984Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:16.985Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:16.987Z INFO  launcher_app::app] hotkey: target_visible=false style=0x6CF0000
+[2026-11-02T07:16:17.108Z INFO  launcher_app::app] hotkey: +120ms style=0x6CF0000
+[2026-11-02T07:16:17.700Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:16:17.701Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:16:17.706Z INFO  launcher_app::app] hotkey: target_visible=true style=0x16CF0000
+[2026-11-02T07:16:17.827Z INFO  launcher_app::app] hotkey: +120ms style=0x16CF0000

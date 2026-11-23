@@ -1,0 +1,13 @@
+[package]
+name = "ideas-launcher-service"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "The service of the IDEAS Launcher: it keeps the index of the whole machine"
+
+[dependencies]
+launcher-core = { workspace = true }
+launcher-index = { workspace = true }
+log = { workspace = true }
+env_logger = "0.11"

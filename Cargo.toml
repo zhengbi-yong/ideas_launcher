@@ -1,0 +1,39 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/ideas-design",
+    "crates/launcher-core",
+    "crates/launcher-index",
+    "crates/launcher-app",
+    "crates/launcher-service",
+]
+# The benchmarks are a project of their own, so that the launcher stays free
+# of dependencies — Criterion is only used there.
+exclude = ["perf"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+
+[workspace.dependencies]
+ideas-design = { path = "crates/ideas-design" }
+launcher-core = { path = "crates/launcher-core", features = ["pinyin"] }
+launcher-index = { path = "crates/launcher-index" }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rayon = "1"
+parking_lot = "0.12"
+dirs = "6"
+log = "0.4"
+
+[profile.release]
+opt-level = 3
+# `thin` keeps the binary just as small in practice while cutting link time
+# from minutes to seconds — important for a project people will rebuild.
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = true

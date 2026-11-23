@@ -1,0 +1,50 @@
+elevated: true
+manage-volume privilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0 luid=00000000:0000001c
+token privileges:
+    luid:00000000:00000000 attributes=0x3
+    luid:00000000:00000000 attributes=0x5
+    luid:00000000:00000000 attributes=0x7
+    luid:00000000:00000000 attributes=0x8
+    luid:00000000:00000000 attributes=0x9
+    luid:00000000:00000000 attributes=0xa
+    luid:00000000:00000000 attributes=0xb
+    luid:00000000:00000000 attributes=0xc
+    luid:00000000:00000000 attributes=0xd
+    luid:00000000:00000000 attributes=0xe
+    luid:00000000:00000000 attributes=0xf
+    luid:00000000:00000000 attributes=0x11
+    luid:00000000:00000000 attributes=0x12
+    luid:00000000:00000000 attributes=0x13
+    luid:00000000:00000000 attributes=0x14
+    luid:00000000:00000000 attributes=0x16
+    luid:00000000:00000000 attributes=0x17
+    luid:00000000:00000003 attributes=0x18
+    luid:00000000:00000000 attributes=0x19
+    luid:00000000:00000000 attributes=0x1c
+    luid:00000000:00000002 attributes=0x1d
+    luid:00000000:00000003 attributes=0x1e
+    luid:00000000:00000003 attributes=0x21
+    luid:00000000:00000000 attributes=0x22
+    luid:00000000:00000000 attributes=0x23
+    luid:00000000:00000000 attributes=0x24
+    luid:00000000:00000000 attributes=0x0
+raw token privilege buffer: 328 bytes
+    1b 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00
+    03 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00
+    00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00
+    00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00
+    09 00 00 00 00 00 00 00 00 00 00 00 0a 00 00 00
+    00 00 00 00 00 00 00 00 0b 00 00 00 00 00 00 00
+    00 00 00 00 0c 00 00 00 00 00 00 00 00 00 00 00
+    0d 00 00 00 00 00 00 00 00 00 00 00 0e 00 00 00
+    SeChangeNotifyPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeBackupPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeRestorePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeManageVolumePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeTakeOwnershipPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+NTFS volumes: 2
+  \\.\C: C:\ label="home"
+    journal id=0x1dceb71cd496ff0 first=0x7e2000000 next=0x7f3ef0600 max_size=268435456
+  \\.\D: D:\ label="disk"
+    journal: unavailable
+  C:\ could not be read straight off the disk: the master file table has no extents: signature="FILE" usa_offset=48 usa_count=3 attributes_offset=0x38 | attribute kind=0x10 non_resident=false name="" value=72 data_size=None runs=0 | attribute kind=0x20 non_resident=true name="" value=0 data_size=Some(687194767360) runs=8 | attribute kind=0x30 non_resident=false name="" value=74 data_size=None runs=0

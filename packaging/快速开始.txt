@@ -1,0 +1,82 @@
+IDEAS Launcher —— 用 Rust 编写的 Windows 快速启动器
+================================================
+
+一、启动
+--------
+安装后从「开始菜单 → IDEAS Launcher」启动,或在任意界面按全局热键唤出。
+
+默认热键:Alt + Space
+  若该组合已被其它程序占用(最常见的是 Flow Launcher 本体),
+  会自动回退到 Ctrl + Space → Ctrl + Alt + Space → Alt + K → Ctrl + J。
+  **当前实际生效的组合显示在窗口右下角。**
+
+命令行参数(便于调试):
+  IdeasLauncher.exe --show --query chrome   启动即打开窗口并直接执行查询
+  IdeasLauncher.exe --selftest chrome       测量一次「按键 → 结果就绪」耗时
+
+二、数据位置
+------------
+  设置   %APPDATA%\IdeasLauncher\Settings\Settings.json
+  历史   %APPDATA%\IdeasLauncher\Settings\History.json
+  缓存   %APPDATA%\IdeasLauncher\Cache\
+  日志   %APPDATA%\IdeasLauncher\Logs\
+
+设置文件的字段名与 Flow Launcher 的 Settings.json 对齐,可以直接互相拷贝迁移。
+
+三、支持的查询
+--------------
+  * Windows 程序(6 个索引源并行扫描,支持 .lnk 快捷方式)
+  * Microsoft Store 应用(UWP,带图标)
+  * 文件与文件夹(用户目录是实时索引,见第三节)
+  * 浏览器书签(Chrome / Edge / Firefox 等 Chromium 系)
+  * 系统设置(524 项,中文名全覆盖)
+  * 系统命令(关机、重启、锁屏、显示器、音量……)
+  * 算式(直接输入 2+2*3)
+  * 网页搜索(g / b / dd / wiki / gh / yt / so …)
+  * Shell 命令(> 前缀)
+  * URL(直接输入网址)
+  * 进程(kill 前缀,例如 kill notepad)
+
+中文可以用拼音检索:输入 chongqi 会找到「重启」。
+多音字按常用词读音处理(重启 = chong qi,不是 zhong qi)。
+
+窗口够宽时,结果列表右侧会显示预览:插件发来的说明(markdown)、
+文件的类型/大小/修改时间、图片缩略图。
+
+四、文件搜索
+------------
+  文件搜索有两层:
+  * **用户目录**(桌面、文档、下载、图片、音乐、视频)是实时索引:
+    新建、改名、删除的文件毫秒级进索引;窗口开着的时候,列表自己就更新了,
+    不用重启,也不用再按一次键。
+    家目录是**全量索引**(本机 121 万条,约 48 秒扫完),一条不落 ——
+    扫描是边扫边出结果的,不用等它扫完才有东西可搜。
+  * **全盘**(每个卷上的每个文件)需要**管理员权限**:读 NTFS 主文件表是
+    「Everything」那一类程序的做法,没有权限就读不到。
+    **程序默认就会自己申请这个权限**:启动时弹一次 UAC,点「是」之后由提权副本接管,
+    全盘索引(本机 919 万条)就位了。
+    不想每次都弹窗,到「设置 → 索引」把「以管理员身份运行」关掉 ——
+    那时程序只搜用户目录,内存也回到 250 MB 那一档。
+
+  全盘索引建好后缓存在 %APPDATA%\IdeasLauncher\Cache\fs-index.bin(约 745 MB),
+  下次启动不到一秒就读回来。
+
+  窗口只显示十几行,但**列表里存着一万条**,可以一直往下翻 —— 排在后面的那一条
+  翻得到。设置页的「最多显示的结果数」改的就是这个数。
+
+  选中一个视频,右边的预览面板会**直接放起来**(随安装包带了一套 FFmpeg,
+  显卡能解码就用显卡,不行就退回软件解码)。
+
+五、第三方插件
+--------------
+把插件目录放进 %APPDATA%\IdeasLauncher\Plugins\<插件名>\,
+里面放一个 plugin.json(格式与 Flow Launcher 相同)和插件本体即可。
+
+支持 JSON-RPC 2.0 的插件:Python_v2、TypeScript_V2 / JavaScript_V2、Executable_V2。
+安装目录下的 runtime\python 提供了 Python 侧的运行时,插件直接
+`from python_plugin import FlowLauncher` 即可。
+
+六、卸载
+--------
+「开始菜单 → IDEAS Launcher → 卸载」,或在「设置 → 应用」中卸载。
+卸载会保留 %APPDATA%\IdeasLauncher 下的设置与历史;需要清理时手动删除该目录即可。

@@ -1,0 +1,6 @@
+elevated: false
+volumes: 2
+==== \\.\C: C:\ ====
+  could not be opened: the volume could not be opened (5)
+==== \\.\D: D:\ ====
+  could not be opened: the volume could not be opened (5)

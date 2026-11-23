@@ -1,0 +1,647 @@
+#AOCI-CODE-VOLUME: 1
+
+===/<repository>/===
+.gitattributes[FG3T]: F:全仓文本强制LF检出，覆盖autocrlf，保证AOCI基线跨平台字节一致 | R:- | A:- | S:-
+AGENTS.md[SG8S]: F:宿主Agent指令文件：注入AOCI认知层的使用合同、Overview与维护流程及收尾规则 | R:code:aoci.txt,code:aoci.meta.txt,code:aoci.code.txt | A:aoci_rules,aoci_overview,aoci_maintain,aoci_update_entry | S:整个文件即aoci:begin/end区块，由aoci生成；项目自有Agent指令应写在区块外，避免工具更新区块时冲突
+Cargo.toml[FG8T]: F:Cargo workspace清单：5个launcher crate成员、公共依赖与release优化配置（thin LTO/strip/panic=abort） | R:code:crates/ideas-design/Cargo.toml,code:crates/launcher-core/Cargo.toml,code:crates/launcher-index/Cargo.toml,code:crates/launcher-app/Cargo.toml,code:crates/launcher-service/Cargo.toml | A:workspace,release | S:-
+README.md[SG7L]: F:项目主文档：定位与性能目标、1.0.0双索引架构、查询管线与逐项渲染/索引优化实录、安装与使用说明、FFmpeg运行时获取与许可说明 | R:code:analysis/REPORT.md,code:analysis/RELEASE-GAP.md,code:analysis/EVERYTHING-REPORT.md | A:- | S:-
+.gitignore[FG4T]: F:Git忽略规则：构建产物（root与perf的target、dist）、FFmpeg二进制运行时、tmp-diag临时诊断与宿主编辑器配置 | R:code:tools/fetch-ffmpeg.ps1 | A:- | S:认知资产（aoci.txt/aoci.meta.txt/aoci.code.txt/AGENTS.md）绝不加入忽略——被忽略的文件会被scan静默跳过，索引建不起来
+
+===/<repository>/analysis/===
+EVERYTHING-REPORT.md[SA6L]: F:voidtools Everything 1.4.1.1032逆向报告：MFT直读的NTFS结构偏移取证、USN变更日志职责、查询语言语法与证据台账 | R:code:analysis/REPORT.md | A:- | S:结论均按Everything 1.4.1.1032取证（含MFT/NTFS偏移），版本升级后偏移需重新取证，不能沿用
+Flow.Launcher-clr-types.txt[SA5L]: F:Flow.Launcher主程序集托管类型清单：按命名空间分组列出类型的方法/字段/flags | R:code:analysis/REPORT.md,code:analysis/dev-logs/app.json | A:- | S:逆向自本机安装的FlowLauncher 2.1.4程序集，是外部.NET代码的事实快照而非本仓库源码，勿当作构建输入
+Flow.Launcher.Core-edges.txt[SA5L]: F:Flow.Launcher.Core方法级调用边表：类型/方法/目标/MetadataToken四列 | R:code:analysis/Flow.Launcher.Core-types.txt,code:analysis/Flow.Launcher.Core-methods.txt | A:- | S:外部FlowLauncher 2.1.4程序集的逆向数据而非本仓库代码；目标列多为token/TypeSpec引用，需配合types与方法清单解读
+Flow.Launcher.Core-methods.txt[SA5L]: F:Flow.Launcher.Core全方法平铺清单（Type.method每行一个，含匿名类型与异步状态机） | R:code:analysis/Flow.Launcher.Core-types.txt | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码；同名多行为重载或泛型实例化，非重复数据
+Flow.Launcher.Core-types.txt[SA5S]: F:Flow.Launcher.Core命名空间与类型索引：全局120类型及Plugin/Resource/Storage等子空间 | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据；大量<>c、<X>d__N条目是编译器生成的闭包与异步状态机，检索业务类型需跳过
+Flow.Launcher.Infrastructure-clr-types.txt[SA5L]: F:Flow.Launcher.Infrastructure程序集类型清单（基础设施层，92+类型） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin-clr-types.txt[SA6L]: F:插件SDK程序集Flow.Launcher.Plugin类型清单：插件契约与公共模型定义 | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4插件SDK逆向数据而非本仓库代码；其契约是Rust版内置插件行为对齐的参照
+Flow.Launcher.Plugin.BrowserBookmark-clr-types.txt[SA4L]: F:内置插件BrowserBookmark托管类型清单（24类型，浏览器书签读取） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.Calculator-clr-types.txt[SA4M]: F:内置插件Calculator类型清单（19类型，含小数/分组分隔符处理的查询闭包） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.Explorer-clr-types.txt[SA4L]: F:内置插件Explorer类型清单（110类型，文件与目录内容检索） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.PluginIndicator-clr-types.txt[SA3T]: F:内置插件PluginIndicator类型清单（8类型，结果命中指示） | R:code:analysis/REPORT.md | A:- | S:外部程序集逆向数据，非本仓库代码
+Flow.Launcher.Plugin.PluginsManager-clr-types.txt[SA4M]: F:内置插件PluginsManager类型清单（34类型，插件下载/安装/更新/卸载） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.ProcessKiller-clr-types.txt[SA3M]: F:内置插件ProcessKiller类型清单（7类型，按名匹配并结束进程） | R:code:analysis/REPORT.md | A:- | S:外部程序集逆向数据，非本仓库代码
+Flow.Launcher.Plugin.Program-clr-types.txt[SA5L]: F:内置插件Program类型清单：程序索引主力（REPORT计258类型1760方法，开始菜单/UWP/注册表来源） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.Shell-clr-types.txt[SA4M]: F:内置插件Shell类型清单（13类型，命令历史与Win+R集成） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.Sys-clr-types.txt[SA4L]: F:内置插件Sys类型清单（9类型，系统命令：锁屏/睡眠/清空回收站等） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.Url-clr-types.txt[SA3S]: F:内置插件Url类型清单（8类型，URL/协议识别与打开） | R:code:analysis/REPORT.md | A:- | S:外部程序集逆向数据，非本仓库代码
+Flow.Launcher.Plugin.WebSearch-clr-types.txt[SA4M]: F:内置插件WebSearch类型清单（22类型，搜索建议SuggestionsAsync） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+Flow.Launcher.Plugin.WindowsSettings-clr-types.txt[SA4L]: F:内置插件WindowsSettings类型清单（9类型，Windows设置项检索） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
+RELEASE-GAP.md[SA7L]: F:发布就绪度审计：全盘搜索逐项问题的根因与修法（裁剪交集、窗口高度、USN句柄权限、增量索引、快捷方式目标拼接等） | R:code:README.md,code:analysis/REPORT.md | A:- | S:README等文档以§号引用本文章节（如§1.15），增删或重排章节会断掉这些外部引用
+REPORT.md[SA8L]: F:Flow Launcher 2.1.4逆向分析总报告：分层架构、查询管线逐跳还原、插件系统、原生边界、性能基线实测与Rust重实现设计推导 | R:code:README.md,code:analysis/EVERYTHING-REPORT.md,code:analysis/RELEASE-GAP.md | A:- | S:§8性能基线来自本机251个日志/374次启动的实测口径，仅代表当时那台机器；§9起的Rust设计结论均由该基线推导
+
+===/<repository>/analysis/dev-logs/===
+app-artifact.txt[SA3T]: F:app.json证据的单行压缩副本（同一evidence_id，约516KB仅一行） | R:code:analysis/dev-logs/app.json | A:- | S:单行516KB，按行读的工具会整块载入，需要时读app.json
+app.json[SA4L]: F:REA静态分析证据JSON：Flow.Launcher.dll制品检查（evidence_id、SHA256、规范化托管类型数据） | R:code:analysis/REPORT.md,code:analysis/dev-logs/app-artifact.txt | A:- | S:与app-artifact.txt同源（同一evidence_id），人工查阅用本文件即可
+bring-to-front.ps1[XA3T]: F:窗口前置调试脚本：P/Invoke SetWindowPos(HWND_TOPMOST)/BringWindowToTop/SetForegroundWindow并回报可见性 | R:- | A:- | S:-
+capture-window.ps1[XA3T]: F:截窗脚本v1：GetWindowRect加CopyFromScreen按屏幕坐标存PNG | R:- | A:- | S:-
+capture-window2.ps1[XA3T]: F:截窗脚本v2：PrintWindow(PW_RENDERFULLCONTENT)离屏渲染，可截合成/透明窗口 | R:- | A:- | S:-
+capture-window3.ps1[XA3T]: F:截窗脚本v3：PrintWindow后手写BMP文件头输出，摆脱System.Drawing依赖 | R:- | A:- | S:-
+check-hotkey.ps1[XA3T]: F:热键诊断脚本：查launcher进程窗口可见性并试探注册Alt+Space（RegisterHotKey，1409=已被占用） | R:code:analysis/dev-logs/run2.err | A:- | S:-
+core-artifact.txt[SA3T]: F:core.json证据的单行压缩副本（同一evidence_id，Flow.Launcher.Core.dll） | R:code:analysis/dev-logs/core.json | A:- | S:单行大文件，按行读的工具会整块载入，需要时读core.json
+core.json[SA4L]: F:REA静态分析证据JSON：Flow.Launcher.Core.dll制品检查（evidence_id、SHA256、规范化类型数据） | R:code:analysis/REPORT.md,code:analysis/dev-logs/core-artifact.txt | A:- | S:与core-artifact.txt同源（同一evidence_id），人工查阅用本文件即可
+drive-launcher.ps1[XA3T]: F:外部驱动脚本：经enum-windows/send-hotkey/send-text驱动运行中的launcher，切换Ctrl+Space、注入查询文本并截图 | R:code:analysis/dev-logs/measure-hotkey.ps1 | A:- | S:依赖仓库外tools目录（用户私人路径下的快速启动软件tools），换机不可直接运行
+infra-artifact.txt[SA3T]: F:infra.json证据的单行压缩副本（同一evidence_id，Flow.Launcher.Infrastructure.dll） | R:code:analysis/dev-logs/infra.json | A:- | S:单行大文件，需要时读infra.json
+infra.json[SA4L]: F:REA静态分析证据JSON：Flow.Launcher.Infrastructure.dll制品检查（evidence_id、SHA256、规范化类型数据） | R:code:analysis/REPORT.md,code:analysis/dev-logs/infra-artifact.txt | A:- | S:与infra-artifact.txt同源（同一evidence_id），人工查阅用本文件即可
+measure-hotkey.ps1[XA4T]: F:热键延迟测量脚本：循环发Ctrl+Space并秒表计时至窗口可见，输出min/median/max/mean | R:code:analysis/dev-logs/drive-launcher.ps1,code:analysis/REPORT.md | A:- | S:依赖仓库外tools目录的send-hotkey/enum-windows脚本
+patch-program-new.cjs[XP3S]: F:一次性codemod：把Program字面量构造改为Program::new（索引期预计算小写搜索文本），覆盖exe/lnk/AppPaths/Uninstall与缓存装载五处 | R:- | A:- | S:补丁已在源码应用，重跑会全部NOT FOUND
+run1.err[RU1T]: F:会话日志：仅一行初始化记录，冷启动353.7ms | R:- | A:- | S:-
+run2.err[RU1T]: F:会话日志：Alt+Space全局热键注册失败（registered: false），热键被其他程序占用 | R:code:analysis/dev-logs/check-hotkey.ps1 | A:- | S:-
+run3.err[RU1T]: F:会话日志：初始化278ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+run4.err[RU1T]: F:会话日志：初始化278ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+run5.err[RU1T]: F:会话日志：初始化272ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+run6.err[RU1T]: F:会话日志：初始化262ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+run7.err[RU1T]: F:会话日志：初始化254ms，热键切换与show()完成时序 | R:- | A:- | S:-
+run8.err[RU1T]: F:会话日志：初始化262ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+run9.err[RU1T]: F:会话日志：初始化398.9ms（偏慢样本）与热键事件 | R:- | A:- | S:-
+runA.err[RU1T]: F:会话日志：初始化267ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runB.err[RU1T]: F:会话日志：初始化318ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runC.err[RU1T]: F:会话日志：初始化284ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runD.err[RU1T]: F:会话日志：初始化324ms，多轮热键切换时序 | R:- | A:- | S:-
+runE.err[RU1T]: F:会话日志：改用Ctrl+Alt+Space组合键的验证轮，初始化295ms | R:- | A:- | S:-
+runF.err[RU1T]: F:会话日志：初始化299ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runG.err[RU1T]: F:会话日志：初始化257ms，含viewport layout尺寸记录 | R:- | A:- | S:-
+runH.err[RU1T]: F:会话日志：初始化314ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runI.err[RU1T]: F:会话日志：初始化253ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runJ.err[RU1T]: F:会话日志：初始化254ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runK.err[RU1T]: F:会话日志：初始化289ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runL.err[RU1T]: F:会话日志：初始化254ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runM.err[RU1T]: F:会话日志：初始化272ms，多轮热键事件 | R:- | A:- | S:-
+runN.err[RU1T]: F:会话日志：初始化291ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runO.err[RU1T]: F:会话日志：初始化339ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runP.err[RU1M]: F:长会话日志：多轮热键切换与show()/hide时序记录 | R:- | A:- | S:-
+runQ.err[RU1M]: F:长会话日志：连续热键事件与窗口显隐时序 | R:- | A:- | S:-
+runR.err[RU1L]: F:最长会话日志：高频热键切换压力下的show()/hide时序 | R:- | A:- | S:-
+runS.err[RU1T]: F:会话日志：初始化263ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runT.err[RU1T]: F:会话日志：初始化267ms与Ctrl+Space热键事件 | R:- | A:- | S:-
+runU.err[RU1M]: F:会话日志（ms级时间戳）：初始化259ms与热键事件 | R:- | A:- | S:-
+runV.err[RU1M]: F:会话日志（ms级时间戳）：初始化299ms与热键事件 | R:- | A:- | S:-
+runW.err[RU1T]: F:会话日志（ms级时间戳）：连续热键事件流 | R:- | A:- | S:-
+runX.err[RU1S]: F:会话日志（ms级时间戳）：密集热键响应间隔记录 | R:- | A:- | S:-
+runZ.err[RU1T]: F:会话日志（ms级时间戳）：连续四次热键响应 | R:- | A:- | S:-
+runZ2.err[RU1T]: F:会话日志（ms级时间戳）：初始化283ms与连续热键响应 | R:- | A:- | S:-
+runZ3.err[RU1T]: F:会话日志（ms级时间戳）：初始化256ms与热键事件 | R:- | A:- | S:-
+runZ4.err[RU1T]: F:会话日志：热键后窗口样式轮询（target_visible与+120ms的style值） | R:- | A:- | S:-
+show-window.ps1[XA3T]: F:窗口诊断脚本：读GWL_STYLE/GWL_EXSTYLE并ShowWindow(SW_SHOW)后置前 | R:- | A:- | S:-
+
+===/<repository>/analysis/everything/===
+Everything-1.4.1.1032.sha256[FA3T]: F:Everything 1.4.1.1032各渠道安装包/zip/exe的SHA256清单，校验取证用二进制 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:-
+everything-indexes.txt[SA3M]: F:voidtools帮助页Indexes的存档文本：默认索引全部固定NTFS卷、数据库位置与自定义索引选项 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:-
+everything-search-syntax.txt[SA4L]: F:voidtools帮助页存档：Everything查询语言语法存档（运算符/修饰符/宏，逆向报告§3的取证依据） | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+everything.reasnap[XA2T]: F:Ghidra分析会话绑定快照（单行JSON，analyzer_preset=ghidra-default） | R:- | A:- | S:单行大JSON，人工查阅读同目录src-*.json
+mft-check.txt[SA3L]: F:提权MFT直读探针输出：各卷MFT记录数与簇extents分布 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+mft-verify-user.txt[SA2T]: F:未提权对照探针：卷打开被拒（错误5），证明MFT直读需管理员 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+overview.json[SA2T]: F:REA证据JSON：everything.exe(x64)制品检查 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:单行大JSON，人工查阅用对应src-*.json
+snap-mft.reasnap[XA2T]: F:Ghidra分析会话绑定快照（MFT取证会话） | R:- | A:- | S:单行大JSON，人工查阅读同目录src-*.json
+snap-syntax.reasnap[XA2T]: F:Ghidra分析会话绑定快照（查询语法取证会话，单行JSON） | R:- | A:- | S:单行大JSON，人工查阅读同目录src-*.json
+src-mft.json[SA2T]: F:REA证据JSON：MFT取证会话的规范化结果（单行） | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:单行大JSON；subject路径字段为GBK乱码形态，系编码遗留
+src-syntax.json[SA2T]: F:REA证据JSON：查询语言取证会话的规范化结果（单行） | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:单行大JSON；subject路径字段为GBK乱码形态
+src-usn.json[SA2T]: F:REA证据JSON：USN取证会话的规范化结果（单行） | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:单行大JSON；subject路径字段为GBK乱码形态
+usn-probe-mft.txt[SA2T]: F:USN/MFT访问探针轮次1：提权状态、SeManageVolumePrivilege启用与令牌特权表 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+usn-probe-mft2.txt[SA2T]: F:USN/MFT访问探针轮次2：提权与令牌特权表 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+usn-probe-mft3.txt[SA2T]: F:USN/MFT访问探针轮次3：提权与令牌特权表 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+usn-probe-mft4.txt[SA2T]: F:USN/MFT访问探针轮次4：提权与令牌特权表 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+usn-probe-mft5.txt[SA2T]: F:USN/MFT访问探针轮次5：提权与令牌特权表 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+usn-probe-persist.txt[SA2T]: F:USN探针：提权与令牌特权，含持久化验证轮 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+whoami-enable.txt[SA2T]: F:whoami调用记录：/enable参数无效的报错（证明启用特权需另走令牌API） | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+whoami-priv.txt[SA2T]: F:whoami /priv输出：进程令牌特权清单与状态表 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部Everything取证材料，非本仓库代码
+
+===/<repository>/analysis/everything/help/command_line_interface/===
+index.html[SA3L]: F:voidtools帮助页存档：命令行接口帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/command_line_options/===
+index.html[SA3L]: F:voidtools帮助页存档：命令行开关清单帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/customizing/===
+index.html[SA3M]: F:voidtools帮助页存档：自定义（外观/字体/颜色）帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/db/===
+index.html[SA2S]: F:voidtools帮助页存档：数据库(db)文件帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/etp/===
+index.html[SA2M]: F:voidtools帮助页存档：ETP服务器帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/everything_service/===
+index.html[SA2S]: F:voidtools帮助页存档：Everything Service服务帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/file_lists/===
+index.html[SA2M]: F:voidtools帮助页存档：文件列表(.efu)帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/folder_indexing/===
+index.html[SA2M]: F:voidtools帮助页存档：文件夹索引帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/http/===
+index.html[SA3M]: F:voidtools帮助页存档：HTTP服务器帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/===
+index.html[SA2S]: F:voidtools帮助页存档：帮助首页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/indexes/===
+index.html[SA3M]: F:voidtools帮助页存档：索引(NTFS卷/数据库位置)帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/ini/===
+index.html[SA3L]: F:voidtools帮助页存档：INI配置项全表帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/installing_everything/===
+index.html[SA2S]: F:voidtools帮助页存档：安装帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/keyboard_shortcuts/===
+index.html[SA3M]: F:voidtools帮助页存档：键盘快捷键帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/knownfolderid/===
+index.html[SA2S]: F:voidtools帮助页存档：KNOWNFOLDERID列表帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/language_ids/===
+index.html[SA2M]: F:voidtools帮助页存档：语言ID列表帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/makevoidtools/===
+index.html[SA2M]: F:voidtools帮助页存档：makevoidtools工具集帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/multiple_instances/===
+index.html[SA2S]: F:voidtools帮助页存档：多实例帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/options/===
+index.html[SA3L]: F:voidtools帮助页存档：选项(Options)全量设置帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/previous_versions/===
+index.html[SA2L]: F:voidtools帮助页存档：历史版本帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/recent_changes/===
+index.html[SA2S]: F:voidtools帮助页存档：更新日志帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/results/===
+index.html[SA3S]: F:voidtools帮助页存档：结果列表帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/run_history/===
+index.html[SA2S]: F:voidtools帮助页存档：运行历史帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/c/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK C语言总览页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/clarion/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK Clarion语言页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/csharp/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK C#语言总览页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_cleanup/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_CleanUp | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_deleterunhistory/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_DeleteRunHistory | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_exit/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_Exit | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getbuildnumber/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetBuildNumber | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getlasterror/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetLastError | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getmajorversion/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetMajorVersion | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getmatchcase/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetMatchCase | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getmatchpath/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetMatchPath | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getmatchwholeword/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetMatchWholeWord | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getmax/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetMax | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getminorversion/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetMinorVersion | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getnumfileresults/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetNumFileResults | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getnumfolderresults/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetNumFolderResults | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getnumresults/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetNumResults | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getoffset/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetOffset | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getregex/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetRegex | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getreplyid/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetReplyID | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getreplywindow/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetReplyWindow | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getrequestflags/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetRequestFlags | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultattributes/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultAttributes | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultdateaccessed/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultDateAccessed | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultdatecreated/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultDateCreated | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultdatemodified/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultDateModified | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultdaterecentlychanged/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultDateRecentlyChanged | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultdaterun/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultDateRun | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultextension/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultExtension | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultfilelistfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultFileListFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultfullpathname/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultFullPathName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresulthighlightedfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultHighlightedFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresulthighlightedfullpathandfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultHighlightedFullPathAndFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresulthighlightedpath/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultHighlightedPath | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultlistrequestflags/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetResultListRequestFlags | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultlistsort/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetResultListSort | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultpath/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultPath | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultruncount/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultRunCount | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getresultsize/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetResultSize | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getrevision/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetRevision | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getruncountfromfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetRunCountFromFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getsearch/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetSearch | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_getsort/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_GetSort | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_gettargetmachine/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetTargetMachine | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_gettotfileresults/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetTotFileResults | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_gettotfolderresults/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetTotFolderResults | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_gettotresults/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_GetTotResults | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_incruncountfromfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IncRunCountFromFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isadmin/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsAdmin | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isappdata/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsAppData | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isdbloaded/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsDBLoaded | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isfastsort/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsFastSort | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isfileinfoindexed/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsFileInfoIndexed | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isfileresult/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsFileResult | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isfolderresult/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsFolderResult | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isqueryreply/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsQueryReply | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_isvolumeresult/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_IsVolumeResult | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_query/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_Query | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_rebuilddb/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_RebuildDB | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_reset/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_Reset | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_savedb/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SaveDB | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_saverunhistory/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SaveRunHistory | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setmatchcase/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_SetMatchCase | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setmatchpath/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetMatchPath | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setmatchwholeword/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_SetMatchWholeWord | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setmax/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_SetMax | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setoffset/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_SetOffset | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setregex/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_SetRegex | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setreplyid/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetReplyID | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setreplywindow/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetReplyWindow | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setrequestflags/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetRequestFlags | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setruncountfromfilename/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetRunCountFromFileName | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setsearch/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetSearch | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_setsort/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_SetSort | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_sortresultsbypath/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK函数Everything_SortResultsByPath | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/everything_updateallfolderindexes/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK函数Everything_UpdateAllFolderIndexes | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/===
+index.html[SA2M]: F:voidtools帮助页存档：SDK总览页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/ipc/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK IPC机制页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/ipc_c_example/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK IPC的C示例页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/python/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK Python语言页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/sdk/visual_basic/===
+index.html[SA2S]: F:voidtools帮助页存档：SDK Visual Basic页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/search_history/===
+index.html[SA2S]: F:voidtools帮助页存档：搜索历史帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/searching/===
+index.html[SA3L]: F:voidtools帮助页存档：搜索语法帮助页（运算符/通配符/正则） | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/supported_languages/===
+index.html[SA2M]: F:voidtools帮助页存档：支持语言列表帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/translating/===
+index.html[SA2M]: F:voidtools帮助页存档：翻译帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/troubleshooting/===
+index.html[SA2S]: F:voidtools帮助页存档：故障排除帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/uninstalling_everything/===
+index.html[SA2S]: F:voidtools帮助页存档：卸载帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/using_everything/===
+index.html[SA2M]: F:voidtools帮助页存档：使用入门帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/analysis/everything/help/whats_new/===
+index.html[SA2S]: F:voidtools帮助页存档：新功能帮助页 | R:code:analysis/EVERYTHING-REPORT.md | A:- | S:外部帮助页存档，非本仓库代码
+
+===/<repository>/crates/ideas-design/===
+Cargo.toml[FC3T]: F:ideas-design crate清单：IDEAS程序族设计令牌，零依赖 | R:code:crates/ideas-design/src/lib.rs | A:- | S:故意零依赖：令牌是纯数字，任何语言的程序都能引用
+README.md[SC3S]: F:ideas-design说明：设计令牌规则（比例尺而非数值、颜色是角色而非颜色） | R:code:crates/ideas-design/src/lib.rs | A:- | S:-
+
+===/<repository>/crates/ideas-design/src/===
+lib.rs[LU5S]: F:IDEAS程序族设计令牌库：间距四进制/字号六进制比例尺与ColorRoles颜色角色 | R:code:crates/launcher-app/src/theme.rs | A:ColorRoles | S:令牌只定义刻度与角色，具体颜色由主题侧解释
+
+===/<repository>/crates/launcher-app/===
+Cargo.toml[FG7T]: F:ideas-launcher主程序清单：egui/eframe GUI，依赖launcher-core/launcher-index/ideas-design | R:code:Cargo.toml,code:crates/launcher-app/build.rs | A:- | S:-
+build.rs[FC4T]: F:构建脚本：winres把app.ico与版本信息嵌入可执行文件 | R:code:crates/launcher-app/Cargo.toml | A:- | S:仅Windows目标生效
+
+===/<repository>/crates/launcher-app/examples/===
+probe_properties.rs[XA3T]: F:一次性探针：验证系统属性对话框能否打开（菜单同款调用） | R:code:crates/launcher-app/src/props.rs | A:- | S:-
+
+===/<repository>/crates/launcher-app/resources/===
+windows_settings.json[FU4L]: F:WindowsSettings内置插件数据：ms-settings URI设置项清单（名称/分类/多语言） | R:code:crates/launcher-app/src/plugins/windows_settings.rs | A:- | S:外部数据快照，含zh/en/az等多语言字段
+
+===/<repository>/crates/launcher-app/src/===
+app.rs[AU8L]: F:launcher主应用：egui界面编排、窗口显隐与动画、查询管线对接、结果列表与预览调度 | R:code:crates/launcher-core/src/engine.rs,code:crates/launcher-app/src/hotkey.rs | A:LauncherApp | S:窗口只创建一次常驻隐藏，不重建
+details.rs[CU6L]: F:预览面板的文件详情：只收集白送的信息（stat/版本），打开时才读盘 | R:code:crates/launcher-app/src/app.rs | A:- | S:-
+elevate.rs[RI5S]: F:提权重启：--admin经shell弹UAC启动第二个副本建全盘索引（对齐Everything做法） | R:code:crates/launcher-app/src/main.rs | A:relaunch_as_admin | S:-
+fonts.rs[RU5M]: F:字体装配：三张字体面的回退链，覆盖中文与符号 | R:code:crates/launcher-app/src/theme.rs | A:- | S:-
+hotkey.rs[RU8M]: F:全局热键：RegisterHotKey+message-only窗口+专用线程，Drop即注销；含置前/聚焦辅助 | R:code:crates/launcher-app/src/app.rs | A:GlobalHotkey,register,wake,force_foreground | S:选RegisterHotKey而非低级键盘钩子（Flow Launcher用SetWindowsHookEx）：用户打字时零成本
+icons.rs[IU6L]: F:惰性图标加载：不预载（对照Flow Launcher的预载），按需解码与缓存 | R:code:crates/launcher-app/src/app.rs | A:- | S:-
+instance.rs[RG5S]: F:单实例：互斥体+事件名按可执行路径派生；二次启动请求首实例显示窗口 | R:code:crates/launcher-app/src/hotkey.rs | A:claim,request_show | S:开发版与安装版互不干扰（名字含路径）
+lib.rs[EG4T]: F:launcher-app crate根：声明各模块并记录设计目标（几十毫秒内可用） | R:code:crates/launcher-app/Cargo.toml | A:- | S:-
+main.rs[EU7M]: F:可执行入口：windows_subsystem=windows、ViewportBuilder建窗、命令行开关分发 | R:code:crates/launcher-app/src/app.rs,code:crates/launcher-app/src/elevate.rs | A:main | S:release隐藏控制台，debug保留（日志去向依赖此差异）
+markdown.rs[CU5M]: F:迷你markdown渲染器：渲染插件随结果发送的描述 | R:code:crates/launcher-app/src/preview.rs | A:- | S:-
+mouse.rs[RU6L]: F:鼠标节流：拖动/滚轮限帧，避免每秒数百帧重绘 | R:code:crates/launcher-app/src/app.rs | A:- | S:-
+paths.rs[RG6M]: F:数据目录布局：镜像Flow Launcher的%APPDATA%结构，含旧FastLauncher名迁移 | R:code:crates/launcher-core/src/settings.rs | A:data_directory,settings_file | S:-
+plugins.rs[AE6L]: F:内置插件宿主：逐一镜像Flow Launcher的Program/Explorer/WebSearch等内置插件 | R:code:crates/launcher-app/src/plugins/files.rs,code:crates/launcher-app/src/plugins/bookmarks.rs | A:- | S:-
+preview.rs[CU6L]: F:预览面板：结果列表旁的图片/视频/文件详情侧栏 | R:code:crates/launcher-app/src/details.rs,code:crates/launcher-app/src/video.rs | A:- | S:-
+props.rs[CU5M]: F:shell文件属性：文件管理器知道而文件系统不知道的属性（版本等） | R:code:crates/launcher-app/src/details.rs | A:- | S:-
+service_client.rs[CN6L]: F:命名管道客户端：向持有全盘索引的服务进程请求文件 | R:code:crates/launcher-core/src/service.rs,code:crates/launcher-service/src/server.rs | A:- | S:服务不在时退回本地双引擎
+settings_view.rs[AU6L]: F:设置覆盖层：内嵌面板对照Flow Launcher的独立940x600设置窗 | R:code:crates/launcher-core/src/settings.rs | A:- | S:-
+shellmenu.rs[CU5S]: F:文件右键菜单：菜单自绘，每项调用shell谓词 | R:code:crates/launcher-app/src/winapi.rs | A:- | S:-
+theme.rs[CU6L]: F:主题桥接：把core主题模型翻译成egui Visuals | R:code:crates/launcher-core/src/theme.rs,code:crates/ideas-design/src/lib.rs | A:- | S:-
+tray.rs[RU5L]: F:系统托盘图标：常驻通知区入口 | R:code:crates/launcher-app/src/winapi.rs | A:- | S:-
+video.rs[CU6L]: F:视频播放：FFmpeg解码，硬件解码优先 | R:code:crates/launcher-app/src/preview.rs | A:- | S:随包带FFmpeg；硬解失败退软件解码
+winapi.rs[IR5L]: F:最小Win32声明集：仅launcher所需入口点，不引winapi整包 | R:code:crates/launcher-app/src/hotkey.rs,code:crates/launcher-app/src/tray.rs | A:- | S:-
+
+===/<repository>/crates/launcher-app/src/bin/===
+bench.rs[XA3S]: F:基准工具：索引构建/缓存往返/查询延迟的端到端计时 | R:code:crates/launcher-app/src/app.rs | A:- | S:-
+blank-window.rs[XA3S]: F:空白窗口对照实验：与launcher同窗口设置的零绘制窗口，隔离归因渲染开销 | R:code:analysis/RELEASE-GAP.md | A:- | S:-
+capture.rs[XA3S]: F:截取launcher自身渲染表面：PrintWindow+PW_RENDERFULLCONTENT读窗口自身缓冲 | R:- | A:- | S:-
+details-probe.rs[XA3T]: F:文件详情探针：对单个文件验证details模块输出 | R:code:crates/launcher-app/src/details.rs | A:- | S:-
+export-design-tokens.rs[XA3S]: F:把设计令牌从代码导出为JSON（令牌以代码为准而非手写） | R:code:crates/ideas-design/src/lib.rs | A:- | S:-
+extract-icon.rs[XA3T]: F:把Windows图标提取为PNG：调试图标管线 | R:code:crates/launcher-app/src/icons.rs | A:- | S:-
+folder-icon-probe.rs[XA3S]: F:对比获取文件夹图标的多种方式 | R:code:crates/launcher-app/src/icons.rs | A:- | S:-
+fs-profile.rs[XA3S]: F:测量最热路径：全盘索引上的搜索profiling（复用先前写下的索引） | R:code:crates/launcher-index/src/fsindex.rs | A:- | S:-
+icon-probe.rs[XA3M]: F:探针：多种取32位带alpha图标方式的对比 | R:code:crates/launcher-app/src/icons.rs | A:- | S:-
+icon-source-probe.rs[XA3T]: F:并列dump一条路径的所有取图标方式 | R:code:crates/launcher-app/src/icons.rs | A:- | S:-
+lnk-dump.rs[XA3T]: F:用shell对照校验快捷方式解析器 | R:code:crates/launcher-index/src/lnk.rs | A:- | S:-
+make-icon.rs[XA3M]: F:程序化生成应用图标：accent色圆角方块 | R:code:crates/launcher-app/build.rs | A:- | S:-
+mem-probe.rs[XA3T]: F:内存剖析：与launcher同配置的最小egui窗口，给出基线内存归因 | R:code:analysis/REPORT.md | A:- | S:-
+video-probe.rs[XA3T]: F:对单个文件试验视频播放器 | R:code:crates/launcher-app/src/video.rs | A:- | S:-
+
+===/<repository>/crates/launcher-app/src/plugins/===
+bookmarks.rs[EE5M]: F:浏览器书签插件：镜像BrowserBookmark，读Chrome/Edge及Chromium系书签JSON | R:code:crates/launcher-app/src/plugins.rs | A:- | S:Firefox的places.sqlite需SQLite依赖，故意不支持
+files.rs[EE7L]: F:文件/文件夹搜索插件：双引擎（用户目录实时索引+全盘索引服务） | R:code:crates/launcher-index/src/fsindex.rs,code:crates/launcher-app/src/service_client.rs | A:- | S:-
+jsonrpc.rs[EE6L]: F:外部JSON-RPC插件宿主：经stdio对接Flow Launcher生态的out-of-process插件 | R:code:crates/launcher-core/src/jsonrpc.rs | A:- | S:-
+processes.rs[EE5M]: F:进程列表与结束插件：镜像ProcessKiller | R:code:crates/launcher-app/src/plugins.rs | A:- | S:-
+sys.rs[EE5M]: F:系统命令插件：镜像Sys的22条命令（电源/音量等） | R:code:crates/launcher-app/src/plugins.rs | A:- | S:-
+uwp.rs[EE5M]: F:微软商店(UWP)应用插件：Store应用与Win32程序一同索引 | R:code:crates/launcher-index/src/uwp.rs | A:- | S:-
+windows_settings.rs[EE6L]: F:Windows设置插件：524条ms-settings条目检索 | R:code:crates/launcher-app/resources/windows_settings.json | A:- | S:条目数据来自resources下的JSON快照
+
+===/<repository>/crates/launcher-core/===
+Cargo.toml[FC7T]: F:launcher-core crate清单：领域模型与匹配引擎 | R:code:crates/launcher-core/src/lib.rs | A:- | S:-
+
+===/<repository>/crates/launcher-core/src/===
+acronym.rs[KU5M]: F:首字母缩写匹配：vs→Visual Studio | R:code:crates/launcher-core/src/matcher.rs | A:- | S:-
+cancel.rs[CG4T]: F:查询取消凭据：上一键的全盘扫描在下一键到来时协作式取消 | R:code:crates/launcher-core/src/engine.rs | A:- | S:-
+engine.rs[AB8L]: F:查询引擎：复刻MainViewModel的分发管线（逐跳同构于逆向报告§3） | R:code:crates/launcher-core/src/query.rs,code:crates/launcher-core/src/matcher.rs | A:Engine | S:-
+hash.rs[CG4S]: F:数值键表的快速哈希：非防泄漏的std默认hasher | R:code:crates/launcher-core/src/history.rs | A:- | S:-
+history.rs[PD6L]: F:查询历史与选中记忆：对应Flow Launcher的两个持久化存储 | R:code:crates/launcher-app/src/paths.rs | A:- | S:-
+jsonrpc.rs[IN6L]: F:JSON-RPC 2.0线协议：Flow Launcher外部插件的stdio通信 | R:code:crates/launcher-app/src/plugins/jsonrpc.rs | A:- | S:-
+lib.rs[LG6T]: F:launcher-core根：由Flow Launcher逆向推导的领域模型声明 | R:code:crates/launcher-core/Cargo.toml | A:- | S:-
+matcher.rs[KB8L]: F:模糊匹配与评分：复刻StringMatcher行为 | R:code:crates/launcher-core/src/engine.rs | A:- | S:-
+pinyin.rs[KB6M]: F:拼音匹配：CJK查询，对应PinyinAlphabet | R:code:crates/launcher-core/src/polyphone.rs | A:- | S:-
+plugin.rs[DE6S]: F:插件契约：镜像Flow Launcher SDK的能力接口 | R:code:crates/launcher-app/src/plugins.rs | A:- | S:-
+polyphone.rs[KB5L]: F:多音词组覆盖表：单字拼音字典之外的多音修正 | R:code:crates/launcher-core/src/pinyin.rs | A:- | S:-
+profile.rs[KP5L]: F:启动各阶段计时：Instant实测而非采样推断 | R:code:analysis/REPORT.md | A:- | S:-
+query.rs[DB6M]: F:查询解析与动作关键字路由：镜像Query/QueryBuilder契约 | R:code:crates/launcher-core/src/engine.rs | A:Query | S:-
+regex.rs[KB6L]: F:小型正则引擎：Everything的regex:修饰符所需，零依赖 | R:code:crates/launcher-core/src/search_syntax.rs | A:- | S:-
+result.rs[DB6M]: F:结果模型：逐字段镜像Flow Launcher的Result记录，全插件共享 | R:code:crates/launcher-core/src/plugin.rs | A:Result | S:-
+search_syntax.rs[KB7L]: F:Everything风格搜索语法解析：voidtools查询语言子集 | R:code:analysis/everything/everything-search-syntax.txt | A:- | S:语法以Everything帮助页存档为准
+service.rs[IG6M]: F:launcher与索引服务间的帧协议：4字节消息头 | R:code:crates/launcher-app/src/service_client.rs,code:crates/launcher-service/src/server.rs | A:- | S:-
+settings.rs[PD6L]: F:持久化设置：字段集镜像Settings.json schema | R:code:crates/launcher-app/src/settings_view.rs,code:crates/launcher-app/src/paths.rs | A:Settings | S:-
+theme.rs[DU5S]: F:主题模型：对应Flow Launcher的20个XAML ResourceDictionary主题 | R:code:crates/launcher-app/src/theme.rs | A:Theme | S:-
+
+===/<repository>/crates/launcher-index/===
+Cargo.toml[FC6T]: F:launcher-index crate清单：Windows程序/文件索引 | R:code:crates/launcher-index/src/lib.rs | A:- | S:-
+
+===/<repository>/crates/launcher-index/src/bin/===
+fs_bench.rs[XA4S]: F:基准：合成可配置规模的全盘索引构建耗时 | R:code:crates/launcher-index/src/fsindex.rs | A:- | S:-
+index_bench.rs[XA4T]: F:基准：Win32程序索引构建 | R:code:crates/launcher-index/src/files.rs | A:- | S:-
+live_scan.rs[XA4T]: F:探针：用户目录实时索引扫到了哪里（三问） | R:code:crates/launcher-index/src/watch.rs | A:- | S:-
+mft_check.rs[XA5M]: F:校验MFT直读结果与系统口径的一致性 | R:code:crates/launcher-index/src/mft.rs,code:analysis/everything/mft-check.txt | A:- | S:-
+mft_delta.rs[XA4T]: F:探针：MFT记录是否携带变更号（需管理员） | R:code:crates/launcher-index/src/mft.rs | A:- | S:-
+usn_dump.rs[XA4T]: F:把USN变更日志原始字节存盘逐条查看（需管理员） | R:code:crates/launcher-index/src/usn.rs | A:- | S:-
+usn_journal_probe.rs[XA5L]: F:把FSCTL_READ_USN_JOURNAL的调用方式全部试一遍，找出内核接受的那种 | R:code:crates/launcher-index/src/usn.rs,code:analysis/RELEASE-GAP.md | A:- | S:-
+usn_probe.rs[XA5M]: F:探针：本机NTFS可索引卷清单与MFT枚举 | R:code:crates/launcher-index/src/mft.rs | A:- | S:-
+usn_read_probe.rs[XA4T]: F:探针：试读变更日志的几种方式，看内核肯理哪一种 | R:code:crates/launcher-index/src/usn.rs | A:- | S:-
+
+===/<repository>/crates/launcher-index/src/===
+cache.rs[PD5S]: F:索引缓存持久化 | R:code:crates/launcher-app/src/paths.rs | A:- | S:-
+files.rs[DB7L]: F:文件与文件夹搜索：实时索引上的查询实现 | R:code:crates/launcher-app/src/plugins/files.rs | A:- | S:-
+fsindex.rs[PB8L]: F:全盘文件索引：NTFS直读构建与原地刷新 | R:code:crates/launcher-index/src/mft.rs,code:crates/launcher-index/src/usn.rs | A:- | S:-
+lib.rs[LB6T]: F:launcher-index根：程序/文件索引模块声明 | R:code:crates/launcher-index/Cargo.toml | A:- | S:-
+lnk.rs[KB6L]: F:纯Rust的.lnk快捷方式解析器 | R:code:crates/launcher-app/src/bin/lnk-dump.rs | A:- | S:-
+mft.rs[KB8L]: F:NTFS主文件表直读：原始字节解析MFT记录 | R:code:analysis/EVERYTHING-REPORT.md,code:crates/launcher-index/src/fsindex.rs | A:- | S:需管理员权限；BPB/属性偏移取证见逆向报告§2
+usn.rs[KB7L]: F:USN/MFT枚举接口的NTFS索引：变更日志跟随 | R:code:analysis/RELEASE-GAP.md | A:- | S:日志句柄需FILE_READ_DATA（错误5教训）
+uwp.rs[IB6L]: F:UWP/微软商店应用索引 | R:code:crates/launcher-app/src/plugins/uwp.rs | A:- | S:-
+watch.rs[RB6L]: F:免管理员的目录变更监视 | R:code:crates/launcher-app/src/plugins/files.rs | A:- | S:USN要管理员时的替代路径
+win32.rs[IB7L]: F:Win32程序索引：六源程序枚举（开始菜单/注册表等） | R:code:analysis/REPORT.md | A:- | S:-
+
+===/<repository>/crates/launcher-service/===
+Cargo.toml[FC6T]: F:launcher-service crate清单：全盘索引服务 | R:code:crates/launcher-service/src/main.rs | A:- | S:-
+
+===/<repository>/crates/launcher-service/src/===
+main.rs[ER6L]: F:服务可执行入口 | R:code:crates/launcher-service/src/server.rs | A:main | S:-
+server.rs[IR7L]: F:索引服务端：持有全盘索引并经命名管道应答launcher | R:code:crates/launcher-core/src/service.rs | A:- | S:退出前上报结束状态，防僵尸进程
+winapi.rs[IR5L]: F:服务所需的Win32声明 | R:code:crates/launcher-service/src/server.rs | A:- | S:-
+
+===/<repository>/docs/design-system/===
+DESIGN.md[SU4M]: F:IDEAS设计规范 | R:code:crates/ideas-design/src/lib.rs | A:- | S:-
+README.md[SU3T]: F:IDEAS设计系统说明 | R:code:docs/design-system/DESIGN.md | A:- | S:-
+
+===/<repository>/packaging/===
+ChineseSimplified.isl[FV3L]: F:Inno Setup简体中文语言包 | R:code:packaging/IdeasLauncher.iss | A:- | S:jrsoftware社区翻译文件，非本仓库原创
+IdeasLauncher.iss[FV4L]: F:Inno Setup安装脚本：per-user安装到%LOCALAPPDATA% | R:code:packaging/快速开始.txt | A:- | S:-
+快速开始.txt[SV3T]: F:快速开始说明（随安装包分发） | R:code:README.md | A:- | S:-
+
+===/<repository>/perf/===
+Cargo.toml[FQ4T]: F:独立基准workspace清单（Criterion，被主workspace排除） | R:code:Cargo.toml | A:- | S:-
+
+===/<repository>/perf/benches/===
+find_fold.rs[TQ4S]: F:基准：名字里找子串的两种方式对比 | R:code:crates/launcher-core/src/matcher.rs | A:- | S:-
+fs_search.rs[TQ4T]: F:基准：锁定全盘索引搜索的数字 | R:code:crates/launcher-index/src/fsindex.rs | A:- | S:-
+
+===/<repository>/runtime/===
+README.md[SE5L]: F:runtime目录说明：插件侧Python运行时库，社区Flow Launcher插件不经修改即可被Rust宿主加载 | R:code:crates/launcher-app/src/plugins/jsonrpc.rs | A:- | S:宿主(Rust)管进程与渲染，插件侧(Python)把JSON-RPC翻译成回调
+
+===/<repository>/runtime/python/===
+flowlauncher.py[LE4T]: F:官方flowlauncher PyPI库的兼容垫片 | R:code:runtime/python/python_plugin.py | A:- | S:让已发布插件import flowlauncher不报错
+flowlauncher_api.py[IE5M]: F:宿主API封装FlowLauncherAPI（V2/JSON-RPC 2.0） | R:code:runtime/python/python_plugin.py | A:FlowLauncherAPI | S:-
+jsonrpc_transport.py[IE5M]: F:JSON-RPC 2.0线协议实现（按行分隔，含保留错误码） | R:code:crates/launcher-core/src/jsonrpc.rs | A:- | S:与Rust宿主侧线协议逐字段对应
+python_plugin.py[LE6L]: F:插件运行时主体：Plugin/FlowLauncher基类、Result、Query，把宿主JSON-RPC翻译成插件回调 | R:code:crates/launcher-app/src/plugins/jsonrpc.rs | A:Plugin,Result,Query | S:-
+selftest.py[TE4M]: F:运行时端到端自测：以子进程拉起selftest_plugin走完整协议 | R:code:runtime/python/selftest_plugin.py | A:- | S:-
+selftest_plugin.py[TE4T]: F:自测用示例插件（被selftest当子进程运行） | R:code:runtime/python/selftest.py | A:- | S:-
+
+===/<repository>/tools/===
+build-installer.ps1[XV4S]: F:构建Windows安装包：Inno Setup打包出单文件setup.exe到dist | R:code:packaging/IdeasLauncher.iss | A:- | S:-
+build.ps1[XV4T]: F:构建release二进制（处理运行中自锁的可执行文件） | R:code:tools/build-installer.ps1 | A:- | S:-
+bundle.js[XV3T]: F:小型打包辅助脚本 | R:- | A:- | S:-
+capture-index-pane.ps1[XU3T]: F:自动打开设置→索引页并截图（坐标由窗口矩形推算） | R:- | A:- | S:-
+capture-window.ps1[XU3S]: F:截取launcher窗口：OpenGL表面PrintWindow读不了，走DWM方式 | R:- | A:- | S:-
+check-delta.ps1[XA3T]: F:查看增量索引变化文件：名字/时间/重复度 | R:code:crates/launcher-index/src/cache.rs | A:- | S:-
+check-index.ps1[XA3T]: F:查看盘上索引缓存：基表大小/写入时间/变化条数 | R:code:crates/launcher-index/src/cache.rs | A:- | S:-
+check-lnk.ps1[XA3T]: F:以shell为裁判对照校验快捷方式解析器 | R:code:crates/launcher-index/src/lnk.rs | A:- | S:-
+check-window.ps1[XU3T]: F:查目标进程窗口状态（P/Invoke枚举） | R:- | A:- | S:-
+cleanup-dead-code.ps1[XC3T]: F:把服务里已用不上的代码块删掉 | R:code:crates/launcher-service/src/server.rs | A:- | S:-
+cleanup-warnings.cjs[XQ3S]: F:清理新增插件时引入的编译警告 | R:code:crates/launcher-app/src/plugins.rs | A:- | S:-
+cleanup.ps1[XV3T]: F:清理构建缓存与launcher残留 | R:- | A:- | S:-
+click-at.ps1[XU3S]: F:把指针移到指定位置并点击 | R:- | A:- | S:-
+click-button.ps1[XU3S]: F:按原生窗口的按钮 | R:- | A:- | S:-
+click-window.ps1[XU3T]: F:窗口内点击（绝对屏幕坐标、物理像素） | R:- | A:- | S:-
+clr.js[XA4L]: F:最小.NET CLI(PE/COFF)元数据读取器：支撑逆向分析 | R:- | A:- | S:-
+compare.ps1[XA4S]: F:启动/结束目标程序并注入热键做同口径对比测量（会抢占焦点） | R:code:analysis/REPORT.md | A:- | S:-
+drag-at.ps1[XU3S]: F:在窗口里拖动（如滚动条） | R:- | A:- | S:-
+enum-windows.ps1[XU3T]: F:枚举进程窗口（P/Invoke） | R:- | A:- | S:-
+focus-away.ps1[XU3T]: F:把焦点移开launcher，迫使其自动隐藏 | R:- | A:- | S:-
+focus-latency.ps1[XU4S]: F:测launcher失焦后到消失的耗时 | R:- | A:- | S:-
+focus-test.ps1[XU4S]: F:焦点抢占压力测试（全局注入按键、反复启停启动器） | R:- | A:- | S:-
+gdb-profile.ps1[XA4S]: F:穷人版profiler：附加到运行中的进程读调用栈 | R:- | A:- | S:-
+measure-fl-latency.ps1[XA4M]: F:Flow Launcher同口径延迟测量（注入按键、反复启停目标程序） | R:code:analysis/REPORT.md | A:- | S:-
+measure-hotkey-latency.ps1[XA4S]: F:热键延迟测量（注入按键、抢占前台焦点） | R:code:analysis/REPORT.md | A:- | S:-
+measure-latency.ps1[XA3T]: F:launcher延迟测量（依赖仓库外tools目录） | R:- | A:- | S:-
+measure-resources.ps1[XA3T]: F:测launcher稳定后的常驻内存 | R:- | A:- | S:-
+members.js[XA4T]: F:从REA证据包提取类型/方法/调用边架构 | R:code:analysis/REPORT.md | A:- | S:-
+perf.js[XA4T]: F:聚合Flow Launcher NLog计时行为性能基线表 | R:code:analysis/REPORT.md | A:- | S:-
+plugin-features.cjs[XA3T]: F:把解析的插件类型清单汇总为特性图 | R:code:analysis/REPORT.md | A:- | S:-
+pp.js[XA3T]: F:把REA单行JSON证据美化缩进为.json | R:- | A:- | S:-
+probe-dpi.ps1[XU3T]: F:看系统对进程窗口的DPI判定 | R:- | A:- | S:-
+probe-hotkeys.ps1[XU3T]: F:探针：热键注册状态 | R:- | A:- | S:-
+reasm.js[XA3T]: F:把REA分块JSONL工具输出重组为纯文本 | R:- | A:- | S:-
+release-keys.ps1[XU3T]: F:释放所有可能卡住的按键 | R:- | A:- | S:-
+scroll-at.ps1[XU3T]: F:在窗口上滚滚轮 | R:- | A:- | S:-
+scroll-window.ps1[XU3T]: F:窗口内滚动（滚轮） | R:- | A:- | S:-
+send-hotkey.ps1[XU3T]: F:发送组合热键（如ctrl+space） | R:- | A:- | S:-
+send-key.ps1[XU3S]: F:在进程窗口按虚拟键 | R:- | A:- | S:-
+send-text.ps1[XU3T]: F:向窗口注入文本 | R:- | A:- | S:-
+snap-window.ps1[XU3T]: F:不触碰地拍摄运行中的launcher | R:- | A:- | S:-
+sum.js[XA3T]: F:汇总REA inspect_managed_artifact美化JSON | R:- | A:- | S:-
+sum2.js[XA3T]: F:inspect_managed_artifact JSON的紧凑摘要 | R:- | A:- | S:-
+verify-installer.ps1[XV4T]: F:把安装包装入一次性目录验证落地内容 | R:code:packaging/IdeasLauncher.iss | A:- | S:-
+verify-launcher.ps1[XQ4T]: F:端到端验证：驱动launcher查询并截图 | R:- | A:- | S:-
+verify-live-index.ps1[XQ4T]: F:实机验证：新建文件能否立刻搜到 | R:code:crates/launcher-index/src/watch.rs | A:- | S:-
+fetch-ffmpeg.ps1[XV4T]: F:获取或校验随包FFmpeg运行时：按SHA-256锁定九个文件，支持-Url下载解包后核对 | R:code:README.md,code:packaging/IdeasLauncher.iss | A:- | S:FFmpeg（约153MB，LGPL）不入Git；哈希与本仓实测版本绑定，升级需同步改哈希并回归视频预览
+

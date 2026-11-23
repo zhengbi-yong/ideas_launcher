@@ -1,0 +1,3838 @@
+# Types in Flow.Launcher
+
+
+## (global) (156)
+- <<AutoPluginUpdates>b__19_0>d  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <timer>5__2
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<AutoUpdates>b__18_0>d  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <timer>5__2
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<OnStartup>b__16_0>d  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <imageLoaderTask>5__2
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<OnStartup>b__16_1>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<QueryResultsAsync>g__QueryTaskAsync|1>d  [methods=2 fields=9 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field plugin
+    field <>4__this
+    field token
+    field <>u__1
+    field <>u__2
+    field <>u__3
+    field <>u__4
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<RegisterViewUpdate>g__UpdateActionAsync|0>d  [methods=2 fields=7 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <queue>5__2
+    field <channelReader>5__3
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<Show>b__1>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <<Show>b__6_0>d  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <>c  [methods=5 fields=4 flags=0x102103]
+    field <>9
+    field <>9__5_0
+    field <>9__5_1
+    field <>9__5_2
+    .cctor() : ?
+    .ctor() : ?
+    <btnDone_OnClick>b__5_0() : ?
+    <btnDone_OnClick>b__5_1() : ?
+    <btnDone_OnClick>b__5_2() : ?
+- <>c  [methods=9 fields=8 flags=0x102103]
+    field <>9
+    field <>9__13_1
+    field <>9__13_2
+    field <>9__13_0
+    field <>9__18_0
+    field <>9__19_1
+    field <>9__19_2
+    field <>9__19_0
+    .cctor() : ?
+    .ctor() : ?
+    <.ctor>b__13_0() : ?et241
+    <.ctor>b__13_1() : TypeDef#0
+    <.ctor>b__13_2() : TypeDef#0
+    <AutoUpdates>b__18_0() : ?
+    <AutoPluginUpdates>b__19_0() : ?
+    <AutoPluginUpdates>b__19_1(System.Void, TypeDef#0) : ?et101
+    <AutoPluginUpdates>b__19_2(System.Void, TypeDef#0) : ?et101
+- <>c  [methods=5 fields=4 flags=0x102103]
+    field <>9
+    field <>9__24_7
+    field <>9__24_0
+    field <>9__45_3
+    .cctor() : ?
+    .ctor() : ?
+    <OnLoaded>b__24_0() : ?
+    <OnLoaded>b__24_7() : ?
+    <InitializeContextMenu>b__45_3() : ?et117
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__3_0
+    .cctor() : ?
+    .ctor() : ?
+    <Install>b__3_0() : ?et169
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__29_0
+    .cctor() : ?
+    .ctor() : ?
+    <OpenSettingDialog>b__29_0() : ?
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__19_0
+    field <>9__19_1
+    .cctor() : ?
+    .ctor() : ?
+    <GetReleaseNotesMarkdownAsync>b__19_0() : TypeDef#0
+    <GetReleaseNotesMarkdownAsync>b__19_1() : ?et189
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__2_0
+    .cctor() : ?
+    .ctor() : ?
+    <SetException>b__2_0() : TypeDef#0
+- <>c  [methods=11 fields=10 flags=0x102103]
+    field <>9
+    field <>9__33_0
+    field <>9__231_0
+    field <>9__234_6
+    field <>9__235_0
+    field <>9__238_0
+    field <>9__256_0
+    field <>9__257_0
+    field <>9__263_0
+    field <>9__264_0
+    .cctor() : ?
+    .ctor() : ?
+    <Backspace>b__33_0() : ?
+    <QueryContextMenu>b__231_0() : TypeDef#0
+    <QueryResultsAsync>b__234_6() : ?
+    <ConstructQueryAsync>b__235_0() : System.Void
+    <ShouldClearExistingResultsForNonQuery>b__238_0() : ?
+    <SetupDialogJumpAsync>b__256_0() : ?
+    <ResetDialogJump>b__257_0() : ?
+    <UpdateResultView>b__263_0() : TypeDef#0
+    <FocusQueryTextBox>b__264_0() : ?
+- <>c  [methods=7 fields=6 flags=0x102103]
+    field <>9
+    field <>9__58_2
+    field <>9__59_0
+    field <>9__59_2
+    field <>9__59_3
+    field <>9__59_5
+    .cctor() : ?
+    .ctor() : ?
+    <NewResults>b__58_2() : System.SByte
+    <NewResults>b__59_0(TypeDef#541345633, ?et224) : System.Void
+    <NewResults>b__59_2() : ?et224
+    <NewResults>b__59_3() : System.SByte
+    <NewResults>b__59_5() : System.SByte
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__10_0
+    .cctor() : ?
+    .ctor() : ?
+    <.ctor>b__10_0() : TypeDef#0
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__10_0
+    .cctor() : ?
+    .ctor() : ?
+    <.ctor>b__10_0() : TypeDef#0
+- <>c  [methods=5 fields=4 flags=0x102103]
+    field <>9
+    field <>9__4_0
+    field <>9__6_0
+    field <>9__40_1
+    .cctor() : ?
+    .ctor() : ?
+    <get_LogFolderSize>b__4_0() : ?et241
+    <get_CacheFolderSize>b__6_0() : ?et241
+    <ClearLogFolder>b__40_1() : ?et249
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__65_0
+    .cctor() : ?
+    .ctor() : ?
+    <get_KoreanIMERegistryKeyExists>b__65_0() : ?et57
+- <>c  [methods=8 fields=7 flags=0x102103]
+    field <>9
+    field <>9__21_0
+    field <>9__21_1
+    field <>9__21_2
+    field <>9__21_3
+    field <>9__21_4
+    field <>9__24_0
+    .cctor() : ?
+    .ctor() : ?
+    <get_ExternalPlugins>b__21_0() : TypeDef#0
+    <get_ExternalPlugins>b__21_1() : ?et204
+    <get_ExternalPlugins>b__21_2() : ?et204
+    <get_ExternalPlugins>b__21_3() : ?et204
+    <get_ExternalPlugins>b__21_4() : ?et204
+    <CheckPluginUpdatesAsync>b__24_0(System.Void, TypeDef#0) : ?et101
+- <>c  [methods=5 fields=4 flags=0x102103]
+    field <>9
+    field <>9__32_0
+    field <>9__32_1
+    field <>9__32_3
+    .cctor() : ?
+    .ctor() : ?
+    <get_PluginViewModels>b__32_0() : ?
+    <get_PluginViewModels>b__32_1() : ?
+    <get_PluginViewModels>b__32_3() : ?et212
+- <>c  [methods=7 fields=6 flags=0x102103]
+    field <>9
+    field <>9__16_0
+    field <>9__140_0
+    field <>9__140_1
+    field <>9__140_2
+    field <>9__140_3
+    .cctor() : ?
+    .ctor() : ?
+    <get_SelectedTheme>b__16_0() : ?et69
+    <Import>b__140_0() : TypeDef#0
+    <Import>b__140_1() : TypeDef#0
+    <Import>b__140_2() : TypeDef#0
+    <Import>b__140_3() : TypeDef#0
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__5_0
+    .cctor() : ?
+    .ctor() : ?
+    <CheckLogonTask>b__5_0() : ?et53
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__13_0
+    .cctor() : ?
+    .ctor() : ?
+    <CheckAvailability>b__13_0(?et53) : ?et136
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__4_0
+    .cctor() : ?
+    .ctor() : ?
+    <GetWallpaperBrush>b__4_0() : TypeRef#10379460<>
+- <>c__0`1  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__0_0
+    .cctor() : ?
+    .ctor() : ?
+    <Open>b__0_0() : ?
+- <>c__DisplayClass12_0  [methods=2 fields=1 flags=0x100103]
+    field hotkey
+    .ctor() : ?
+    <SetCustomQueryHotkey>b__0(?et53) : ?et136
+- <>c__DisplayClass14_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field output
+    .ctor() : ?
+    <RefreshMarkdownViewer>b__0() : ?
+- <>c__DisplayClass17_0  [methods=2 fields=1 flags=0x100103]
+    field item
+    .ctor() : ?
+    <CustomHotkeyEdit>b__0() : TypeDef#0
+- <>c__DisplayClass19_0  [methods=2 fields=1 flags=0x100103]
+    field plugins
+    .ctor() : ?
+    <AutoPluginUpdates>b__3() : ?
+- <>c__DisplayClass19_1  [methods=2 fields=1 flags=0x100103]
+    field plugins
+    .ctor() : ?
+    <AutoPluginUpdates>b__4() : ?
+- <>c__DisplayClass2_0  [methods=2 fields=1 flags=0x100103]
+    field record
+    .ctor() : ?
+    <.ctor>b__0(System.Void, TypeSpec#88315680, TypeSpec#75526753, ?et130, ?et92) : ?et201
+- <>c__DisplayClass20_0  [methods=2 fields=1 flags=0x100103]
+    field item
+    .ctor() : ?
+    <CustomShortcutEdit>b__0() : System.Void
+- <>c__DisplayClass22_0  [methods=3 fields=1 flags=0x100103]
+    field key
+    .ctor() : ?
+    <DoesShortcutExist>b__0() : System.Void
+    <DoesShortcutExist>b__1() : System.Byte
+- <>c__DisplayClass23_0  [methods=3 fields=2 flags=0x100103]
+    field resultUpdateChannel
+    field <>4__this
+    .ctor() : ?
+    <RegisterViewUpdate>g__UpdateActionAsync|0() : ?
+    <RegisterViewUpdate>g__continueAction|1() : ?et41
+- <>c__DisplayClass231_0  [methods=2 fields=1 flags=0x100103]
+    field query
+    .ctor() : ?
+    <QueryContextMenu>b__1() : ?[]
+- <>c__DisplayClass232_0  [methods=2 fields=1 flags=0x100103]
+    field query
+    .ctor() : ?
+    <QueryHistory>b__0() : ?[]
+- <>c__DisplayClass233_0  [methods=2 fields=1 flags=0x100103]
+    field h
+    .ctor() : ?
+    <GetHistoryItems>b__0() : ?et249
+- <>c__DisplayClass234_0  [methods=5 fields=7 flags=0x100103]
+    field <>4__this
+    field updateGuid
+    field query
+    field searchDelay
+    field currentIsHomeQuery
+    field currentIsDialogJump
+    field reSelect
+    .ctor() : ?
+    <QueryResultsAsync>b__3() : ?et41
+    <QueryResultsAsync>g__ClearResults|0() : ?
+    <QueryResultsAsync>g__QueryTaskAsync|1() : TypeRef#543179860
+    <QueryResultsAsync>g__QueryHistoryTask|2() : ?et129
+- <>c__DisplayClass234_1  [methods=3 fields=2 flags=0x100103]
+    field currentCancellationToken
+    field CS$<>8__locals1
+    .ctor() : ?
+    <QueryResultsAsync>b__4() : TypeDef#0
+    <QueryResultsAsync>b__5() : TypeDef#0
+- <>c__DisplayClass239_0  [methods=3 fields=2 flags=0x100103]
+    field <>4__this
+    field result
+    .ctor() : ?
+    <ContextMenuTopMost>b__0() : ?et249
+    <ContextMenuTopMost>b__1() : ?et249
+- <>c__DisplayClass24_0  [methods=2 fields=2 flags=0x100103]
+    field disposing
+    field <>4__this
+    .ctor() : ?
+    <Dispose>b__0() : ?
+- <>c__DisplayClass24_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field pair
+    .ctor() : ?
+    <RegisterResultsUpdatedEvent>b__0(TypeDef#0) : ?et197
+- <>c__DisplayClass24_0  [methods=2 fields=1 flags=0x100103]
+    field plugins
+    .ctor() : ?
+    <CheckPluginUpdatesAsync>b__1() : ?
+- <>c__DisplayClass240_0  [methods=2 fields=1 flags=0x100103]
+    field metadata
+    .ctor() : ?
+    <ContextMenuPluginInfo>b__0() : ?et249
+- <>c__DisplayClass27_0  [methods=2 fields=1 flags=0x100103]
+    field hotkey
+    .ctor() : ?
+    <.ctor>b__0() : ?et157
+- <>c__DisplayClass3_0  [methods=3 fields=3 flags=0x100103]
+    field progressBox
+    field cancelProgress
+    field caption
+    .ctor() : ?
+    <ShowAsync>b__1() : ?
+    <ShowAsync>b__0() : ?
+- <>c__DisplayClass3_0  [methods=2 fields=1 flags=0x100103]
+    field url
+    .ctor() : ?
+    <Hyperlink>b__0() : ?et117
+- <>c__DisplayClass31_0  [methods=3 fields=1 flags=0x100103]
+    field stringToCopy
+    .ctor() : ?
+    <CopyToClipboard>b__0() : ?
+    <CopyToClipboard>b__1() : ?
+- <>c__DisplayClass32_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field dialogJumpResult
+    .ctor() : ?
+    <LoadContextMenu>b__0(System.Void, System.Boolean) : ?et173
+- <>c__DisplayClass33_0  [methods=2 fields=1 flags=0x100103]
+    field hotkey
+    .ctor() : ?
+    <SetKeysToDisplay>b__0() : ?et157
+- <>c__DisplayClass33_0  [methods=2 fields=6 flags=0x100103]
+    field <>4__this
+    field screenLeftTop
+    field maxWidth
+    field xRatio
+    field maxHeight
+    field yRatio
+    .ctor() : ?
+    <OnMouseDown>b__0() : ?
+- <>c__DisplayClass35_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field dialogJumpResult
+    .ctor() : ?
+    <OpenResultAsync>b__0(System.Void, System.Boolean) : ?et173
+- <>c__DisplayClass4_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field progress
+    .ctor() : ?
+    <ReportProgress>b__0() : ?
+- <>c__DisplayClass4_0  [methods=2 fields=1 flags=0x100103]
+    field result
+    .ctor() : ?
+    <IsTopMost>b__0() : ?et92
+- <>c__DisplayClass40_0  [methods=3 fields=1 flags=0x100103]
+    field success
+    .ctor() : ?
+    <ClearLogFolder>b__0() : ?et241
+    <ClearLogFolder>b__2() : ?et249
+- <>c__DisplayClass43_0  [methods=3 fields=1 flags=0x100103]
+    field success
+    .ctor() : ?
+    <ClearCacheFolder>b__0() : ?et241
+    <ClearCacheFolder>b__1() : ?et249
+- <>c__DisplayClass5_0  [methods=2 fields=5 flags=0x100103]
+    field messageBoxText
+    field caption
+    field button
+    field icon
+    field defaultResult
+    .ctor() : ?
+    <Show>b__0() : ?
+- <>c__DisplayClass5_0  [methods=2 fields=3 flags=0x100103]
+    field title
+    field subTitle
+    field iconPath
+    .ctor() : ?
+    <Show>b__0() : ?
+- <>c__DisplayClass53_0  [methods=2 fields=1 flags=0x100103]
+    field metadata
+    .ctor() : ?
+    <KeepResultsFor>b__0() : System.SByte
+- <>c__DisplayClass54_0  [methods=2 fields=1 flags=0x100103]
+    field metadata
+    .ctor() : ?
+    <KeepResultsExcept>b__0() : System.SByte
+- <>c__DisplayClass58_0  [methods=3 fields=2 flags=0x100103]
+    field <>4__this
+    field resultId
+    .ctor() : ?
+    <NewResults>b__0() : TypeDef#0
+    <NewResults>b__1() : System.SByte
+- <>c__DisplayClass59_0  [methods=3 fields=2 flags=0x100103]
+    field <>4__this
+    field resultsForUpdates
+    .ctor() : ?
+    <NewResults>b__1(?[]) : TypeRef#553957408
+    <NewResults>b__4() : System.SByte
+- <>c__DisplayClass59_1  [methods=2 fields=1 flags=0x100103]
+    field r
+    .ctor() : ?
+    <NewResults>b__6() : ?et224
+- <>c__DisplayClass6_0  [methods=3 fields=2 flags=0x100103]
+    field buttonAction
+    field <>4__this
+    .ctor() : ?
+    <Show>b__0() : ?et117
+    <Show>b__1() : ?
+- <>c__DisplayClass6_0  [methods=2 fields=1 flags=0x100103]
+    field record
+    .ctor() : ?
+    <AddOrUpdate>b__0(TypeDef#0) : System.String
+- <>c__DisplayClass6_0  [methods=2 fields=1 flags=0x100103]
+    field result
+    .ctor() : ?
+    <Remove>b__0() : ?et92
+- <>c__DisplayClass7_0  [methods=2 fields=1 flags=0x100103]
+    field result
+    .ctor() : ?
+    <AddOrUpdate>b__0() : ?et92
+- <>c__DisplayClass8_0  [methods=2 fields=5 flags=0x100103]
+    field title
+    field buttonText
+    field buttonAction
+    field subTitle
+    field iconPath
+    .ctor() : ?
+    <ShowWithButton>b__0() : ?
+- <>c__DisplayClass84_0  [methods=2 fields=3 flags=0x100103]
+    field <>4__this
+    field queryText
+    field isReQuery
+    .ctor() : ?
+    <ChangeQueryText>b__0() : ?
+- <>c__DisplayClass85_0  [methods=2 fields=3 flags=0x100103]
+    field <>4__this
+    field queryText
+    field isReQuery
+    .ctor() : ?
+    <ChangeQueryTextAsync>b__0() : ?
+- <>c__DisplayClass9_0  [methods=2 fields=1 flags=0x100103]
+    field buttonAction
+    .ctor() : ?
+    <ShowInternalWithButton>b__0(TypeDef#0) : System.String
+- <>O  [methods=0 fields=3 flags=0x100183]
+    field <0>__DispatcherUnhandledException
+    field <1>__UnhandledException
+    field <2>__TaskSchedulerUnobservedTaskException
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__OnToggleHotkey
+- <>O  [methods=0 fields=2 flags=0x100183]
+    field <0>__OnToggleHotkey
+    field <1>__OnToggleHotkey
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__OnToggleHotkey
+- <>O  [methods=0 fields=3 flags=0x100183]
+    field <0>__OnToggleHotkey
+    field <1>__OnToggleHotkey
+    field <2>__OnToggleHotkeyWithChefKeys
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__ActivateFirstInstance
+- <>O  [methods=0 fields=2 flags=0x100183]
+    field <0>__GetWallpaperBrush
+    field <1>__Parse
+- <BuildQueryAsync>d__236  [methods=2 fields=11 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field queryBuilder
+    field builtInShortcuts
+    field queryBuilderTmp
+    field <>4__this
+    field <customExpanded>5__2
+    field <queryChanged>5__3
+    field <>7__wrap3
+    field <shortcut>5__5
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ChangeQueryTextAsync>d__85  [methods=2 fields=7 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field queryText
+    field isReQuery
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <CheckPluginUpdatesAsync>d__24  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <CloseExternalPreviewAsync>d__220  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ConstructQueryAsync>d__235  [methods=2 fields=8 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field queryText
+    field customShortcuts
+    field <>4__this
+    field builtInShortcuts
+    field <queryBuilder>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <CopyToClipboard>d__31  [methods=2 fields=8 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field stringToCopy
+    field directCopy
+    field showDefaultNotification
+    field <>4__this
+    field <isFile>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <CreateRemoteServiceAsync>d__9  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field channelName
+    field <pipeServer>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <GetReleaseNotesMarkdownAsync>d__19  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <Hide>d__261  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field reset
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <InstallPluginAsync>d__23  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadBadgeImageAsync>d__56  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadCacheBinaryStorageAsync>d__79`1  [methods=2 fields=7 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field cacheName
+    field cacheDirectory
+    field defaultData
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadIconAsync>d__8  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadImageAsync>d__3  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>7__wrap1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadImageAsync>d__3  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>7__wrap1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadImageAsync>d__55  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadImageInternalAsync>d__54  [methods=2 fields=7 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field imagePath
+    field icon
+    field <>4__this
+    field loadFullImage
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <LoadPreviewImageAsync>d__57  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <OnClosing>d__26  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field e
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OnContextMenusForSettingsClick>d__34  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OnDeactivated>d__29  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OnStartup>d__16  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OnTestProxyClickedAsync>d__5  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OpenDeletePluginWindowAsync>d__69  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OpenExternalPreviewAsync>d__219  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field path
+    field sendFailToast
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OpenHelperAsync>d__34  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field button
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OpenHotkeyDialogAsync>d__41  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <dialog>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <OpenResultAsync>d__35  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field index
+    field <result>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <PositionResetAsync>d__47  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <QueryAsync>d__230  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field searchDelay
+    field isReQuery
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <QueryResultsAsync>d__234  [methods=2 fields=13 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field searchDelay
+    field reSelect
+    field <>8__1
+    field <>8__2
+    field isReQuery
+    field <>u__1
+    field <plugins>5__2
+    field <>u__2
+    field <>u__3
+    field <>u__4
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <RefreshExternalPluginsAsync>d__22  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <RefreshMarkdownViewer>d__14  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>8__1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <RegisterClockAndDateUpdateAsync>d__25  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <timer>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ReloadPluginDataAsync>d__26  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ResetDialogJump>d__257  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ResetWindowAsync>d__259  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <RetryActionOnSTAThreadAsync>d__32  [methods=2 fields=8 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field action
+    field retryCount
+    field retryDelay
+    field <i>5__2
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SaveCacheBinaryStorageAsync>d__80`1  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field cacheName
+    field cacheDirectory
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SetImageAsync>d__8  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field imageName
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SetImageOfMessageBoxAsync>d__7  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field icon
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SetupDialogJumpAsync>d__256  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field handle
+    field <>4__this
+    field <dialogWindowHandleChanged>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <Show>d__6  [methods=2 fields=9 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field title
+    field subTitle
+    field iconPath
+    field <>7__wrap1
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <Show>d__6  [methods=2 fields=12 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field buttonAction
+    field <>4__this
+    field title
+    field subTitle
+    field buttonText
+    field iconPath
+    field <>8__1
+    field <>7__wrap1
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ShowAsync>d__3  [methods=2 fields=12 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field cancelProgress
+    field caption
+    field reportProgressAsync
+    field <>8__1
+    field <>7__wrap1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>7__wrap4
+    field <>u__1
+    field <>u__2
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ShowCommandQueryAsync>d__33  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field action
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <ShowPreviewAsync>d__216  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SignalFirstInstanceAsync>d__10  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field channelName
+    field <pipeClient>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <SwitchExternalPreviewAsync>d__221  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field path
+    field sendFailToast
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <TestProxyAsync>d__6  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <client>5__2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- <UpdatePreviewAsync>d__225  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et117
+- AnimationSpeedData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- BackdropTypeData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- ColorSchemeData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- DataWebRequest  [methods=2 fields=1 flags=0x100003]
+    field _uri
+    .ctor() : ?et169
+    GetResponse() : ?
+- DataWebResponse  [methods=6 fields=2 flags=0x100003]
+    field _contentType
+    field _data
+    .ctor() : ?et169
+    get_ContentType() : ?
+    set_ContentType() : ?
+    get_ContentLength() : ?
+    set_ContentLength() : ?
+    GetResponseStream() : ?
+- DialogJumpFileResultBehaviourData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- DialogJumpResultBehaviourData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- DialogJumpWindowPositionData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- DisplayModeData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- DisplayType  [methods=0 fields=3 flags=0x102]
+    field value__
+    field Default
+    field Small
+- DoublePinyinSchemaData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- EResultType  [methods=0 fields=4 flags=0x102]
+    field value__
+    field Cancel
+    field Save
+    field Delete
+- FlowLauncher_ProcessedByFody  [methods=0 fields=2 flags=0x0]
+    field FodyVersion
+    field PropertyChanged
+- GitHubReleaseInfo  [methods=9 fields=4 flags=0x100103]
+    field <PublishedDate>k__BackingField
+    field <Name>k__BackingField
+    field <TagName>k__BackingField
+    field <ReleaseNotes>k__BackingField
+    get_PublishedDate() : ?
+    set_PublishedDate() : ?et177
+    get_Name() : ?
+    set_Name() : ?
+    get_TagName() : ?
+    set_TagName() : ?
+    get_ReleaseNotes() : ?
+    set_ReleaseNotes() : ?
+    .ctor() : ?
+- HotkeyType  [methods=0 fields=19 flags=0x102]
+    field value__
+    field None
+    field CustomQueryHotkey
+    field Hotkey
+    field PreviewHotkey
+    field OpenContextMenuHotkey
+    field SettingWindowHotkey
+    field OpenHistoryHotkey
+    field CycleHistoryUpHotkey
+    field CycleHistoryDownHotkey
+    field SelectPrevPageHotkey
+    field SelectNextPageHotkey
+    field AutoCompleteHotkey
+    field AutoCompleteHotkey2
+    field SelectPrevItemHotkey
+    field SelectPrevItemHotkey2
+    field SelectNextItemHotkey
+    field SelectNextItemHotkey2
+    field DialogJumpHotkey
+- LastQueryModeData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- LogLevelData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- ResultCollection  [methods=8 fields=2 flags=0x100002]
+    field editTime
+    field CollectionChanged
+    add_CollectionChanged() : ?et153
+    remove_CollectionChanged() : ?et153
+    OnCollectionChanged() : ?et157
+    BulkAddAll(System.Void, TypeSpec#541344032, ?et129) : ?et101
+    AddAll(System.Void, TypeSpec#541344032, ?et129) : ?et101
+    RemoveAll() : ?
+    Update(System.Void, TypeSpec#541344032, ?et129) : ?et101
+    .ctor() : ?
+- Runner  [methods=5 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et37
+    TryFindNextPossibleStartingPosition(System.Void, System.Char) : ?et37
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et37
+    .ctor() : ?
+    <TryMatchAtCurrentPosition>g__UncaptureUntil|2_0() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+- SearchPrecisionData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- SearchWindowAlignData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+- SearchWindowScreenData  [methods=1 fields=0 flags=0x100002]
+    .ctor() : ?
+
+## Flow.Launcher (23)
+- ActionKeywords  [methods=7 fields=8 flags=0x100001]
+    field _plugin
+    field _pluginViewModel
+    field tbOldActionKeyword
+    field tbAction
+    field btnCancel
+    field btnDone
+    field lblAdd
+    field _contentLoaded
+    .ctor() : ?et212
+    ActionKeyword_OnLoaded() : ?et117
+    BtnCancel_OnClick() : ?et117
+    btnDone_OnClick() : ?et117
+    ReplaceActionKeyword(TypeSpec#6905860<>) : TypeDef#58747232
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- App  [methods=25 fields=9 flags=0x100001]
+    field <API>k__BackingField
+    field ClassName
+    field _disposed
+    field _settings
+    field _mainWindow
+    field _mainVM
+    field _internationalization
+    field _disposingLock
+    field _contentLoaded
+    get_API() : ?
+    set_API() : ?et133
+    get_LoadingOrExiting() : ?
+    .ctor() : ?
+    Main() : ?
+    ShowErrorMsgBoxAndFailFast(?et217) : ?et128
+    OnStartup(TypeDef#0<>) : ?et129
+    AutoStartup() : ?
+    AutoUpdates() : ?
+    AutoPluginUpdates() : ?
+    RegisterExitEvents() : ?
+    RegisterDispatcherUnhandledException() : ?
+    RegisterAppDomainExceptions() : ?
+    RegisterTaskSchedulerUnhandledException() : ?
+    Dispose() : ?
+    Dispose() : ?
+    OnSecondAppStarted() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+    <OnStartup>b__16_0() : ?
+    <OnStartup>b__16_1() : ?
+    <RegisterExitEvents>b__20_0(?et101) : ?et129
+    <RegisterExitEvents>b__20_1(?et105) : ?et129
+    <RegisterExitEvents>b__20_2(?et109) : ?et129
+- CustomQueryHotkeySetting  [methods=14 fields=12 flags=0x100001]
+    field <Hotkey>k__BackingField
+    field <ActionKeyword>k__BackingField
+    field update
+    field originalCustomHotkey
+    field HotkeyControl
+    field tbAction
+    field btnTestActionKeyword
+    field btnCancel
+    field btnAdd
+    field tbAdd
+    field tbUpdate
+    field _contentLoaded
+    get_Hotkey() : ?
+    set_Hotkey() : ?
+    get_ActionKeyword() : ?
+    set_ActionKeyword() : ?
+    .ctor() : ?
+    .ctor() : TypeDef#0
+    BtnCancel_OnClick() : ?et117
+    btnAdd_OnClick() : ?et117
+    BtnTestActionKeyword_OnClick() : ?et117
+    cmdEsc_OnPress(?[]) : ?et130
+    window_MouseDown(?et49) : ?et130
+    InitializeComponent() : ?
+    _CreateDelegate() : TypeDef#0
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- CustomShortcutSetting  [methods=15 fields=12 flags=0x100001]
+    field _hotkeyVm
+    field <Key>k__BackingField
+    field <Value>k__BackingField
+    field <originalKey>k__BackingField
+    field <originalValue>k__BackingField
+    field <update>k__BackingField
+    field tbExpand
+    field btnTestShortcut
+    field btnCancel
+    field btnAdd
+    field lblAdd
+    field _contentLoaded
+    get_Key() : ?
+    set_Key() : ?
+    get_Value() : ?
+    set_Value() : ?
+    get_originalKey() : ?
+    get_originalValue() : ?
+    get_update() : ?
+    .ctor() : ?et196
+    .ctor() : TypeDef#0
+    BtnCancel_OnClick() : ?et117
+    BtnAdd_OnClick() : ?et117
+    cmdEsc_OnPress(?[]) : ?et130
+    BtnTestShortcut_OnClick() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- HotkeyControl  [methods=30 fields=11 flags=0x100001]
+    field WindowTitleProperty
+    field ValidateKeyGestureProperty
+    field DefaultHotkeyProperty
+    field ChangeHotkeyProperty
+    field TypeProperty
+    field _settings
+    field hotkey
+    field <KeysToDisplay>k__BackingField
+    field <CurrentHotkey>k__BackingField
+    field HotkeyList
+    field _contentLoaded
+    get_WindowTitle() : ?
+    set_WindowTitle() : ?
+    get_ValidateKeyGesture() : ?
+    set_ValidateKeyGesture() : ?
+    get_DefaultHotkey() : ?
+    set_DefaultHotkey() : ?
+    OnHotkeyChanged(TypeDef#0) : ?et85
+    get_ChangeHotkey() : ?
+    set_ChangeHotkey() : ?et97
+    get_Type() : ?
+    set_Type() : ?
+    get_Hotkey() : ?
+    set_Hotkey() : ?
+    .ctor() : ?
+    RefreshHotkeyInterface() : ?
+    CheckHotkeyAvailability(System.Boolean) : System.UIntPtr
+    get_EmptyHotkey() : ?
+    get_KeysToDisplay(System.Void, System.String) : ?et77
+    set_KeysToDisplay(?et77, System.Void, System.String) : ?et130
+    get_CurrentHotkey() : ?
+    set_CurrentHotkey() : System.UIntPtr
+    GetNewHotkey() : ?et117
+    OpenHotkeyDialogAsync() : ?
+    SetHotkey(System.Boolean) : System.UIntPtr
+    Delete() : ?
+    SetKeysToDisplay(System.Double, System.Void, TypeDef#0) : ?et130
+    SetHotkey() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+- HotkeyControlDialog  [methods=22 fields=14 flags=0x100001]
+    field _hotkeySettings
+    field _overwriteOtherHotkey
+    field <DefaultHotkey>k__BackingField
+    field <WindowTitle>k__BackingField
+    field <CurrentHotkey>k__BackingField
+    field <KeysToDisplay>k__BackingField
+    field <ResultType>k__BackingField
+    field <ResultValue>k__BackingField
+    field isOpenFlowHotkey
+    field Alert
+    field tbMsg
+    field OverwriteBtn
+    field SaveBtn
+    field _contentLoaded
+    get_DefaultHotkey() : ?
+    get_WindowTitle() : ?
+    get_CurrentHotkey() : ?
+    set_CurrentHotkey() : System.UIntPtr
+    get_KeysToDisplay(System.Void, System.String) : ?et77
+    get_ResultType() : ?
+    set_ResultType() : ?
+    get_ResultValue() : ?
+    set_ResultValue() : ?
+    get_EmptyHotkey() : ?
+    .ctor() : System.String
+    Reset() : ?et117
+    Delete() : ?et117
+    Cancel() : ?et117
+    Save() : ?et117
+    OnPreviewKeyDown(?et169) : ?et130
+    SetKeysToDisplay(System.Double, System.Void, TypeDef#0) : ?et130
+    CheckHotkeyAvailability(System.Boolean) : System.UIntPtr
+    Overwrite() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+- Localize  [methods=586 fields=0 flags=0x100181]
+    runtimePluginInstalledChooseRuntimePrompt() : System.Object
+    runtimePluginChooseRuntimeExecutable() : ?
+    runtimeExecutableInvalidChooseDownload() : System.Object
+    runtimePluginUnableToSetExecutablePath() : ?
+    failedToInitializePluginsTitle() : ?
+    failedToInitializePluginsMessage() : ?
+    restartToDisablePortableMode() : ?
+    restartToEnablePortableMode() : ?
+    moveToDifferentLocation() : ?
+    shortcutsUninstallerCreated() : ?
+    userDataDuplicated() : System.Object
+    pluginHasErrored() : ?
+    pluginsHaveErrored() : ?
+    referToLogs() : ?
+    pleaseTryAgain() : ?
+    parseProxyFailed() : ?
+    failToInstallTypeScriptEnv() : ?
+    failToInstallPythonEnv() : ?
+    registerHotkeyFailed() : ?
+    unregisterHotkeyFailed() : ?
+    MessageBoxTitle() : ?
+    couldnotStartCmd() : ?
+    invalidFlowLauncherPluginFileFormat() : ?
+    setAsTopMostInThisQuery() : ?
+    cancelTopMostInThisQuery() : ?
+    executeQuery() : ?
+    lastExecuteTime() : ?
+    iconTrayOpen() : ?
+    iconTraySettings() : ?
+    iconTrayAbout() : ?
+    iconTrayExit() : ?
+    closeWindow() : ?
+    copy() : ?
+    cut() : ?
+    paste() : ?
+    undo() : ?
+    selectAll() : ?
+    fileTitle() : ?
+    folderTitle() : ?
+    textTitle() : ?
+    GameMode() : ?
+    GameModeToolTip() : ?
+    PositionReset() : ?
+    PositionResetToolTip() : ?
+    queryTextBoxPlaceholder() : ?
+    pluginStillInitializing() : ?
+    pluginStillInitializingSubtitle() : ?
+    pluginFailedToRespond() : ?
+    pluginFailedToRespondSubtitle() : ?
+    flowlauncher_settings() : ?
+    general() : ?
+    portableMode() : ?
+    portableModeToolTIp() : ?
+    startFlowLauncherOnSystemStartup() : ?
+    useLogonTaskForStartup() : ?
+    useLogonTaskForStartupTooltip() : ?
+    setAutoStartFailed() : ?
+    hideFlowLauncherWhenLoseFocus() : ?
+    showTaskbarWhenOpened() : ?
+    showTaskbarWhenOpenedToolTip() : ?
+    dontPromptUpdateMsg() : ?
+    SearchWindowPosition() : ?
+    SearchWindowScreenRememberLastLaunchLocation() : ?
+    SearchWindowScreenCursor() : ?
+    SearchWindowScreenFocus() : ?
+    SearchWindowScreenPrimary() : ?
+    SearchWindowScreenCustom() : ?
+    SearchWindowAlign() : ?
+    SearchWindowAlignCenter() : ?
+    SearchWindowAlignCenterTop() : ?
+    SearchWindowAlignLeftTop() : ?
+    SearchWindowAlignRightTop() : ?
+    SearchWindowAlignCustom() : ?
+    language() : ?
+    lastQueryMode() : ?
+    lastQueryModeToolTip() : ?
+    LastQueryPreserved() : ?
+    LastQuerySelected() : ?
+    LastQueryEmpty() : ?
+    LastQueryActionKeywordPreserved() : ?
+    LastQueryActionKeywordSelected() : ?
+    maxShowResults() : ?
+    maxShowResultsToolTip() : ?
+    ignoreHotkeysOnFullscreen() : ?
+    ignoreHotkeysOnFullscreenToolTip() : ?
+    defaultFileManager() : ?
+    defaultFileManagerToolTip() : ?
+    defaultBrowser() : ?
+    defaultBrowserToolTip() : ?
+    pythonFilePath() : ?
+    nodeFilePath() : ?
+    selectNodeExecutable() : ?
+    selectPythonExecutable() : ?
+    typingStartEn() : ?
+    typingStartEnTooltip() : ?
+    autoUpdates() : ?
+    autoUpdatesTooltip() : ?
+    select() : ?
+    hideOnStartup() : ?
+    hideOnStartupToolTip() : ?
+    hideNotifyIcon() : ?
+    hideNotifyIconToolTip() : ?
+    querySearchPrecision() : ?
+    querySearchPrecisionToolTip() : ?
+    SearchPrecisionNone() : ?
+    SearchPrecisionLow() : ?
+    SearchPrecisionRegular() : ?
+    ShouldUsePinyin() : ?
+    ShouldUsePinyinToolTip() : ?
+    ShouldUseDoublePinyin() : ?
+    ShouldUseDoublePinyinToolTip() : ?
+    DoublePinyinSchema() : ?
+    DoublePinyinSchemasXiaoHe() : ?
+    DoublePinyinSchemasZiRanMa() : ?
+    DoublePinyinSchemasWeiRuan() : ?
+    DoublePinyinSchemasZhiNengABC() : ?
+    DoublePinyinSchemasZiGuangPinYin() : ?
+    DoublePinyinSchemasPinYinJiaJia() : ?
+    DoublePinyinSchemasXingKongJianDao() : ?
+    DoublePinyinSchemasDaNiu() : ?
+    DoublePinyinSchemasXiaoLang() : ?
+    AlwaysPreview() : ?
+    AlwaysPreviewToolTip() : ?
+    shadowEffectNotAllowed() : ?
+    searchDelay() : ?
+    searchDelayToolTip() : ?
+    searchDelayNumberBoxToolTip() : ?
+    searchDelayTime() : ?
+    searchDelayTimeToolTip() : ?
+    KoreanImeTitle() : ?
+    KoreanImeGuide() : ?
+    KoreanImeOpenLink() : ?
+    KoreanImeOpenLinkToolTip() : ?
+    KoreanImeOpenLinkButton() : ?
+    KoreanImeRegistry() : ?
+    KoreanImeRegistryTooltip() : ?
+    KoreanImeSettingChangeFailTitle() : ?
+    KoreanImeSettingChangeFailSubTitle() : ?
+    homePage() : ?
+    homePageToolTip() : ?
+    historyResultsForHomePage() : ?
+    historyResultsCountForHomePage() : ?
+    homeToggleBoxToolTip() : ?
+    showAtTopmost() : ?
+    showAtTopmostToolTip() : ?
+    autoRestartAfterChanging() : ?
+    autoRestartAfterChangingToolTip() : ?
+    showUnknownSourceWarning() : ?
+    showUnknownSourceWarningToolTip() : ?
+    autoUpdatePlugins() : ?
+    autoUpdatePluginsToolTip() : ?
+    searchplugin() : ?
+    searchpluginToolTip() : ?
+    searchplugin_Noresult_Title() : ?
+    searchplugin_Noresult_Subtitle() : ?
+    plugin() : ?
+    plugins() : ?
+    browserMorePlugins() : ?
+    enable() : ?
+    disable() : ?
+    actionKeywordsTitle() : ?
+    actionKeywords() : ?
+    currentActionKeywords() : ?
+    newActionKeyword() : ?
+    actionKeywordsTooltip() : ?
+    pluginSearchDelayTime() : ?
+    pluginSearchDelayTimeTooltip() : ?
+    FilterComboboxLabel() : ?
+    DisplayModeOnOff() : ?
+    DisplayModePriority() : ?
+    DisplayModeSearchDelay() : ?
+    DisplayModeHomeOnOff() : ?
+    currentPriority() : ?
+    newPriority() : ?
+    priority() : ?
+    priorityToolTip() : ?
+    pluginDirectory() : ?
+    author() : ?
+    plugin_init_time() : ?
+    plugin_query_time() : ?
+    plugin_query_version() : ?
+    plugin_query_web() : ?
+    plugin_uninstall() : ?
+    plugin_default_search_delay_time() : ?
+    plugin_search_delay_time() : ?
+    failedToRemovePluginSettingsTitle() : ?
+    failedToRemovePluginSettingsMessage() : ?
+    failedToRemovePluginCacheTitle() : ?
+    failedToRemovePluginCacheMessage() : ?
+    pluginModifiedAlreadyTitle() : ?
+    pluginModifiedAlreadyMessage() : ?
+    failedToInstallPluginTitle() : ?
+    failedToUninstallPluginTitle() : ?
+    fileNotFoundMessage() : ?
+    pluginExistAlreadyMessage() : ?
+    errorCreatingSettingPanel() : System.Object
+    pluginStore() : ?
+    pluginStore_NewRelease() : ?
+    pluginStore_RecentlyUpdated() : ?
+    pluginStore_None() : ?
+    pluginStore_Installed() : ?
+    refresh() : ?
+    installbtn() : ?
+    uninstallbtn() : ?
+    updatebtn() : ?
+    LabelInstalledToolTip() : ?
+    LabelNew() : ?
+    LabelNewToolTip() : ?
+    LabelUpdateToolTip() : ?
+    ErrorInstallingPlugin() : ?
+    ErrorUninstallingPlugin() : ?
+    ErrorUpdatingPlugin() : ?
+    KeepPluginSettingsTitle() : ?
+    KeepPluginSettingsSubtitle() : ?
+    InstallSuccessNoRestart() : ?
+    UninstallSuccessNoRestart() : ?
+    UpdateSuccessNoRestart() : ?
+    InstallPromptTitle() : ?
+    InstallPromptSubtitle() : System.Object
+    UninstallPromptTitle() : ?
+    UninstallPromptSubtitle() : System.Object
+    UpdatePromptTitle() : ?
+    UpdatePromptSubtitle() : System.Object
+    DownloadingPlugin() : ?
+    AutoRestartAfterChange() : ?
+    ZipFileNotHavePluginJson() : ?
+    InstallFromUnknownSourceTitle() : ?
+    InstallFromUnknownSourceSubtitle() : ?
+    ZipFiles() : ?
+    SelectZipFile() : ?
+    installLocalPluginTooltip() : ?
+    updateNoResultTitle() : ?
+    updateNoResultSubtitle() : ?
+    updateAllPluginsTitle() : ?
+    updateAllPluginsButtonContent() : ?
+    checkPluginUpdatesTooltip() : ?
+    PluginsUpdateSuccessNoRestart() : ?
+    theme() : ?
+    appearance() : ?
+    browserMoreThemes() : ?
+    howToCreateTheme() : ?
+    hiThere() : ?
+    SampleTitleExplorer() : ?
+    SampleSubTitleExplorer() : ?
+    SampleTitleWebSearch() : ?
+    SampleSubTitleWebSearch() : ?
+    SampleTitleProgram() : ?
+    SampleSubTitleProgram() : ?
+    SampleTitleProcessKiller() : ?
+    SampleSubTitleProcessKiller() : ?
+    SearchBarHeight() : ?
+    ItemHeight() : ?
+    queryBoxFont() : ?
+    resultItemFont() : ?
+    resultSubItemFont() : ?
+    resetCustomize() : ?
+    resetCustomizeToolTip() : ?
+    ImportThemeSize() : ?
+    ImportThemeSizeToolTip() : ?
+    CustomizeToolTip() : ?
+    windowMode() : ?
+    opacity() : ?
+    theme_load_failure_path_not_exists() : ?
+    theme_load_failure_parse_error() : ?
+    ThemeFolder() : ?
+    OpenThemeFolder() : ?
+    ColorScheme() : ?
+    ColorSchemeSystem() : ?
+    ColorSchemeLight() : ?
+    ColorSchemeDark() : ?
+    SoundEffect() : ?
+    SoundEffectTip() : ?
+    SoundEffectVolume() : ?
+    SoundEffectVolumeTip() : ?
+    SoundEffectWarning() : ?
+    Animation() : ?
+    AnimationTip() : ?
+    AnimationSpeed() : ?
+    AnimationSpeedTip() : ?
+    AnimationSpeedSlow() : ?
+    AnimationSpeedMedium() : ?
+    AnimationSpeedFast() : ?
+    AnimationSpeedCustom() : ?
+    Clock() : ?
+    Date() : ?
+    BackdropType() : ?
+    BackdropInfo() : ?
+    BackdropTypeDisabledToolTip() : ?
+    BackdropTypesNone() : ?
+    BackdropTypesAcrylic() : ?
+    BackdropTypesMica() : ?
+    BackdropTypesMicaAlt() : ?
+    TypeIsDarkToolTip() : ?
+    TypeHasBlurToolTip() : ?
+    ShowPlaceholder() : ?
+    ShowPlaceholderTip() : ?
+    PlaceholderText() : ?
+    PlaceholderTextTip() : ?
+    KeepMaxResults() : ?
+    KeepMaxResultsToolTip() : ?
+    MaxShowResultsCannotWorkWithAlwaysPreview() : ?
+    hotkey() : ?
+    hotkeys() : ?
+    flowlauncherHotkey() : ?
+    flowlauncherHotkeyToolTip() : ?
+    previewHotkey() : ?
+    previewHotkeyToolTip() : ?
+    hotkeyPresets() : ?
+    hotkeyPresetsToolTip() : ?
+    openResultModifiers() : ?
+    openResultModifiersToolTip() : ?
+    showOpenResultHotkey() : ?
+    showOpenResultHotkeyToolTip() : ?
+    autoCompleteHotkey() : ?
+    autoCompleteHotkeyToolTip() : ?
+    SelectNextItemHotkey() : ?
+    SelectPrevItemHotkey() : ?
+    SelectNextPageHotkey() : ?
+    SelectPrevPageHotkey() : ?
+    CycleHistoryUpHotkey() : ?
+    CycleHistoryDownHotkey() : ?
+    OpenContextMenuHotkey() : ?
+    OpenNativeContextMenuHotkey() : ?
+    SettingWindowHotkey() : ?
+    CopyFilePathHotkey() : ?
+    ToggleGameModeHotkey() : ?
+    ToggleHistoryHotkey() : ?
+    OpenContainFolderHotkey() : ?
+    RunAsAdminHotkey() : ?
+    RequeryHotkey() : ?
+    ReloadPluginHotkey() : ?
+    QuickWidthHotkey() : ?
+    QuickHeightHotkey() : ?
+    ReloadPluginHotkeyToolTip() : ?
+    AdditionalHotkeyToolTip() : ?
+    customQueryHotkey() : ?
+    customQueryShortcut() : ?
+    builtinShortcuts() : ?
+    customQuery() : ?
+    customShortcut() : ?
+    customShortcutExpansion() : ?
+    builtinShortcutDescription() : ?
+    delete() : ?
+    edit() : ?
+    add() : ?
+    none() : ?
+    pleaseSelectAnItem() : ?
+    deleteCustomHotkeyWarning() : ?
+    deleteCustomShortcutWarning() : ?
+    shortcut_clipboard_description() : ?
+    shortcut_active_explorer_path() : ?
+    queryWindowShadowEffect() : ?
+    shadowEffectCPUUsage() : ?
+    windowWidthSize() : ?
+    windowWidthSizeToolTip() : ?
+    useGlyphUI() : ?
+    useGlyphUIEffect() : ?
+    flowlauncherPressHotkey() : ?
+    showBadges() : ?
+    showBadgesToolTip() : ?
+    showBadgesGlobalOnly() : ?
+    showBadgesGlobalOnlyToolTip() : ?
+    dialogJumpHotkey() : ?
+    dialogJumpHotkeyToolTip() : ?
+    dialogJump() : ?
+    dialogJumpToolTip() : ?
+    autoDialogJump() : ?
+    autoDialogJumpToolTip() : ?
+    showDialogJumpWindow() : ?
+    showDialogJumpWindowToolTip() : ?
+    dialogJumpWindowPosition() : ?
+    dialogJumpWindowPositionToolTip() : ?
+    DialogJumpWindowPositionUnderDialog() : ?
+    DialogJumpWindowPositionFollowDefault() : ?
+    dialogJumpResultBehaviour() : ?
+    dialogJumpResultBehaviourToolTip() : ?
+    DialogJumpResultBehaviourLeftClick() : ?
+    DialogJumpResultBehaviourRightClick() : ?
+    dialogJumpFileResultBehaviour() : ?
+    dialogJumpFileResultBehaviourToolTip() : ?
+    DialogJumpFileResultBehaviourFullPath() : ?
+    DialogJumpFileResultBehaviourFullPathOpen() : ?
+    DialogJumpFileResultBehaviourDirectory() : ?
+    proxy() : ?
+    enableProxy() : ?
+    server() : ?
+    port() : ?
+    userName() : ?
+    password() : ?
+    testProxy() : ?
+    save() : ?
+    serverCantBeEmpty() : ?
+    portCantBeEmpty() : ?
+    invalidPortFormat() : ?
+    saveProxySuccessfully() : ?
+    proxyIsCorrect() : ?
+    proxyConnectFailed() : ?
+    about() : ?
+    website() : ?
+    github() : ?
+    docs() : ?
+    version() : ?
+    icons() : ?
+    about_activate_times() : ?
+    checkUpdates() : ?
+    BecomeASponsor() : ?
+    newVersionTips() : ?
+    checkUpdatesFailed() : ?
+    downloadUpdatesFailed() : ?
+    releaseNotes() : ?
+    documentation() : ?
+    devtool() : ?
+    settingfolder() : ?
+    logfolder() : ?
+    clearlogfolder() : ?
+    clearlogfolderMessage() : ?
+    cachefolder() : ?
+    clearcachefolder() : ?
+    clearcachefolderMessage() : ?
+    clearfolderfailMessage() : ?
+    welcomewindow() : ?
+    userdatapath() : ?
+    userdatapathToolTip() : ?
+    userdatapathButton() : ?
+    advanced() : ?
+    logLevel() : ?
+    LogLevelNONE() : ?
+    LogLevelERROR() : ?
+    LogLevelINFO() : ?
+    LogLevelDEBUG() : ?
+    settingWindowFontTitle() : ?
+    seeMoreReleaseNotes() : ?
+    checkNetworkConnectionTitle() : ?
+    checkNetworkConnectionSubTitle() : ?
+    appUpdateTitle() : ?
+    appUpdateButtonContent() : ?
+    fileManagerWindow() : ?
+    fileManager_learnMore() : ?
+    fileManager_tips() : ?
+    fileManager_tips2() : ?
+    fileManager_name() : ?
+    fileManager_profile_name() : ?
+    fileManager_path() : ?
+    fileManager_directory_arg() : ?
+    fileManager_file_arg() : ?
+    fileManagerPathNotFound() : ?
+    fileManagerPathError() : ?
+    fileManagerExplorer() : ?
+    defaultBrowserTitle() : ?
+    defaultBrowser_tips() : ?
+    defaultBrowser_name() : ?
+    defaultBrowser_profile_name() : ?
+    defaultBrowser_path() : ?
+    defaultBrowser_newWindow() : ?
+    defaultBrowser_newTab() : ?
+    defaultBrowser_parameter() : ?
+    defaultBrowser_default() : ?
+    defaultBrowser_new_profile() : ?
+    changePriorityWindow() : ?
+    priority_tips() : ?
+    invalidPriority() : ?
+    oldActionKeywords() : ?
+    newActionKeywords() : ?
+    cancel() : ?
+    done() : ?
+    cannotFindSpecifiedPlugin() : ?
+    newActionKeywordsCannotBeEmpty() : ?
+    newActionKeywordsHasBeenAssigned() : ?
+    newActionKeywordsSameAsOld() : ?
+    success() : ?
+    completedSuccessfully() : ?
+    failedToCopy() : ?
+    actionkeyword_tips() : ?
+    searchDelayTimeTitle() : ?
+    searchDelayTimeTips() : ?
+    homeTitle() : ?
+    homeTips() : ?
+    customeQueryHotkeyTitle() : ?
+    customeQueryHotkeyTips() : ?
+    preview() : ?
+    hotkeyIsNotUnavailable() : ?
+    invalidPluginHotkey() : ?
+    update() : ?
+    hotkeyRegTitle() : ?
+    hotkeyUnavailable() : ?
+    hotkeyUnavailableUneditable() : ?
+    hotkeyUnavailableEditable() : ?
+    hotkeyRegGuide() : ?
+    emptyPluginHotkey() : ?
+    customeQueryShortcutTitle() : ?
+    customeQueryShortcutTips() : ?
+    customeQueryShortcutGuide() : ?
+    duplicateShortcut() : ?
+    emptyShortcut() : ?
+    invalidShortcut() : ?
+    commonSave() : ?
+    commonOverwrite() : ?
+    commonCancel() : ?
+    commonReset() : ?
+    commonDelete() : ?
+    commonOK() : ?
+    commonYes() : ?
+    commonNo() : ?
+    commonBackground() : ?
+    reportWindow_version() : ?
+    reportWindow_time() : ?
+    reportWindow_reproduce() : ?
+    reportWindow_send_report() : ?
+    reportWindow_cancel() : ?
+    reportWindow_general() : ?
+    reportWindow_exceptions() : ?
+    reportWindow_exception_type() : ?
+    reportWindow_source() : ?
+    reportWindow_stack_trace() : ?
+    reportWindow_sending() : ?
+    reportWindow_report_succeed() : ?
+    reportWindow_report_failed() : ?
+    reportWindow_flowlauncher_got_an_error() : ?
+    reportWindow_please_open_issue() : ?
+    reportWindow_upload_log() : ?
+    reportWindow_copy_below() : ?
+    fileManagerNotFoundTitle() : ?
+    fileManagerNotFound() : ?
+    errorTitle() : ?
+    folderOpenError() : ?
+    browserOpenError() : ?
+    fileNotFoundError() : ?
+    pleaseWait() : ?
+    update_flowlauncher_update_check() : ?
+    update_flowlauncher_already_on_latest() : ?
+    update_flowlauncher_update_found() : ?
+    update_flowlauncher_updating() : ?
+    update_flowlauncher_fail_moving_portable_user_profile_data() : ?
+    update_flowlauncher_new_update() : ?
+    update_flowlauncher_update_new_version_available() : ?
+    update_flowlauncher_update_error() : ?
+    update_flowlauncher_update() : ?
+    update_flowlauncher_update_cancel() : ?
+    update_flowlauncher_fail() : ?
+    update_flowlauncher_check_connection() : ?
+    update_flowlauncher_update_restart_flowlauncher_tip() : ?
+    update_flowlauncher_update_update_files() : ?
+    update_flowlauncher_update_files() : ?
+    update_flowlauncher_update_update_description() : ?
+    restartAfterUpdating() : ?
+    updatePluginCheckboxContent() : System.Object
+    updatePluginNoSelected() : ?
+    Skip() : ?
+    Welcome_Page1_Title() : ?
+    Welcome_Page1_Text01() : ?
+    Welcome_Page1_Text02() : ?
+    Welcome_Page2_Title() : ?
+    Welcome_Page2_Text01() : ?
+    Welcome_Page2_Text02() : ?
+    Welcome_Page3_Title() : ?
+    Welcome_Page4_Title() : ?
+    Welcome_Page4_Text01() : ?
+    Welcome_Page5_Title() : ?
+    Welcome_Page5_Text01() : ?
+    HotkeyUpDownDesc() : ?
+    HotkeyLeftRightDesc() : ?
+    HotkeyShiftEnterDesc() : ?
+    HotkeyCtrlEnterDesc() : ?
+    HotkeyCtrlShiftEnterDesc() : ?
+    HotkeyCtrlHDesc() : ?
+    HotkeyESCDesc() : ?
+    HotkeyTabDesc() : ?
+    HotkeyRunDesc() : ?
+    HotkeyCtrlIDesc() : ?
+    HotkeyF5Desc() : ?
+    HotkeySelectFirstResult() : ?
+    HotkeySelectLastResult() : ?
+    HotkeyRequery() : ?
+    HotkeyOpenResult() : ?
+    HotkeyOpenResultN() : ?
+    RecommendWeather() : ?
+    RecommendWeatherDesc() : ?
+    RecommendShell() : ?
+    RecommendShellDesc() : ?
+    RecommendBluetooth() : ?
+    RecommendBluetoothDesc() : ?
+    RecommendAcronyms() : ?
+    RecommendAcronymsDesc() : ?
+    FileSize() : ?
+    Created() : ?
+    LastModified() : ?
+- MainWindow  [methods=82 fields=44 flags=0x100001]
+    field <CanClose>k__BackingField
+    field ClassName
+    field _settings
+    field _theme
+    field _notifyIcon
+    field _contextMenu
+    field _viewModel
+    field _isArrowKeyPressed
+    field _animationSoundWMP
+    field _animationSoundWPF
+    field _soundLock
+    field _hwndSource
+    field _initialWidth
+    field _initialHeight
+    field DefaultRightMargin
+    field _isClockPanelAnimating
+    field _progressBarStoryboard
+    field _disposed
+    field FlowMainWindow
+    field QueryBoxArea
+    field QueryTextPlaceholderBox
+    field QueryTextSuggestionBox
+    field QueryTextBox
+    field ClockPanel
+    field ClockBox
+    field DateBox
+    field PluginActivationIcon
+    field SearchIcon
+    field ProgressBar
+    field MiddleSeparatorArea
+    field MiddleSeparator
+    field ResultPreviewAreaBoarder
+    field ResultPreviewArea
+    field ResultArea
+    field ResultListBox
+    field ResultContextMenu
+    field History
+    field PreviewMiddleSeparator
+    field Preview
+    field PreviewGlyphIcon
+    field PreviewImageIcon
+    field PreviewTitle
+    field PreviewSubTitle
+    field _contentLoaded
+    get_CanClose() : ?
+    set_CanClose() : ?
+    .ctor() : ?
+    ViewModel_ActualApplicationThemeChanged(?et253) : ?et130
+    OnSourceInitialized(?et101) : ?et129
+    OnLoaded() : ?et117
+    ProgressBar_Loaded() : ?et117
+    OnClosing(?et57) : ?et131
+    OnClosed(?et101) : ?et129
+    OnLocationChanged(?et101) : ?et129
+    OnDeactivated(?et101) : ?et129
+    OnKeyDown(?et169) : ?et130
+    OnKeyUp(?et169) : ?et130
+    OnPreviewMouseMove(?et81) : ?et131
+    OnMouseDown(?et49) : ?et130
+    OnContextMenusForSettingsClick() : ?et117
+    WndProc(System.IntPtr, System.Boolean&) : System.IntPtr
+    InitSoundEffects() : ?
+    SoundPlay() : ?
+    IsSoundEffectsInitialized() : ?
+    DisposeSoundEffects() : ?
+    SyncSoundEffectsState() : ?
+    RegisterSoundEffectsEvent() : ?
+    UnregisterSoundEffectsEvent() : ?
+    InitializeNotifyIcon() : ?
+    UpdateNotifyIconText() : ?
+    InitializeContextMenu() : ?
+    UpdatePosition() : ?
+    PositionResetAsync() : ?
+    InitializePosition() : ?
+    AdjustPositionForResolutionChange() : ?
+    GetDpi() : System.Double&
+    SelectedScreen() : ?
+    HorizonCenter() : ?et105
+    VerticalCenter() : ?et105
+    HorizonRight() : ?et105
+    HorizonLeft() : ?et105
+    VerticalTop() : ?et105
+    InitProgressbarAnimation() : ?
+    ProgressBar_IsVisibleChanged(?et93) : ?et130
+    WindowAnimation() : ?
+    UpdateClockPanelVisibility() : ?
+    GetOpacityFromStyle(System.Double) : System.UInt32
+    GetThicknessFromStyle(?et245) : TypeDef#549732961
+    QueryTextBox_OnCopy(?[]) : ?et130
+    QueryTextBox_OnPaste(?et33) : ?et132
+    QueryTextBox_KeyUp(?et169) : ?et130
+    QueryTextBox_OnPreviewDragOver(?et53) : ?et132
+    SetupPlaceholderText() : ?
+    QueryTextBox_TextChanged(?et57) : ?et132
+    QueryTextSuggestionBox_TextChanged(?et57) : ?et132
+    SetPlaceholderText() : ?
+    SetupResizeMode() : ?
+    QueryTextBox_TextChanged1(?et57) : ?et132
+    InitializeDialogJump() : ?
+    InitializeDialogJumpPosition() : ?
+    HorizonCenter() : ?et89
+    VerticalBottom() : ?et89
+    Dispose() : ?
+    Dispose() : ?
+    InitializeComponent() : ?
+    _CreateDelegate() : TypeDef#0
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+    <OnLoaded>b__24_1() : ?
+    <OnLoaded>b__24_2(?et81) : ?et132
+    <OnLoaded>b__24_8() : ?
+    <OnLoaded>b__24_9() : ?
+    <OnLoaded>b__24_3(?et81) : ?et132
+    <OnLoaded>b__24_4(?et57) : ?et132
+    <OnLoaded>b__24_5(?et101) : ?et129
+    <OnLoaded>b__24_6(?et101) : ?et129
+    <RegisterSoundEffectsEvent>b__41_0() : ?
+    <RegisterSoundEffectsEvent>b__41_1() : ?
+    <InitializeNotifyIcon>b__43_0(?et85) : ?et132
+    <InitializeContextMenu>b__45_0() : ?et117
+    <InitializeContextMenu>b__45_1() : ?et117
+    <InitializeContextMenu>b__45_2() : ?et117
+    <InitializeContextMenu>b__45_4() : ?et117
+    <InitializePosition>g__InitializePositionInner|48_0() : ?
+    <UpdateClockPanelVisibility>b__60_0(?et101) : ?et129
+    <UpdateClockPanelVisibility>b__60_1(?et101) : ?et129
+- MessageBoxEx  [methods=11 fields=14 flags=0x100001]
+    field ClassName
+    field msgBox
+    field _result
+    field _button
+    field MessageBoxWindow
+    field Img
+    field TitleTextBlock
+    field DescTextBlock
+    field DescOnlyTextBlock
+    field btnOk
+    field btnYes
+    field btnNo
+    field btnCancel
+    field _contentLoaded
+    .ctor() : ?et141
+    Show(System.String, TypeDef#537158496, ?et145, TypeDef#0) : System.String
+    SetButtonVisibilityFocusAndResult(TypeDef#0) : ?et141
+    SetImageOfMessageBoxAsync() : TypeDef#0
+    SetImageAsync() : System.String
+    KeyEsc_OnPress(?[]) : ?et130
+    Button_Click() : ?et117
+    Button_Cancel() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+- Msg  [methods=8 fields=8 flags=0x100001]
+    field fadeOutStoryboard
+    field closing
+    field showAnimation
+    field imgIco
+    field tbTitle
+    field tbSubTitle
+    field imgClose
+    field _contentLoaded
+    .ctor() : ?
+    LoadImageAsync() : ?
+    imgClose_MouseUp(?et49) : ?et130
+    fadeOutStoryboard_Completed(?et101) : ?et129
+    Show() : System.String
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    <Show>b__6_0() : ?
+- MsgWithButton  [methods=7 fields=9 flags=0x100001]
+    field fadeOutStoryboard
+    field closing
+    field showAnimation
+    field imgIco
+    field tbTitle
+    field tbSubTitle
+    field imgClose
+    field btn
+    field _contentLoaded
+    .ctor() : ?
+    LoadImageAsync() : ?
+    imgClose_MouseUp(?et49) : ?et130
+    fadeOutStoryboard_Completed(?et101) : ?et129
+    Show() : TypeRef#58955104
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- Notification  [methods=9 fields=3 flags=0x100180]
+    field ClassName
+    field legacy
+    field _notificationActions
+    Install() : ?
+    Uninstall() : ?
+    Show() : System.String
+    ShowInternal() : System.String
+    LegacyShow() : System.String
+    ShowWithButton() : TypeRef#58955104
+    ShowInternalWithButton() : TypeRef#58955104
+    LegacyShowWithButton() : TypeRef#58955104
+    .cctor() : ?
+- PluginUpdateWindow  [methods=12 fields=7 flags=0x100001]
+    field <Plugins>k__BackingField
+    field <Restart>k__BackingField
+    field _settings
+    field UpdatePluginStackPanel
+    field btnCancel
+    field btnUpdate
+    field _contentLoaded
+    get_Plugins(TypeDef#0) : System.Void
+    set_Plugins(System.Void, TypeDef#0) : ?et101
+    get_Restart() : ?
+    set_Restart() : ?
+    .ctor(System.Void, TypeDef#0) : ?et101
+    CheckBox_Checked() : ?et117
+    CheckBox_Unchecked() : ?et117
+    BtnCancel_OnClick() : ?et117
+    btnUpdate_OnClick() : ?et117
+    cmdEsc_OnPress(?[]) : ?et130
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- ProgressBoxEx  [methods=11 fields=8 flags=0x100001]
+    field ClassName
+    field _cancelProgress
+    field MessageBoxWindow
+    field TitleTextBlock
+    field ProgressBar
+    field btnBackground
+    field btnCancel
+    field _contentLoaded
+    .ctor() : ?et85
+    ShowAsync(TypeSpec#88121156<System.Double, TypeRef#541362784, ?et85, ?, ?, ?, ?>) : System.String
+    ReportProgress() : ?
+    KeyEsc_OnPress(?[]) : ?et130
+    Button_Cancel() : ?et117
+    Button_Minimize() : ?et117
+    Button_Background() : ?et117
+    ForceClose() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+- PublicApi  [methods=1 fields=1 flags=0x100180]
+    field instance
+    get_Instance() : ?
+- PublicAPIInstance  [methods=87 fields=9 flags=0x100001]
+    field ClassName
+    field _settings
+    field _mainVM
+    field _theme
+    field _updater
+    field _saveSettingsLock
+    field _pluginJsonStorages
+    field _globalKeyboardHandlers
+    field _pluginBinaryStorages
+    get_Theme() : ?
+    get_Updater() : ?
+    .ctor(TypeDef#0) : ?et205
+    ChangeQuery() : ?
+    RestartApp() : ?
+    ShowMainWindow() : ?
+    FocusQueryTextBox() : ?
+    HideMainWindow() : ?
+    IsMainWindowVisible() : ?
+    add_VisibilityChanged() : ?et253
+    remove_VisibilityChanged() : ?et253
+    CheckForNewUpdate() : ?
+    SaveAppAllSettings() : ?
+    ReloadAllPluginData() : ?
+    ShowMsgError() : ?
+    ShowMsgErrorWithButton() : TypeDef#0
+    ShowMsg() : System.String
+    ShowMsg(System.Boolean) : System.String
+    ShowMsgWithButton() : TypeRef#58955104
+    ShowMsgWithButton(System.Boolean) : TypeRef#58955104
+    OpenSettingDialog() : ?
+    ShellRun() : ?
+    CopyToClipboard() : System.Boolean
+    RetryActionOnSTAThreadAsync(System.Void, TypeDef#541374048, ?et85, System.Int32, System.Int32) : ?et173
+    StartLoadingBar() : ?
+    StopLoadingBar() : ?
+    GetTranslation() : ?
+    GetAllPlugins(TypeDef#0) : System.Void
+    GetAllInitializedPlugins(TypeDef#0) : System.Void
+    FuzzySearch(System.String) : System.String
+    HttpGetStringAsync(System.Void, System.String, System.String, TypeDef#0) : ?et173
+    HttpGetStreamAsync(System.Void, TypeRef#71533665, ?et129, ?et129) : ?et173
+    HttpDownloadAsync(System.String, TypeSpec#8085508<>) : System.String
+    AddActionKeyword() : ?
+    ActionKeywordAssigned() : ?
+    RemoveActionKeyword() : ?
+    LogDebug() : System.String
+    LogInfo() : System.String
+    LogWarn() : System.String
+    LogError() : System.String
+    LogException() : TypeDef#0
+    RemovePluginSettings() : ?
+    SavePluginSettings() : ?
+    LoadSettingJsonStorage() : ?
+    SaveSettingJsonStorage() : ?
+    OpenDirectory() : ?
+    OpenUri(TypeRef#4415620<>) : ?et169
+    OpenWebUrl() : TypeSpec#8405856
+    OpenWebUrl(TypeRef#4415620<>) : ?et169
+    OpenUrl() : TypeSpec#8405856
+    OpenUrl(TypeRef#4415620<>) : ?et169
+    OpenAppUri() : ?
+    OpenAppUri() : ?et169
+    ToggleGameMode() : ?
+    SetGameMode() : ?
+    IsGameModeOn() : ?
+    RegisterGlobalKeyboardCallback(?et225, System.SByte, System.Int32, System.Int32, TypeDef#0) : ?et132
+    RemoveGlobalKeyboardCallback(?et225, System.SByte, System.Int32, System.Int32, TypeDef#0) : ?et132
+    ReQuery() : ?
+    BackToQueryResults() : ?
+    ShowMsgBox(System.String, TypeDef#537158496, ?et145, TypeDef#0) : System.String
+    ShowProgressBoxAsync(TypeSpec#88121156<System.Double, TypeRef#541362784, ?et85, ?, ?, ?, ?>) : System.String
+    GetAvailableThemes(TypeDef#0) : System.Void
+    GetCurrentTheme() : ?
+    SetCurrentTheme() : ?et69
+    RemovePluginCaches() : ?
+    SavePluginCaches() : ?
+    LoadCacheBinaryStorageAsync(!!3584, System.String, !!0) : System.Void
+    SaveCacheBinaryStorageAsync() : System.String
+    LoadImageAsync(System.Void, TypeDef#8624993, System.Boolean) : System.Byte
+    UpdatePluginManifestAsync(System.Void, System.Boolean, System.Boolean, TypeDef#0) : ?et173
+    GetPluginManifest(System.Void, TypeDef#0) : ?et165
+    PluginModified() : ?
+    UpdatePluginAsync(System.Void, System.Boolean, TypeRef#325141656, System.String) : ?et173
+    InstallPlugin(System.String) : ?et77
+    UninstallPluginAsync(System.Void, System.Boolean, TypeDef#0) : ?et173
+    StopwatchLogDebug() : TypeDef#0
+    StopwatchLogDebugAsync(System.Void, System.Int64, System.String, System.String, TypeSpec#4808772<>) : ?et173
+    StopwatchLogInfo() : TypeDef#0
+    StopwatchLogInfoAsync(System.Void, System.Int64, System.String, System.String, TypeSpec#4808772<>) : ?et173
+    IsApplicationDarkTheme() : ?
+    add_ActualApplicationThemeChanged() : ?et245
+    remove_ActualApplicationThemeChanged() : ?et245
+    GetDataDirectory() : ?
+    GetLogDirectory() : ?
+    KListener_hookedKeyboardCallback(System.Int32, TypeDef#0) : ?et237
+    .cctor() : ?
+- ReleaseNotesWindow  [methods=24 fields=8 flags=0x100001]
+    field MaximizeButton
+    field RestoreButton
+    field SeeMore
+    field MarkdownScrollViewer
+    field MarkdownViewer
+    field RefreshProgressRing
+    field RefreshButton
+    field _contentLoaded
+    get_ReleaseNotes() : ?
+    .ctor() : ?
+    ThemeManager_ActualApplicationThemeChanged() : TypeDef#0
+    Window_Loaded() : ?et117
+    OnCloseExecuted(?[]) : ?et130
+    Window_Closed(?et101) : ?et129
+    OnMinimizeButtonClick() : ?et117
+    OnMaximizeRestoreButtonClick() : ?et117
+    OnCloseButtonClick() : ?et117
+    RefreshMaximizeRestoreButton() : ?
+    Window_StateChanged(?et101) : ?et129
+    MarkdownViewer_Loaded() : ?et117
+    RefreshButton_Click() : ?et117
+    RefreshMarkdownViewer() : ?
+    Grid_SizeChanged(?et129) : ?et133
+    MarkdownViewer_MouseWheel(?et133) : ?et133
+    MarkdownViewer_PreviewMouseWheel(?et133) : ?et133
+    RaiseMouseWheelEvent(?et133) : ?et133
+    GetReleaseNotesMarkdownAsync(System.Void, System.String) : ?et173
+    IsNumber() : ?
+    ImageUnitRegex() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    <ThemeManager_ActualApplicationThemeChanged>b__3_0() : ?
+- ReportWindow  [methods=7 fields=2 flags=0x100000]
+    field ErrorTextbox
+    field _contentLoaded
+    .ctor() : ?et217
+    GetIssuesUrl() : ?
+    SetException() : ?et217
+    Hyperlink(System.String) : System.String
+    BtnCancel_OnClick() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- ResultListBox  [methods=17 fields=10 flags=0x100001]
+    field _lock
+    field _lastpos
+    field curItem
+    field RightClickResultCommandProperty
+    field LeftClickResultCommandProperty
+    field _start
+    field _path
+    field _trimmedQuery
+    field _isDragging
+    field _contentLoaded
+    .ctor() : ?
+    get_RightClickResultCommand() : ?
+    set_RightClickResultCommand() : ?et97
+    get_LeftClickResultCommand() : ?
+    set_LeftClickResultCommand() : ?et97
+    OnSelectionChanged(?et57) : ?et134
+    OnMouseEnter(?et81) : ?et131
+    OnMouseMove(?et81) : ?et131
+    ListBox_PreviewMouseDown(?et49) : ?et130
+    ResultList_PreviewMouseLeftButtonDown(?et49) : ?et130
+    ResultList_MouseMove(?et81) : ?et131
+    ResultListBox_OnPreviewMouseRightButtonDown(?et49) : ?et130
+    ResultListBox_OnPreviewMouseUp(?et49) : ?et130
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    System.Windows.Markup.IStyleConnector.Connect() : ?
+    .cctor() : ?
+- SelectBrowserWindow  [methods=6 fields=9 flags=0x100001]
+    field _viewModel
+    field comboBox
+    field ProfileTextBox
+    field btnBrowseFile
+    field PathTextBox
+    field fileArgTextBox
+    field btnCancel
+    field btnDone
+    field _contentLoaded
+    .ctor() : ?
+    btnCancel_Click() : ?et117
+    btnDone_Click() : ?et117
+    btnBrowseFile_Click() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- SelectFileManagerWindow  [methods=6 fields=10 flags=0x100001]
+    field _viewModel
+    field comboBox
+    field ProfileTextBox
+    field btnBrowseFile
+    field PathTextBox
+    field directoryArgTextBox
+    field fileArgTextBox
+    field btnCancel
+    field btnDone
+    field _contentLoaded
+    .ctor() : ?
+    btnCancel_Click() : ?et117
+    btnDone_Click() : ?et117
+    btnBrowseFile_Click() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- SettingWindow  [methods=24 fields=14 flags=0x100001]
+    field _settings
+    field _viewModel
+    field MaximizeButton
+    field RestoreButton
+    field NavView
+    field General
+    field Plugins
+    field PluginStore
+    field Theme
+    field Hotkey
+    field Proxy
+    field About
+    field ContentFrame
+    field _contentLoaded
+    .ctor() : ?
+    OnLoaded() : ?et117
+    ViewModel_PropertyChanged(?et81) : ?et132
+    OnClosed(?et101) : ?et129
+    OnCloseExecuted(?[]) : ?et130
+    window_MouseDown(?et49) : ?et130
+    Window_StateChanged(?et101) : ?et129
+    Window_Activated(?et101) : ?et129
+    Window_LocationChanged(?et101) : ?et129
+    OnMinimizeButtonClick() : ?et117
+    OnMaximizeRestoreButtonClick() : ?et117
+    OnCloseButtonClick() : ?et117
+    RefreshMaximizeRestoreButton() : ?
+    UpdatePositionAndState() : ?
+    SetWindowPosition() : ?
+    AdjustWindowPosition() : System.Double&
+    IsPositionValid() : ?
+    WindowLeft() : ?
+    WindowTop() : ?
+    NavigationView_SelectionChanged(TypeDef#0) : ?et105
+    NavView_Loaded() : ?et117
+    ContentFrame_Loaded() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- WelcomeWindow  [methods=11 fields=11 flags=0x100001]
+    field _settings
+    field _viewModel
+    field _forwardTransitionInfo
+    field _backTransitionInfo
+    field FlowWelcomeWindow
+    field ContentFrame
+    field PageNavigation
+    field SkipButton
+    field NextButton
+    field BackButton
+    field _contentLoaded
+    .ctor() : ?
+    ForwardButton_Click() : ?et117
+    BackwardButton_Click() : ?et117
+    BtnCancel_OnClick() : ?et117
+    PageTypeSelector() : System.Int32
+    window_MouseDown(?et49) : ?et130
+    OnActivated(?et101) : ?et129
+    ContentFrame_Loaded() : ?et117
+    Window_Closed(?et101) : ?et129
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+
+## Flow.Launcher.Converters (20)
+- BadgePositionConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- BoolToIMEConversionModeConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- BoolToIMEStateConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- BoolToVisibilityConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- BorderClipConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(?et134, TypeDef#0<>) : TypeRef#75958112
+    ConvertBack(?et134, TypeDef#0<>) : TypeRef#75958112[]
+    .ctor() : ?
+- CornerRadiusFilterConverter  [methods=9 fields=2 flags=0x100001]
+    field <Filter>k__BackingField
+    field <Scale>k__BackingField
+    get_Filter() : ?
+    set_Filter() : ?et228
+    get_Scale() : ?
+    set_Scale() : ?
+    Convert(?et228) : TypeDef#549739618
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    GetDoubleValue(TypeDef#0) : ?et113
+    .ctor() : ?
+- CornerRadiusFilterKind  [methods=0 fields=8 flags=0x101]
+    field value__
+    field None
+    field Top
+    field Right
+    field Bottom
+    field Left
+    field TopLeftValue
+    field BottomRightValue
+- DateTimeFormatToNowConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- DiameterToCenterPointConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- HighlightTextConverter  [methods=4 fields=0 flags=0x100001]
+    Convert(?et134, TypeDef#0<>) : TypeRef#75958112
+    ConvertBack(?et134, TypeDef#0<>) : TypeRef#75958112[]
+    ShouldHighlight(System.Void, System.Int32, System.Int32) : ?et101
+    .ctor() : ?
+- IconRadiusConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(?et134, TypeDef#0<>) : TypeRef#75958112
+    ConvertBack(?et134, TypeDef#0<>) : TypeRef#75958112[]
+    .ctor() : ?
+- OpenResultHotkeyVisibilityConverter  [methods=3 fields=1 flags=0x100001]
+    field MaxVisibleHotkeys
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- OrdinalConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- PlacementRectangleConverter  [methods=5 fields=1 flags=0x100001]
+    field <Margin>k__BackingField
+    get_Margin() : ?
+    set_Margin() : ?et245
+    Convert(?et134, TypeDef#0<>) : TypeRef#75958112
+    ConvertBack(?et134, TypeDef#0<>) : TypeRef#75958112[]
+    .ctor() : ?
+- QuerySuggestionBoxConverter  [methods=4 fields=1 flags=0x100001]
+    field ClassName
+    Convert(?et134, TypeDef#0<>) : TypeRef#75958112
+    ConvertBack(?et134, TypeDef#0<>) : TypeRef#75958112[]
+    .ctor() : ?
+    .cctor() : ?
+- SharedSizeGroupConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- SizeRatioConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- SplitterConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- StringToKeyBindingConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- TextConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+
+## Flow.Launcher.Helper (12)
+- AutoStartup  [methods=15 fields=4 flags=0x100001]
+    field ClassName
+    field StartupPath
+    field LogonTaskName
+    field LogonTaskDesc
+    CheckIsEnabled() : ?
+    CheckLogonTask() : ?
+    CheckRegistry() : ?
+    DisableViaLogonTaskAndRegistry() : ?
+    ChangeToViaLogonTask() : ?
+    ChangeToViaRegistry() : ?
+    Disable() : ?
+    Enable() : ?
+    ScheduleLogonTask() : ?
+    UnscheduleLogonTask() : ?
+    IsCurrentUserIsAdmin() : ?
+    UnscheduleRegistry() : ?
+    ScheduleRegistry() : ?
+    .ctor() : ?
+    .cctor() : ?
+- BorderHelper  [methods=4 fields=1 flags=0x100181]
+    field ChildProperty
+    GetChild(?et153) : ?et130
+    SetChild(TypeDef#0) : ?et153
+    OnChildChanged(TypeDef#0) : ?et85
+    .cctor() : ?
+- DataWebRequestFactory  [methods=2 fields=0 flags=0x100001]
+    Create() : TypeDef#0
+    .ctor() : ?
+- ErrorReporting  [methods=6 fields=0 flags=0x100181]
+    Report(System.Boolean, System.String) : ?et217
+    UnhandledException(?et153) : ?et137
+    DispatcherUnhandledException(?et157) : ?et137
+    TaskSchedulerUnobservedTaskException(?et73) : ?et129
+    RuntimeInfo() : ?
+    DependenciesInfo() : ?
+- ExceptionHelper  [methods=1 fields=3 flags=0x100180]
+    field PresentationFrameworkExceptionSource
+    field DWM_E_COMPOSITIONDISABLED
+    field STATUS_MESSAGE_LOST_HR
+    IsRecoverableDwmCompositionException() : ?et217
+- HotKeyMapper  [methods=12 fields=3 flags=0x100180]
+    field ClassName
+    field _settings
+    field _mainViewModel
+    Initialize() : ?
+    OnToggleHotkey(?et53) : ?et136
+    OnToggleHotkeyWithChefKeys() : ?
+    SetHotkey(?et136, ?et53) : TypeRef#75518304
+    SetWithChefKeys() : ?
+    SetHotkey(TypeSpec#5333060<>) : System.UIntPtr
+    RemoveHotkey() : ?
+    RemoveWithChefKeys() : ?
+    LoadCustomPluginHotkey() : ?
+    SetCustomQueryHotkey() : TypeDef#0
+    CheckAvailability() : System.UIntPtr
+    .cctor() : ?
+- ISingleInstanceApp  [methods=1 fields=0 flags=0x1000a1]
+    OnSecondAppStarted() : ?
+- SingleInstance`1  [methods=7 fields=4 flags=0x100181]
+    field Delimiter
+    field ChannelNameSuffix
+    field InstanceMutexName
+    field <SingleInstanceMutex>k__BackingField
+    get_SingleInstanceMutex() : ?
+    set_SingleInstanceMutex() : ?et169
+    InitializeAsFirstInstance() : ?
+    Cleanup() : ?
+    CreateRemoteServiceAsync() : System.String
+    SignalFirstInstanceAsync() : System.String
+    ActivateFirstInstance() : ?
+- SingletonWindowOpener  [methods=1 fields=0 flags=0x100181]
+    Open() : ?
+- SyntaxSugars  [methods=2 fields=0 flags=0x100181]
+    CallOrRescueDefault(?et37, System.Void, !!0) : ?et129
+    CallOrRescueDefault(?et37, System.Void, !!7680, ?et0) : ?et129
+- WallpaperPathRetrieval  [methods=3 fields=4 flags=0x100181]
+    field ClassName
+    field MaxCacheSize
+    field WallpaperCache
+    field CacheLock
+    GetWallpaperBrush() : ?
+    GetWallpaperColor() : ?
+    .cctor() : ?
+- WindowsMediaPlayerHelper  [methods=2 fields=1 flags=0x100180]
+    field ClassName
+    IsWindowsMediaPlayerInstalled() : ?
+    .cctor() : ?
+
+## Flow.Launcher.Properties (2)
+- Resources  [methods=7 fields=2 flags=0x100000]
+    field resourceMan
+    field resourceCulture
+    .ctor() : ?
+    get_ResourceManager() : ?
+    get_Culture() : ?
+    set_Culture() : TypeDef#0<>
+    get_app() : ?
+    get_gamemode() : ?
+    get_dev() : ?
+- Settings  [methods=6 fields=1 flags=0x100100]
+    field defaultInstance
+    get_Default() : ?
+    get_GithubRepo() : ?
+    .ctor() : ?
+    SettingChangingEventHandler(?et37) : ?et137
+    SettingsSavingEventHandler(?et57) : ?et131
+    .cctor() : ?
+
+## Flow.Launcher.Resources.Controls (5)
+- CustomScrollViewerEx  [methods=16 fields=4 flags=0x100001]
+    field LastVerticalLocation
+    field LastHorizontalLocation
+    field OrientationProperty
+    field AutoHideScrollBarsProperty
+    .ctor() : ?
+    get_Orientation() : ?
+    set_Orientation() : ?et245
+    get_AutoHideScrollBars() : ?
+    set_AutoHideScrollBars() : ?
+    OnAutoHideScrollBarsChanged(TypeDef#0) : ?et85
+    OnLoaded() : ?et117
+    OnInitialized() : ?et101
+    OnMouseWheel() : ?et133
+    OnScrollChanged() : ?et253
+    GetDirection() : ?
+    ChangeView(System.Double, System.Void, System.Double, TypeRef#4415620<System.Double, System.Void, System.Single>) : ?et130
+    ChangeView(System.Double, System.Void, System.Double, TypeRef#4415620<System.Double, System.Void, System.Single, System.Boolean>) : ?et130
+    ScrollToValue(?et245) : ?et136
+    UpdateVisualState() : ?
+    .cctor() : ?
+- HotkeyDisplay  [methods=11 fields=5 flags=0x100001]
+    field KeysProperty
+    field TypeProperty
+    field <Values>k__BackingField
+    field KeysControl
+    field _contentLoaded
+    .ctor() : ?
+    get_Keys() : ?
+    set_Keys() : ?
+    get_Type() : ?
+    set_Type() : ?et80
+    keyChanged(TypeDef#0) : ?et85
+    get_Values(System.Void, System.String) : ?et77
+    set_Values(?et77, System.Void, System.String) : ?et130
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .cctor() : ?
+- InstalledPluginDisplay  [methods=4 fields=5 flags=0x100001]
+    field PriorityControl
+    field SearchDelayControl
+    field HomeOnOffControl
+    field OnOffControl
+    field _contentLoaded
+    .ctor() : ?
+    NumberBox_OnValueChanged() : TypeDef#0
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- InstalledPluginDisplayBottomData  [methods=3 fields=1 flags=0x100001]
+    field _contentLoaded
+    .ctor() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- InstalledPluginDisplayKeyword  [methods=3 fields=1 flags=0x100001]
+    field _contentLoaded
+    .ctor() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+
+## Flow.Launcher.Resources.MarkupExtensions (3)
+- CollapsedWhenExtension  [methods=12 fields=2 flags=0x100001]
+    field <When>k__BackingField
+    field <IsEqualTo>k__BackingField
+    get_When() : ?
+    set_When() : ?et201
+    get_IsEqualTo() : ?
+    set_IsEqualTo() : ?
+    get_IsEqualToBool(System.Void, System.Boolean) : System.Double
+    set_IsEqualToBool(System.Double, System.Void, System.Boolean) : ?et130
+    get_IsEqualToInt(System.Void, System.Int32) : System.Double
+    set_IsEqualToInt(System.Double, System.Void, System.Int32) : ?et130
+    get_DefaultVisibility() : ?
+    get_InvertedVisibility() : ?
+    .ctor() : ?et201
+    ProvideValue() : ?et249
+- HideableVisibilityConverter  [methods=11 fields=3 flags=0x100001]
+    field <DefaultVisibility>k__BackingField
+    field <InvertedVisibility>k__BackingField
+    field <IsEqualTo>k__BackingField
+    get_DefaultVisibility() : ?
+    set_DefaultVisibility(TypeDef#0) : System.Void
+    get_InvertedVisibility() : ?
+    set_InvertedVisibility(TypeDef#0) : System.Void
+    get_IsEqualTo() : ?
+    set_IsEqualTo() : ?
+    Convert(?et134, TypeDef#0<>) : TypeRef#75958112
+    Convert(System.Object[], TypeDef#0) : ?et129
+    ConvertBack(?et134, TypeDef#0<>) : TypeRef#75958112[]
+    ConvertBack(System.Object[], TypeDef#0) : ?et129
+    .ctor() : ?
+- VisibleWhenExtension  [methods=3 fields=0 flags=0x100001]
+    get_DefaultVisibility() : ?
+    get_InvertedVisibility() : ?
+    .ctor() : ?et201
+
+## Flow.Launcher.Resources.Pages (5)
+- WelcomePage1  [methods=8 fields=6 flags=0x100001]
+    field <Settings>k__BackingField
+    field _viewModel
+    field _translater
+    field Logo
+    field wizard
+    field _contentLoaded
+    get_Settings() : ?
+    OnNavigatedTo() : ?et237
+    get_Languages(TypeDef#0) : System.Void
+    get_CustomLanguage() : ?
+    set_CustomLanguage() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- WelcomePage2  [methods=9 fields=4 flags=0x100001]
+    field <Settings>k__BackingField
+    field _viewModel
+    field _contentLoaded
+    field setTogglingHotkeyCommand
+    get_Settings() : ?
+    OnNavigatedTo() : ?et237
+    SetTogglingHotkey() : System.UIntPtr
+    get_PreviewBackground() : ?
+    InitializeComponent() : ?
+    _CreateDelegate() : TypeDef#0
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    get_SetTogglingHotkeyCommand(System.Void, TypeDef#0) : ?et77
+    .ctor() : ?
+- WelcomePage3  [methods=6 fields=3 flags=0x100001]
+    field <Settings>k__BackingField
+    field _viewModel
+    field _contentLoaded
+    get_Settings() : ?
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    _CreateDelegate() : TypeDef#0
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- WelcomePage4  [methods=5 fields=4 flags=0x100001]
+    field <Settings>k__BackingField
+    field _viewModel
+    field Logo
+    field _contentLoaded
+    get_Settings() : ?
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- WelcomePage5  [methods=11 fields=4 flags=0x100001]
+    field <Settings>k__BackingField
+    field _viewModel
+    field Logo
+    field _contentLoaded
+    get_Settings() : ?
+    OnNavigatedTo() : ?et237
+    OnAutoStartupChecked() : ?et117
+    OnAutoStartupUncheck() : ?et117
+    ChangeAutoStartup() : ?
+    OnHideOnStartupChecked() : ?et117
+    OnHideOnStartupUnchecked() : ?et117
+    BtnCancel_OnClick() : ?et117
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+
+## Flow.Launcher.SettingPages.ViewModels (9)
+- DisplayMode  [methods=0 fields=5 flags=0x101]
+    field value__
+    field OnOff
+    field Priority
+    field SearchDelay
+    field HomeOnOff
+- DropdownDataGeneric`1  [methods=9 fields=3 flags=0x100001]
+    field <Display>k__BackingField
+    field <Value>k__BackingField
+    field <LocalizationKey>k__BackingField
+    get_Display() : ?
+    set_Display() : ?
+    get_Value() : ?
+    set_Value(!0) : System.Void
+    get_LocalizationKey() : ?
+    set_LocalizationKey() : ?
+    GetValues() : !!3584
+    UpdateLabels(!!0) : System.Void
+    .ctor() : ?
+- SettingsPaneAboutViewModel  [methods=48 fields=15 flags=0x100001]
+    field ClassName
+    field _settings
+    field _updater
+    field <LogLevels>k__BackingField
+    field openWelcomeWindowCommand
+    field askClearLogFolderConfirmationCommand
+    field askClearCacheFolderConfirmationCommand
+    field openSettingsFolderCommand
+    field openParentOfSettingsFolderCommand
+    field openCacheFolderCommand
+    field openLogsFolderCommand
+    field updateAppCommand
+    field resetSettingWindowFontCommand
+    field openReleaseNotesCommand
+    field openSponsorPageCommand
+    get_LogFolderSize() : ?
+    get_CacheFolderSize() : ?
+    get_Website() : ?
+    get_SponsorPage() : ?
+    get_ReleaseNotes() : ?
+    get_Documentation() : ?
+    get_Docs() : ?
+    get_Github() : ?
+    get_Version() : ?
+    get_ActivatedTimes() : ?
+    get_LogLevels(TypeDef#0) : System.Void
+    get_LogLevel() : ?
+    set_LogLevel() : ?et137
+    .ctor(TypeDef#0) : ?et205
+    UpdateEnumDropdownLocalizations() : ?
+    OpenWelcomeWindow() : ?
+    AskClearLogFolderConfirmation() : ?
+    AskClearCacheFolderConfirmation() : ?
+    OpenSettingsFolder() : ?
+    OpenParentOfSettingsFolder() : ?
+    OpenCacheFolder() : ?
+    OpenLogsFolder() : ?
+    UpdateAppAsync() : ?
+    ClearLogFolder() : ?
+    GetLogDir() : System.String
+    GetLogFiles(TypeDef#0) : System.Void
+    ClearCacheFolder() : ?
+    GetCacheDir() : ?
+    GetPluginCacheDir() : ?
+    GetCacheFiles(TypeDef#0) : System.Void
+    BytesToReadableString() : ?
+    get_SettingWindowFont() : ?
+    set_SettingWindowFont() : ?
+    ResetSettingWindowFont() : ?
+    OpenReleaseNotes() : ?
+    OpenSponsorPage() : ?
+    get_OpenWelcomeWindowCommand() : ?
+    get_AskClearLogFolderConfirmationCommand() : ?
+    get_AskClearCacheFolderConfirmationCommand() : ?
+    get_OpenSettingsFolderCommand() : ?
+    get_OpenParentOfSettingsFolderCommand(System.Void, System.Object) : ?et77
+    get_OpenCacheFolderCommand() : ?
+    get_OpenLogsFolderCommand() : ?
+    get_UpdateAppCommand() : ?
+    get_ResetSettingWindowFontCommand() : ?
+    get_OpenReleaseNotesCommand() : ?
+    get_OpenSponsorPageCommand() : ?
+    .cctor() : ?
+- SettingsPaneGeneralViewModel  [methods=51 fields=18 flags=0x100001]
+    field <Settings>k__BackingField
+    field _updater
+    field _portable
+    field _translater
+    field <SearchWindowScreens>k__BackingField
+    field <SearchWindowAligns>k__BackingField
+    field <SearchPrecisionScores>k__BackingField
+    field _portableMode
+    field <LastQueryModes>k__BackingField
+    field <DialogJumpWindowPositions>k__BackingField
+    field <DialogJumpResultBehaviours>k__BackingField
+    field <DialogJumpFileResultBehaviours>k__BackingField
+    field <DoublePinyinSchemas>k__BackingField
+    field openImeSettingsCommand
+    field selectPythonCommand
+    field selectNodeCommand
+    field selectFileManagerCommand
+    field selectBrowserCommand
+    get_Settings() : ?
+    .ctor(TypeRef#541374048, ?et157, TypeDef#0) : ?et205
+    get_StartFlowLauncherOnSystemStartup() : ?
+    set_StartFlowLauncherOnSystemStartup() : ?
+    get_UseLogonTaskForStartup() : ?
+    set_UseLogonTaskForStartup() : ?
+    get_SearchWindowScreens(TypeDef#0) : System.Void
+    get_SearchWindowAligns(TypeDef#0) : System.Void
+    get_SearchPrecisionScores(TypeDef#0) : System.Void
+    get_ScreenNumbers(System.Int32) : System.Void
+    get_PortableMode() : ?
+    set_PortableMode() : ?
+    get_LastQueryModes(TypeDef#0) : System.Void
+    get_EnableDialogJump() : ?
+    set_EnableDialogJump() : ?
+    get_DialogJumpWindowPositions(TypeDef#0) : System.Void
+    get_DialogJumpResultBehaviours(TypeDef#0) : System.Void
+    get_DialogJumpFileResultBehaviours(TypeDef#0) : System.Void
+    get_SearchDelayTimeValue() : ?
+    set_SearchDelayTimeValue() : ?
+    get_MaxHistoryResultsToShowValue() : ?
+    set_MaxHistoryResultsToShowValue() : ?
+    UpdateEnumDropdownLocalizations() : ?
+    get_Language() : ?
+    set_Language() : ?
+    get_LegacyKoreanIMEEnabled() : ?
+    set_LegacyKoreanIMEEnabled() : ?
+    get_KoreanIMERegistryKeyExists() : ?
+    get_KoreanIMERegistryValueIsZero() : ?
+    OpenImeSettings() : ?
+    get_ShouldUsePinyin() : ?
+    set_ShouldUsePinyin() : ?
+    set_UseDoublePinyin() : ?
+    get_UseDoublePinyin() : ?
+    get_DoublePinyinSchemas(TypeDef#0) : System.Void
+    get_Languages(TypeDef#0) : System.Void
+    get_AlwaysPreviewToolTip() : ?
+    GetFileFromDialog() : ?
+    UpdateApp() : ?
+    get_AutoUpdates() : ?
+    set_AutoUpdates() : ?
+    SelectPython() : ?
+    SelectNode() : ?
+    SelectFileManager() : ?
+    SelectBrowser() : ?
+    get_OpenImeSettingsCommand() : ?
+    get_SelectPythonCommand() : ?
+    get_SelectNodeCommand() : ?
+    get_SelectFileManagerCommand() : ?
+    get_SelectBrowserCommand() : ?
+    .cctor() : ?
+- SettingsPaneHotkeyViewModel  [methods=24 fields=11 flags=0x100001]
+    field <Settings>k__BackingField
+    field <SelectedCustomPluginHotkey>k__BackingField
+    field <SelectedCustomShortcut>k__BackingField
+    field setTogglingHotkeyCommand
+    field setDialogJumpHotkeyCommand
+    field customHotkeyDeleteCommand
+    field customHotkeyEditCommand
+    field customHotkeyAddCommand
+    field customShortcutDeleteCommand
+    field customShortcutEditCommand
+    field customShortcutAddCommand
+    get_Settings() : ?
+    get_SelectedCustomPluginHotkey() : ?
+    set_SelectedCustomPluginHotkey() : TypeDef#0
+    get_SelectedCustomShortcut() : ?
+    set_SelectedCustomShortcut() : System.Void
+    get_OpenResultModifiersList() : ?
+    .ctor() : ?et205
+    SetTogglingHotkey() : System.UIntPtr
+    SetDialogJumpHotkey() : System.UIntPtr
+    CustomHotkeyDelete() : ?
+    CustomHotkeyEdit() : ?
+    CustomHotkeyAdd() : ?
+    CustomShortcutDelete() : ?
+    CustomShortcutEdit() : ?
+    CustomShortcutAdd() : ?
+    DoesShortcutExist() : ?
+    get_SetTogglingHotkeyCommand(System.Void, TypeDef#0) : ?et77
+    get_SetDialogJumpHotkeyCommand(System.Void, TypeDef#0) : ?et77
+    get_CustomHotkeyDeleteCommand() : ?
+    get_CustomHotkeyEditCommand() : ?
+    get_CustomHotkeyAddCommand() : ?
+    get_CustomShortcutDeleteCommand() : ?
+    get_CustomShortcutEditCommand() : ?
+    get_CustomShortcutAddCommand() : ?
+- SettingsPanePluginStoreViewModel  [methods=20 fields=8 flags=0x100001]
+    field filterText
+    field showDotNet
+    field showPython
+    field showNodeJs
+    field showExecutable
+    field refreshExternalPluginsCommand
+    field installPluginCommand
+    field checkPluginUpdatesCommand
+    get_FilterText() : ?
+    set_FilterText() : ?
+    get_ShowDotNet() : ?
+    set_ShowDotNet() : ?
+    get_ShowPython() : ?
+    set_ShowPython() : ?
+    get_ShowNodeJs() : ?
+    set_ShowNodeJs() : ?
+    get_ShowExecutable() : ?
+    set_ShowExecutable() : ?
+    get_ExternalPlugins(System.Void, TypeDef#0) : ?et185
+    RefreshExternalPluginsAsync() : ?
+    InstallPluginAsync() : ?
+    CheckPluginUpdatesAsync() : ?
+    GetFileFromDialog() : ?
+    SatisfiesFilter() : ?et204
+    get_RefreshExternalPluginsCommand() : ?
+    get_InstallPluginCommand() : ?
+    get_CheckPluginUpdatesCommand() : ?
+    .ctor() : ?
+- SettingsPanePluginsViewModel  [methods=21 fields=10 flags=0x100001]
+    field _settings
+    field <DisplayModes>k__BackingField
+    field _selectedDisplayMode
+    field _isOnOffSelected
+    field _isPrioritySelected
+    field _isSearchDelaySelected
+    field _isHomeOnOffSelected
+    field filterText
+    field _pluginViewModels
+    field openHelperCommand
+    get_DisplayModes(TypeDef#0) : System.Void
+    get_SelectedDisplayMode() : ?
+    set_SelectedDisplayMode() : ?et0
+    get_IsOnOffSelected() : ?
+    set_IsOnOffSelected() : ?
+    get_IsPrioritySelected() : ?
+    set_IsPrioritySelected() : ?
+    get_IsSearchDelaySelected() : ?
+    set_IsSearchDelaySelected() : ?
+    get_IsHomeOnOffSelected() : ?
+    set_IsHomeOnOffSelected() : ?
+    .ctor() : ?et205
+    get_FilterText() : ?
+    set_FilterText() : ?
+    get_PluginViewModels(TypeDef#0) : System.Void
+    SatisfiesFilter() : ?et212
+    OpenHelperAsync() : TypeDef#0
+    UpdateEnumDropdownLocalizations() : ?
+    UpdateDisplayModeFromSelection() : ?
+    get_OpenHelperCommand(System.Void, TypeDef#0) : System.UIntPtr
+    <get_PluginViewModels>b__32_2() : TypeDef#0
+- SettingsPaneProxyViewModel  [methods=5 fields=3 flags=0x100001]
+    field <Settings>k__BackingField
+    field _updater
+    field testProxyClickedCommand
+    get_Settings() : ?
+    .ctor(TypeDef#0) : ?et205
+    OnTestProxyClickedAsync() : ?
+    TestProxyAsync(System.Void, System.String) : ?et173
+    get_TestProxyClickedCommand() : ?
+- SettingsPaneThemeViewModel  [methods=87 fields=15 flags=0x100001]
+    field <Settings>k__BackingField
+    field _theme
+    field DefaultFont
+    field _themes
+    field _selectedTheme
+    field <ColorSchemes>k__BackingField
+    field <TimeFormatList>k__BackingField
+    field <DateFormatList>k__BackingField
+    field <AnimationSpeeds>k__BackingField
+    field <BackdropTypesList>k__BackingField
+    field <ClockPanelFont>k__BackingField
+    field <PreviewResults>k__BackingField
+    field openThemesFolderCommand
+    field resetCommand
+    field importCommand
+    get_Settings() : ?
+    get_BackdropSubText() : ?
+    get_LinkHowToCreateTheme() : ?
+    get_LinkThemeGallery() : ?
+    get_Themes(TypeDef#0) : System.Void
+    get_SelectedTheme() : ?
+    set_SelectedTheme() : ?et69
+    get_IsBackdropEnabled() : ?
+    get_IsDropShadowEnabled() : ?
+    get_DropShadowEffect() : ?
+    set_DropShadowEffect() : ?
+    get_WindowHeightSize() : ?
+    set_WindowHeightSize() : ?
+    get_ItemHeightSize() : ?
+    set_ItemHeightSize() : ?
+    get_QueryBoxFontSize() : ?
+    set_QueryBoxFontSize() : ?
+    get_ResultItemFontSize() : ?
+    set_ResultItemFontSize() : ?
+    get_ResultSubItemFontSize() : ?
+    set_ResultSubItemFontSize() : ?
+    get_ColorSchemes(TypeDef#0) : System.Void
+    get_ColorScheme() : ?
+    set_ColorScheme() : ?
+    get_TimeFormatList(System.String) : System.Void
+    get_DateFormatList(System.String) : System.Void
+    get_TimeFormat() : ?
+    set_TimeFormat() : ?
+    get_DateFormat() : ?
+    set_DateFormat() : ?
+    get_MaxResultsRange(System.Int32) : System.Void
+    get_KeepMaxResults() : ?
+    set_KeepMaxResults() : ?
+    get_ClockText() : ?
+    get_DateText() : ?
+    get_UseGlyphIcons() : ?
+    set_UseGlyphIcons() : ?
+    get_UseAnimation() : ?
+    set_UseAnimation() : ?
+    get_AnimationSpeeds(TypeDef#0) : System.Void
+    get_BackdropTypesList(TypeDef#0) : System.Void
+    get_BackdropType() : ?
+    set_BackdropType() : System.Double
+    get_UseSound() : ?
+    set_UseSound() : ?
+    get_ShowWMPWarning() : ?
+    get_EnableVolumeAdjustment() : ?
+    get_SoundEffectVolume() : ?
+    set_SoundEffectVolume() : ?
+    get_ShowPlaceholder() : ?
+    set_ShowPlaceholder() : ?
+    get_PlaceholderTextTip() : ?
+    get_PlaceholderText() : ?
+    set_PlaceholderText() : ?
+    get_UseClock() : ?
+    set_UseClock() : ?
+    get_UseDate() : ?
+    set_UseDate() : ?
+    get_ClockPanelFont() : ?
+    get_PreviewBackground() : ?
+    get_PreviewResults() : ?
+    get_SelectedQueryBoxFont() : ?
+    set_SelectedQueryBoxFont() : ?et149
+    get_SelectedQueryBoxFontFaces() : ?
+    set_SelectedQueryBoxFontFaces() : ?et157
+    get_SelectedResultFont() : ?
+    set_SelectedResultFont() : ?et149
+    get_SelectedResultFontFaces() : ?
+    set_SelectedResultFontFaces() : ?et157
+    get_SelectedResultSubFont() : ?
+    set_SelectedResultSubFont() : ?et149
+    get_SelectedResultSubFontFaces() : ?
+    set_SelectedResultSubFontFaces() : ?et157
+    get_ThemeImage() : ?
+    .ctor(TypeDef#0) : ?et205
+    OpenThemesFolder() : ?
+    Reset() : ?
+    Import() : ?
+    get_OpenThemesFolderCommand() : ?
+    get_ResetCommand() : ?
+    get_ImportCommand() : ?
+    <get_SelectedQueryBoxFont>b__118_0() : ?et149
+    <get_SelectedQueryBoxFontFaces>b__121_0() : ?
+    <get_SelectedResultFont>b__124_0() : ?et149
+    <get_SelectedResultFontFaces>b__127_0() : ?
+    <get_SelectedResultSubFont>b__130_0() : ?et149
+    <get_SelectedResultSubFontFaces>b__133_0() : ?
+
+## Flow.Launcher.SettingPages.Views (7)
+- SettingsPaneAbout  [methods=4 fields=5 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field UpdateAppButton
+    field AskClearCacheFolderConfirmationButton
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- SettingsPaneGeneral  [methods=4 fields=3 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- SettingsPaneHotkey  [methods=5 fields=3 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    _CreateDelegate() : TypeDef#0
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- SettingsPanePlugins  [methods=9 fields=5 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field DisplayModeComboBox
+    field PluginFilterTextbox
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    PluginListBox_Loaded() : ?et117
+    ViewModel_PropertyChanged(?et81) : ?et132
+    OnNavigatingFrom() : ?et249
+    SettingsPanePlugins_OnKeyDown(?et169) : ?et130
+    PluginCollectionView_OnFilter(System.Void) : ?et136
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- SettingsPanePluginStore  [methods=10 fields=6 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field FilterFlyout
+    field PluginStoreFilterTextbox
+    field StoreListBox
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    ViewModel_PropertyChanged(?et81) : ?et132
+    OnNavigatingFrom() : ?et249
+    SettingsPanePlugins_OnKeyDown(?et169) : ?et130
+    Hyperlink_OnRequestNavigate(System.Double) : ?et136
+    PluginStoreCollectionView_OnFilter(System.Void) : ?et136
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    System.Windows.Markup.IStyleConnector.Connect() : ?
+    .ctor() : ?
+- SettingsPaneProxy  [methods=4 fields=3 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+- SettingsPaneTheme  [methods=5 fields=24 flags=0x100001]
+    field _viewModel
+    field _settingViewModel
+    field WindowHeightValue
+    field QueryBoxFontSize
+    field QueryBoxFontComboBox
+    field QueryBoxFontStyleComboBox
+    field ItemHeightValue
+    field ResultItemFontSize
+    field ResultItemFontComboBox
+    field ResultItemFontStyleComboBox
+    field ResultSubItemFontSize
+    field ResultSubItemFontComboBox
+    field ResultSubItemFontStyleComboBox
+    field Editor
+    field QueryTextBox
+    field ClockPanel
+    field ClockBox
+    field DateBox
+    field ResultListBox
+    field ResultContextMenu
+    field History
+    field ThemeCard
+    field WMPWarning
+    field _contentLoaded
+    OnNavigatedTo() : ?et237
+    InitializeComponent() : ?
+    _CreateDelegate() : TypeDef#0
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Storage (8)
+- ConcurrentDictionaryConcurrentQueueConverter  [methods=3 fields=0 flags=0x100000]
+    Read(System.Boolean, System.String, TypeSpec#7496132<TypeSpec#541374305, TypeDef#0[], ?, ?, ?, ?, ?, ?, ?>) : ?et129
+    Write(TypeSpec#10510596<?et201, System.Void, TypeSpec#558143264, ?et213, ?, ?, ?, ?>) : ?et225
+    .ctor() : ?
+- FlowLauncherJsonStorageTopMostRecord  [methods=6 fields=2 flags=0x100001]
+    field _topMostRecordStorage
+    field _topMostRecord
+    .ctor() : ?
+    Save() : ?
+    IsTopMost() : ?[]
+    GetTopMostIndex() : ?[]
+    Remove() : ?[]
+    AddOrUpdate() : ?[]
+- History  [methods=4 fields=2 flags=0x100001]
+    field <Items>k__BackingField
+    field _maxHistory
+    get_Items(TypeDef#0) : System.Void
+    set_Items(System.Void, TypeDef#0) : ?et101
+    Add() : ?
+    .ctor() : ?
+- HistoryItem  [methods=7 fields=2 flags=0x100001]
+    field <Query>k__BackingField
+    field <ExecutedDateTime>k__BackingField
+    get_Query() : ?
+    set_Query() : ?
+    get_ExecutedDateTime() : ?
+    set_ExecutedDateTime() : System.Byte
+    GetTimeAgo() : ?
+    DateTimeAgo() : System.Byte
+    .ctor() : ?
+- MultipleTopMostRecord  [methods=7 fields=1 flags=0x100000]
+    field <records>k__BackingField
+    get_records(System.Boolean, System.String, TypeSpec#7496132<>) : ?et129
+    set_records(?et129, System.Boolean, System.String, TypeSpec#7496132<>) : ?et132
+    IsTopMost() : ?[]
+    GetTopMostIndex() : ?[]
+    Remove() : ?[]
+    AddOrUpdate() : ?[]
+    .ctor() : ?
+- Record  [methods=10 fields=4 flags=0x100000]
+    field <Title>k__BackingField
+    field <SubTitle>k__BackingField
+    field <PluginID>k__BackingField
+    field <RecordKey>k__BackingField
+    get_Title() : ?
+    set_Title(System.String) : System.Void
+    get_SubTitle() : ?
+    set_SubTitle(System.String) : System.Void
+    get_PluginID() : ?
+    set_PluginID(System.String) : System.Void
+    get_RecordKey() : ?
+    set_RecordKey(System.String) : System.Void
+    Equals() : ?[]
+    .ctor() : ?
+- TopMostRecord  [methods=6 fields=1 flags=0x100000]
+    field <records>k__BackingField
+    get_records(System.Boolean, System.String, TypeDef#0) : ?et129
+    set_records(?et129, System.Boolean, System.String, TypeDef#0) : ?et132
+    IsTopMost() : ?[]
+    Remove() : ?[]
+    AddOrUpdate() : ?[]
+    .ctor() : ?
+- UserSelectedRecord  [methods=11 fields=4 flags=0x100001]
+    field HASH_MULTIPLIER
+    field HASH_INITIAL
+    field <recordsWithQuery>k__BackingField
+    field <records>k__BackingField
+    get_recordsWithQuery(System.Boolean, System.Int32, System.Int32) : ?et61
+    set_recordsWithQuery(?et61, System.Boolean, System.Int32, System.Int32) : ?et131
+    get_records(System.Boolean, System.String, System.Int32) : ?et61
+    set_records(?et61, System.Boolean, System.String, System.Int32) : ?et131
+    .ctor() : ?
+    GenerateStaticHashCode() : ?
+    GenerateResultHashCode() : ?[]
+    GenerateQueryAndResultHashCode(TypeDef#0) : ?et69
+    TransformOldRecords() : ?
+    Add() : ?[]
+    GetSelectedCount() : ?[]
+
+## Flow.Launcher.ViewModel (10)
+- MainViewModel  [methods=196 fields=80 flags=0x100001]
+    field ClassName
+    field _lastQuery
+    field _previousIsHomeQuery
+    field _progressQueryDict
+    field _updateQuery
+    field _queryTextBeforeLeaveResults
+    field _ignoredQueryText
+    field _historyItemsStorage
+    field _userSelectedRecordStorage
+    field _topMostRecord
+    field _history
+    field lastHistoryIndex
+    field _userSelectedRecord
+    field _updateSource
+    field _updateToken
+    field _resultsUpdateChannelWriter
+    field _resultsViewUpdateTask
+    field _emptyResult
+    field _emptyDialogJumpResult
+    field _historyMetadata
+    field _taskbarShownByFlow
+    field <Settings>k__BackingField
+    field <ClockText>k__BackingField
+    field <DateText>k__BackingField
+    field <Results>k__BackingField
+    field <ContextMenu>k__BackingField
+    field <History>k__BackingField
+    field <GameModeStatus>k__BackingField
+    field _queryText
+    field <LastQuerySelected>k__BackingField
+    field <QueryTextCursorMovedToEnd>k__BackingField
+    field _selectedResults
+    field <ProgressBarVisibility>k__BackingField
+    field <MainWindowVisibility>k__BackingField
+    field <MainWindowVisibilityStatus>k__BackingField
+    field VisibilityChanged
+    field ActualApplicationThemeChanged
+    field <ClockPanelVisibility>k__BackingField
+    field <SearchIconVisibility>k__BackingField
+    field <ClockPanelOpacity>k__BackingField
+    field <SearchIconOpacity>k__BackingField
+    field _placeholderText
+    field <PluginIconSource>k__BackingField
+    field <PluginIconPath>k__BackingField
+    field ResultAreaColumnPreviewShown
+    field ResultAreaColumnPreviewHidden
+    field _selectedItemFromQueryResults
+    field _previewSelectedItem
+    field <ResultAreaColumn>k__BackingField
+    field <ExternalPreviewVisible>k__BackingField
+    field <DialogWindowHandle>k__BackingField
+    field _isDialogJump
+    field _previousMainWindowVisibilityStatus
+    field _dialogJumpSource
+    field _disposed
+    field reloadPluginDataCommand
+    field loadHistoryCommand
+    field reQueryCommand
+    field reverseHistoryCommand
+    field forwardHistoryCommand
+    field loadContextMenuCommand
+    field backspaceCommand
+    field autocompleteQueryCommand
+    field openResultCommand
+    field openSettingCommand
+    field selectHelpCommand
+    field selectFirstResultCommand
+    field selectLastResultCommand
+    field selectPrevPageCommand
+    field selectNextPageCommand
+    field selectPrevItemCommand
+    field selectNextItemCommand
+    field escCommand
+    field toggleGameModeCommand
+    field copyAlternativeCommand
+    field increaseWidthCommand
+    field decreaseWidthCommand
+    field increaseMaxResultCommand
+    field decreaseMaxResultCommand
+    field togglePreviewCommand
+    .ctor() : ?
+    ThemeManager_ActualApplicationThemeChanged() : TypeDef#0
+    RegisterViewUpdate() : ?
+    RegisterResultsUpdatedEvent() : ?
+    RegisterClockAndDateUpdateAsync() : ?
+    ReloadPluginDataAsync() : ?
+    LoadHistory() : ?
+    ReQuery() : ?
+    ReQuery() : ?
+    ReverseHistory() : ?
+    ForwardHistory() : ?
+    LoadContextMenu() : ?
+    Backspace() : ?
+    AutocompleteQuery() : ?
+    OpenResultAsync() : System.String
+    DeepCloneResults(System.Void, TypeDef#75843425, ?et128, ?et165, System.Void, TypeDef#71337825, ?et129, ?et129) : ?et165
+    OpenSetting() : ?
+    SelectHelp() : ?
+    SelectFirstResult() : ?
+    SelectLastResult() : ?
+    SelectPrevPage() : ?
+    SelectNextPage() : ?
+    SelectPrevItem() : ?
+    SelectNextItem() : ?
+    Esc() : ?
+    BackToQueryResults() : ?
+    ToggleGameMode() : ?
+    CopyAlternative() : ?
+    get_Settings() : ?
+    get_ClockText() : ?
+    set_ClockText() : ?
+    get_DateText() : ?
+    set_DateText() : ?
+    get_Results() : ?
+    set_Results() : ?et228
+    get_ContextMenu() : ?
+    set_ContextMenu() : ?et228
+    get_History() : ?
+    set_History() : ?et228
+    get_GameModeStatus() : ?
+    set_GameModeStatus() : ?
+    get_QueryText() : ?
+    set_QueryText() : ?
+    IncreaseWidth() : ?
+    DecreaseWidth() : ?
+    IncreaseMaxResult() : ?
+    DecreaseMaxResult() : ?
+    ChangeQueryText() : ?
+    ChangeQueryTextAsync(System.Boolean) : System.String
+    get_LastQuerySelected() : ?
+    set_LastQuerySelected() : ?
+    get_QueryTextCursorMovedToEnd() : ?
+    set_QueryTextCursorMovedToEnd() : ?
+    get_SelectedResults() : ?
+    set_SelectedResults() : ?et228
+    get_ShowCustomizedPreview() : ?
+    get_CustomizedPreviewControl() : ?
+    get_ProgressBarVisibility() : ?
+    set_ProgressBarVisibility() : TypeDef#0<>
+    get_MainWindowVisibility() : ?
+    set_MainWindowVisibility() : TypeDef#0<>
+    get_MainWindowVisibilityStatus() : ?
+    set_MainWindowVisibilityStatus() : ?
+    add_VisibilityChanged() : ?et253
+    remove_VisibilityChanged() : ?et253
+    add_ActualApplicationThemeChanged() : ?et245
+    remove_ActualApplicationThemeChanged() : ?et245
+    get_ClockPanelVisibility() : ?
+    set_ClockPanelVisibility() : TypeDef#0<>
+    get_SearchIconVisibility() : ?
+    set_SearchIconVisibility() : TypeDef#0<>
+    get_ClockPanelOpacity() : ?
+    set_ClockPanelOpacity() : ?
+    get_SearchIconOpacity() : ?
+    set_SearchIconOpacity() : ?
+    get_PlaceholderText() : ?
+    set_PlaceholderText() : ?
+    get_MainWindowWidth() : ?
+    set_MainWindowWidth() : ?
+    get_MainWindowHeight() : ?
+    set_MainWindowHeight() : ?
+    get_QueryBoxFontSize() : ?
+    set_QueryBoxFontSize() : ?
+    get_ItemHeightSize() : ?
+    set_ItemHeightSize() : ?
+    get_ResultItemFontSize() : ?
+    set_ResultItemFontSize() : ?
+    get_ResultSubItemFontSize() : ?
+    set_ResultSubItemFontSize() : ?
+    get_PluginIconSource() : ?
+    set_PluginIconSource() : ?et109
+    get_PluginIconPath() : ?
+    set_PluginIconPath() : ?
+    get_OpenResultCommandModifiers() : ?
+    VerifyOrSetDefaultHotkey() : ?
+    get_PreviewHotkey() : ?
+    get_AutoCompleteHotkey() : ?
+    get_AutoCompleteHotkey2() : ?
+    get_SelectNextItemHotkey() : ?
+    get_SelectNextItemHotkey2() : ?
+    get_SelectPrevItemHotkey() : ?
+    get_SelectPrevItemHotkey2() : ?
+    get_SelectNextPageHotkey() : ?
+    get_SelectPrevPageHotkey() : ?
+    get_OpenContextMenuHotkey() : ?
+    get_SettingWindowHotkey() : ?
+    get_OpenHistoryHotkey() : ?
+    get_CycleHistoryUpHotkey() : ?
+    get_CycleHistoryDownHotkey() : ?
+    get_StartWithEnglishMode() : ?
+    get_PreviewSelectedItem() : ?
+    set_PreviewSelectedItem() : System.SByte
+    get_InternalPreviewVisible() : ?
+    get_ResultAreaColumn() : ?
+    set_ResultAreaColumn() : ?
+    get_ExternalPreviewVisible() : ?
+    set_ExternalPreviewVisible() : ?
+    ShowPreviewAsync() : ?
+    HidePreview() : ?
+    TogglePreview() : ?
+    OpenExternalPreviewAsync(System.Boolean) : System.String
+    CloseExternalPreviewAsync() : ?
+    SwitchExternalPreviewAsync(System.Boolean) : System.String
+    ShowInternalPreview() : ?
+    HideInternalPreview() : ?
+    ResetPreview() : ?
+    UpdatePreviewAsync() : ?
+    CanExternalPreviewSelectedResult() : ?
+    QueryResultsPreviewed() : ?
+    QueryResults() : ?
+    Query() : ?
+    QueryAsync(System.Boolean) : System.Boolean
+    QueryContextMenu() : ?
+    QueryHistory() : ?
+    GetHistoryItems(TypeDef#75843425, ?et105, System.Void, TypeDef#0) : System.Void
+    QueryResultsAsync(System.Boolean, System.Boolean) : System.Boolean
+    ConstructQueryAsync(System.Void, TypeSpec#88314208, TypeRef#566526042, System.Void, TypeSpec#75520580<>) : ?et173
+    BuildQueryAsync() : TypeSpec#75520580<?et205, TypeDef#0, ?, ?>
+    ShouldClearExistingResultsForQuery(System.Boolean) : ?et69
+    ShouldClearExistingResultsForNonQuery(?et193, System.Void, TypeDef#0) : ?et131
+    ContextMenuTopMost() : TypeDef#0
+    ContextMenuPluginInfo() : TypeDef#0
+    QueryResultsSelected() : ?
+    ContextMenuSelected() : ?
+    HistorySelected() : ?
+    ResultsSelected() : ?et228
+    ToggleFlowLauncher() : ?
+    ShouldIgnoreHotkeys() : ?
+    get_DialogWindowHandle() : ?
+    set_DialogWindowHandle() : ?
+    InitializeVisibilityStatus() : ?
+    IsDialogJumpWindowUnderDialog() : ?
+    SetupDialogJumpAsync() : System.IntPtr
+    ResetDialogJump() : ?
+    HideDialogJump() : ?
+    ResetWindowAsync() : ?
+    Show() : ?
+    Hide() : ?
+    Save() : ?
+    UpdateResultView(?et193, System.Void, TypeDef#0) : ?et131
+    FocusQueryTextBox() : ?
+    Dispose() : ?
+    Dispose() : ?
+    get_ReloadPluginDataCommand() : ?
+    get_LoadHistoryCommand() : ?
+    get_ReQueryCommand() : ?
+    get_ReverseHistoryCommand() : ?
+    get_ForwardHistoryCommand() : ?
+    get_LoadContextMenuCommand() : ?
+    get_BackspaceCommand(System.Void, System.Object) : ?et77
+    get_AutocompleteQueryCommand() : ?
+    get_OpenResultCommand(System.Void, System.String) : System.UIntPtr
+    get_OpenSettingCommand() : ?
+    get_SelectHelpCommand() : ?
+    get_SelectFirstResultCommand() : ?
+    get_SelectLastResultCommand() : ?
+    get_SelectPrevPageCommand() : ?
+    get_SelectNextPageCommand() : ?
+    get_SelectPrevItemCommand() : ?
+    get_SelectNextItemCommand() : ?
+    get_EscCommand() : ?
+    get_ToggleGameModeCommand() : ?
+    get_CopyAlternativeCommand() : ?
+    get_IncreaseWidthCommand() : ?
+    get_DecreaseWidthCommand() : ?
+    get_IncreaseMaxResultCommand() : ?
+    get_DecreaseMaxResultCommand() : ?
+    get_TogglePreviewCommand() : ?
+    .cctor() : ?
+    <.ctor>b__21_0(?et81) : ?et132
+    <.ctor>b__21_1(?et81) : ?et132
+    <.ctor>b__21_2(?et81) : ?et132
+    <SetupDialogJumpAsync>b__256_1() : ?
+    <SetupDialogJumpAsync>b__256_2() : ?
+    <Show>b__260_0() : ?
+    <Hide>b__261_0() : ?
+- PluginStoreItemViewModel  [methods=16 fields=7 flags=0x100001]
+    field _newPlugin
+    field _oldPluginPair
+    field None
+    field RecentlyUpdated
+    field NewRelease
+    field Installed
+    field showCommandQueryCommand
+    .ctor() : ?et77
+    get_ID() : ?
+    get_Name() : ?
+    get_Description() : ?
+    get_Author() : ?
+    get_Version() : ?
+    get_Language() : ?
+    get_Website() : ?
+    get_UrlDownload() : ?
+    get_UrlSourceCode() : ?
+    get_IcoPath() : ?
+    get_LabelInstalled() : ?
+    get_LabelUpdate() : ?
+    get_Category() : ?
+    ShowCommandQueryAsync() : System.String
+    get_ShowCommandQueryCommand(System.Void, System.String) : System.UIntPtr
+- PluginViewModel  [methods=45 fields=16 flags=0x100001]
+    field ClassName
+    field Settings
+    field SettingPanelMargin
+    field SettingPanelItemTopBottomMargin
+    field _pluginPair
+    field _imageLoaded
+    field _settingControl
+    field _isExpanded
+    field _bottomPart1
+    field _bottomPart2
+    field _image
+    field <PluginSettingsObject>k__BackingField
+    field openPluginDirectoryCommand
+    field openSourceCodeLinkCommand
+    field openDeletePluginWindowCommand
+    field setActionKeywordsCommand
+    get_PluginPair() : ?
+    set_PluginPair(TypeDef#0) : System.Void
+    LoadIconAsync() : ?
+    get_Image() : ?
+    set_Image() : ?et109
+    get_PluginState() : ?
+    set_PluginState() : ?
+    get_PluginHomeState() : ?
+    set_PluginHomeState() : ?
+    get_IsExpanded() : ?
+    set_IsExpanded() : ?
+    get_Priority() : ?
+    set_Priority() : ?
+    get_PluginSearchDelayTime() : ?
+    set_PluginSearchDelayTime() : ?
+    get_BottomPart1() : ?
+    get_BottomPart2() : ?
+    get_HasSettingControl() : ?
+    get_SettingControl() : ?
+    TryCreateSettingPanel() : TypeDef#0
+    get_ActionKeywordsVisibility() : ?
+    get_InitializeTime() : ?
+    get_QueryTime() : ?
+    get_Version() : ?
+    get_InitAndQueryTime() : ?
+    get_ActionKeywordsText() : ?
+    get_SearchDelayTimeText() : ?
+    get_PluginSettingsObject() : ?
+    set_PluginSettingsObject(TypeDef#0) : System.Void
+    get_SearchDelayEnabled() : ?
+    get_DefaultSearchDelay() : ?
+    get_HomeEnabled() : ?
+    OnActionKeywordsTextChanged() : ?
+    OpenPluginDirectory() : ?
+    OpenSourceCodeLink() : ?
+    OpenDeletePluginWindowAsync() : ?
+    SetActionKeywords() : ?
+    CreateErrorSettingPanel() : System.String
+    get_OpenPluginDirectoryCommand() : ?
+    get_OpenSourceCodeLinkCommand() : ?
+    get_OpenDeletePluginWindowCommand() : ?
+    get_SetActionKeywordsCommand() : ?
+    .ctor() : ?
+    .cctor() : ?
+    <set_PluginPair>b__7_0(?et81) : ?et132
+- ResultsForUpdate  [methods=22 fields=7 flags=0x100109]
+    field <Results>k__BackingField
+    field <Metadata>k__BackingField
+    field <Query>k__BackingField
+    field <Token>k__BackingField
+    field <ReSelectFirstResult>k__BackingField
+    field <ShouldClearExistingResults>k__BackingField
+    field <ID>k__BackingField
+    .ctor(?et165, System.Void, TypeDef#407144289, TypeSpec#541348192, ?et129, System.Boolean, System.Boolean) : ?et128
+    get_Results(System.Void, TypeDef#0) : ?et165
+    set_Results(?et165, System.Void, TypeDef#0) : ?et128
+    get_Metadata() : ?
+    set_Metadata() : ?
+    get_Query() : ?
+    set_Query() : ?et69
+    get_Token() : ?
+    set_Token() : ?et129
+    get_ReSelectFirstResult() : ?
+    set_ReSelectFirstResult() : ?
+    get_ShouldClearExistingResults() : ?
+    set_ShouldClearExistingResults() : ?
+    get_ID() : ?
+    ToString() : ?
+    PrintMembers() : ?et205
+    op_Inequality(TypeDef#0) : ?et224
+    op_Equality(TypeDef#0) : ?et224
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?et224
+    Deconstruct(?et132, TypeRef#549749784&[], ?et69, TypeRef#8659040&, System.Boolean&) : TypeDef#75524448
+- ResultsViewModel  [methods=42 fields=13 flags=0x100001]
+    field ClassName
+    field <Results>k__BackingField
+    field _collectionLock
+    field _settings
+    field _mainVM
+    field <IsPreviewOn>k__BackingField
+    field <SelectedIndex>k__BackingField
+    field <SelectedItem>k__BackingField
+    field <Margin>k__BackingField
+    field <Visibility>k__BackingField
+    field <RightClickResultCommand>k__BackingField
+    field <LeftClickResultCommand>k__BackingField
+    field FormattedTextProperty
+    get_Results() : ?
+    get_MaxResults() : ?
+    .ctor() : ?
+    .ctor(TypeDef#0) : ?et205
+    get_IsPreviewOn() : ?
+    set_IsPreviewOn() : ?
+    get_MaxHeight() : ?
+    get_ItemHeightSize() : ?
+    set_ItemHeightSize() : ?
+    get_SelectedIndex() : ?
+    set_SelectedIndex() : ?
+    get_SelectedItem() : ?
+    set_SelectedItem() : System.SByte
+    get_Margin() : ?
+    set_Margin() : ?et245
+    get_Visibility() : ?
+    set_Visibility() : TypeDef#0<>
+    get_RightClickResultCommand() : ?
+    set_RightClickResultCommand(TypeDef#0) : System.Void
+    get_LeftClickResultCommand() : ?
+    set_LeftClickResultCommand(TypeDef#0) : System.Void
+    InsertIndexOf(?et130, System.SByte) : TypeSpec#75525728
+    NewIndex() : ?
+    SelectNextResult() : ?
+    SelectPrevResult() : ?
+    SelectNextPage() : ?
+    SelectPrevPage() : ?
+    SelectFirstResult() : ?
+    SelectLastResult() : ?
+    Clear() : ?
+    KeepResultsFor() : ?
+    KeepResultsExcept() : ?
+    AddResults(System.Void, TypeDef#0) : ?et101
+    AddResults(?et193, System.Void, TypeRef#541358112, ?et129, System.Boolean) : ?et131
+    UpdateResults(System.Void, TypeSpec#71336224, ?et129, ?et129) : ?et101
+    NewResults(TypeSpec#75841824, ?et101, System.Void, TypeDef#0) : System.Void
+    NewResults(TypeSpec#75841824, ?et131, ?et193, System.Void, TypeDef#0) : System.Void
+    SetFormattedText(TypeSpec#7233732<>) : ?et85
+    GetFormattedText() : TypeDef#0
+    FormattedTextPropertyChanged(TypeDef#0) : ?et85
+    .cctor() : ?
+    <.ctor>b__10_0(?et81) : ?et132
+- ResultViewModel  [methods=40 fields=14 flags=0x100001]
+    field ClassName
+    field FontCollection
+    field Fonts
+    field <Settings>k__BackingField
+    field _imageLoaded
+    field _badgeImageLoaded
+    field _previewImageLoaded
+    field _image
+    field _badgeImage
+    field _previewImage
+    field <Glyph>k__BackingField
+    field <Result>k__BackingField
+    field <QuerySuggestionText>k__BackingField
+    field <IconXY>k__BackingField
+    .ctor() : TypeDef#0[]
+    get_Settings() : ?
+    get_ShowDefaultPreview() : ?
+    get_ShowIcon() : ?
+    get_ShowPreviewImage() : ?
+    get_IconRadius() : ?
+    get_ShowGlyph() : ?
+    get_ShowBadge() : ?
+    get_IsGlobalQuery() : ?
+    get_GlyphAvailable() : ?
+    get_ImgIconAvailable() : ?
+    get_BadgeIconAvailable() : ?
+    get_PreviewImageAvailable() : ?
+    get_ShowTitleToolTip() : ?
+    get_ShowSubTitleToolTip() : ?
+    get_Image() : ?
+    set_Image() : ?et109
+    get_BadgeImage() : ?
+    set_BadgeImage() : ?et109
+    get_PreviewImage() : ?
+    set_PreviewImage() : ?et109
+    get_UseBigThumbnail() : ?
+    get_Glyph() : ?
+    set_Glyph() : ?et253
+    LoadImageInternalAsync(System.Void, TypeDef#75733857, ?et135, ?et181, System.Boolean) : ?et173
+    LoadImageAsync() : ?
+    LoadBadgeImageAsync() : ?
+    LoadPreviewImageAsync() : ?
+    LoadPreviewImage() : ?
+    get_PreviewDescription() : ?
+    get_Result() : ?
+    get_ResultProgress() : ?
+    get_QuerySuggestionText() : ?
+    set_QuerySuggestionText() : ?
+    get_IconXY() : ?
+    set_IconXY() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    .cctor() : ?
+- SelectBrowserViewModel  [methods=10 fields=5 flags=0x100001]
+    field _settings
+    field selectedCustomBrowserIndex
+    field <CustomBrowsers>k__BackingField
+    field addCommand
+    field deleteCommand
+    get_SelectedCustomBrowserIndex() : ?
+    set_SelectedCustomBrowserIndex() : ?
+    get_CustomBrowsers(System.Void, TypeDef#0) : ?et77
+    get_CustomBrowser() : ?
+    .ctor() : ?et205
+    SaveSettings() : ?
+    Add() : ?
+    Delete() : ?
+    get_AddCommand() : ?
+    get_DeleteCommand() : ?
+- SelectFileManagerViewModel  [methods=11 fields=5 flags=0x100001]
+    field _settings
+    field selectedCustomExplorerIndex
+    field <CustomExplorers>k__BackingField
+    field addCommand
+    field deleteCommand
+    get_SelectedCustomExplorerIndex() : ?
+    set_SelectedCustomExplorerIndex() : ?
+    get_CustomExplorers(System.Void, TypeDef#0) : ?et77
+    get_CustomExplorer() : ?
+    .ctor() : ?et205
+    SaveSettings() : ?
+    IsFileManagerValid() : ?
+    Add() : ?
+    Delete() : ?
+    get_AddCommand() : ?
+    get_DeleteCommand() : ?
+- SettingWindowViewModel  [methods=12 fields=2 flags=0x100001]
+    field _settings
+    field _pageType
+    .ctor() : ?et205
+    SetPageType() : ?[]
+    get_PageType() : ?
+    set_PageType() : ?[]
+    get_SettingWindowWidth() : ?
+    set_SettingWindowWidth() : ?
+    get_SettingWindowHeight() : ?
+    set_SettingWindowHeight() : ?
+    get_SettingWindowTop(System.Void, System.Double) : System.Double
+    set_SettingWindowTop(System.Double, System.Void, System.Double) : ?et130
+    get_SettingWindowLeft(System.Void, System.Double) : System.Double
+    set_SettingWindowLeft(System.Double, System.Void, System.Double) : ?et130
+- WelcomeViewModel  [methods=9 fields=4 flags=0x100001]
+    field MaxPageNum
+    field _pageNum
+    field _backEnabled
+    field _nextEnabled
+    get_PageDisplay() : ?
+    get_PageNum() : ?
+    set_PageNum() : ?
+    get_BackEnabled() : ?
+    set_BackEnabled() : ?
+    get_NextEnabled() : ?
+    set_NextEnabled() : ?
+    UpdateView() : ?
+    .ctor() : ?
+
+## System.Text.RegularExpressions.Generated (2)
+- <RegexGenerator_g>F5FCC85A3A81C7F0BA049626BD550F6856A79BC8645F5BE91F6A1DA0217461B90__ImageUnitRegex_0  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>F5FCC85A3A81C7F0BA049626BD550F6856A79BC8645F5BE91F6A1DA0217461B90__Utilities  [methods=1 fields=2 flags=0x100180]
+    field s_defaultTimeout
+    field s_hasTimeout
+    .cctor() : ?

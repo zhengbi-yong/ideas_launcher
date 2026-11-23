@@ -1,0 +1,194 @@
+
+== namespace (global) (120 types) ==
+  ? <<DownloadFileAsync>b__0>d
+  ? <<InitAsync>g__ReadErrorAsync|19_0>d
+  ? <<InitializePluginsAsync>b__1>d
+  ? <<InstallEnvironment>b__18_1>d
+  ? <<InstallEnvironment>b__18_1>d
+  ? <<InstallEnvironment>b__20_1>d
+  ? <<ParseResults>b__0>d
+  ? <<QueryDialogJumpForPluginAsync>b__0>d
+  ? <<QueryForPluginAsync>b__1>d
+  ? <<QueryHomeForPluginAsync>b__1>d
+  ? <<UpdateAllPluginsAsync>b__0>d
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c
+  ? <>c__DisplayClass1_0
+  ? <>c__DisplayClass12_0
+  ? <>c__DisplayClass16_0
+  ? <>c__DisplayClass16_0
+  ? <>c__DisplayClass17_0
+  ? <>c__DisplayClass17_0
+  ? <>c__DisplayClass17_0
+  ? <>c__DisplayClass19_0
+  ? <>c__DisplayClass2_0
+  ? <>c__DisplayClass2_0
+  ? <>c__DisplayClass2_1
+  ? <>c__DisplayClass22_0
+  ? <>c__DisplayClass27_0
+  ? <>c__DisplayClass27_1
+  ? <>c__DisplayClass27_2
+  ? <>c__DisplayClass28_0
+  ? <>c__DisplayClass28_1
+  ? <>c__DisplayClass28_2
+  ? <>c__DisplayClass28_3
+  ? <>c__DisplayClass32_0
+  ? <>c__DisplayClass32_0
+  ? <>c__DisplayClass32_1
+  ? <>c__DisplayClass33_0
+  ? <>c__DisplayClass34_0
+  ? <>c__DisplayClass36_0
+  ? <>c__DisplayClass36_1
+  ? <>c__DisplayClass36_2
+  ? <>c__DisplayClass36_3
+  ? <>c__DisplayClass4_0
+  ? <>c__DisplayClass42_0
+  ? <>c__DisplayClass43_0
+  ? <>c__DisplayClass44_0
+  ? <>c__DisplayClass49_0
+  ? <>c__DisplayClass52_0
+  ? <>c__DisplayClass57_0
+  ? <>c__DisplayClass58_0
+  ? <>c__DisplayClass6_0
+  ? <>c__DisplayClass6_0
+  ? <>c__DisplayClass7_0
+  ? <>c__DisplayClass7_0
+  ? <>c__DisplayClass8_0
+  ? <>c__DisplayClass9_0
+  ? <>f__AnonymousType0`2
+  ? <>O
+  ? <>O
+  ? <>y__InlineArray2`1
+  ? <ChangeLanguageAsync>d__18
+  ? <CheckForPluginUpdatesAsync>d__6
+  ? <CloseExternalPreviewAsync>d__18
+  ? <DeserializedResultAsync>d__11
+  ? <DisposeAsync>d__16
+  ? <DisposeAsync>d__28
+  ? <DisposePluginAsync>d__15
+  ? <DisposePluginsAsync>d__14
+  ? <DownloadFileAsync>d__8
+  ? <ExecuteAsync>d__16
+  ? <ExecuteResultAsync>d__13
+  ? <ExecuteResultAsync>d__13
+  ? <FetchAsync>d__11
+  ? <FetchAsync>d__12
+  ? <GitHubUpdateManagerAsync>d__12
+  ? <InitAsync>d__13
+  ? <InitAsync>d__19
+  ? <InitAsync>d__20
+  ? <InitAsync>d__4
+  ? <InitAsync>d__4
+  ? <InitAsync>d__5
+  ? <InitAsync>d__5
+  ? <InitializeAsync>d__31
+  ? <InitializeLanguageAsync>d__12
+  ? <InitializePluginsAsync>d__27
+  ? <InitSettingAsync>d__19
+  ? <InstallPluginAndCheckRestartAsync>d__2
+  ? <InstallPluginAndCheckRestartAsync>d__3
+  ? <Module>
+  ? <OpenExternalPreviewAsync>d__17
+  ? <PrivateImplementationDetails>
+  ? <QueryAsync>d__17
+  ? <QueryAsync>d__18
+  ? <QueryDialogJumpForPluginAsync>d__34
+  ? <QueryForPluginAsync>d__32
+  ? <QueryHomeForPluginAsync>d__33
+  ? <RefreshFrameAsync>d__39
+  ? <ReloadDataAsync>d__15
+  ? <ReloadDataAsync>d__16
+  ? <ReloadDataAsync>d__27
+  ? <SaveAsync>d__33
+  ? <SetBlurForWindowAsync>d__40
+  ? <SwitchExternalPreviewAsync>d__19
+  ? <UninstallPluginAndCheckRestartAsync>d__4
+  ? <UninstallPluginAsync>d__56
+  ? <UninstallPluginAsync>d__58
+  ? <UpdateAllPluginsAsync>d__7
+  ? <UpdateAppAsync>d__10
+  ? <UpdateManifestAsync>d__9
+  ? <UpdatePluginAndCheckRestartAsync>d__5
+  ? <UpdatePluginAsync>d__54
+  ? GithubRelease
+  ? MessageHandlerType
+
+== namespace Flow.Launcher.Core (3 types) ==
+  ? Localize
+  ? PublicApi
+  ? Updater
+
+== namespace Flow.Launcher.Core.Configuration (2 types) ==
+  ? IPortable
+  ? Portable
+
+== namespace Flow.Launcher.Core.ExternalPlugins (4 types) ==
+  ? CommunityPluginSource
+  ? CommunityPluginStore
+  ? FlowPluginException
+  ? PluginsManifest
+
+== namespace Flow.Launcher.Core.ExternalPlugins.Environments (7 types) ==
+  ? AbstractPluginEnvironment
+  ? JavaScriptEnvironment
+  ? JavaScriptV2Environment
+  ? PythonEnvironment
+  ? PythonV2Environment
+  ? TypeScriptEnvironment
+  ? TypeScriptV2Environment
+
+== namespace Flow.Launcher.Core.Plugin (29 types) ==
+  ? ExecutablePlugin
+  ? ExecutablePluginV2
+  ? FieldAttributes
+  ? IResultUpdateRegister
+  ? JsonRPCBase
+  ? JsonRPCClientRequestModel
+  ? JsonRpcConfigurationModel
+  ? JsonRPCErrorModel
+  ? JsonRPCPlugin
+  ? JsonRPCPluginBase
+  ? JsonRPCPluginSettings
+  ? JsonRPCPluginV2
+  ? JsonRPCQueryResponseModel
+  ? JsonRPCRequestModel
+  ? JsonRPCResponseModel
+  ? JsonRPCResult
+  ? NodePlugin
+  ? NodePluginV2
+  ? PluginAssemblyLoader
+  ? PluginConfig
+  ? PluginInstaller
+  ? PluginManager
+  ? PluginsLoader
+  ? PluginUpdateInfo
+  ? ProcessStreamPluginV2
+  ? PythonPlugin
+  ? PythonPluginV2
+  ? QueryBuilder
+  ? SettingField
+
+== namespace Flow.Launcher.Core.Plugin.JsonRPCV2Models (3 types) ==
+  ? JsonRPCExecuteResponse
+  ? JsonRPCPublicAPI
+  ? JsonRPCQueryRequest
+
+== namespace Flow.Launcher.Core.Resource (7 types) ==
+  ? AvailableLanguages
+  ? FontHelper
+  ? Internationalization
+  ? JsonObjectConverter
+  ? Language
+  ? Theme
+  ? ThemeHelper
+
+== namespace Flow.Launcher.Core.Storage (1 types) ==
+  ? IRemovable

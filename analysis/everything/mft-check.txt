@@ -1,0 +1,788 @@
+elevated: true
+volumes: 2
+==== \\.\C: C:\ ====
+  records: 9096448
+  sector=512 cluster=8 record=1024 (boot says 1024) records=9096448 extents=44 mft_lcn=786432
+    extent 0: lcn=786432 clusters=51232 logical=0
+    extent 1: lcn=11403264 clusters=51200 logical=209846272
+    extent 2: lcn=51223453 clusters=51203 logical=419561472
+    extent 3: lcn=52573989 clusters=51227 logical=629288960
+    extent 4: lcn=52345899 clusters=51221 logical=839114752
+    extent 5: lcn=66654584 clusters=51208 logical=1048915968
+    extent 6: lcn=68876858 clusters=51206 logical=1258663936
+    extent 7: lcn=120615723 clusters=51221 logical=1468403712
+    extent 8: lcn=132730685 clusters=51203 logical=1678204928
+    extent 9: lcn=148041754 clusters=51206 logical=1887932416
+    extent 10: lcn=189962319 clusters=51217 logical=2097672192
+    extent 11: lcn=190022162 clusters=57923 logical=2307457024
+    extent 12: lcn=30468825 clusters=51207 logical=2544709632
+    extent 13: lcn=238380399 clusters=51217 logical=2754453504
+    extent 14: lcn=245655733 clusters=51211 logical=2964238336
+    extent 15: lcn=255893870 clusters=93330 logical=3173998592
+  record 0 at offset 3221225472: 46 49 4c 45 30 00 03 00 0d d0 29 ee 46 00 00 00 01 00 01 00 38 00 01 00 e0 02 00 00 00 04 00 00 00 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 89 1a b9 38 00 00 00 00 10 00 00 00 60 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=72 data_size=None runs=0
+  attribute kind=0x20 non_resident=true name="" value=0 data_size=Some(160) runs=8
+  attribute kind=0x30 non_resident=false name="" value=74 data_size=None runs=0
+    name value: 05 00 00 00 00 00 05 00 7e 0e e0 84 44 7f dc 01 7e 0e e0 84 44 7f dc 01 7e 0e e0 84 44 7f dc 01 7e 0e e0 84 44 7f dc 01 00 40 00 00 00 00 00 00 00 40 00 00 00 00 00 00 06 00 00 00 00 00 00 00 04 03 24 00 4d 00 46 00 54 00
+    namespace=3 length_byte=4 trailing=3
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(9314762752) runs=336
+    header: 80 00 00 00 90 01 00 00 01 00 40 00 00 00 06 00 00 00 00 00 00 00 00 00 3f b3 22 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 34 2b 02 00 00 00 00 00 34 2b 02 00 00 00 00 00 34 2b 02 00 00 00
+    sizes: +0x28=9314762752 +0x30=9314762752 +0x38=9314762752
+    layout a: pairs_at=32 pairs=64 runs=[(786432, 51232), (11403264, 51200), (51223453, 51203), (52573989, 51227), (52345899, 51221), (66654584, 51208), (68876858, 51206), (120615723, 51221), (132730685, 51203), (148041754, 51206), (189962319, 51217), (190022162, 57923), (30468825, 51207), (238380399, 51217), (245655733, 51211), (255893870, 93330), (248628287, 51201), (245009937, 51215), (317608734, 51202), (316583739, 58757), (323630437, 51259), (327703401, 51223), (328930255, 51217), (316732691, 51256), (328241540, 51228), (318408291, 72061), (463791161, 51207), (469163060, 77932), (388762336, 4922), (389481580, 51257), (503430460, 9607), (516411432, 51224), (500084808, 51224), (538720200, 116760), (517387364, 51228), (570579005, 51203), (604361476, 51228), (651503980, 51220), (679255744, 51200), (577407836, 51204), (559103956, 29736), (257136964, 56283), (627170341, 51227), (523489372, 6599)]
+    layout b: pairs_at=28 pairs=0 runs=[]
+  --- record 0 ---
+  #0 seq=1 name="$MFT" size=9314762752 parent=0x5 (".")
+  --- identity 0 ---
+  metadata: None
+  #0 seq=1 name="$MFT" size=9314762752 parent=0x5 (".") | system: nothing
+  --- record 1 ---
+  #1 seq=1 name="$MFTMirr" size=4096 parent=0x5 (".")
+  --- identity 1 ---
+  metadata: None
+  #1 seq=1 name="$MFTMirr" size=4096 parent=0x5 (".") | system: nothing
+  --- record 2 ---
+  #2 seq=2 name="$LogFile" size=67108864 parent=0x5 (".")
+  --- identity 2 ---
+  metadata: None
+  #2 seq=2 name="$LogFile" size=67108864 parent=0x5 (".") | system: nothing
+  --- record 3 ---
+  #3 seq=3 name="$Volume" size=0 parent=0x5 (".")
+  --- identity 3 ---
+  metadata: None
+  #3 seq=3 name="$Volume" size=0 parent=0x5 (".") | system: nothing
+  --- record 4 ---
+  #4 seq=4 name="$AttrDef" size=2560 parent=0x5 (".")
+  --- identity 4 ---
+  metadata: None
+  #4 seq=4 name="$AttrDef" size=2560 parent=0x5 (".") | system: nothing
+  --- record 5 ---
+  #5 seq=5 name="." size=0 parent=0x5 (".")
+  --- identity 5 ---
+  metadata: None
+  #5 seq=5 name="." size=0 parent=0x5 (".") | system: nothing
+  --- record 6 ---
+  #6 seq=6 name="$Bitmap" size=125024064 parent=0x5 (".")
+  --- identity 6 ---
+  metadata: None
+  #6 seq=6 name="$Bitmap" size=125024064 parent=0x5 (".") | system: nothing
+  --- record 7 ---
+  #7 seq=7 name="$Boot" size=8192 parent=0x5 (".")
+  --- identity 7 ---
+  metadata: None
+  #7 seq=7 name="$Boot" size=8192 parent=0x5 (".") | system: nothing
+  --- record 8 ---
+  #8 seq=8 name="$BadClus" size=4095792377856 parent=0x5 (".")
+  --- identity 8 ---
+  metadata: None
+  #8 seq=8 name="$BadClus" size=4095792377856 parent=0x5 (".") | system: nothing
+  --- record 9 ---
+  #9 seq=9 name="$Secure" size=0 parent=0x5 (".")
+  --- identity 9 ---
+  metadata: None
+  #9 seq=9 name="$Secure" size=0 parent=0x5 (".") | system: nothing
+  --- record 10 ---
+  #10 seq=10 name="$UpCase" size=131072 parent=0x5 (".")
+  --- identity 10 ---
+  metadata: None
+  #10 seq=10 name="$UpCase" size=131072 parent=0x5 (".") | system: nothing
+  --- record 11 ---
+  #11 seq=11 name="$Extend" size=0 parent=0x5 (".")
+  --- identity 11 ---
+  metadata: None
+  #11 seq=11 name="$Extend" size=0 parent=0x5 (".") | system: nothing
+  --- record 12 ---
+  #12: the record could not be read
+  record 12 at offset 3221237760: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0c 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 03 00 00 00 0c 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 13 ---
+  #13: the record could not be read
+  record 13 at offset 3221238784: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0d 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 03 00 00 00 0d 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 14 ---
+  #14: the record could not be read
+  record 14 at offset 3221239808: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0e 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 03 00 00 00 0e 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 15 ---
+  #15: the record could not be read
+  record 15 at offset 3221240832: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0f 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 03 00 00 00 0f 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 16 ---
+  #16: the record could not be read
+  record 16 at offset 3221241856: 46 49 4c 45 30 00 03 00 df d2 3d d8 46 00 00 00 01 00 00 00 38 00 01 00 f8 03 00 00 00 04 00 00 00 00 00 00 00 00 01 00 01 00 00 00 10 00 00 00 b1 00 94 53 00 00 00 00 b0 00 00 00 b8 03 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0xb0 non_resident=true name="" value=0 data_size=Some(1138688) runs=888
+  --- record 17 ---
+  #17: the record could not be read
+  record 17 at offset 3221242880: 46 49 4c 45 30 00 03 00 d1 d2 3d d8 46 00 00 00 01 00 00 00 38 00 01 00 08 02 00 00 00 04 00 00 00 00 00 00 00 00 01 00 01 00 00 00 11 00 00 00 4e 00 00 00 00 00 00 00 b0 00 00 00 c8 01 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0xb0 non_resident=true name="" value=0 data_size=Some(0) runs=392
+  --- record 18 ---
+  #18: the record could not be read
+  record 18 at offset 3221243904: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 19 ---
+  #19: the record could not be read
+  record 19 at offset 3221244928: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 20 ---
+  #20: the record could not be read
+  record 20 at offset 3221245952: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 21 ---
+  #21: the record could not be read
+  record 21 at offset 3221246976: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 22 ---
+  #22: the record could not be read
+  record 22 at offset 3221248000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 23 ---
+  #23: the record could not be read
+  record 23 at offset 3221249024: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 24 ---
+  #24 seq=1 name="$Quota" size=0 parent=0xb ("$Extend")
+  --- identity 24 ---
+  metadata: None
+  #24 seq=1 name="$Quota" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 25 ---
+  #25 seq=1 name="$ObjId" size=0 parent=0xb ("$Extend")
+  --- identity 25 ---
+  metadata: None
+  #25 seq=1 name="$ObjId" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 26 ---
+  #26 seq=1 name="$Reparse" size=0 parent=0xb ("$Extend")
+  --- identity 26 ---
+  metadata: None
+  #26 seq=1 name="$Reparse" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 27 ---
+  #27 seq=1 name="$RmMetadata" size=0 parent=0xb ("$Extend")
+  --- identity 27 ---
+  metadata: None
+  #27 seq=1 name="$RmMetadata" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 28 ---
+  #28 seq=1 name="$Repair" size=10485760 parent=0x1b ("$RmMetadata")
+  --- identity 28 ---
+  metadata: None
+  #28 seq=1 name="$Repair" size=10485760 parent=0x1b ("$RmMetadata") | system: nothing
+  --- record 29 ---
+  #29 seq=1 name="$Deleted" size=0 parent=0xb ("$Extend")
+  --- identity 29 ---
+  metadata: None
+  #29 seq=1 name="$Deleted" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 30 ---
+  #30 seq=1 name="$TxfLog" size=0 parent=0x1b ("$RmMetadata")
+  --- identity 30 ---
+  metadata: None
+  #30 seq=1 name="$TxfLog" size=0 parent=0x1b ("$RmMetadata") | system: nothing
+  --- record 31 ---
+  #31 seq=1 name="$Txf" size=0 parent=0x1b ("$RmMetadata")
+  --- identity 31 ---
+  metadata: None
+  #31 seq=1 name="$Txf" size=0 parent=0x1b ("$RmMetadata") | system: nothing
+  --- record 32 ---
+  #32 seq=1 name="$Tops" size=100 parent=0x1e ("$TxfLog")
+  --- identity 32 ---
+  metadata: None
+  #32 seq=1 name="$Tops" size=100 parent=0x1e ("$TxfLog") | system: nothing
+  --- record 33 ---
+  #33 seq=1 name="$TxfLog.blf" size=65536 parent=0x1e ("$TxfLog")
+  --- identity 33 ---
+  metadata: None
+  #33 seq=1 name="$TxfLog.blf" size=65536 parent=0x1e ("$TxfLog") | system: nothing
+  --- record 34 ---
+  #34 seq=7 name="ModuleInterface" size=0 parent=0x3c9ad ("CursorWrap")
+  --- identity 34 ---
+  metadata: None
+  #34 seq=7 name="ModuleInterface" size=0 parent=0x3c9ad ("CursorWrap") | system: nothing
+  --- record 35 ---
+  #35 seq=290 name="Temp" size=0 parent=0xdd4 ("Diagnosis")
+  --- identity 35 ---
+  metadata: None
+  #35 seq=290 name="Temp" size=0 parent=0xdd4 ("Diagnosis") | system: nothing
+  --- record 36 ---
+  #36: the record could not be read
+  record 36 at offset 3221262336: 46 49 4c 45 30 00 03 00 ef af 68 40 00 00 00 00 03 00 ff ff 38 00 01 00 88 00 00 00 00 04 00 00 8b 76 03 00 00 00 02 00 02 00 00 00 24 00 00 00 8c 9f 00 00 00 00 00 00 80 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(496629) runs=8
+  --- record 37 ---
+  #37 seq=2 name="Amcache.hve" size=33554432 parent=0xe7c ("Programs")
+  --- identity 37 ---
+  metadata: None
+  #37 seq=2 name="Amcache.hve" size=33554432 parent=0xe7c ("Programs") | system: nothing
+  --- record 38 ---
+  #38 seq=2 name="Amcache.hve.LOG1" size=49152 parent=0xe7c ("Programs")
+  --- identity 38 ---
+  metadata: None
+  #38 seq=2 name="Amcache.hve.LOG1" size=49152 parent=0xe7c ("Programs") | system: nothing
+  --- record 39 ---
+  #39 seq=2 name="Amcache.hve.LOG2" size=2097152 parent=0xe7c ("Programs")
+  --- identity 39 ---
+  metadata: None
+  #39 seq=2 name="Amcache.hve.LOG2" size=2097152 parent=0xe7c ("Programs") | system: nothing
+  --- record 40 ---
+  #40 seq=2 name="PowerGrid" size=0 parent=0xdea ("Windows")
+  --- identity 40 ---
+  metadata: None
+  #40 seq=2 name="PowerGrid" size=0 parent=0xdea ("Windows") | system: nothing
+  --- record 41 ---
+  #41 seq=2 name="Forecast.json" size=94 parent=0x28 ("PowerGrid")
+  --- identity 41 ---
+  metadata: None
+  #41 seq=2 name="Forecast.json" size=94 parent=0x28 ("PowerGrid") | system: nothing
+  --- record 42 ---
+  #42 seq=2 name="D3DSCache" size=0 parent=0x1609 ("Local")
+  --- identity 42 ---
+  metadata: None
+  #42 seq=2 name="D3DSCache" size=0 parent=0x1609 ("Local") | system: nothing
+  --- record 43 ---
+  #43 seq=2 name="ab340f44f2aef275" size=0 parent=0x2a ("D3DSCache")
+  --- identity 43 ---
+  metadata: None
+  #43 seq=2 name="ab340f44f2aef275" size=0 parent=0x2a ("D3DSCache") | system: nothing
+  --- record 44 ---
+  #44 seq=4 name="F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.lock" size=4 parent=0x2b ("ab340f44f2aef275")
+  --- identity 44 ---
+  metadata: None
+  #44 seq=4 name="F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.lock" size=4 parent=0x2b ("ab340f44f2aef275") | system: nothing
+  --- record 45 ---
+  #45 seq=4 name="F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.idx" size=65552 parent=0x2b ("ab340f44f2aef275")
+  --- identity 45 ---
+  metadata: None
+  #45 seq=4 name="F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.idx" size=65552 parent=0x2b ("ab340f44f2aef275") | system: nothing
+  --- record 46 ---
+  #46 seq=4 name="F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.val" size=848 parent=0x2b ("ab340f44f2aef275")
+  --- identity 46 ---
+  metadata: None
+  #46 seq=4 name="F4EB2D6C-ED2B-4BDD-AD9D-F913287E6768.val" size=848 parent=0x2b ("ab340f44f2aef275") | system: nothing
+  --- record 47 ---
+  #47 seq=13 name="System" size=0 parent=0x21b ("NativeImages_v2.0.50727_32")
+  --- identity 47 ---
+  metadata: None
+  #47 seq=13 name="System" size=0 parent=0x21b ("NativeImages_v2.0.50727_32") | system: nothing
+  --- record 48 ---
+  #48 seq=5 name="{D6E06D36-BFED-427C-AE05-21258E7643DE}" size=0 parent=0x20b3 ("SystemTemp")
+  --- identity 48 ---
+  metadata: None
+  #48 seq=5 name="{D6E06D36-BFED-427C-AE05-21258E7643DE}" size=0 parent=0x20b3 ("SystemTemp") | system: nothing
+  --- record 49 ---
+  #49 seq=103 name="f_001112" size=22726 parent=0x3f928a ("Cache_Data")
+  --- identity 49 ---
+  metadata: None
+  #49 seq=103 name="f_001112" size=22726 parent=0x3f928a ("Cache_Data") | system: nothing
+  --- record 50 ---
+  #50 seq=559 name="ShimOfflineStorage" size=13324 parent=0x121c7f ("NvBackend")
+  --- identity 50 ---
+  metadata: None
+  #50 seq=559 name="ShimOfflineStorage" size=13324 parent=0x121c7f ("NvBackend") | system: nothing
+  --- record 51 ---
+  #51: the record could not be read
+  record 51 at offset 3221277696: 46 49 4c 45 30 00 03 00 d2 22 69 40 00 00 00 00 03 00 fe ff 38 00 01 00 88 00 00 00 00 04 00 00 c3 76 03 00 00 00 02 00 03 00 00 00 33 00 00 00 af 07 00 00 00 00 00 00 80 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(13495) runs=8
+  --- record 52 ---
+  #52 seq=23 name="log_2026-05-20.log" size=646 parent=0x8c45 ("v0.98.1")
+  --- identity 52 ---
+  metadata: None
+  #52 seq=23 name="log_2026-05-20.log" size=646 parent=0x8c45 ("v0.98.1") | system: nothing
+  --- record 53 ---
+  #53: the record could not be read
+  record 53 at offset 3221279744: 46 49 4c 45 30 00 03 00 da 34 69 40 00 00 00 00 03 00 ff ff 38 00 01 00 88 00 00 00 00 04 00 00 bd 76 03 00 00 00 02 00 02 00 00 00 35 00 00 00 48 0e 00 00 00 00 00 00 80 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(10929) runs=8
+  --- record 54 ---
+  #54 seq=3 name="74df9c3adbf31a42877ee7312cfc2e73cd6f0d73afbc7dac324ee30209f4f38d.cat" size=10929 parent=0x6202 ("Catalogs")
+  --- identity 54 ---
+  metadata: None
+  #54 seq=3 name="74df9c3adbf31a42877ee7312cfc2e73cd6f0d73afbc7dac324ee30209f4f38d.cat" size=10929 parent=0x6202 ("Catalogs") | system: nothing
+  --- record 55 ---
+  #55 seq=2 name="Microsoft-Windows-Winlogon%4Operational.evtx" size=1052672 parent=0x1ace ("Logs")
+  --- identity 55 ---
+  metadata: None
+  #55 seq=2 name="Microsoft-Windows-Winlogon%4Operational.evtx" size=1052672 parent=0x1ace ("Logs") | system: nothing
+  --- record 56 ---
+  #56 seq=347 name="0794ed8066edd045_0" size=111664 parent=0x3e36d ("js")
+  --- identity 56 ---
+  metadata: None
+  #56 seq=347 name="0794ed8066edd045_0" size=111664 parent=0x3e36d ("js") | system: nothing
+  --- record 57 ---
+  #57 seq=2 name="setupapi.dev.20260118_145217.log" size=4228734 parent=0x1097 ("INF")
+  --- identity 57 ---
+  metadata: None
+  #57 seq=2 name="setupapi.dev.20260118_145217.log" size=4228734 parent=0x1097 ("INF") | system: nothing
+  --- record 58 ---
+  #58 seq=148 name="20260118T160301.843_17848_W5Q7.log" size=639 parent=0x46c97 ("log")
+  --- identity 58 ---
+  metadata: None
+  #58 seq=148 name="20260118T160301.843_17848_W5Q7.log" size=639 parent=0x46c97 ("log") | system: nothing
+  --- record 59 ---
+  #59 seq=227 name="LOG.old" size=422 parent=0x2159e ("shared_proto_db")
+  --- identity 59 ---
+  metadata: None
+  #59 seq=227 name="LOG.old" size=422 parent=0x2159e ("shared_proto_db") | system: nothing
+  --- record 60 ---
+  #60 seq=295 name="3523ed72431fcc71_0" size=1021 parent=0x33c664 ("48f56f2d-fc94-4226-9ab0-194301300df4")
+  --- identity 60 ---
+  metadata: None
+  #60 seq=295 name="3523ed72431fcc71_0" size=1021 parent=0x33c664 ("48f56f2d-fc94-4226-9ab0-194301300df4") | system: nothing
+  --- record 61 ---
+  #61 seq=76 name="f_0005d5" size=115715 parent=0x1e4ce4 ("Cache_Data")
+  --- identity 61 ---
+  metadata: None
+  #61 seq=76 name="f_0005d5" size=115715 parent=0x1e4ce4 ("Cache_Data") | system: nothing
+  --- record 62 ---
+  #62 seq=2 name="0" size=0 parent=0x20867 ("Windows")
+  --- identity 62 ---
+  metadata: None
+  #62 seq=2 name="0" size=0 parent=0x20867 ("Windows") | system: nothing
+  --- record 63 ---
+  #63 seq=2 name="2052" size=0 parent=0x20867 ("Windows")
+  --- identity 63 ---
+  metadata: None
+  #63 seq=2 name="2052" size=0 parent=0x20867 ("Windows") | system: nothing
+  --- record 3703 ---
+  #3703 seq=1 name="Windows" size=0 parent=0x5 (".")
+  --- identity 3703 ---
+  metadata: None
+  #3703 seq=1 name="Windows" size=0 parent=0x5 (".") | system: nothing
+  --- record 3646 ---
+  #3646 seq=1 name="Users" size=0 parent=0x5 (".")
+  --- identity 3646 ---
+  metadata: None
+  #3646 seq=1 name="Users" size=0 parent=0x5 (".") | system: nothing
+  --- record 1201 ---
+  #1201 seq=1 name="Program Files" size=0 parent=0x5 (".")
+  --- identity 1201 ---
+  metadata: None
+  #1201 seq=1 name="Program Files" size=0 parent=0x5 (".") | system: nothing
+  --- record 3520 ---
+  #3520 seq=1 name="ProgramData" size=0 parent=0x5 (".")
+  --- identity 3520 ---
+  metadata: None
+  #3520 seq=1 name="ProgramData" size=0 parent=0x5 (".") | system: nothing
+  --- record 5595 ---
+  #5595 seq=1 name="System32" size=0 parent=0xe77 ("Windows")
+  --- identity 5595 ---
+  metadata: None
+  #5595 seq=1 name="System32" size=0 parent=0xe77 ("Windows") | system: nothing
+  --- record 1198 ---
+  #1198 seq=4 name="$Recycle.Bin" size=0 parent=0x5 (".")
+  --- identity 1198 ---
+  metadata: None
+  #1198 seq=4 name="$Recycle.Bin" size=0 parent=0x5 (".") | system: nothing
+  --- record 5 ---
+  #5 seq=5 name="." size=0 parent=0x5 (".")
+  --- identity 5 ---
+  metadata: None
+  #5 seq=5 name="." size=0 parent=0x5 (".") | system: nothing
+  walked 9066667 records in 9.1270071s (read 9314762752 bytes in 4384 ms, parse 2393 ms, empty tail 14, extensions 13835)
+  names: 208656418 bytes
+==== \\.\D: D:\ ====
+  records: 512
+  sector=512 cluster=8 record=1024 (boot says 1024) records=512 extents=1 mft_lcn=786432
+    extent 0: lcn=786432 clusters=128 logical=0
+  record 0 at offset 3221225472: 46 49 4c 45 30 00 03 00 9f 3c 59 7d 01 00 00 00 01 00 01 00 38 00 01 00 a0 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 0b 00 00 00 00 00 00 00 10 00 00 00 60 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=72 data_size=None runs=0
+  attribute kind=0x30 non_resident=false name="" value=74 data_size=None runs=0
+    name value: 05 00 00 00 00 00 05 00 60 db 40 20 47 2e dd 01 60 db 40 20 47 2e dd 01 60 db 40 20 47 2e dd 01 60 db 40 20 47 2e dd 01 00 80 00 00 00 00 00 00 00 80 00 00 00 00 00 00 06 00 00 00 00 00 00 00 04 03 24 00 4d 00 46 00 54 00
+    namespace=3 length_byte=4 trailing=3
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(524288) runs=8
+    header: 80 00 00 00 48 00 00 00 01 00 40 00 00 00 02 00 00 00 00 00 00 00 00 00 7f 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08 00 00 00 00 00
+    sizes: +0x28=524288 +0x30=524288 +0x38=524288
+    layout a: pairs_at=32 pairs=64 runs=[(786432, 128)]
+    layout b: pairs_at=28 pairs=0 runs=[]
+  attribute kind=0xb0 non_resident=true name="" value=0 data_size=Some(4104) runs=16
+  --- record 0 ---
+  #0 seq=1 name="$MFT" size=524288 parent=0x5 (".")
+  --- identity 0 ---
+  metadata: None
+  #0 seq=1 name="$MFT" size=524288 parent=0x5 (".") | system: nothing
+  --- record 1 ---
+  #1 seq=1 name="$MFTMirr" size=4096 parent=0x5 (".")
+  --- identity 1 ---
+  metadata: None
+  #1 seq=1 name="$MFTMirr" size=4096 parent=0x5 (".") | system: nothing
+  --- record 2 ---
+  #2 seq=2 name="$LogFile" size=67108864 parent=0x5 (".")
+  --- identity 2 ---
+  metadata: None
+  #2 seq=2 name="$LogFile" size=67108864 parent=0x5 (".") | system: nothing
+  --- record 3 ---
+  #3 seq=3 name="$Volume" size=0 parent=0x5 (".")
+  --- identity 3 ---
+  metadata: None
+  #3 seq=3 name="$Volume" size=0 parent=0x5 (".") | system: nothing
+  --- record 4 ---
+  #4 seq=4 name="$AttrDef" size=2560 parent=0x5 (".")
+  --- identity 4 ---
+  metadata: None
+  #4 seq=4 name="$AttrDef" size=2560 parent=0x5 (".") | system: nothing
+  --- record 5 ---
+  #5 seq=5 name="." size=0 parent=0x5 (".")
+  --- identity 5 ---
+  metadata: None
+  #5 seq=5 name="." size=0 parent=0x5 (".") | system: nothing
+  --- record 6 ---
+  #6 seq=6 name="$Bitmap" size=124991776 parent=0x5 (".")
+  --- identity 6 ---
+  metadata: None
+  #6 seq=6 name="$Bitmap" size=124991776 parent=0x5 (".") | system: nothing
+  --- record 7 ---
+  #7 seq=7 name="$Boot" size=8192 parent=0x5 (".")
+  --- identity 7 ---
+  metadata: None
+  #7 seq=7 name="$Boot" size=8192 parent=0x5 (".") | system: nothing
+  --- record 8 ---
+  #8 seq=8 name="$BadClus" size=4095730511872 parent=0x5 (".")
+  --- identity 8 ---
+  metadata: None
+  #8 seq=8 name="$BadClus" size=4095730511872 parent=0x5 (".") | system: nothing
+  --- record 9 ---
+  #9 seq=9 name="$Secure" size=265700 parent=0x5 (".")
+  --- identity 9 ---
+  metadata: None
+  #9 seq=9 name="$Secure" size=265700 parent=0x5 (".") | system: nothing
+  --- record 10 ---
+  #10 seq=10 name="$UpCase" size=131072 parent=0x5 (".")
+  --- identity 10 ---
+  metadata: None
+  #10 seq=10 name="$UpCase" size=131072 parent=0x5 (".") | system: nothing
+  --- record 11 ---
+  #11 seq=11 name="$Extend" size=0 parent=0x5 (".")
+  --- identity 11 ---
+  metadata: None
+  #11 seq=11 name="$Extend" size=0 parent=0x5 (".") | system: nothing
+  --- record 12 ---
+  #12: the record could not be read
+  record 12 at offset 3221237760: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0c 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 06 00 00 00 0c 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 13 ---
+  #13: the record could not be read
+  record 13 at offset 3221238784: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0d 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 06 00 00 00 0d 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 14 ---
+  #14: the record could not be read
+  record 14 at offset 3221239808: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0e 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 06 00 00 00 0e 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 15 ---
+  #15: the record could not be read
+  record 15 at offset 3221240832: 46 49 4c 45 30 00 03 00 00 00 00 00 00 00 00 00 0f 00 00 00 38 00 01 00 20 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 06 00 00 00 0f 00 00 00 01 00 00 00 00 00 00 00 10 00 00 00 48 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x10 non_resident=false name="" value=48 data_size=None runs=0
+  attribute kind=0x50 non_resident=false name="" value=100 data_size=None runs=0
+  attribute kind=0x80 non_resident=false name="" value=0 data_size=None runs=0
+  --- record 16 ---
+  #16: the record could not be read
+  record 16 at offset 3221241856: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 17 ---
+  #17: the record could not be read
+  record 17 at offset 3221242880: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 18 ---
+  #18: the record could not be read
+  record 18 at offset 3221243904: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 19 ---
+  #19: the record could not be read
+  record 19 at offset 3221244928: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 20 ---
+  #20: the record could not be read
+  record 20 at offset 3221245952: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 21 ---
+  #21: the record could not be read
+  record 21 at offset 3221246976: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 22 ---
+  #22: the record could not be read
+  record 22 at offset 3221248000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 23 ---
+  #23: the record could not be read
+  record 23 at offset 3221249024: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  signature="\0\0\0\0" usa_offset=0 usa_count=0 attributes_offset=0 flags=0x0
+  --- record 24 ---
+  #24 seq=1 name="$Quota" size=0 parent=0xb ("$Extend")
+  --- identity 24 ---
+  metadata: None
+  #24 seq=1 name="$Quota" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 25 ---
+  #25 seq=1 name="$ObjId" size=0 parent=0xb ("$Extend")
+  --- identity 25 ---
+  metadata: None
+  #25 seq=1 name="$ObjId" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 26 ---
+  #26 seq=1 name="$Reparse" size=0 parent=0xb ("$Extend")
+  --- identity 26 ---
+  metadata: None
+  #26 seq=1 name="$Reparse" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 27 ---
+  #27 seq=1 name="$RmMetadata" size=0 parent=0xb ("$Extend")
+  --- identity 27 ---
+  metadata: None
+  #27 seq=1 name="$RmMetadata" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 28 ---
+  #28 seq=1 name="$Repair" size=10485760 parent=0x1b ("$RmMetadata")
+  --- identity 28 ---
+  metadata: None
+  #28 seq=1 name="$Repair" size=10485760 parent=0x1b ("$RmMetadata") | system: nothing
+  --- record 29 ---
+  #29 seq=1 name="$Deleted" size=0 parent=0xb ("$Extend")
+  --- identity 29 ---
+  metadata: None
+  #29 seq=1 name="$Deleted" size=0 parent=0xb ("$Extend") | system: nothing
+  --- record 30 ---
+  #30 seq=1 name="$TxfLog" size=0 parent=0x1b ("$RmMetadata")
+  --- identity 30 ---
+  metadata: None
+  #30 seq=1 name="$TxfLog" size=0 parent=0x1b ("$RmMetadata") | system: nothing
+  --- record 31 ---
+  #31 seq=1 name="$Txf" size=0 parent=0x1b ("$RmMetadata")
+  --- identity 31 ---
+  metadata: None
+  #31 seq=1 name="$Txf" size=0 parent=0x1b ("$RmMetadata") | system: nothing
+  --- record 32 ---
+  #32 seq=1 name="$Tops" size=1048576 parent=0x1e ("$TxfLog")
+  --- identity 32 ---
+  metadata: None
+  #32 seq=1 name="$Tops" size=1048576 parent=0x1e ("$TxfLog") | system: nothing
+  --- record 33 ---
+  #33 seq=1 name="$TxfLog.blf" size=65536 parent=0x1e ("$TxfLog")
+  --- identity 33 ---
+  metadata: None
+  #33 seq=1 name="$TxfLog.blf" size=65536 parent=0x1e ("$TxfLog") | system: nothing
+  --- record 34 ---
+  #34 seq=1 name="$TxfLogContainer00000000000000000001" size=10485760 parent=0x1e ("$TxfLog")
+  --- identity 34 ---
+  metadata: None
+  #34 seq=1 name="$TxfLogContainer00000000000000000001" size=10485760 parent=0x1e ("$TxfLog") | system: nothing
+  --- record 35 ---
+  #35 seq=1 name="$TxfLogContainer00000000000000000002" size=10485760 parent=0x1e ("$TxfLog")
+  --- identity 35 ---
+  metadata: None
+  #35 seq=1 name="$TxfLogContainer00000000000000000002" size=10485760 parent=0x1e ("$TxfLog") | system: nothing
+  --- record 36 ---
+  #36 seq=1 name="System Volume Information" size=0 parent=0x5 (".")
+  --- identity 36 ---
+  metadata: None
+  #36 seq=1 name="System Volume Information" size=0 parent=0x5 (".") | system: nothing
+  --- record 37 ---
+  #37 seq=1 name="WPSettings.dat" size=12 parent=0x24 ("System Volume Information")
+  --- identity 37 ---
+  metadata: None
+  #37 seq=1 name="WPSettings.dat" size=12 parent=0x24 ("System Volume Information") | system: nothing
+  --- record 38 ---
+  #38 seq=1 name="IndexerVolumeGuid" size=76 parent=0x24 ("System Volume Information")
+  --- identity 38 ---
+  metadata: None
+  #38 seq=1 name="IndexerVolumeGuid" size=76 parent=0x24 ("System Volume Information") | system: nothing
+  --- record 39 ---
+  #39 seq=34 name="tracking.log" size=20480 parent=0x24 ("System Volume Information")
+  --- identity 39 ---
+  metadata: None
+  #39 seq=34 name="tracking.log" size=20480 parent=0x24 ("System Volume Information") | system: nothing
+  --- record 40 ---
+  #40 seq=101 name="EDP" size=0 parent=0x24 ("System Volume Information")
+  --- identity 40 ---
+  metadata: None
+  #40 seq=101 name="EDP" size=0 parent=0x24 ("System Volume Information") | system: nothing
+  --- record 41 ---
+  #41 seq=17 name="Recovery" size=0 parent=0x28 ("EDP")
+  --- identity 41 ---
+  metadata: None
+  #41 seq=17 name="Recovery" size=0 parent=0x28 ("EDP") | system: nothing
+  --- record 42 ---
+  #42: the record could not be read
+  record 42 at offset 3221268480: 46 49 4c 45 30 00 03 00 7e a1 1f 63 01 00 00 00 1d 00 00 00 38 00 01 00 90 00 00 00 00 04 00 00 36 00 00 00 00 00 01 00 01 00 00 00 2a 00 00 00 4c 00 47 11 00 00 00 00 80 00 00 00 50 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(0) runs=16
+  --- record 43 ---
+  #43 seq=25 name="迅雷下载" size=0 parent=0x5 (".")
+  --- identity 43 ---
+  metadata: None
+  #43 seq=25 name="迅雷下载" size=0 parent=0x5 (".") | system: nothing
+  --- record 44 ---
+  #44 seq=1 name="云盘下载" size=0 parent=0x2b ("迅雷下载")
+  --- identity 44 ---
+  metadata: None
+  #44 seq=1 name="云盘下载" size=0 parent=0x2b ("迅雷下载") | system: nothing
+  --- record 45 ---
+  #45 seq=1 name="云盘缓存" size=0 parent=0x2c ("云盘下载")
+  --- identity 45 ---
+  metadata: None
+  #45 seq=1 name="云盘缓存" size=0 parent=0x2c ("云盘下载") | system: nothing
+  --- record 46 ---
+  #46 seq=3 name="Cadence SPB 2025 v25" size=0 parent=0x2b ("迅雷下载")
+  --- identity 46 ---
+  metadata: None
+  #46 seq=3 name="Cadence SPB 2025 v25" size=0 parent=0x2b ("迅雷下载") | system: nothing
+  --- record 47 ---
+  #47 seq=1 name="Cadence SPB 25.1 更新包" size=0 parent=0x2e ("Cadence SPB 2025 v25")
+  --- identity 47 ---
+  metadata: None
+  #47 seq=1 name="Cadence SPB 25.1 更新包" size=0 parent=0x2e ("Cadence SPB 2025 v25") | system: nothing
+  --- record 48 ---
+  #48 seq=1 name="SPB 25.10.010" size=0 parent=0x2f ("Cadence SPB 25.1 更新包")
+  --- identity 48 ---
+  metadata: None
+  #48 seq=1 name="SPB 25.10.010" size=0 parent=0x2f ("Cadence SPB 25.1 更新包") | system: nothing
+  --- record 49 ---
+  #49 seq=1 name="SPB 25.10.020" size=0 parent=0x2f ("Cadence SPB 25.1 更新包")
+  --- identity 49 ---
+  metadata: None
+  #49 seq=1 name="SPB 25.10.020" size=0 parent=0x2f ("Cadence SPB 25.1 更新包") | system: nothing
+  --- record 50 ---
+  #50 seq=1 name="SPB 25.10.030" size=0 parent=0x2f ("Cadence SPB 25.1 更新包")
+  --- identity 50 ---
+  metadata: None
+  #50 seq=1 name="SPB 25.10.030" size=0 parent=0x2f ("Cadence SPB 25.1 更新包") | system: nothing
+  --- record 51 ---
+  #51 seq=2 name="SPB 25.10.040" size=0 parent=0x2f ("Cadence SPB 25.1 更新包")
+  --- identity 51 ---
+  metadata: None
+  #51 seq=2 name="SPB 25.10.040" size=0 parent=0x2f ("Cadence SPB 25.1 更新包") | system: nothing
+  --- record 52 ---
+  #52 seq=1 name="远程安装服务.png" size=144738 parent=0x2e ("Cadence SPB 2025 v25")
+  --- identity 52 ---
+  metadata: None
+  #52 seq=1 name="远程安装服务.png" size=144738 parent=0x2e ("Cadence SPB 2025 v25") | system: nothing
+  --- record 53 ---
+  #53: the record could not be read
+  record 53 at offset 3221279744: 46 49 4c 45 30 00 03 00 84 4a 76 63 01 00 00 00 02 00 00 00 38 00 01 00 90 00 00 00 00 04 00 00 3a 00 00 00 00 00 01 00 01 00 00 00 35 00 00 00 67 00 47 11 00 00 00 00 80 00 00 00 50 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(0) runs=16
+  --- record 54 ---
+  #54 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.020.iso" size=4497524736 parent=0x31 ("SPB 25.10.020")
+  --- identity 54 ---
+  metadata: None
+  #54 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.020.iso" size=4497524736 parent=0x31 ("SPB 25.10.020") | system: nothing
+  --- record 55 ---
+  #55 seq=3 name="SPB 25.10.050" size=0 parent=0x2f ("Cadence SPB 25.1 更新包")
+  --- identity 55 ---
+  metadata: None
+  #55 seq=3 name="SPB 25.10.050" size=0 parent=0x2f ("Cadence SPB 25.1 更新包") | system: nothing
+  --- record 56 ---
+  #56 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.010.iso" size=4342044672 parent=0x30 ("SPB 25.10.010")
+  --- identity 56 ---
+  metadata: None
+  #56 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.010.iso" size=4342044672 parent=0x30 ("SPB 25.10.010") | system: nothing
+  --- record 57 ---
+  #57 seq=2 name="$RECYCLE.BIN" size=0 parent=0x5 (".")
+  --- identity 57 ---
+  metadata: None
+  #57 seq=2 name="$RECYCLE.BIN" size=0 parent=0x5 (".") | system: nothing
+  --- record 58 ---
+  #58 seq=1 name="Cadence SPB 2025 v25.10.exe" size=11415811232 parent=0x2e ("Cadence SPB 2025 v25")
+  --- identity 58 ---
+  metadata: None
+  #58 seq=1 name="Cadence SPB 2025 v25.10.exe" size=11415811232 parent=0x2e ("Cadence SPB 2025 v25") | system: nothing
+  --- record 59 ---
+  #59: the record could not be read
+  record 59 at offset 3221285888: 46 49 4c 45 30 00 03 00 f3 46 0f 63 01 00 00 00 02 00 00 00 38 00 01 00 90 00 00 00 00 04 00 00 36 00 00 00 00 00 01 00 01 00 00 00 3b 00 00 00 32 03 47 11 00 00 00 00 80 00 00 00 50 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(0) runs=16
+  --- record 60 ---
+  #60 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.030.iso" size=5196642304 parent=0x32 ("SPB 25.10.030")
+  --- identity 60 ---
+  metadata: None
+  #60 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.030.iso" size=5196642304 parent=0x32 ("SPB 25.10.030") | system: nothing
+  --- record 61 ---
+  #61: the record could not be read
+  record 61 at offset 3221287936: 46 49 4c 45 30 00 03 00 36 b3 0a 63 01 00 00 00 03 00 00 00 38 00 01 00 90 00 00 00 00 04 00 00 36 00 00 00 00 00 01 00 01 00 00 00 3d 00 00 00 60 00 47 11 00 00 00 00 80 00 00 00 50 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(0) runs=16
+  --- record 62 ---
+  #62 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.040.iso" size=3945877504 parent=0x33 ("SPB 25.10.040")
+  --- identity 62 ---
+  metadata: None
+  #62 seq=1 name="Cadence SPB OrCAD X and Allegro X v25.10.040.iso" size=3945877504 parent=0x33 ("SPB 25.10.040") | system: nothing
+  --- record 63 ---
+  #63: the record could not be read
+  record 63 at offset 3221289984: 46 49 4c 45 30 00 03 00 e9 d4 21 63 01 00 00 00 01 00 00 00 38 00 01 00 98 00 00 00 00 04 00 00 38 00 00 00 00 00 01 00 01 00 00 00 3f 00 00 00 f5 05 47 11 00 00 00 00 80 00 00 00 58 00 00 00
+  signature="FILE" usa_offset=48 usa_count=3 attributes_offset=56 flags=0x1
+  attribute kind=0x80 non_resident=true name="" value=0 data_size=Some(4342044672) runs=16
+  --- record 3703 ---
+  #3703: the record could not be read
+  record 3703 is not on the disk
+  --- record 3646 ---
+  #3646: the record could not be read
+  record 3646 is not on the disk
+  --- record 1201 ---
+  #1201: the record could not be read
+  record 1201 is not on the disk
+  --- record 3520 ---
+  #3520: the record could not be read
+  record 3520 is not on the disk
+  --- record 5595 ---
+  #5595: the record could not be read
+  record 5595 is not on the disk
+  --- record 1198 ---
+  #1198: the record could not be read
+  record 1198 is not on the disk
+  --- record 5 ---
+  #5 seq=5 name="." size=0 parent=0x5 (".")
+  --- identity 5 ---
+  metadata: None
+  #5 seq=5 name="." size=0 parent=0x5 (".") | system: nothing
+  walked 196 records in 1.065ms (read 524288 bytes in 0 ms, parse 0 ms, empty tail 153, extensions 0)
+  names: 2847 bytes
+index built: 9066863 entries in 11.2673481s
+index saved: 771259258 bytes in 695.2085ms
+index loaded back: 9066863 entries in 534.531ms
+  query "report" -> 5 hits in 27.2853ms
+  query "report" (all the candidates) -> 5 hits in 25.6936ms
+      Report  C:\.\Program Files\MATLAB\R2025b\toolbox\DesignCostEstimation\Presentations\Report\web\Report
+      Report  C:\.\Program Files\MATLAB\R2025b\toolbox\shared\sdi\web\Report
+      Report  C:\.\Program Files\MATLAB\R2025b\toolbox\DesignCostEstimation\Presentations\Report
+  query "*.pdf" -> 5 hits in 24.0217ms
+  query "*.pdf" (all the candidates) -> 5 hits in 27.6776ms
+      1.pdf  C:\.\Program Files\MATLAB\R2025b\sys\jade\docbook\images\callouts\1.pdf
+      1.pdf  C:\.\Users\Sisyphus\Zotero\storage\XFG63X6R\1.pdf
+      2.pdf  C:\.\Program Files\MATLAB\R2025b\sys\jade\docbook\images\callouts\2.pdf
+  query "folder:" -> 5 hits in 26.361ms
+  query "folder:" (all the candidates) -> 5 hits in 628.5632ms
+      $  C:\.\Users\Sisyphus\AppData\Local\Feishu\8.4.7\webcontent\doubao-feishu\feishu\static\js\async\feishu-main_init-chat-app\routes\drive\$
+      $  C:\.\Users\Sisyphus\AppData\Local\Feishu\app\webcontent\doubao-feishu\feishu\static\js\async\feishu-main_init-chat-app\routes\drive\$
+      .  D:\.
+  query "config" -> 5 hits in 10.7149ms
+  query "config" (all the candidates) -> 5 hits in 36.0859ms
+      CONFIG  C:\.\Program Files\Tencent\MarvisData\Component\MarvisAgent\MarvisAgent\_internal\CONFIG
+      CONFIG  C:\.\Windows\Microsoft.NET\Framework\v2.0.50727\CONFIG
+      CONFIG  C:\.\Windows\Microsoft.NET\Framework64\v2.0.50727\CONFIG
+  query "everything" -> 5 hits in 2.9005ms
+  query "everything" (all the candidates) -> 5 hits in 2.62ms
+      Everything  C:\.\Users\Sisyphus\Documents\projects\Flow.Launcher\Plugins\Flow.Launcher.Plugin.Explorer\Search\Everything
+      everything  C:\.\Users\Sisyphus\Documents\private\快速启动软件\analysis\everything
+      everything  C:\.\Program Files\Labcenter Electronics\Proteus 9 Professional\Tools\Python\Lib\site-packages\pygame\tests\run_tests__tests\everything
+  query "README" -> 5 hits in 19.4107ms
+  query "README" (all the candidates) -> 5 hits in 22.6481ms
+      README  C:\.\Program Files\Siemens\Designcenter2606\MACH\auxiliary\mfgam\pbfprinter\pypy3.10-v7.3.16-win64\Lib\test\sndhdrdata\README
+      README  C:\.\Users\Sisyphus\AppData\Roaming\LarkShell\aha\users\5e5d7375ef856a0ff70400fa4b8aa515\PartitionsV2\7662307046206491600-cli_9c21a4767c305107\README
+      README  C:\.\Users\Sisyphus\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView\Default\README
+  query "c:\\windows\\" -> 0 hits in 1.8416ms
+  query "c:\\windows\\" (all the candidates) -> 0 hits in 1.8173ms

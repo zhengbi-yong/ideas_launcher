@@ -1,0 +1,346 @@
+# Types in Flow.Launcher.Plugin.WebSearch
+
+
+## (global) (22)
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__2_0
+    .cctor() : ?
+    .ctor() : ?
+    <SuggestionsAsync>b__2_0() : ?et113
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__1_1
+    field <>9__1_0
+    .cctor() : ?
+    .ctor() : ?
+    <SuggestionsAsync>b__1_0(System.Void, System.String, TypeDef#0) : ?et133
+    <SuggestionsAsync>b__1_1() : ?et113
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__1_0
+    .cctor() : ?
+    .ctor() : ?
+    <SuggestionsAsync>b__1_0() : ?et113
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__1_0
+    .cctor() : ?
+    .ctor() : ?
+    <SuggestionsAsync>b__1_0() : ?et113
+- <>c__DisplayClass11_0  [methods=2 fields=4 flags=0x100103]
+    field subtitle
+    field score
+    field searchSource
+    field <>4__this
+    .ctor() : ?
+    <SuggestionsAsync>b__0() : ?
+- <>c__DisplayClass11_1  [methods=2 fields=2 flags=0x100103]
+    field o
+    field CS$<>8__locals1
+    .ctor() : ?
+    <SuggestionsAsync>b__1() : ?et141
+- <>c__DisplayClass12_0  [methods=2 fields=1 flags=0x100103]
+    field selected
+    .ctor() : ?
+    <LoadContextMenus>b__0() : ?et141
+- <>c__DisplayClass13_0  [methods=2 fields=2 flags=0x100103]
+    field context
+    field <>4__this
+    .ctor() : ?
+    <InitAsync>g__Init|0() : ?
+- <>c__DisplayClass9_0  [methods=2 fields=3 flags=0x100103]
+    field query
+    field <>4__this
+    field <>9__0
+    .ctor() : ?
+    <QueryAsync>b__0() : ?
+- <>c__DisplayClass9_1  [methods=2 fields=2 flags=0x100103]
+    field searchSource
+    field keyword
+    .ctor() : ?
+    <QueryAsync>b__1() : ?et141
+- <>O  [methods=0 fields=1 flags=0x100183]
+    field <0>__IsWhiteSpace
+- <Initialize>d__10  [methods=2 fields=8 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field sources
+    field action
+    field context
+    field <>7__wrap1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <LoadPreviewIconAsync>d__8  [methods=2 fields=4 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field pathToPreviewIconImage
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <OnSelectIconClick>d__15  [methods=2 fields=5 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field <>7__wrap1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <QueryAsync>d__9  [methods=2 fields=9 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field <>4__this
+    field <>8__1
+    field token
+    field <results>5__2
+    field <>7__wrap2
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <SuggestionsAsync>d__1  [methods=2 fields=11 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field token
+    field <resultStream>5__2
+    field <>u__1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>7__wrap4
+    field <>u__2
+    field <>u__3
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <SuggestionsAsync>d__1  [methods=2 fields=11 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field token
+    field <resultStream>5__2
+    field <>u__1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>7__wrap4
+    field <>u__2
+    field <>u__3
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <SuggestionsAsync>d__1  [methods=2 fields=11 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field token
+    field <resultStream>5__2
+    field <>u__1
+    field <>7__wrap2
+    field <>7__wrap3
+    field <>7__wrap4
+    field <>u__2
+    field <>u__3
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <SuggestionsAsync>d__11  [methods=2 fields=9 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field subtitle
+    field searchSource
+    field <>4__this
+    field keyword
+    field token
+    field <>8__1
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <SuggestionsAsync>d__2  [methods=2 fields=6 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field query
+    field token
+    field <>4__this
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+- <UpdateResultsFromSuggestionAsync>d__10  [methods=2 fields=9 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>4__this
+    field keyword
+    field subtitle
+    field searchSource
+    field token
+    field results
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et153
+
+## Flow.Launcher.Plugin.WebSearch (8)
+- Action  [methods=0 fields=3 flags=0x101]
+    field value__
+    field Add
+    field Edit
+- Main  [methods=11 fields=10 flags=0x100001]
+    field _context
+    field _settings
+    field _viewModel
+    field Images
+    field DefaultImagesDirectory
+    field CustomImagesDirectory
+    field scoreStandard
+    field scoreSuggestions
+    field SearchSourceGlobalPluginWildCardSign
+    field ResultsUpdated
+    QueryAsync(TypeSpec#75521092<?et125>) : System.Void
+    UpdateResultsFromSuggestionAsync() : TypeSpec#75521092<System.Single, TypeDef#0, ?, ?, ?>
+    SuggestionsAsync(TypeSpec#6381572<TypeDef#0, ?, ?, ?>) : System.Void
+    LoadContextMenus(TypeDef#0) : System.Void
+    InitAsync() : TypeDef#0
+    CreateSettingPanel() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    add_ResultsUpdated() : ?
+    remove_ResultsUpdated() : ?
+    .ctor() : ?
+- SearchSource  [methods=18 fields=7 flags=0x100001]
+    field <Title>k__BackingField
+    field <ActionKeyword>k__BackingField
+    field <Icon>k__BackingField
+    field <CustomIcon>k__BackingField
+    field <Url>k__BackingField
+    field <IsPrivateMode>k__BackingField
+    field <Enabled>k__BackingField
+    get_Title() : ?
+    set_Title() : ?
+    get_ActionKeyword() : ?
+    set_ActionKeyword() : ?
+    get_Icon() : ?
+    set_Icon() : ?
+    get_CustomIcon() : ?
+    set_CustomIcon() : ?
+    get_IconPath() : ?
+    get_Url() : ?
+    set_Url() : ?
+    get_Status() : ?
+    get_IsPrivateMode() : ?
+    set_IsPrivateMode() : ?
+    get_Enabled() : ?
+    set_Enabled() : ?
+    DeepCopy() : ?
+    .ctor() : ?
+- SearchSourceSettingWindow  [methods=12 fields=10 flags=0x100001]
+    field _oldSearchSource
+    field _searchSource
+    field _searchSources
+    field _action
+    field _context
+    field _api
+    field _viewModel
+    field selectedNewIconImageFullPath
+    field imgPreviewIcon
+    field _contentLoaded
+    .ctor(?et213, System.Void, TypeDef#77022339, System.Single) : ?et128
+    .ctor(?et213, System.Void, TypeDef#0) : ?et128
+    Initialize(?et213, System.Void, TypeDef#72828035, ?[,]) : ?et128
+    OnCancelButtonClick(?et225) : ?et128
+    OnConfirmButtonClick(?et225) : ?et128
+    AddSearchSource() : ?
+    EditSearchSource() : ?
+    OnSelectIconClick(?et225) : ?et128
+    TextBox_PreviewKeyDown(?et229) : ?et128
+    TextBox_Pasting(?et233) : ?et128
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- SearchSourceViewModel  [methods=8 fields=1 flags=0x100001]
+    field <SearchSource>k__BackingField
+    get_SearchSource() : ?
+    set_SearchSource() : ?
+    UpdateIconAttributes() : System.String
+    CopyNewImageToUserDataDirectoryIfRequired(System.String) : System.String
+    SetupCustomImagesDirectory() : ?
+    ShouldProvideHint() : ?
+    LoadPreviewIconAsync(System.Void, TypeDef#0) : System.UInt32
+    .ctor() : ?
+- Settings  [methods=15 fields=6 flags=0x100001]
+    field <SearchSources>k__BackingField
+    field <SelectedSearchSource>k__BackingField
+    field enableSuggestion
+    field maxSuggestions
+    field <Suggestions>k__BackingField
+    field <SelectedSuggestion>k__BackingField
+    .ctor() : ?
+    get_SearchSources(System.Void, TypeDef#0) : ?et33
+    set_SearchSources(?et33, System.Void, TypeDef#0) : ?et129
+    get_SelectedSearchSource() : ?
+    set_SelectedSearchSource() : ?
+    get_EnableSuggestion() : ?
+    set_EnableSuggestion() : ?
+    get_MaxSuggestions() : ?
+    set_MaxSuggestions() : ?
+    get_Suggestions() : ?
+    set_Suggestions() : ?et56
+    get_SelectedSuggestion() : ?
+    set_SelectedSuggestion() : ?
+    get_Suggestion() : ?
+    set_Suggestion() : ?
+- SettingsControl  [methods=16 fields=8 flags=0x100001]
+    field _settings
+    field _context
+    field _dragStartPoint
+    field _lastHeaderClicked
+    field _lastDirection
+    field SearchSourcesListView
+    field EnableSuggestion
+    field _contentLoaded
+    .ctor() : TypeDef#0
+    OnAddSearchSearchClick(?et225) : ?et128
+    OnDeleteSearchSearchClick(?et225) : ?et128
+    OnEditSearchSourceClick(?et225) : ?et128
+    SortByColumn(?et225) : ?et128
+    Sort(?et49) : ?et129
+    MouseDoubleClickItem(?) : ?et129
+    ListView_SizeChanged(?et69) : ?et129
+    ListView_PreviewMouseLeftButtonDown(?) : ?et129
+    ListView_PreviewMouseMove(?et77) : ?et129
+    ListView_Drop(?et89) : ?et129
+    GetNearestContainer() : System.Object
+    FindAncestor() : ?et97
+    NumberBox_ValueChanged(TypeDef#0) : ?et101
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+- SettingsViewModel  [methods=2 fields=1 flags=0x100001]
+    field <Settings>k__BackingField
+    .ctor() : ?
+    get_Settings() : ?
+
+## Flow.Launcher.Plugin.WebSearch.SuggestionSources (5)
+- Baidu  [methods=4 fields=2 flags=0x100001]
+    field ClassName
+    field _reg
+    SuggestionsAsync(TypeSpec#58743876<>) : System.Void
+    ToString() : ?
+    .ctor() : ?
+    .cctor() : ?
+- Bing  [methods=4 fields=1 flags=0x100001]
+    field ClassName
+    SuggestionsAsync(TypeSpec#58743876<>) : System.Void
+    ToString() : ?
+    .ctor() : ?
+    .cctor() : ?
+- DuckDuckGo  [methods=4 fields=1 flags=0x100001]
+    field ClassName
+    SuggestionsAsync(TypeSpec#58743876<>) : System.Void
+    ToString() : ?
+    .ctor() : ?
+    .cctor() : ?
+- Google  [methods=4 fields=1 flags=0x100001]
+    field ClassName
+    SuggestionsAsync(TypeSpec#58743876<>) : System.Void
+    ToString() : ?
+    .ctor() : ?
+    .cctor() : ?
+- SuggestionSource  [methods=2 fields=0 flags=0x100081]
+    SuggestionsAsync(TypeSpec#58743876<>) : System.Void
+    .ctor() : ?

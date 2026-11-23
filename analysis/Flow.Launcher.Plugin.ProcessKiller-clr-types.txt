@@ -1,0 +1,254 @@
+# Types in Flow.Launcher.Plugin.ProcessKiller
+
+
+## (global) (7)
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__12_0
+    field <>9__12_1
+    .cctor() : ?
+    .ctor() : ?
+    <CreateResultsFromQuery>b__12_0() : ?et197
+    <CreateResultsFromQuery>b__12_1() : ?et197
+- <>c__DisplayClass11_0  [methods=2 fields=1 flags=0x100103]
+    field similarProcesses
+    .ctor() : ?
+    <LoadContextMenus>b__0() : ?et233
+- <>c__DisplayClass12_0  [methods=3 fields=2 flags=0x100103]
+    field firstResult
+    field processlist
+    .ctor() : ?
+    <CreateResultsFromQuery>b__2() : ?et197
+    <CreateResultsFromQuery>b__4() : ?et233
+- <>c__DisplayClass12_1  [methods=2 fields=1 flags=0x100103]
+    field p
+    .ctor() : ?
+    <CreateResultsFromQuery>b__3() : ?et233
+- <>c__DisplayClass6_0  [methods=3 fields=3 flags=0x100103]
+    field windowHandles
+    field processedProcessIds
+    field processDict
+    .ctor() : ?
+    <GetProcessesWithNonEmptyWindowTitle>b__0() : ?
+    <GetProcessesWithNonEmptyWindowTitle>b__1() : ?
+- <>c__DisplayClass8_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field processPath
+    .ctor() : ?
+    <GetSimilarProcesses>b__0() : ?et205
+- <Module>  [methods=0 fields=0 flags=0x0]
+
+## Flow.Launcher.Plugin.ProcessKiller (5)
+- Localize  [methods=7 fields=0 flags=0x100181]
+    flowlauncher_plugin_processkiller_plugin_name() : ?
+    flowlauncher_plugin_processkiller_plugin_description() : ?
+    flowlauncher_plugin_processkiller_kill_all() : ?
+    flowlauncher_plugin_processkiller_kill_all_count() : ?
+    flowlauncher_plugin_processkiller_kill_instances() : ?
+    flowlauncher_plugin_processkiller_show_window_title() : ?
+    flowlauncher_plugin_processkiller_put_visible_window_process_top() : ?
+- Main  [methods=10 fields=4 flags=0x100001]
+    field <Context>k__BackingField
+    field _settings
+    field processHelper
+    field _viewModel
+    get_Context() : ?
+    set_Context() : ?et189
+    Init() : ?et189
+    Query(System.Void, TypeDef#537178464, ?et201) : ?et193
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    LoadContextMenus(System.Void, TypeDef#537178464, ?et197) : ?et193
+    CreateResultsFromQuery(System.Void, TypeDef#537178464, ?et201) : ?et193
+    CreateSettingPanel() : ?
+    .ctor() : ?
+- ProcessHelper  [methods=10 fields=3 flags=0x100000]
+    field ClassName
+    field _systemProcessList
+    field FlowLauncherProcessName
+    IsSystemProcessOrFlowLauncher() : ?et205
+    GetProcessNameIdTitle() : ?et205
+    GetMatchingProcesses(System.Void, TypeDef#0) : ?et193
+    GetProcessesWithNonEmptyWindowTitle(System.Boolean, System.Int32, System.String) : ?et209
+    GetWindowTitle() : ?
+    GetSimilarProcesses(System.Void, TypeDef#0) : ?et229
+    TryKill() : ?et205
+    TryGetProcessFilename() : ?et205
+    .ctor() : ?
+    .cctor() : ?
+- ProcessResult  [methods=6 fields=5 flags=0x100000]
+    field <Process>k__BackingField
+    field <Score>k__BackingField
+    field <Title>k__BackingField
+    field <TitleMatch>k__BackingField
+    field <Tooltip>k__BackingField
+    .ctor(System.Int32, System.String, TypeDef#0) : ?et205
+    get_Process() : ?
+    get_Score() : ?
+    get_Title() : ?
+    get_TitleMatch() : ?
+    get_Tooltip() : ?
+- Settings  [methods=5 fields=2 flags=0x100001]
+    field <ShowWindowTitle>k__BackingField
+    field <PutVisibleWindowProcessesTop>k__BackingField
+    get_ShowWindowTitle() : ?
+    set_ShowWindowTitle() : ?
+    get_PutVisibleWindowProcessesTop() : ?
+    set_PutVisibleWindowProcessesTop() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.ProcessKiller.ViewModels (1)
+- SettingsViewModel  [methods=3 fields=1 flags=0x100001]
+    field <Settings>k__BackingField
+    .ctor() : ?
+    get_Settings() : ?
+    set_Settings() : ?
+
+## Flow.Launcher.Plugin.ProcessKiller.Views (1)
+- SettingsControl  [methods=3 fields=1 flags=0x100001]
+    field _contentLoaded
+    .ctor() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+
+## Windows.Win32 (1)
+- PInvoke  [methods=13 fields=0 flags=0x100180]
+    CloseHandle() : System.Object
+    QueryFullProcessImageName(TypeDef#423904580, System.Void, System.Char, System.UInt32&) : ?et97
+    QueryFullProcessImageName(TypeDef#63636548, System.UInt32) : System.Object
+    OpenProcess_SafeHandle(TypeDef#0) : System.Single
+    OpenProcess(TypeDef#0) : System.Single
+    EnumWindows() : TypeDef#0[,]
+    GetWindowTextLength() : ?
+    GetWindowText() : TypeRef#12605764<>
+    GetWindowText() : TypeDef#0
+    IsWindowVisible() : ?
+    GetWindowThreadProcessId() : System.UInt32&
+    GetWindowThreadProcessId() : ?
+    GetWindowThreadProcessId() : System.UInt32*
+
+## Windows.Win32.Foundation (6)
+- BOOL  [methods=12 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    .ctor() : ?
+    op_Implicit() : ?
+    op_Implicit() : ?
+- HANDLE  [methods=15 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit() : System.Object
+    op_Explicit() : System.Void
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Explicit() : ?
+- HWND  [methods=16 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    get_Null() : ?
+    get_IsNull() : ?
+    op_Implicit() : ?
+    op_Explicit() : System.Void
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?
+    op_Explicit() : ?
+    op_Explicit() : ?
+    op_Implicit() : ?
+- LPARAM  [methods=9 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Implicit() : ?
+    op_Implicit() : ?
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- PCWSTR  [methods=10 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    op_Explicit() : ?et40
+    op_Implicit() : System.Char
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    get_Length() : ?
+    ToString() : ?
+    AsSpan(System.Void, System.Char) : ?et157
+    get_DebuggerDisplay() : ?
+- PWSTR  [methods=14 fields=1 flags=0x100108]
+    field Value
+    .ctor() : ?
+    .ctor() : ?
+    op_Implicit() : ?et44
+    op_Implicit() : System.Char
+    op_Equality() : TypeDef#0
+    op_Inequality() : TypeDef#0
+    Equals() : ?
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+    op_Implicit() : ?et44
+    get_Length() : ?
+    AsSpan(System.Char) : System.Void
+    get_DebuggerDisplay() : ?
+
+## Windows.Win32.System.Threading (2)
+- PROCESS_ACCESS_RIGHTS  [methods=0 fields=22 flags=0x100]
+    field value__
+    field PROCESS_TERMINATE
+    field PROCESS_CREATE_THREAD
+    field PROCESS_SET_SESSIONID
+    field PROCESS_VM_OPERATION
+    field PROCESS_VM_READ
+    field PROCESS_VM_WRITE
+    field PROCESS_DUP_HANDLE
+    field PROCESS_CREATE_PROCESS
+    field PROCESS_SET_QUOTA
+    field PROCESS_SET_INFORMATION
+    field PROCESS_QUERY_INFORMATION
+    field PROCESS_SUSPEND_RESUME
+    field PROCESS_QUERY_LIMITED_INFORMATION
+    field PROCESS_SET_LIMITED_INFORMATION
+    field PROCESS_ALL_ACCESS
+    field PROCESS_DELETE
+    field PROCESS_READ_CONTROL
+    field PROCESS_WRITE_DAC
+    field PROCESS_WRITE_OWNER
+    field PROCESS_SYNCHRONIZE
+    field PROCESS_STANDARD_RIGHTS_REQUIRED
+- PROCESS_NAME_FORMAT  [methods=0 fields=3 flags=0x100]
+    field value__
+    field PROCESS_NAME_WIN32
+    field PROCESS_NAME_NATIVE
+
+## Windows.Win32.UI.WindowsAndMessaging (1)
+- WNDENUMPROC  [methods=4 fields=0 flags=0x100]
+    .ctor() : ?
+    Invoke() : ?
+    BeginInvoke(?et128, ?et133, System.Object) : TypeDef#76088392
+    EndInvoke(?et129) : ?et128

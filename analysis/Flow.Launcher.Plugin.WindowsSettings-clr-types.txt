@@ -1,0 +1,851 @@
+# Types in Flow.Launcher.Plugin.WindowsSettings
+
+
+## (global) (9)
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__1_0
+    .cctor() : ?
+    .ctor() : ?
+    <ReadAllPossibleSettings>b__1_0() : ?
+- <>c  [methods=5 fields=4 flags=0x102103]
+    field <>9
+    field <>9__3_1
+    field <>9__3_4
+    field <>9__7_0
+    .cctor() : ?
+    .ctor() : ?
+    <GetResultList>b__3_1() : ?et193
+    <GetResultList>b__3_4(System.String, TypeSpec#58744388<>) : System.Void
+    <AddOptionalToolTip>b__7_0() : ?
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__3_1
+    .cctor() : ?
+    .ctor() : ?
+    <FilterByBuild>b__3_1() : ?
+- <>c__DisplayClass2_0  [methods=2 fields=2 flags=0x100103]
+    field windowsSettingIconPath
+    field controlPanelIconPath
+    .ctor() : ?
+    <GetDefaultResults>b__0() : TypeDef#0
+- <>c__DisplayClass3_0  [methods=2 fields=4 flags=0x100103]
+    field query
+    field windowsSettingIconPath
+    field controlPanelIconPath
+    field <>9__0
+    .ctor() : ?
+    <GetResultList>b__0() : System.String
+- <>c__DisplayClass3_0  [methods=2 fields=1 flags=0x100103]
+    field currentWindowsBuild
+    .ctor() : ?
+    <FilterByBuild>b__0() : ?
+- <>c__DisplayClass3_1  [methods=3 fields=2 flags=0x100103]
+    field entry
+    field CS$<>8__locals1
+    .ctor() : ?
+    <GetResultList>b__2() : TypeDef#0
+    <GetResultList>b__3() : ?
+- <>c__DisplayClass5_0  [methods=2 fields=1 flags=0x100103]
+    field entry
+    .ctor() : ?
+    <NewSettingResult>b__0() : ?et217
+- <Module>  [methods=0 fields=0 flags=0x0]
+
+## Flow.Launcher.Plugin.WindowsSettings (2)
+- Log  [methods=3 fields=1 flags=0x100181]
+    field _api
+    Init() : ?
+    Exception(TypeDef#0) : ?et81
+    Warn(System.String) : ?et85
+- Main  [methods=11 fields=7 flags=0x100101]
+    field _assemblyName
+    field _context
+    field windowSettingsIconPath
+    field controlPanelIconPath
+    field _disposed
+    field _settingsList
+    field _translatedSettingList
+    .ctor() : ?
+    get_Name() : ?
+    get_Description() : ?
+    Init() : ?
+    Query(TypeDef#537174112, ?et133) : System.Void
+    OnCultureInfoChanged() : ?et137
+    LoadContextMenus(TypeDef#537174112, ?et129) : System.Void
+    Dispose() : ?
+    Dispose() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+
+## Flow.Launcher.Plugin.WindowsSettings.Classes (1)
+- WindowsSetting  [methods=33 fields=12 flags=0x100000]
+    field <Name>k__BackingField
+    field <Area>k__BackingField
+    field <Command>k__BackingField
+    field type
+    field <Type>k__BackingField
+    field <DisplayType>k__BackingField
+    field <AltNames>k__BackingField
+    field <Keywords>k__BackingField
+    field <IconGlyph>k__BackingField
+    field <Note>k__BackingField
+    field <IntroducedInBuild>k__BackingField
+    field <DeprecatedInBuild>k__BackingField
+    get_EqualityContract() : ?
+    .ctor() : ?
+    get_Name() : ?
+    set_Name() : ?
+    get_Area() : ?
+    set_Area() : ?
+    get_Command() : ?
+    set_Command() : ?
+    get_Type() : ?
+    set_Type() : ?
+    get_DisplayType() : ?
+    set_DisplayType() : ?
+    get_AltNames(System.String) : System.Void
+    set_AltNames(System.Void, System.String) : ?et121
+    get_Keywords(TypeSpec#58744388<>) : System.Void
+    set_Keywords(System.Void, TypeSpec#58744388<>) : ?et121
+    get_IconGlyph() : ?
+    set_IconGlyph() : ?et233
+    get_Note() : ?
+    set_Note() : ?
+    get_IntroducedInBuild(System.Void, System.UInt32) : ?et225
+    set_IntroducedInBuild(?et225, System.Void, System.UInt32) : ?et128
+    get_DeprecatedInBuild(System.Void, System.UInt32) : ?et225
+    set_DeprecatedInBuild(?et225, System.Void, System.UInt32) : ?et128
+    ToString() : ?
+    PrintMembers() : ?et197
+    op_Inequality() : TypeDef#0
+    op_Equality() : TypeDef#0
+    GetHashCode() : ?
+    Equals() : ?
+    Equals() : ?
+    <Clone>$() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.WindowsSettings.Helper (5)
+- ContextMenuHelper  [methods=1 fields=0 flags=0x100180]
+    GetContextMenu(TypeDef#75767904, ?et128, ?et129, System.String&) : System.Void
+- JsonSettingsListHelper  [methods=1 fields=1 flags=0x100180]
+    field _settingsFile
+    ReadAllPossibleSettings(TypeDef#0) : System.Void
+- ResultHelper  [methods=7 fields=2 flags=0x100180]
+    field _api
+    field TaskLinkScorePenalty
+    Init() : ?
+    GetDefaultResults(TypeDef#88350816, TypeRef#168067166, System.String, System.String) : System.Void
+    GetResultList(TypeDef#88350816, TypeRef#168067166, TypeDef#58958176) : System.Void
+    NewSettingResult(System.String, System.String, System.String, TypeDef#0) : System.Int32
+    GetSubtitle() : ?
+    AddOptionalToolTip() : TypeDef#0
+    DoOpenSettingsAction() : ?
+- TranslationHelper  [methods=1 fields=0 flags=0x100180]
+    TranslateAllSettings(TypeDef#75842570, ?et121, System.Void, TypeDef#0) : System.Void
+- UnsupportedSettingsHelper  [methods=2 fields=3 flags=0x100180]
+    field _keyPath
+    field _keyNameBuild
+    field _keyNameBuildNumber
+    FilterByBuild(TypeDef#75842570, ?et121, System.Void, TypeDef#0) : System.Void
+    GetNumericRegistryValue() : System.String&
+
+## Flow.Launcher.Plugin.WindowsSettings.Properties (1)
+- Resources  [methods=694 fields=2 flags=0x100001]
+    field resourceMan
+    field resourceCulture
+    .ctor() : ?
+    get_ResourceManager() : ?
+    get_Culture() : ?
+    set_Culture() : ?et137
+    get__16BitApplicationSupport() : ?
+    get__null() : ?
+    get_About() : ?
+    get_access_cpl() : ?
+    get_AccessibilityOptions() : ?
+    get_AccessoryApps() : ?
+    get_AccessRemoteappAndDesktops() : ?
+    get_AccessWorkOrSchool() : ?
+    get_AccommodateLearningAbilities() : ?
+    get_AccommodateLowVision() : ?
+    get_AccountInfo() : ?
+    get_Accounts() : ?
+    get_ActionCenter() : ?
+    get_Activation() : ?
+    get_ActivityHistory() : ?
+    get_AddABluetoothDevice() : ?
+    get_AddADevice() : ?
+    get_AddALanguage() : ?
+    get_AddClocksForDifferentTimeZones() : ?
+    get_AddHardware() : ?
+    get_AddOrRemovePrograms() : ?
+    get_AddOrRemoveUserAccounts() : ?
+    get_AddRemovePrograms() : ?
+    get_AddYourPhone() : ?
+    get_AdjustCleartypeText() : ?
+    get_AdjustCommonlyUsedMobilitySettings() : ?
+    get_AdjustSettingsBeforeGivingAPresentation() : ?
+    get_AdjustSystemVolume() : ?
+    get_AdjustTheAppearanceAndPerformanceOfWindows() : ?
+    get_AdministrativeTools() : ?
+    get_AdvancedDisplaySettings() : ?
+    get_AdvancedGraphics() : ?
+    get_AdvancedPrinterSetup() : ?
+    get_AdvertisingId() : ?
+    get_AirplaneMode() : ?
+    get_AllowAnAppThroughWindowsFirewall() : ?
+    get_AllowRemoteAccessToYourComputer() : ?
+    get_AllowRemoteAssistanceInvitationsToBeSentFromThisComputer() : ?
+    get_AltAndTab() : ?
+    get_AlternativeName() : ?
+    get_Animations() : ?
+    get_AppColor() : ?
+    get_AppControlPanel() : ?
+    get_AppDiagnostics() : ?
+    get_AppFeatures() : ?
+    get_Application() : ?
+    get_AppsAndFeatures() : ?
+    get_AppSettingsApp() : ?
+    get_AppsForWebsites() : ?
+    get_AppVolumeAndDevicePreferences() : ?
+    get_appwiz_cpl() : ?
+    get_Area() : ?
+    get_AreaAccounts() : ?
+    get_AreaAdministrativeTools() : ?
+    get_AreaAppearanceAndPersonalization() : ?
+    get_AreaApps() : ?
+    get_AreaClockAndRegion() : ?
+    get_AreaControlPanel() : ?
+    get_AreaCortana() : ?
+    get_AreaDevices() : ?
+    get_AreaEaseOfAccess() : ?
+    get_AreaExtras() : ?
+    get_AreaGaming() : ?
+    get_AreaHardwareAndSound() : ?
+    get_AreaHomePage() : ?
+    get_AreaMixedReality() : ?
+    get_AreaNetworkAndInternet() : ?
+    get_AreaPersonalization() : ?
+    get_AreaPhone() : ?
+    get_AreaPrivacy() : ?
+    get_AreaPrograms() : ?
+    get_AreaSurfaceHub() : ?
+    get_AreaSystem() : ?
+    get_AreaSystemAndSecurity() : ?
+    get_AreaTimeAndLanguage() : ?
+    get_AreaUnknown() : ?
+    get_AreaUpdateAndSecurity() : ?
+    get_AreaUserAccounts() : ?
+    get_AssignedAccess() : ?
+    get_Audio() : ?
+    get_AudioAlerts() : ?
+    get_AudioAndSpeech() : ?
+    get_AutoHideTheTaskbar() : ?
+    get_AutomaticallyAdjustForDaylightSavingTime() : ?
+    get_AutomaticFileDownloads() : ?
+    get_AutoPlay() : ?
+    get_Background() : ?
+    get_BackgroundApps() : ?
+    get_Backup() : ?
+    get_BackupAndRestore() : ?
+    get_BackUpAndRestoreWindows7() : ?
+    get_BackUpYourRecoveryKey() : ?
+    get_BatterySaver() : ?
+    get_BatterySaverSettings() : ?
+    get_BatterySaverUsageDetails() : ?
+    get_BatteryUse() : ?
+    get_BiometricDevices() : ?
+    get_BitLockerDriveEncryption() : ?
+    get_BlockOrAllowPopUps() : ?
+    get_BlockOrAllowThirdPartyCookies() : ?
+    get_BlueLight() : ?
+    get_Bluetooth() : ?
+    get_BluetoothDevices() : ?
+    get_BlueYellow() : ?
+    get_BopomofoIme() : ?
+    get_bpmf() : ?
+    get_Broadcasting() : ?
+    get_Calendar() : ?
+    get_CalibrateDisplayColour() : ?
+    get_CalibrateTheScreenForPenOrTouchInput() : ?
+    get_CallHistory() : ?
+    get_calling() : ?
+    get_Camera() : ?
+    get_CangjieIme() : ?
+    get_CapsLock() : ?
+    get_CellularAndSim() : ?
+    get_ChangeAccountType() : ?
+    get_ChangeAdvancedColourManagementSettingsForDisplaysScannersAndPrinters() : ?
+    get_ChangeAutomaticMaintenanceSettings() : ?
+    get_ChangeBatterySettings() : ?
+    get_ChangeBluetoothSettings() : ?
+    get_ChangeCursorBlinkRate() : ?
+    get_ChangeDateTimeOrNumberFormats() : ?
+    get_ChangeDefaultPrinter() : ?
+    get_ChangeDefaultSettingsForMediaOrDevices() : ?
+    get_ChangeDeviceInstallationSettings() : ?
+    get_ChangeFontSettings() : ?
+    get_ChangeHowTheMousePointerLooks() : ?
+    get_ChangeHowTheMousePointerLooksWhenItSMoving() : ?
+    get_ChangeHowWebPagesAreDisplayedInTabs() : ?
+    get_ChangeHowWindowsSearches() : ?
+    get_ChangeHowYourKeyboardWorks() : ?
+    get_ChangeHowYourMouseWorks() : ?
+    get_ChangeInputMethods() : ?
+    get_ChangeLocationSettings() : ?
+    get_ChangeMouseClickSettings() : ?
+    get_ChangeMouseSettings() : ?
+    get_ChangeMouseWheelSettings() : ?
+    get_ChangeMultiTouchGestureSettings() : ?
+    get_ChangeOrRemoveAProgram() : ?
+    get_ChangePCWakeUpSettings() : ?
+    get_ChangePowerSavingSettings() : ?
+    get_ChangeScreenSaver() : ?
+    get_ChangeSearchOptionsForFilesAndFolders() : ?
+    get_ChangeSecuritySettings() : ?
+    get_ChangeSettingsForContentReceivedUsingTapAndSend() : ?
+    get_ChangeSoundCardSettings() : ?
+    get_ChangeSystemSounds() : ?
+    get_ChangeTabletPenSettings() : ?
+    get_ChangeTemporaryInternetFileSettings() : ?
+    get_ChangeTextToSpeechSettings() : ?
+    get_ChangeTheFileTypeAssociatedWithAFileExtension() : ?
+    get_ChangeTheMousePointerDisplayOrSpeed() : ?
+    get_ChangeTheNarratorSVoice() : ?
+    get_ChangeTheOrderOfWindowsSideshowGadgets() : ?
+    get_ChangeTheSearchProviderInInternetExplorer() : ?
+    get_ChangeTheTimeZone() : ?
+    get_ChangeTheWayCurrencyIsDisplayed() : ?
+    get_ChangeTheWayDatesAndListsAreDisplayed() : ?
+    get_ChangeTheWayMeasurementsAreDisplayed() : ?
+    get_ChangeTheWayTimeIsDisplayed() : ?
+    get_ChangeTouchInputSettings() : ?
+    get_ChangeUserAccountControlSettings() : ?
+    get_ChangeWhatClosingTheLidDoes() : ?
+    get_ChangeWhatThePowerButtonsDo() : ?
+    get_ChangeWhenTheComputerSleeps() : ?
+    get_ChangeWindowsSideshowCompatibleDeviceSettings() : ?
+    get_ChangeWindowsSideshowSettings() : ?
+    get_ChangeWindowsToGoStartUpOptions() : ?
+    get_ChangeWorkgroupName() : ?
+    get_ChangeYourHomepage() : ?
+    get_CheckFirewallStatus() : ?
+    get_CheckKeyboardStatus() : ?
+    get_CheckProcessorSpeed() : ?
+    get_CheckSecurityStatus() : ?
+    get_ChooseAPowerPlan() : ?
+    get_ChooseHowYouOpenLinks() : ?
+    get_ChooseTheOrderOfHowYourScreenRotates() : ?
+    get_ChooseWhenToTurnOffDisplay() : ?
+    get_ChooseWhichFoldersAppearOnStart() : ?
+    get_ClearDiskSpaceByDeletingUnnecessaryFiles() : ?
+    get_ClientServiceForNetWare() : ?
+    get_Clipboard() : ?
+    get_ClosedCaptions() : ?
+    get_ColorFilters() : ?
+    get_ColorManagement() : ?
+    get_Colors() : ?
+    get_Command() : ?
+    get_ConfigureAdvancedUserProfileProperties() : ?
+    get_ConfigureProxyServer() : ?
+    get_ConnectedDevices() : ?
+    get_ConnectToANetwork() : ?
+    get_ConnectToTheInternet() : ?
+    get_Contacts() : ?
+    get_ControlPanel() : ?
+    get_ControlTheComputerWithoutTheMouseOrKeyboard() : ?
+    get_CopyCommand() : ?
+    get_CoreIsolation() : ?
+    get_Cortana() : ?
+    get_CortanaAcrossMyDevices() : ?
+    get_CortanaLanguage() : ?
+    get_CreateAnAccount() : ?
+    get_CreateAndFormatHardDiskPartitions() : ?
+    get_CreateAPasswordResetDisk() : ?
+    get_CreateARecoveryDrive() : ?
+    get_CreateARestorePoint() : ?
+    get_CreateStandardUserAccount() : ?
+    get_CredentialManager() : ?
+    get_Crossdevice() : ?
+    get_CustomDevices() : ?
+    get_CustomiseTheMouseButtons() : ?
+    get_DarkColor() : ?
+    get_DarkMode() : ?
+    get_DataUsage() : ?
+    get_DateAndTime() : ?
+    get_DefaultApps() : ?
+    get_DefaultCamera() : ?
+    get_DefaultLocation() : ?
+    get_DefaultPrograms() : ?
+    get_DefaultSaveLocations() : ?
+    get_DefragmentAndOptimiseYourDrives() : ?
+    get_DeleteBrowsingHistory() : ?
+    get_DeleteCookiesOrTemporaryFiles() : ?
+    get_DeliveryOptimization() : ?
+    get_desk_cpl() : ?
+    get_DesktopThemes() : ?
+    get_deuteranopia() : ?
+    get_DeviceManager() : ?
+    get_DevicesAndPrinters() : ?
+    get_Dhcp() : ?
+    get_DiagnoseYourComputersMemoryProblems() : ?
+    get_DialUp() : ?
+    get_DirectAccess() : ?
+    get_DirectOpenYourPhone() : ?
+    get_Display() : ?
+    get_DisplayProperties() : ?
+    get_DNS() : ?
+    get_Documents() : ?
+    get_DuplicatingMyDisplay() : ?
+    get_DuringTheseHours() : ?
+    get_EaseOfAccessCenter() : ?
+    get_EditEnvironmentVariablesForYourAccount() : ?
+    get_EditGroupPolicy() : ?
+    get_Edition() : ?
+    get_EditLocalUsersAndGroups() : ?
+    get_EditPowerPlan() : ?
+    get_EditTheSystemEnvironmentVariables() : ?
+    get_Email() : ?
+    get_EmailAndAppAccounts() : ?
+    get_EnableOrDisableSessionCookies() : ?
+    get_Encryption() : ?
+    get_EncryptYourOfflineFiles() : ?
+    get_Environment() : ?
+    get_Ethernet() : ?
+    get_ExploitProtection() : ?
+    get_Extras() : ?
+    get_EyeControl() : ?
+    get_EyeTracker() : ?
+    get_FamilyAndOtherPeople() : ?
+    get_FeedbackAndDiagnostics() : ?
+    get_FileSystem() : ?
+    get_FindAndFixAudioPlaybackProblems() : ?
+    get_FindAndFixAudioRecordingProblems() : ?
+    get_FindAndFixBluescreenProblems() : ?
+    get_FindAndFixKeyboardProblems() : ?
+    get_FindAndFixNetworkingAndConnectionProblems() : ?
+    get_FindAndFixPrintingProblems() : ?
+    get_FindAndFixProblems() : ?
+    get_FindAndFixProblemsWithWindowsSearch() : ?
+    get_FindAndFixWindowsUpdateProblems() : ?
+    get_FindFast() : ?
+    get_findfast_cpl() : ?
+    get_FindMyDevice() : ?
+    get_Firewall() : ?
+    get_FixProblemsWithYourComputer() : ?
+    get_FocusAssistQuietHours() : ?
+    get_FocusAssistQuietMoments() : ?
+    get_FolderOptions() : ?
+    get_Fonts() : ?
+    get_ForDevelopers() : ?
+    get_GameBar() : ?
+    get_GameControllers() : ?
+    get_GameDvr() : ?
+    get_GameMode() : ?
+    get_Gateway() : ?
+    get_General() : ?
+    get_GenerateASystemHealthReport() : ?
+    get_GetMoreFeaturesWithANewEditionOfWindows() : ?
+    get_GetPrograms() : ?
+    get_GettingStarted() : ?
+    get_GiveAdministrativeRightsToADomainUser() : ?
+    get_GiveOtherUsersAccessToThisComputer() : ?
+    get_Glance() : ?
+    get_GraphicsSettings() : ?
+    get_Grayscale() : ?
+    get_GreenWeek() : ?
+    get_GroupSimilarWindowsOnTheTaskbar() : ?
+    get_HeadsetDisplay() : ?
+    get_HearAToneWhenKeysArePressed() : ?
+    get_HearTextReadAloudWithNarrator() : ?
+    get_HighContrast() : ?
+    get_HolographicAudio() : ?
+    get_HolographicEnvironment() : ?
+    get_HolographicHeadset() : ?
+    get_HolographicManagement() : ?
+    get_HomeGroup() : ?
+    get_HowToChangeTheSizeOfVirtualMemory() : ?
+    get_HowToChangeYourWindowsPassword() : ?
+    get_HowToInstallAProgram() : ?
+    get_Id() : ?
+    get_IdentifyAndRepairNetworkProblems() : ?
+    get_IgnoreRepeatedKeystrokesUsingFilterkeys() : ?
+    get_Image() : ?
+    get_IndexingOptions() : ?
+    get_inetcpl_cpl() : ?
+    get_Infrared() : ?
+    get_InkingAndTyping() : ?
+    get_InstallAProgramFromTheNetwork() : ?
+    get_InternetOptions() : ?
+    get_intl_cpl() : ?
+    get_InvertedColors() : ?
+    get_InviteSomeoneToConnectToYourPCAndHelpYouOrOfferToHelpSomeoneElse() : ?
+    get_Ip() : ?
+    get_IsolatedBrowsing() : ?
+    get_JapanImeSettings() : ?
+    get_JoinADomain() : ?
+    get_joy_cpl() : ?
+    get_JoystickProperties() : ?
+    get_jpnime() : ?
+    get_Keyboard() : ?
+    get_Keypad() : ?
+    get_Keys() : ?
+    get_Language() : ?
+    get_LetWindowsSuggestEaseOfAccessSettings() : ?
+    get_LightColor() : ?
+    get_LightMode() : ?
+    get_Location() : ?
+    get_LockOrUnlockTheTaskbar() : ?
+    get_LockScreen() : ?
+    get_Magnifier() : ?
+    get_MagnifyPortionsOfTheScreenUsingMagnifier() : ?
+    get_MailMicrosoftExchangeOrWindowsMessaging() : ?
+    get_main_cpl() : ?
+    get_MakeAFileTypeAlwaysOpenInASpecificProgram() : ?
+    get_MakeChangesToAccounts() : ?
+    get_MakeItEasierToSeeTheMousePointer() : ?
+    get_ManageAdvancedSharingSettings() : ?
+    get_ManageAudioDevices() : ?
+    get_ManageBitlocker() : ?
+    get_ManageBrowserAddOns() : ?
+    get_ManageComputerCertificates() : ?
+    get_ManageDiskSpaceUsedByYourOfflineFiles() : ?
+    get_ManageFileEncryptionCertificates() : ?
+    get_ManageKnownNetworks() : ?
+    get_ManageNetworkPasswords() : ?
+    get_ManageOfflineFiles() : ?
+    get_ManageOptionalFeatures() : ?
+    get_ManageStorageSpaces() : ?
+    get_ManageUserCertificates() : ?
+    get_ManageWebCredentials() : ?
+    get_ManageWindowsCredentials() : ?
+    get_ManageWorkFolders() : ?
+    get_MediaStreamingOptions() : ?
+    get_Messaging() : ?
+    get_MeteredConnection() : ?
+    get_Microphone() : ?
+    get_MicrosoftChangjieSettings() : ?
+    get_MicrosoftIMERegisterWordJapanese() : ?
+    get_MicrosoftMailPostOffice() : ?
+    get_MicrosoftNewPhoneticSettings() : ?
+    get_MicrosoftPinyinSimplefastOptions() : ?
+    get_MicrosoftQuickSettings() : ?
+    get_mlcfg32_cpl() : ?
+    get_mmsys_cpl() : ?
+    get_MobileDevices() : ?
+    get_MobileHotspot() : ?
+    get_modem_cpl() : ?
+    get_Mono() : ?
+    get_MoreDetails() : ?
+    get_Motion() : ?
+    get_Mouse() : ?
+    get_MouseAndTouchpad() : ?
+    get_MouseFontsKeyboardAndPrintersProperties() : ?
+    get_MousePointer() : ?
+    get_MoveThePointerWithTheKeypadUsingMousekeys() : ?
+    get_MultimediaProperties() : ?
+    get_Multitasking() : ?
+    get_Narrator() : ?
+    get_NavigationBar() : ?
+    get_NavigationProperties() : ?
+    get_netcpl_cpl() : ?
+    get_netsetup_cpl() : ?
+    get_Network() : ?
+    get_NetworkAndSharingCenter() : ?
+    get_NetworkConnection() : ?
+    get_NetworkProperties() : ?
+    get_NetworkSetupWizard() : ?
+    get_NetworkStatus() : ?
+    get_NFC() : ?
+    get_NFCTransactions() : ?
+    get_NightLight() : ?
+    get_NightLightSettings() : ?
+    get_Note() : ?
+    get_NoteAddYourPhone() : ?
+    get_NoteAdvancedGraphics() : ?
+    get_NoteBattery() : ?
+    get_NoteDeprecated17763() : ?
+    get_NoteDialPaired() : ?
+    get_NoteDirectAccess() : ?
+    get_NoteDisplayGraphics() : ?
+    get_NoteEnrolledWIP() : ?
+    get_NoteEyetrackerHardware() : ?
+    get_NoteImeJapan() : ?
+    get_NoteImePinyin() : ?
+    get_NoteImeWubi() : ?
+    get_NoteMixedReality() : ?
+    get_NoteMobileProvisioning() : ?
+    get_NoteSince18362() : ?
+    get_NoteSince19041() : ?
+    get_NoteThirdParty() : ?
+    get_NoteTouchpad() : ?
+    get_NoteWiFiAdapter() : ?
+    get_NoteWindowsAnywhere() : ?
+    get_NoteWorkplaceProvisioning() : ?
+    get_Notifications() : ?
+    get_NotificationsAndActions() : ?
+    get_NumLock() : ?
+    get_nwc_cpl() : ?
+    get_odbccp32_cpl() : ?
+    get_OdbcDataSourceAdministrator32Bit() : ?
+    get_OdbcDataSourceAdministrator64Bit() : ?
+    get_OfflineFiles() : ?
+    get_OfflineMaps() : ?
+    get_OfflineMapsDownloadMaps() : ?
+    get_OnScreen() : ?
+    get_OptimiseForBlindness() : ?
+    get_OptimiseVisualDisplay() : ?
+    get_Os() : ?
+    get_OtherDevices() : ?
+    get_OtherOptions() : ?
+    get_OtherUsers() : ?
+    get_ParentalControls() : ?
+    get_Password() : ?
+    get_password_cpl() : ?
+    get_PasswordProperties() : ?
+    get_PenAndInputDevices() : ?
+    get_PenAndTouch() : ?
+    get_PenAndWindowsInk() : ?
+    get_PeopleNearMe() : ?
+    get_PerformanceInformationAndTools() : ?
+    get_PerformRecommendedMaintenanceTasksAutomatically() : ?
+    get_PermissionsAndHistory() : ?
+    get_PersonalizationCategory() : ?
+    get_Phone() : ?
+    get_PhoneAndModem() : ?
+    get_PhoneAndModemOptions() : ?
+    get_PhoneCalls() : ?
+    get_PhoneDefaultApps() : ?
+    get_Picture() : ?
+    get_Pictures() : ?
+    get_PinyinImeSettings() : ?
+    get_PinyinImeSettingsDomainLexicon() : ?
+    get_PinyinImeSettingsKeyConfiguration() : ?
+    get_PinyinImeSettingsUdp() : ?
+    get_PlayCdsOrOtherMediaAutomatically() : ?
+    get_PlayingGameFullScreen() : ?
+    get_PluginDescription() : ?
+    get_PluginTitle() : ?
+    get_PowerAndSleep() : ?
+    get_powercfg_cpl() : ?
+    get_PowerOptions() : ?
+    get_Presentation() : ?
+    get_PressKeyCombinationsOneAtATime() : ?
+    get_PreviewDeleteShowOrHideFonts() : ?
+    get_Printers() : ?
+    get_PrintersAndScanners() : ?
+    get_PrintScreen() : ?
+    get_PrintTheSpeechReferenceCard() : ?
+    get_PrivateCharacterEditor() : ?
+    get_ProblemReportsAndSolutions() : ?
+    get_Processor() : ?
+    get_ProgramsAndFeatures() : ?
+    get_ProjectingToThisPc() : ?
+    get_protanopia() : ?
+    get_Provisioning() : ?
+    get_Proximity() : ?
+    get_Proxy() : ?
+    get_Quickime() : ?
+    get_QuietMomentsGame() : ?
+    get_Radios() : ?
+    get_Ram() : ?
+    get_Recognition() : ?
+    get_RecordStepsToReproduceAProblem() : ?
+    get_Recovery() : ?
+    get_RedEye() : ?
+    get_RedGreen() : ?
+    get_RedWeek() : ?
+    get_Region() : ?
+    get_RegionalLanguage() : ?
+    get_RegionalSettingsProperties() : ?
+    get_RegionAndLanguage() : ?
+    get_RegionFormatting() : ?
+    get_RemoteAppAndDesktopConnections() : ?
+    get_RemoteDesktop() : ?
+    get_RenameThisComputer() : ?
+    get_ReplaceSoundsWithVisualCues() : ?
+    get_ResetSecurityPolicies() : ?
+    get_RestoreDataFilesOrComputerFromBackupWindows7() : ?
+    get_RestoreYourFilesWithFileHistory() : ?
+    get_ReviewYourComputersStatusAndResolveIssues() : ?
+    get_RunProgramsMadeForPreviousVersionsOfWindows() : ?
+    get_SaveBackupCopiesOfYourFilesWithFileHistory() : ?
+    get_ScanADocumentOrPicture() : ?
+    get_ScannersAndCameras() : ?
+    get_schedtasks() : ?
+    get_Scheduled() : ?
+    get_ScheduledTasks() : ?
+    get_ScheduleTasks() : ?
+    get_ScreenRotation() : ?
+    get_ScrollBars() : ?
+    get_ScrollLock() : ?
+    get_Sdns() : ?
+    get_SearchingWindows() : ?
+    get_SecureDNS() : ?
+    get_SecurityCenter() : ?
+    get_SecurityProcessor() : ?
+    get_SeeTheNameOfThisComputer() : ?
+    get_SeeWhichProcessesStartUpAutomaticallyWhenYouStartWindows() : ?
+    get_SelectUsersWhoCanUseRemoteDesktop() : ?
+    get_SendOrReceiveAFile() : ?
+    get_SessionCleanup() : ?
+    get_SetFlicksToPerformCertainTasks() : ?
+    get_SetTabletButtonsToPerformCertainTasks() : ?
+    get_SetTheTimeAndDate() : ?
+    get_SettingsForMicrosoftIMEJapanese() : ?
+    get_SettingsHomePage() : ?
+    get_SetUpABroadbandConnection() : ?
+    get_SetUpAConnectionOrNetwork() : ?
+    get_SetUpADialUpConnection() : ?
+    get_SetUpAMicrophone() : ?
+    get_SetUpAVirtualPrivateNetworkVPNConnection() : ?
+    get_SetUpDiallingRules() : ?
+    get_SetUpIscsiInitiator() : ?
+    get_SetUpKiosk() : ?
+    get_SetUpODBCDataSources() : ?
+    get_SetUpODBCDataSources32Bit() : ?
+    get_SetUpODBCDataSources64Bit() : ?
+    get_SetUpUSBGameControllers() : ?
+    get_SetYourDefaultPrograms() : ?
+    get_SharedExperiences() : ?
+    get_Shortcuts() : ?
+    get_ShortNameWiFi() : ?
+    get_ShowHiddenFilesAndFolders() : ?
+    get_ShowHowMuchRAMIsOnThisComputer() : ?
+    get_ShowOrHideFileExtensions() : ?
+    get_ShowWhichDomainYourComputerIsOn() : ?
+    get_ShowWhichOperatingSystemYourComputerIsRunning() : ?
+    get_ShowWhichProgramsAreInstalledOnYourComputer() : ?
+    get_ShowWhichWorkgroupThisComputerIsOn() : ?
+    get_SignInOptions() : ?
+    get_SignInOptionsDynamicLock() : ?
+    get_Size() : ?
+    get_Sound() : ?
+    get_SpecifySingleOrDoubleClickToOpen() : ?
+    get_SpecifyWhichHandYouWriteWith() : ?
+    get_Speech() : ?
+    get_SpeechRecognition() : ?
+    get_SpeechTyping() : ?
+    get_Start() : ?
+    get_StartOrStopUsingAutoplayForAllMediaAndDevices() : ?
+    get_StartPlaces() : ?
+    get_StartSpeechRecognition() : ?
+    get_StartupApps() : ?
+    get_sticpl_cpl() : ?
+    get_Storage() : ?
+    get_StoragePolicies() : ?
+    get_StorageSense() : ?
+    get_SubtitlePreposition() : ?
+    get_SyncCenter() : ?
+    get_SyncYourSettings() : ?
+    get_sysdm_cpl() : ?
+    get_System() : ?
+    get_SystemPropertiesAndAddNewHardwareWizard() : ?
+    get_Tab() : ?
+    get_TabletMode() : ?
+    get_TabletPcSettings() : ?
+    get_TakeSpeechTutorials() : ?
+    get_Talk() : ?
+    get_TalkToCortana() : ?
+    get_Taskbar() : ?
+    get_TaskbarColor() : ?
+    get_TaskLink() : ?
+    get_TaskManager() : ?
+    get_Tasks() : ?
+    get_TeamConferencing() : ?
+    get_TeamDeviceManagement() : ?
+    get_TellIfAnRSSFeedIsAvailableOnAWebsite() : ?
+    get_TextToSpeech() : ?
+    get_Themes() : ?
+    get_themes_cpl() : ?
+    get_timedate_cpl() : ?
+    get_Timeline() : ?
+    get_Touch() : ?
+    get_TouchFeedback() : ?
+    get_Touchpad() : ?
+    get_TrainTheComputerToRecogniseYourVoice() : ?
+    get_Transparency() : ?
+    get_tritanopia() : ?
+    get_Troubleshoot() : ?
+    get_TroubleshootingHistory() : ?
+    get_TruePlay() : ?
+    get_TurnAutocompleteInInternetExplorerOnOrOff() : ?
+    get_TurnFlicksOnOrOff() : ?
+    get_TurnHighContrastOnOrOff() : ?
+    get_TurnMagnifierOnOrOff() : ?
+    get_TurnOffAutomaticWindowArrangement() : ?
+    get_TurnOffBackgroundImages() : ?
+    get_TurnOffUnnecessaryAnimations() : ?
+    get_TurnOnEasyAccessKeys() : ?
+    get_TurnOnScreenKeyboardOnOrOff() : ?
+    get_TurnScreenSaverOnOrOff() : ?
+    get_TurnWindowsFeaturesOnOrOff() : ?
+    get_Typing() : ?
+    get_Uninstall() : ?
+    get_UninstallAProgram() : ?
+    get_Usb() : ?
+    get_UseAudioDescriptionForVideo() : ?
+    get_UserAccounts() : ?
+    get_UseScreenReader() : ?
+    get_Version() : ?
+    get_VideoPlayback() : ?
+    get_Videos() : ?
+    get_ViewAdvancedSystemSettings() : ?
+    get_ViewAllProblemReports() : ?
+    get_ViewBasicInformationAboutYourComputer() : ?
+    get_ViewCurrentAccessibilitySettings() : ?
+    get_ViewDevicesAndPrinters() : ?
+    get_ViewEventLogs() : ?
+    get_ViewInstalledFonts() : ?
+    get_ViewInstalledUpdates() : ?
+    get_ViewLocalServices() : ?
+    get_ViewNetworkComputersAndDevices() : ?
+    get_ViewNetworkConnections() : ?
+    get_ViewNetworkStatusAndTasks() : ?
+    get_ViewRecentMessagesAboutYourComputer() : ?
+    get_ViewRecommendedActionsToKeepWindowsRunningSmoothly() : ?
+    get_ViewReliabilityHistory() : ?
+    get_ViewScannersAndCameras() : ?
+    get_ViewSystemResourceUsageInTaskManager() : ?
+    get_VirtualDesktops() : ?
+    get_Virus() : ?
+    get_VoiceActivation() : ?
+    get_Volume() : ?
+    get_Vpn() : ?
+    get_Wallpaper() : ?
+    get_WarmerColor() : ?
+    get_WelcomeCenter() : ?
+    get_WelcomeScreen() : ?
+    get_wgpocpl_cpl() : ?
+    get_WhatsHappenedToTheQuickLaunchToolbar() : ?
+    get_Wheel() : ?
+    get_WiFi() : ?
+    get_WiFiCalling() : ?
+    get_WiFiSettings() : ?
+    get_WindowBorder() : ?
+    get_WindowsAnytimeUpgrade() : ?
+    get_WindowsAnywhere() : ?
+    get_WindowsCardSpace() : ?
+    get_WindowsDefender() : ?
+    get_WindowsFirewall() : ?
+    get_WindowsHelloSetupFace() : ?
+    get_WindowsHelloSetupFingerprint() : ?
+    get_WindowsInsiderProgram() : ?
+    get_WindowsMobilityCenter() : ?
+    get_WindowsSearch() : ?
+    get_WindowsSecurity() : ?
+    get_WindowsUpdate() : ?
+    get_WindowsUpdateAdvancedOptions() : ?
+    get_WindowsUpdateCheckForUpdates() : ?
+    get_WindowsUpdateRestartOptions() : ?
+    get_WindowsUpdateViewOptionalUpdates() : ?
+    get_WindowsUpdateViewUpdateHistory() : ?
+    get_Wireless() : ?
+    get_Workplace() : ?
+    get_WorkplaceProvisioning() : ?
+    get_WubiImeSettings() : ?
+    get_WubiImeSettingsUdp() : ?
+    get_XboxNetworking() : ?
+    get_YourInfo() : ?
+    get_Zoom() : ?

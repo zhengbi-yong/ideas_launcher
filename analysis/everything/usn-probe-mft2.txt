@@ -1,0 +1,84 @@
+elevated: true
+manage-volume privilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0 luid=00000000:0000001c
+token privileges:
+    luid:00000000:00000000 attributes=0x3
+    luid:00000000:00000000 attributes=0x5
+    luid:00000000:00000000 attributes=0x7
+    luid:00000000:00000000 attributes=0x8
+    luid:00000000:00000000 attributes=0x9
+    luid:00000000:00000000 attributes=0xa
+    luid:00000000:00000000 attributes=0xb
+    luid:00000000:00000000 attributes=0xc
+    luid:00000000:00000000 attributes=0xd
+    luid:00000000:00000000 attributes=0xe
+    luid:00000000:00000000 attributes=0xf
+    luid:00000000:00000000 attributes=0x11
+    luid:00000000:00000000 attributes=0x12
+    luid:00000000:00000000 attributes=0x13
+    luid:00000000:00000000 attributes=0x14
+    luid:00000000:00000000 attributes=0x16
+    luid:00000000:00000000 attributes=0x17
+    luid:00000000:00000003 attributes=0x18
+    luid:00000000:00000000 attributes=0x19
+    luid:00000000:00000000 attributes=0x1c
+    luid:00000000:00000002 attributes=0x1d
+    luid:00000000:00000003 attributes=0x1e
+    luid:00000000:00000003 attributes=0x21
+    luid:00000000:00000000 attributes=0x22
+    luid:00000000:00000000 attributes=0x23
+    luid:00000000:00000000 attributes=0x24
+    luid:00000000:00000000 attributes=0x0
+raw token privilege buffer: 328 bytes
+    1b 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00
+    03 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00
+    00 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00
+    00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00
+    09 00 00 00 00 00 00 00 00 00 00 00 0a 00 00 00
+    00 00 00 00 00 00 00 00 0b 00 00 00 00 00 00 00
+    00 00 00 00 0c 00 00 00 00 00 00 00 00 00 00 00
+    0d 00 00 00 00 00 00 00 00 00 00 00 0e 00 00 00
+    SeChangeNotifyPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeBackupPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeRestorePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeManageVolumePrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+    SeTakeOwnershipPrivilege: enabled=true stage=AdjustTokenPrivileges/count-only error=0
+NTFS volumes: 2
+  \\.\C: C:\ label="home"
+    journal id=0x1dceb71cd496ff0 first=0x7e2000000 next=0x7f36b82a0 max_size=268435456
+  \\.\D: D:\ label="disk"
+    journal: unavailable
+  C:\ could not be read straight off the disk: the master file table has no extents
+  C:\ -> 505018 entries (86908 folders, 418110 files) through the change journal in 360.8839202s
+      frn=0x2000000000080 parent=0x1000000001ace Microsoft-Windows-CloudStore%4Initialization.evtx
+      frn=0x72000000000081 parent=0x4000000008056 LOG.old
+      frn=0x1a4000000000086 parent=0x3e00000000092b log_2026-10-24.log
+      frn=0x151000000000088 parent=0x1000000000efb Microsoft.T899a0058#
+      frn=0x6000000000089 parent=0x500000000008b CodeIntegrity.cat
+  D:\ could not be read straight off the disk: the master file table has no extents
+  D:\ -> error: the control code was rejected (38)
+the enumeration parameter shapes are a diagnostic; skipping them
+index built: 505018 entries in 192.9995ms
+index saved: 40978916 bytes in 94.6127ms
+index loaded back: 505018 entries in 66.6461ms
+  query "report" -> 5 hits in 5.7869ms
+      Report  C:\Report
+      report  C:\resources\mlreportgen\en\report
+      report  C:\eb2a72adbd724bc8b598306b7d6ad1c8\artifacts\report
+  query "*.pdf" -> 5 hits in 6.4963ms
+      1.pdf  C:\jade\docbook\images\callouts\1.pdf
+      2.pdf  C:\jade\docbook\images\callouts\2.pdf
+      3.pdf  C:\jade\docbook\images\callouts\3.pdf
+  query "folder:" -> 5 hits in 8.8485ms
+      0  C:\matlab\maps\mapdata\maptiles\NaturalEarth\darkwater\v1\5\0
+      0  C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\0
+      0  C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Windows\0
+  query "config" -> 5 hits in 2.9664ms
+      CONFIG  C:\Windows\Microsoft.NET\Framework\v2.0.50727\CONFIG
+      Config  C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config
+      Config  C:\Config
+  query "everything" -> 1 hits in 1.2214ms
+      Duck against everything.essentialsound  C:\Presets\EssentialSound\Default\music\Duck against everything.essentialsound
+  query "README" -> 5 hits in 3.1713ms
+      README  C:\EBWebView\Default\README
+      README  C:\8639ebdb8429bda672c00b09745d3a3c\profile_main\README
+      README  C:\8639ebdb8429bda672c00b09745d3a3c\profile_explorer\README

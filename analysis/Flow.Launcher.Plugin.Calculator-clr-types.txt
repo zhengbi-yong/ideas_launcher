@@ -1,0 +1,238 @@
+# Types in Flow.Launcher.Plugin.Calculator
+
+
+## (global) (19)
+- __StaticArrayInitTypeSize=16  [methods=0 fields=0 flags=0x115]
+- <>c  [methods=3 fields=2 flags=0x102103]
+    field <>9
+    field <>9__18_0
+    .cctor() : ?
+    .ctor() : ?
+    <Query>b__18_0() : ?et173
+- <>c__DisplayClass18_0  [methods=2 fields=3 flags=0x100103]
+    field isFunctionPresent
+    field decimalSep
+    field groupSep
+    .ctor() : ?
+    <Query>b__1() : ?et173
+- <>c__DisplayClass18_1  [methods=2 fields=1 flags=0x100103]
+    field newResult
+    .ctor() : ?
+    <Query>b__2() : ?et193
+- <>O  [methods=0 fields=3 flags=0x100183]
+    field <0>__PowMatchEvaluator
+    field <1>__LogMatchEvaluator
+    field <2>__LnMatchEvaluator
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <PrivateImplementationDetails>  [methods=0 fields=1 flags=0x100]
+    field 3C17DA885F7916F14BECDDD5A559E146795A03758C28EA455EC8E9E803B90531
+- Runner  [methods=4 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et89
+    TryFindNextPossibleStartingPosition(System.Void, System.Char) : ?et89
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et89
+    .ctor() : ?
+- Runner  [methods=4 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et89
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et89
+    .ctor() : ?
+    <TryMatchAtCurrentPosition>g__UncaptureUntil|1_0() : ?
+- Runner  [methods=5 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et89
+    TryFindNextPossibleStartingPosition(System.Void, System.Char) : ?et89
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et89
+    .ctor() : ?
+    <TryMatchAtCurrentPosition>g__UncaptureUntil|2_0() : ?
+- Runner  [methods=5 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et89
+    TryFindNextPossibleStartingPosition(System.Void, System.Char) : ?et89
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et89
+    .ctor() : ?
+    <TryMatchAtCurrentPosition>g__UncaptureUntil|2_0() : ?
+- Runner  [methods=5 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et89
+    TryFindNextPossibleStartingPosition(System.Void, System.Char) : ?et89
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et89
+    .ctor() : ?
+    <TryMatchAtCurrentPosition>g__UncaptureUntil|2_0() : ?
+- Runner  [methods=5 fields=0 flags=0x100103]
+    Scan(System.Void, System.Char) : ?et89
+    TryFindNextPossibleStartingPosition(System.Void, System.Char) : ?et89
+    TryMatchAtCurrentPosition(System.Void, System.Char) : ?et89
+    .ctor() : ?
+    <TryMatchAtCurrentPosition>g__UncaptureUntil|2_0() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+- RunnerFactory  [methods=2 fields=0 flags=0x100103]
+    CreateInstance() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Calculator (6)
+- DecimalSeparator  [methods=0 fields=4 flags=0x101]
+    field value__
+    field UseSystemLocale
+    field Dot
+    field Comma
+- DecimalSeparatorLocalized  [methods=14 fields=5 flags=0x100001]
+    field <Value>k__BackingField
+    field _display
+    field <LocalizationKey>k__BackingField
+    field <LocalizationValue>k__BackingField
+    field PropertyChanged
+    get_Value() : ?
+    set_Value(TypeDef#0) : System.Void
+    get_Display() : ?
+    set_Display() : ?
+    get_LocalizationKey() : ?
+    set_LocalizationKey() : ?
+    get_LocalizationValue() : ?
+    set_LocalizationValue() : ?
+    GetValues(System.Void, TypeDef#0) : ?et145
+    UpdateLabels(?et145, System.Void, TypeDef#0) : ?et128
+    add_PropertyChanged() : ?et213
+    remove_PropertyChanged() : ?et213
+    OnPropertyChanged() : ?
+    .ctor() : ?
+- Localize  [methods=14 fields=0 flags=0x100181]
+    flowlauncher_plugin_calculator_plugin_name() : ?
+    flowlauncher_plugin_calculator_plugin_description() : ?
+    flowlauncher_plugin_calculator_not_a_number() : ?
+    flowlauncher_plugin_calculator_expression_not_complete() : ?
+    flowlauncher_plugin_calculator_copy_number_to_clipboard() : ?
+    flowlauncher_plugin_calculator_output_decimal_separator() : ?
+    flowlauncher_plugin_calculator_output_decimal_separator_help() : ?
+    flowlauncher_plugin_calculator_decimal_separator_use_system_locale() : ?
+    flowlauncher_plugin_calculator_decimal_separator_comma() : ?
+    flowlauncher_plugin_calculator_decimal_separator_dot() : ?
+    flowlauncher_plugin_calculator_max_decimal_places() : ?
+    flowlauncher_plugin_calculator_use_thousands_separator() : ?
+    flowlauncher_plugin_calculator_failed_to_copy() : ?
+    flowlauncher_plugin_calculator_show_error_message() : ?
+- Main  [methods=18 fields=14 flags=0x100001]
+    field ThousandGroupRegex
+    field NumberRegex
+    field PowRegex
+    field LogRegex
+    field LnRegex
+    field FunctionRegex
+    field MagesEngine
+    field Comma
+    field Dot
+    field IcoPath
+    field EmptyResults
+    field <Context>k__BackingField
+    field _settings
+    field _viewModel
+    get_Context() : ?
+    set_Context() : ?et153
+    Init() : ?et153
+    Query(System.Void, TypeDef#537175392, ?et157) : ?et145
+    PowMatchEvaluator() : ?et173
+    LogMatchEvaluator() : ?et173
+    LnMatchEvaluator() : ?et173
+    NormalizeNumber(System.String) : System.String
+    IsValidGrouping() : System.Int32[]
+    FormatResult() : ?et165
+    GetGroupSeparator() : ?
+    GetDecimalSeparator() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    CreateSettingPanel() : ?
+    OnCultureInfoChanged() : ?et181
+    .ctor() : ?
+    .cctor() : ?
+- MainRegexHelper  [methods=6 fields=0 flags=0x100180]
+    GetNumberRegex() : ?
+    GetThousandGroupRegex() : ?
+    GetPowRegex() : ?
+    GetLogRegex() : ?
+    GetLnRegex() : ?
+    GetFunctionRegex() : ?
+- Settings  [methods=9 fields=4 flags=0x100001]
+    field <DecimalSeparator>k__BackingField
+    field <MaxDecimalPlaces>k__BackingField
+    field <ShowErrorMessage>k__BackingField
+    field <UseThousandsSeparator>k__BackingField
+    get_DecimalSeparator() : ?
+    set_DecimalSeparator() : ?
+    get_MaxDecimalPlaces() : ?
+    set_MaxDecimalPlaces() : ?
+    get_ShowErrorMessage() : ?
+    set_ShowErrorMessage() : ?
+    get_UseThousandsSeparator() : ?
+    set_UseThousandsSeparator() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Calculator.ViewModels (1)
+- SettingsViewModel  [methods=6 fields=2 flags=0x100001]
+    field <Settings>k__BackingField
+    field <AllDecimalSeparator>k__BackingField
+    .ctor() : ?
+    get_Settings() : ?
+    get_MaxDecimalPlacesRange(System.Void, System.Int32) : System.Byte
+    get_AllDecimalSeparator(System.Void, TypeDef#0) : ?et145
+    get_SelectedDecimalSeparator() : ?
+    set_SelectedDecimalSeparator() : ?
+
+## Flow.Launcher.Plugin.Calculator.Views (1)
+- CalculatorSettings  [methods=3 fields=4 flags=0x100001]
+    field _viewModel
+    field DecimalSeparatorComboBox
+    field MaxDecimalPlaces
+    field _contentLoaded
+    .ctor() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+
+## System.Text.RegularExpressions.Generated (7)
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__GetFunctionRegex_5  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__GetLnRegex_4  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__GetLogRegex_3  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__GetNumberRegex_0  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__GetPowRegex_2  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__GetThousandGroupRegex_1  [methods=2 fields=1 flags=0x100100]
+    field Instance
+    .ctor() : ?
+    .cctor() : ?
+- <RegexGenerator_g>FDDCA655245CF5B7F3330F4457F7CE383AECAE146B64F2018AC5B5F253AFF91E7__Utilities  [methods=10 fields=4 flags=0x100180]
+    field s_defaultTimeout
+    field s_hasTimeout
+    field s_ascii_EA321D00EA321D00
+    field s_ascii_FFFFFFFF7F8F00FCFFFFFFFFFFFFFFFF
+    IndexOfNonAsciiOrAny_FBD7E75D81C98DC08F1E592D93281AC524A5F908F0E4BB840D88BA91E864315B(System.Void, System.Char) : ?et89
+    IsBoundary(System.Void, System.Char, System.Int32) : ?et89
+    IsWordChar() : ?
+    StackPop(System.Int32&, System.Int32&) : System.Int32&
+    StackPush(System.Int32&, System.Int32, System.Int32) : System.Int32
+    StackPush(System.Int32&, System.Int32, System.Int32, System.Int32) : System.Int32
+    .cctor() : ?
+    <IsBoundary>g__IsBoundaryWordChar|3_0() : ?
+    <StackPush>g__WithResize|6_0(System.Int32&, System.Int32, System.Int32) : System.Int32
+    <StackPush>g__WithResize|7_0(System.Int32&, System.Int32, System.Int32, System.Int32) : System.Int32

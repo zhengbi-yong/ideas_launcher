@@ -1,0 +1,223 @@
+# Types in Flow.Launcher.Plugin.Shell
+
+
+## (global) (13)
+- <<OnWinRPressed>b__23_0>d  [methods=2 fields=3 flags=0x100103]
+    field <>1__state
+    field <>t__builder
+    field <>u__1
+    MoveNext() : ?
+    SetStateMachine() : ?et197
+- <>c  [methods=6 fields=5 flags=0x102103]
+    field <>9
+    field <>9__10_1
+    field <>9__10_3
+    field <>9__12_0
+    field <>9__23_0
+    .cctor() : ?
+    .ctor() : ?
+    <GetHistoryCmds>b__10_1(?et165, System.Boolean, System.String, System.Int32) : ?et128
+    <GetHistoryCmds>b__10_3() : ?
+    <ResultsFromHistory>b__12_0(?et165, System.Boolean, System.String, System.Int32) : ?et128
+    <OnWinRPressed>b__23_0() : ?
+- <>c__DisplayClass10_0  [methods=3 fields=3 flags=0x100103]
+    field cmd
+    field result
+    field <>4__this
+    .ctor() : ?
+    <GetHistoryCmds>b__0(?et165, System.Boolean, System.String, System.Int32) : ?et128
+    <GetHistoryCmds>b__2(System.Int32) : TypeDef#58763616
+- <>c__DisplayClass10_1  [methods=2 fields=2 flags=0x100103]
+    field m
+    field CS$<>8__locals1
+    .ctor() : ?
+    <GetHistoryCmds>b__4() : ?et213
+- <>c__DisplayClass11_0  [methods=2 fields=2 flags=0x100103]
+    field <>4__this
+    field cmd
+    .ctor() : ?
+    <GetCurrentCmd>b__0() : ?et213
+- <>c__DisplayClass12_0  [methods=2 fields=2 flags=0x100103]
+    field m
+    field <>4__this
+    .ctor() : ?
+    <ResultsFromHistory>b__2() : ?et213
+- <>c__DisplayClass27_0  [methods=4 fields=2 flags=0x100103]
+    field <>4__this
+    field selectedResult
+    .ctor() : ?
+    <LoadContextMenus>b__0() : ?et213
+    <LoadContextMenus>b__1() : ?et213
+    <LoadContextMenus>b__2() : ?et213
+- <>c__DisplayClass9_0  [methods=3 fields=3 flags=0x100103]
+    field cmd
+    field results
+    field <>4__this
+    .ctor() : ?
+    <Query>b__1() : ?
+    <Query>b__2() : ?
+- <>c__DisplayClass9_1  [methods=2 fields=2 flags=0x100103]
+    field dir
+    field CS$<>8__locals1
+    .ctor() : ?
+    <Query>b__0() : ?
+- <>c__DisplayClass9_2  [methods=3 fields=1 flags=0x100103]
+    field o
+    .ctor() : ?
+    <Query>b__3() : ?
+    <Query>b__4() : ?
+- <>c__DisplayClass9_3  [methods=2 fields=2 flags=0x100103]
+    field m
+    field CS$<>8__locals2
+    .ctor() : ?
+    <Query>b__5() : ?et213
+- <>O  [methods=0 fields=2 flags=0x100183]
+    field <0>__Start
+    field <1>__RunAsDifferentUser
+- <Module>  [methods=0 fields=0 flags=0x0]
+
+## Flow.Launcher.Plugin.Shell (5)
+- Localize  [methods=16 fields=0 flags=0x100181]
+    flowlauncher_plugin_cmd_relace_winr() : ?
+    flowlauncher_plugin_cmd_close_cmd_after_press() : ?
+    flowlauncher_plugin_cmd_press_any_key_to_close() : ?
+    flowlauncher_plugin_cmd_leave_cmd_open() : ?
+    flowlauncher_plugin_cmd_always_run_as_administrator() : ?
+    flowlauncher_plugin_cmd_use_windows_terminal() : ?
+    flowlauncher_plugin_cmd_run_as_different_user() : ?
+    flowlauncher_plugin_cmd_plugin_name() : ?
+    flowlauncher_plugin_cmd_plugin_description() : ?
+    flowlauncher_plugin_cmd_cmd_has_been_executed_times() : ?
+    flowlauncher_plugin_cmd_execute_through_shell() : ?
+    flowlauncher_plugin_cmd_run_as_administrator() : ?
+    flowlauncher_plugin_cmd_copy() : ?
+    flowlauncher_plugin_cmd_history() : ?
+    flowlauncher_plugin_cmd_command_not_found() : ?
+    flowlauncher_plugin_cmd_error_running_command() : ?
+- Main  [methods=25 fields=6 flags=0x100001]
+    field ClassName
+    field <Context>k__BackingField
+    field Image
+    field _winRStroked
+    field _keyboardSimulator
+    field _settings
+    get_Context() : ?
+    set_Context() : ?
+    Query(TypeDef#0) : System.Void
+    GetHistoryCmds(TypeRef#474252188) : System.Void
+    GetCurrentCmd() : ?
+    ResultsFromHistory(TypeDef#0) : System.Void
+    PrepareProcessStartInfo(System.Boolean) : System.String
+    CreateProcessStartInfo(TypeDef#8421508, System.Boolean, System.String) : System.String
+    ConfigureCmdProcessStartInfo(System.String, System.Boolean, System.Boolean, System.Boolean, System.String) : ?et141
+    ConfigurePowershellProcessStartInfo(System.String, System.Boolean, System.Boolean, System.Boolean, System.String) : ?et141
+    ConfigurePwshProcessStartInfo(System.String, System.Boolean, System.Boolean, System.Boolean, System.String) : ?et141
+    ConfigureRunCommandStartInfo(System.String) : ?et141
+    Execute(?et145, System.Boolean, TypeDef#537174880, ?et149, TypeDef#0) : ?et128
+    ExistInPath() : ?
+    Init() : ?
+    API_GlobalKeyboardEvent() : TypeDef#0
+    OnWinRPressed() : ?
+    CreateSettingPanel() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    LoadContextMenus(TypeDef#0) : System.Void
+    Dispose() : ?
+    .ctor() : ?
+    .cctor() : ?
+    <ResultsFromHistory>b__12_1(System.Int32) : TypeDef#58763616
+- Settings  [methods=20 fields=9 flags=0x100001]
+    field _shell
+    field _replaceWinR
+    field _closeShellAfterPress
+    field _leaveShellOpen
+    field _runAsAdministrator
+    field _useWindowsTerminal
+    field _showOnlyMostUsedCMDs
+    field _showOnlyMostUsedCMDsNumber
+    field <CommandHistory>k__BackingField
+    get_Shell() : ?
+    set_Shell() : ?
+    get_ReplaceWinR() : ?
+    set_ReplaceWinR() : ?
+    get_CloseShellAfterPress() : ?
+    set_CloseShellAfterPress() : ?
+    get_LeaveShellOpen() : ?
+    set_LeaveShellOpen() : ?
+    get_RunAsAdministrator() : ?
+    set_RunAsAdministrator() : ?
+    get_UseWindowsTerminal() : ?
+    set_UseWindowsTerminal() : ?
+    get_ShowOnlyMostUsedCMDs() : ?
+    set_ShowOnlyMostUsedCMDs() : ?
+    get_ShowOnlyMostUsedCMDsNumber() : ?
+    set_ShowOnlyMostUsedCMDsNumber() : ?
+    get_CommandHistory(System.Boolean, System.String, System.Int32) : ?et221
+    set_CommandHistory(?et221, System.Boolean, System.String, System.Int32) : ?et128
+    AddCmdHistory() : ?
+    .ctor() : ?
+- Shell  [methods=0 fields=5 flags=0x101]
+    field value__
+    field Cmd
+    field Powershell
+    field RunCommand
+    field Pwsh
+- ShellLocalized  [methods=14 fields=5 flags=0x100001]
+    field <Value>k__BackingField
+    field _display
+    field <LocalizationKey>k__BackingField
+    field <LocalizationValue>k__BackingField
+    field PropertyChanged
+    get_Value() : ?
+    set_Value(TypeDef#0) : System.Void
+    get_Display() : ?
+    set_Display() : ?
+    get_LocalizationKey() : ?
+    set_LocalizationKey() : ?
+    get_LocalizationValue() : ?
+    set_LocalizationValue() : ?
+    GetValues(TypeDef#0) : System.Void
+    UpdateLabels(System.Void, TypeDef#0) : ?et109
+    add_PropertyChanged() : ?et245
+    remove_PropertyChanged() : ?et245
+    OnPropertyChanged() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Shell.Converters (1)
+- LeaveShellOpenOrCloseShellAfterPressEnabledConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(?et129, ?et45) : TypeDef#75968096
+    ConvertBack(?et129, ?et45) : TypeDef#75968096[]
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Shell.ViewModels (1)
+- ShellSettingViewModel  [methods=12 fields=3 flags=0x100001]
+    field <Settings>k__BackingField
+    field <AllShells>k__BackingField
+    field <OnlyMostUsedCMDsNumbers>k__BackingField
+    get_Settings() : ?
+    get_AllShells(TypeDef#0) : System.Void
+    get_SelectedShell() : ?
+    set_SelectedShell() : ?
+    get_OnlyMostUsedCMDsNumbers(System.Int32) : System.Void
+    get_SelectedOnlyMostUsedCMDsNumber() : ?
+    set_SelectedOnlyMostUsedCMDsNumber() : ?
+    get_CloseShellAfterPress() : ?
+    set_CloseShellAfterPress() : ?
+    get_LeaveShellOpen() : ?
+    set_LeaveShellOpen() : ?
+    .ctor() : ?
+
+## Flow.Launcher.Plugin.Shell.Views (1)
+- CMDSetting  [methods=3 fields=9 flags=0x100001]
+    field ReplaceWinR
+    field CloseShellAfterPress
+    field LeaveShellOpen
+    field AlwaysRunAsAdministrator
+    field UseWindowsTerminal
+    field ShellComboBox
+    field ShowOnlyMostUsedCMDs
+    field ShowOnlyMostUsedCMDsNumber
+    field _contentLoaded
+    .ctor() : ?
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?

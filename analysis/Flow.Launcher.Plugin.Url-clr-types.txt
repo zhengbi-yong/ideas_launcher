@@ -1,0 +1,113 @@
+# Types in Flow.Launcher.Plugin.Url
+
+
+## (global) (8)
+- __StaticArrayInitTypeSize=6_Align=2  [methods=0 fields=0 flags=0x115]
+- <>c__DisplayClass13_0  [methods=4 fields=3 flags=0x100103]
+    field raw
+    field <>9__1
+    field <>9__2
+    .ctor() : ?
+    <Query>b__0() : ?et137
+    <Query>b__1() : ?
+    <Query>b__2() : ?
+- <>c__DisplayClass15_0  [methods=3 fields=2 flags=0x100103]
+    field input
+    field uri
+    .ctor() : ?
+    <IsURL>b__0() : ?
+    <IsURL>b__1() : ?
+- <>c__DisplayClass17_0  [methods=2 fields=2 flags=0x100103]
+    field input
+    field colonIndex
+    .ctor() : ?
+    <TryMatchColonScheme>b__0() : ?
+- <>c__DisplayClass18_0  [methods=2 fields=1 flags=0x100103]
+    field uri
+    .ctor() : ?
+    <TryMatchNonHostScheme>b__0() : ?
+- <>O  [methods=0 fields=3 flags=0x100183]
+    field <0>__IsWhiteSpace
+    field <1>__IsNullOrEmpty
+    field <2>__IsLetterOrDigit
+- <Module>  [methods=0 fields=0 flags=0x0]
+- <PrivateImplementationDetails>  [methods=0 fields=1 flags=0x100]
+    field 3F68494D359B55DCCE1B5F85C838FDFA19B83E480A1F8F603FCE1095C0EA7BA72
+
+## Flow.Launcher.Plugin.Url (4)
+- Localize  [methods=12 fields=0 flags=0x100181]
+    flowlauncher_plugin_url_open_url() : ?
+    flowlauncher_plugin_url_cannot_open_url() : ?
+    flowlauncher_plugin_url_plugin_name() : ?
+    flowlauncher_plugin_url_plugin_description() : ?
+    flowlauncher_plugin_url_plugin_choose() : ?
+    flowlauncher_plugin_url_plugin_filter() : ?
+    flowlauncher_plugin_url_use_custom_browser() : ?
+    flowlauncher_plugin_url_browser_path() : ?
+    flowlauncher_plugin_url_new_tab() : ?
+    flowlauncher_plugin_url_new_window() : ?
+    flowlauncher_plugin_url_private_mode() : ?
+    flowlauncher_plugin_url_usehttps() : ?
+- Main  [methods=17 fields=7 flags=0x100001]
+    field <Context>k__BackingField
+    field <Settings>k__BackingField
+    field HostValidatedSchemes
+    field ChromiumSchemes
+    field NonHostValidatedDoubleSlashSchemes
+    field ColonOnlySchemes
+    field AllDoubleSlashSchemes
+    get_Context() : ?
+    set_Context() : ?
+    get_Settings() : ?
+    set_Settings() : ?
+    Query(TypeDef#0) : System.Void
+    GetHttpPreference() : ?
+    IsURL() : ?
+    TryMatchBareIP() : System.Boolean
+    TryMatchColonScheme() : System.Boolean
+    TryMatchNonHostScheme(System.Boolean&) : System.String
+    ValidateSchemeHost() : ?
+    Init() : ?
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    CreateSettingPanel() : ?
+    .ctor() : ?
+    .cctor() : ?
+- Settings  [methods=13 fields=6 flags=0x100001]
+    field _useCustomBrowser
+    field _browserPath
+    field _openInNewBrowserWindow
+    field <OpenInPrivateMode>k__BackingField
+    field <PrivateModeArgument>k__BackingField
+    field <AlwaysOpenWithHttps>k__BackingField
+    get_UseCustomBrowser() : ?
+    set_UseCustomBrowser() : ?
+    get_BrowserPath() : ?
+    set_BrowserPath() : ?
+    get_OpenInNewBrowserWindow() : ?
+    set_OpenInNewBrowserWindow() : ?
+    get_OpenInPrivateMode() : ?
+    set_OpenInPrivateMode() : ?
+    get_PrivateModeArgument() : ?
+    set_PrivateModeArgument() : ?
+    get_AlwaysOpenWithHttps() : ?
+    set_AlwaysOpenWithHttps() : ?
+    .ctor() : ?
+- SettingsControl  [methods=5 fields=2 flags=0x100001]
+    field <Settings>k__BackingField
+    field _contentLoaded
+    get_Settings() : ?
+    .ctor() : ?
+    SelectBrowserPath(?et161) : ?et128
+    InitializeComponent() : ?
+    System.Windows.Markup.IComponentConnector.Connect() : ?
+
+## Flow.Launcher.Plugin.Url.Converters (2)
+- BoolToVisibilityConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(?et193, System.Object, TypeDef#0) : ?et128
+    ConvertBack(?et193, System.Object, TypeDef#0) : ?et128
+    .ctor() : ?
+- InverseBoolConverter  [methods=3 fields=0 flags=0x100001]
+    Convert(?et193, System.Object, TypeDef#0) : ?et128
+    ConvertBack(?et193, System.Object, TypeDef#0) : ?et128
+    .ctor() : ?

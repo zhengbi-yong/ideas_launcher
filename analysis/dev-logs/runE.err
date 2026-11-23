@@ -1,0 +1,4 @@
+[2026-11-02T06:06:03Z INFO  launcher_app::app] global hotkey active: Ctrl + Alt + Space
+[2026-11-02T06:06:03Z INFO  launcher_app::app] native window handle: 0xb1688
+[2026-11-02T06:06:03Z INFO  launcher_app] launcher initialised in 294.5566ms
+[2026-11-02T06:06:03Z INFO  launcher_app::app] first frame painted; window hidden

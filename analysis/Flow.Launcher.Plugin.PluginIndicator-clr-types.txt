@@ -1,0 +1,79 @@
+# Types in Flow.Launcher.Plugin.PluginIndicator
+
+
+## (global) (8)
+- <>c  [methods=4 fields=3 flags=0x102103]
+    field <>9
+    field <>9__6_3
+    field <>9__6_5
+    .cctor() : ?
+    .ctor() : ?
+    <QueryResults>b__6_3(TypeSpec#88114180<TypeDef#75726978, ?et128, ?et141, TypeDef#537175136, ?et145, System.Int32, TypeSpec#88114180<TypeDef#75726978, ?et128, ?et141, TypeDef#537175136, ?et145, ?, ?, ?, ?, ?, ?, ?, ?>, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?>) : System.Boolean
+    <QueryResults>b__6_5(System.Boolean&, TypeSpec#88113924<TypeDef#537174880, ?et145, TypeDef#0, ?, ?, ?, ?, ?, ?, ?>) : TypeDef#75841669
+- <>c__DisplayClass6_0  [methods=5 fields=2 flags=0x100103]
+    field nonGlobalPlugins
+    field querySearch
+    .ctor() : ?
+    <QueryResults>b__0(System.String, TypeDef#0) : System.Boolean
+    <QueryResults>b__1(TypeSpec#58753540<?et128, ?et145, TypeSpec#58753540<>, ?, ?, ?, ?, ?, ?, ?>) : System.Boolean
+    <QueryResults>b__2(TypeSpec#88113924<TypeDef#537174880, ?et145, TypeDef#75850848, System.Single, System.Boolean, TypeSpec#58753540<?et128, ?et145>, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?>) : System.Boolean
+    <QueryResults>b__4() : System.Boolean[,]
+- <>c__DisplayClass6_1  [methods=2 fields=1 flags=0x100103]
+    field <>h__TransparentIdentifier3
+    .ctor() : ?
+    <QueryResults>b__6() : ?et149
+- <>f__AnonymousType0`2  [methods=6 fields=2 flags=0x100100]
+    field <keyword>i__Field
+    field <plugin>i__Field
+    get_keyword() : ?
+    get_plugin() : ?
+    .ctor() : !0
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- <>f__AnonymousType1`2  [methods=6 fields=2 flags=0x100100]
+    field <<>h__TransparentIdentifier0>i__Field
+    field <keywordSearchResult>i__Field
+    get_<>h__TransparentIdentifier0() : ?
+    get_keywordSearchResult() : ?
+    .ctor() : !0
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- <>f__AnonymousType2`2  [methods=6 fields=2 flags=0x100100]
+    field <<>h__TransparentIdentifier1>i__Field
+    field <searchResult>i__Field
+    get_<>h__TransparentIdentifier1() : ?
+    get_searchResult() : ?
+    .ctor() : !0
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- <>f__AnonymousType3`2  [methods=6 fields=2 flags=0x100100]
+    field <<>h__TransparentIdentifier2>i__Field
+    field <score>i__Field
+    get_<>h__TransparentIdentifier2() : ?
+    get_score() : ?
+    .ctor() : !0
+    Equals() : ?
+    GetHashCode() : ?
+    ToString() : ?
+- <Module>  [methods=0 fields=0 flags=0x0]
+
+## Flow.Launcher.Plugin.PluginIndicator (2)
+- Localize  [methods=3 fields=0 flags=0x100181]
+    flowlauncher_plugin_pluginindicator_result_subtitle() : ?
+    flowlauncher_plugin_pluginindicator_plugin_name() : ?
+    flowlauncher_plugin_pluginindicator_plugin_description() : ?
+- Main  [methods=10 fields=1 flags=0x100001]
+    field <Context>k__BackingField
+    get_Context() : ?
+    set_Context() : ?
+    Init() : ?
+    Query(TypeDef#0) : System.Void
+    QueryResults(TypeDef#0) : System.Void
+    GetNonGlobalPlugins(System.String, TypeDef#0) : System.Boolean
+    GetTranslatedPluginTitle() : ?
+    GetTranslatedPluginDescription() : ?
+    HomeQuery(TypeDef#0) : System.Void
+    .ctor() : ?

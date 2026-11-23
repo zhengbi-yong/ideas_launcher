@@ -1,0 +1,201 @@
+[2026-11-02T06:30:10Z INFO  launcher_app::app] global hotkey active: Ctrl + Space
+[2026-11-02T06:30:10Z INFO  launcher_app::app] native window handle: 0x450a50
+[2026-11-02T06:30:10Z INFO  launcher_app] launcher initialised in 266.1184ms
+[2026-11-02T06:30:10Z INFO  launcher_app::app] first frame painted; window hidden
+[2026-11-02T06:30:10Z INFO  launcher_app::app] layout: viewport_rect=[[0.0 0.0] - [680.0 460.0]] ui.max_rect=[[0.0 0.0] - [680.0 460.0]] ui.min_rect=[[0.0 0.0] - [0.0 0.0]] size=[680.0 460.0]
+[2026-11-02T06:30:16Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:16Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:16Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:16Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:16Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:16Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:16Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:16Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:16Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:16Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:17Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:17Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:17Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:17Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:17Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:17Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:17Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:17Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:17Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:17Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:18Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:18Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:18Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:18Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:18Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:18Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:18Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:18Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:18Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:18Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:18Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:18Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:19Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:19Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:19Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:19Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:19Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:19Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:19Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:19Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:19Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:19Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:20Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:20Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:20Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:20Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:20Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:20Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:20Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:20Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:20Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:20Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:20Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:20Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:20Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:20Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:21Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:21Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:21Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:21Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:21Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:21Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:21Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:21Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:21Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:21Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:22Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:22Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:22Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:22Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:22Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:22Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:22Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:22Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:22Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:22Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:23Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:23Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:23Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:23Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:23Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:23Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:23Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:23Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:23Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:23Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:24Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:24Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:24Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:24Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:24Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:24Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:24Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:24Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:24Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:24Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:25Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:25Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:25Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:25Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:25Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:25Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:25Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:25Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:25Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:25Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:25Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:25Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:25Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:25Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:26Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:26Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:26Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:26Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:26Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:26Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:26Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:26Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:26Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:26Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:27Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:27Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:27Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:27Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:27Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:27Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:27Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:27Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:27Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:27Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:28Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:28Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:28Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:28Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:28Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:28Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:28Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:28Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:28Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:28Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:29Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:29Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:29Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:29Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:29Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:29Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:29Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:29Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:29Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:29Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:30Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:30Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:30Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:30Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:30Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:30Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:30Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:30Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:30Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:30Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:31Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:31Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:31Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:31Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:31Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:31Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:31Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:31Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:31Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:31Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:32Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:32Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:32Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:32Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:32Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:32Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:32Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:32Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:32Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:32Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:32Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:32Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:33Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:33Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:33Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:33Z INFO  launcher_app::app] after toggle: visible=true
+[2026-11-02T06:30:33Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:33Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:33Z INFO  launcher_app::app] hotkey toggled; visible=true
+[2026-11-02T06:30:33Z INFO  launcher_app::app] after toggle: visible=false
+[2026-11-02T06:30:33Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:30:33Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:30:34Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:30:34Z INFO  launcher_app::app] show(): hwnd=0x450a50
+[2026-11-02T06:30:34Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:30:34Z INFO  launcher_app::app] after toggle: visible=true

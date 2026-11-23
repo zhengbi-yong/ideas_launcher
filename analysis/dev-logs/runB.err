@@ -1,0 +1,10 @@
+[2026-11-02T06:02:17Z INFO  launcher_app::app] global hotkey active: Ctrl + Space
+[2026-11-02T06:02:17Z INFO  launcher_app::app] native window handle: 0x3d11d2
+[2026-11-02T06:02:17Z INFO  launcher_app] launcher initialised in 318.4788ms
+[2026-11-02T06:02:17Z INFO  launcher_app::app] first frame painted; window hidden
+[2026-11-02T06:02:21Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T06:02:21Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T06:02:21Z INFO  launcher_app::app] hotkey toggled; visible=false
+[2026-11-02T06:02:21Z INFO  launcher_app::app] show(): hwnd=0x3d11d2
+[2026-11-02T06:02:21Z INFO  launcher_app::app] show(): done
+[2026-11-02T06:02:21Z INFO  launcher_app::app] after toggle: visible=true

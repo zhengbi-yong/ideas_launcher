@@ -1,0 +1,31 @@
+[package]
+name = "ideas-perf"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+# The benchmarks live in a project of their own, so that the launcher itself
+# stays free of dependencies. Criterion is a development dependency of this
+# project only — the program that the user runs never carries it.
+
+[dependencies]
+launcher-core = { path = "../crates/launcher-core" }
+launcher-index = { path = "../crates/launcher-index" }
+dirs = "6"
+rayon = "1"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "fs_search"
+harness = false
+
+[[bench]]
+name = "find_fold"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

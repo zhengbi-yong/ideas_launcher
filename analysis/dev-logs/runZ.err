@@ -1,0 +1,24 @@
+[2026-11-02T07:09:05.193Z INFO  launcher_app::app] global hotkey active: Ctrl + Space
+[2026-11-02T07:09:05.195Z INFO  launcher_app::app] native window handle: 0x4e0d46
+[2026-11-02T07:09:05.195Z INFO  launcher_app] launcher initialised in 328.4828ms
+[2026-11-02T07:09:05.197Z INFO  launcher_app::app] layout: viewport_rect=[[0.0 0.0] - [680.0 460.0]] ui.max_rect=[[0.0 0.0] - [680.0 460.0]] ui.min_rect=[[0.0 0.0] - [0.0 0.0]] size=[680.0 460.0]
+[2026-11-02T07:09:10.455Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:10.464Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:31.901Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:31.910Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:32.608Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:32.616Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:33.501Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:33.510Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:34.354Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:34.355Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:35.192Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:35.193Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:36.034Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:36.042Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:36.859Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:36.867Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:37.717Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:37.725Z INFO  launcher_app::app] hotkey fired
+[2026-11-02T07:09:38.590Z INFO  launcher_app::hotkey] hotkey thread: WM_HOTKEY received
+[2026-11-02T07:09:38.598Z INFO  launcher_app::app] hotkey fired

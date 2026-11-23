@@ -1,0 +1,16 @@
+# 构建产物（根与 perf/ 两处 cargo target）
+target/
+/dist/
+
+# FFmpeg 运行时（153MB LGPL 二进制，不入库；用 tools/fetch-ffmpeg.ps1 获取并校验）
+/runtime/ffmpeg/
+
+# 一次性诊断脚本（开发期临时测量，见 tools/ 与 analysis/dev-logs/）
+/tmp-diag/
+
+# 宿主编辑器配置（含机器绑定的绝对路径）
+/.zcode/
+
+# Windows 系统残留
+Thumbs.db
+Desktop.ini

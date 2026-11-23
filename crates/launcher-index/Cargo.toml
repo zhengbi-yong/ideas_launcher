@@ -1,0 +1,19 @@
+[package]
+name = "launcher-index"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Windows program indexing for the Rust quick launcher"
+
+[dependencies]
+launcher-core = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rayon = { workspace = true }
+parking_lot = { workspace = true }
+dirs = { workspace = true }
+log = { workspace = true }
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.55"
