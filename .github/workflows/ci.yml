@@ -26,23 +26,28 @@ jobs:
       - name: Install aoci v0.2.0-rc2
         shell: pwsh
         run: |
+          # Extract OUTSIDE the working tree: aoci scans the repo and any
+          # file dropped inside it becomes untracked drift.
+          $tmp = Join-Path $env:RUNNER_TEMP "aoci"
+          New-Item -ItemType Directory -Force -Path $tmp | Out-Null
+          $zip = Join-Path $tmp "aoci.zip"
           $url = "https://github.com/aoci-spec/aoci-code/releases/download/v0.2.0-rc2/aoci_0.2.0-rc2_windows_amd64.zip"
-          Invoke-WebRequest -Uri $url -OutFile aoci.zip
-          Expand-Archive aoci.zip -DestinationPath aoci-bin
+          Invoke-WebRequest -Uri $url -OutFile $zip
+          Expand-Archive $zip -DestinationPath (Join-Path $tmp "bin")
           # 与本仓建立索引时一致的 SHA-256（SHA256SUMS 中 windows_amd64 行）
           $expected = "a07fe6bc6476887ce411ebc58ed8633020e0ad964bf6303ddf608bee9787b2bc"
-          $actual = (Get-FileHash -Algorithm SHA256 aoci.zip).Hash.ToLowerInvariant()
+          $actual = (Get-FileHash -Algorithm SHA256 $zip).Hash.ToLowerInvariant()
           if ($actual -ne $expected) { throw "aoci archive checksum mismatch: $actual" }
+          Add-Content $env:GITHUB_PATH (Join-Path $tmp "bin")
       - name: Check cognition layer
         shell: pwsh
         run: |
-          # Diagnostics: what the runner's git thinks about line endings.
-          git config --list --show-origin | Select-String -Pattern "autocrlf|eol" | Write-Host
           # aoci check exits nonzero on drift itself; keep its raw output out
           # of the PowerShell pipe (encoding) via cmd redirection.
-          cmd /c ".\aoci-bin\aoci.exe --repo . check --json > check-out.json 2>&1"
+          $out = Join-Path $env:RUNNER_TEMP "check-out.json"
+          cmd /c "aoci.exe --repo . check --json > `"$out`" 2>&1"
           $code = $LASTEXITCODE
-          $raw = Get-Content check-out.json -Raw -Encoding UTF8
+          $raw = Get-Content $out -Raw -Encoding UTF8
           Write-Host ($raw.Substring(0, [Math]::Min(2500, $raw.Length)))
           if ($code -ne 0) {
             Write-Host "::error::AOCI cognition drift (aoci exit $code) — run aoci_maintain and commit updated cognition assets"

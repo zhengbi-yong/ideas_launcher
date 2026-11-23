@@ -646,5 +646,5 @@ verify-live-index.ps1[XQ4T]: F:实机验证：新建文件能否立刻搜到 | R
 fetch-ffmpeg.ps1[XV4T]: F:获取或校验随包FFmpeg运行时：按SHA-256锁定九个文件，支持-Url下载解包后核对 | R:code:README.md,code:packaging/IdeasLauncher.iss | A:- | S:FFmpeg（约153MB，LGPL）不入Git；哈希与本仓实测版本绑定，升级需同步改哈希并回归视频预览
 
 ===/<repository>/.github/workflows/===
-ci.yml[FV3T]: F:GitHub Actions流水线：Windows构建测试（cargo build/test --locked）与AOCI认知层守护（下载aoci、SHA-256校验、cmd重定向原始输出、退出码判定） | R:code:Cargo.toml | A:- | S:漂移即红牌：新受管文件须随同提交认知条目；勿用PS管道解析JSON（编码截断）
+ci.yml[FV3T]: F:GitHub Actions流水线：Windows构建测试（cargo build/test --locked）与AOCI认知守护（aoci解压到RUNNER_TEMP、SHA-256校验、退出码判定） | R:code:Cargo.toml | A:- | S:工具须解压在工作树外——落进仓库即成无条目漂移；漂移时红牌，须随同提交认知条目
 
