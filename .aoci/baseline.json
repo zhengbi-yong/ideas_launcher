@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-18T23:56:24Z",
-  "updated_at": "2026-11-23T09:21:27Z",
+  "updated_at": "2026-11-23T10:12:48Z",
   "files": {
     ".gitattributes": {
       "role": "index",
@@ -1854,9 +1854,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "57dc198239c54a1336f297e405e4e78843884e87ba5f76311d4bdcba8320f3a9",
-      "size": 69149,
-      "normalized_sha256": "57dc198239c54a1336f297e405e4e78843884e87ba5f76311d4bdcba8320f3a9"
+      "sha256": "8f65023214658dbd594f01cfd4b522e619bad025fd0c69e8017e0f892dd76aa9",
+      "size": 70379,
+      "normalized_sha256": "8f65023214658dbd594f01cfd4b522e619bad025fd0c69e8017e0f892dd76aa9"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -1927,6 +1927,42 @@
       "sha256": "2e70765a18ff10cf682478dbb0c5ff487195df809a31b0df7be414e1b4dea78e",
       "size": 199716,
       "normalized_sha256": "2e70765a18ff10cf682478dbb0c5ff487195df809a31b0df7be414e1b4dea78e"
+    },
+    "crates/launcher-app/src/app/actions.rs": {
+      "role": "index",
+      "sha256": "e6cac5f7b46ae06115a0d6034b44c2a1a8682bb00cb1e4f35a767d4cbe070e04",
+      "size": 11737,
+      "normalized_sha256": "e6cac5f7b46ae06115a0d6034b44c2a1a8682bb00cb1e4f35a767d4cbe070e04"
+    },
+    "crates/launcher-app/src/app/construct.rs": {
+      "role": "index",
+      "sha256": "3b2190fe21ad5da218e83df427d1ed16859fda0dd2a15f555c23971fd38b4767",
+      "size": 23859,
+      "normalized_sha256": "3b2190fe21ad5da218e83df427d1ed16859fda0dd2a15f555c23971fd38b4767"
+    },
+    "crates/launcher-app/src/app/eframe_impl.rs": {
+      "role": "index",
+      "sha256": "897dff7cbd8464fe225e2724fd640e8f385a98af7309a81122bfe2103987b0f9",
+      "size": 86918,
+      "normalized_sha256": "897dff7cbd8464fe225e2724fd640e8f385a98af7309a81122bfe2103987b0f9"
+    },
+    "crates/launcher-app/src/app/lifecycle.rs": {
+      "role": "index",
+      "sha256": "c80bd4f58f3b38b8094804250867c9c6d05103c6c9778b8111d21bd86b83bfbe",
+      "size": 10203,
+      "normalized_sha256": "c80bd4f58f3b38b8094804250867c9c6d05103c6c9778b8111d21bd86b83bfbe"
+    },
+    "crates/launcher-app/src/app/mod.rs": {
+      "role": "index",
+      "sha256": "9cff9840ee846d03bb2bb68952886ff0abbfe18d5144c6e88bac77b1872be7bc",
+      "size": 54166,
+      "normalized_sha256": "9cff9840ee846d03bb2bb68952886ff0abbfe18d5144c6e88bac77b1872be7bc"
+    },
+    "crates/launcher-app/src/app/query.rs": {
+      "role": "index",
+      "sha256": "43a7d5068bcc66082ba69f20b0d6e029a89f6f0531bc63a519481ca127836920",
+      "size": 13512,
+      "normalized_sha256": "43a7d5068bcc66082ba69f20b0d6e029a89f6f0531bc63a519481ca127836920"
     },
     "crates/launcher-app/src/bin/bench.rs": {
       "role": "index",

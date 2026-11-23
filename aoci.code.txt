@@ -463,7 +463,6 @@ probe_properties.rs[XA3T]: F:一次性探针：验证系统属性对话框能否
 windows_settings.json[FU4L]: F:WindowsSettings内置插件数据：ms-settings URI设置项清单（名称/分类/多语言） | R:code:crates/launcher-app/src/plugins/windows_settings.rs | A:- | S:外部数据快照，含zh/en/az等多语言字段
 
 ===/<repository>/crates/launcher-app/src/===
-app.rs[AU8L]: F:launcher主应用：egui界面编排、窗口显隐与动画、查询管线对接、结果列表与预览调度 | R:code:crates/launcher-core/src/engine.rs,code:crates/launcher-app/src/hotkey.rs | A:LauncherApp | S:窗口只创建一次常驻隐藏，不重建
 details.rs[CU6L]: F:预览面板的文件详情：只收集白送的信息（stat/版本），打开时才读盘 | R:code:crates/launcher-app/src/app.rs | A:- | S:-
 elevate.rs[RI5S]: F:提权重启：--admin经shell弹UAC启动第二个副本建全盘索引（对齐Everything做法） | R:code:crates/launcher-app/src/main.rs | A:relaunch_as_admin | S:-
 fonts.rs[RU5M]: F:字体装配：三张字体面的回退链，覆盖中文与符号 | R:code:crates/launcher-app/src/theme.rs | A:- | S:-
@@ -647,4 +646,12 @@ fetch-ffmpeg.ps1[XV4T]: F:获取或校验随包FFmpeg运行时：按SHA-256锁�
 
 ===/<repository>/.github/workflows/===
 ci.yml[FV3T]: F:GitHub Actions流水线：Windows构建测试（cargo build/test --locked）与AOCI认知守护（aoci解压到RUNNER_TEMP、SHA-256校验、退出码判定） | R:code:Cargo.toml | A:- | S:工具须解压在工作树外——落进仓库即成无条目漂移；漂移时红牌，须随同提交认知条目
+
+===/<repository>/crates/launcher-app/src/app/===
+actions.rs[AU6M]: F:结果操作：打开/复制/补全/选中移动/设置保存/视频准备/主题应用 | R:code:crates/launcher-app/src/app/mod.rs | A:- | S:-
+construct.rs[AU6L]: F:LauncherApp构造：插件注册/索引启动/热键与前台监视/IME开启 | R:code:crates/launcher-app/src/main.rs,code:crates/launcher-app/src/app/mod.rs | A:LauncherApp::new | S:自 app.rs 拆出的纯代码搬移，子模块可见私有字段
+eframe_impl.rs[AU8L]: F:eframe::App实现：logic帧调度与ui整体绘制（搜索框/列表/页脚/预览/设置） | R:code:crates/launcher-app/src/app/mod.rs,code:crates/launcher-app/src/app/query.rs | A:- | S:ui()约1700行，是渲染的主体；渲染后端一直是glow
+lifecycle.rs[RU5M]: F:窗口生命周期：设置面板打开/启动即显/帧率自适应/显隐/光标定位 | R:code:crates/launcher-app/src/app/mod.rs,code:crates/launcher-app/src/hotkey.rs | A:- | S:-
+mod.rs[AU8L]: F:app模块根：LauncherApp状态结构/HostApi/自由渲染辅助（菜单帧/行高/主题色板）/共享布局函数与测试 | R:code:crates/launcher-app/src/lib.rs | A:LauncherApp | S:子模块（construct/lifecycle/query/actions/eframe_impl）各管一个关注点，靠私有字段可见性保持纯搬移
+query.rs[AB6M]: F:查询管线：发查询/回收结果/应用结果/窗口高度适配与屏幕边界 | R:code:crates/launcher-core/src/engine.rs,code:crates/launcher-app/src/app/eframe_impl.rs | A:- | S:-
 
