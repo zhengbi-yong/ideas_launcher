@@ -40,6 +40,7 @@ type NtStatus = i32;
 const INVALID_HANDLE_VALUE: Handle = -1isize as Handle;
 
 const GENERIC_READ: Dword = 0x8000_0000;
+const GENERIC_WRITE: Dword = 0x4000_0000;
 const FILE_SHARE_READ: Dword = 0x0000_0001;
 const FILE_SHARE_WRITE: Dword = 0x0000_0002;
 const OPEN_EXISTING: Dword = 3;
@@ -51,6 +52,11 @@ const FSCTL_ENUM_USN_DATA: Dword = 0x0009_00B3;
 /// `CTL_CODE(FILE_DEVICE_FILE_SYSTEM, 40, METHOD_BUFFERED, FILE_ANY_ACCESS)`
 const FSCTL_QUERY_USN_JOURNAL: Dword = 0x0009_00F4;
 const FSCTL_READ_USN_JOURNAL: Dword = 0x0009_00BB;
+/// `CTL_CODE(FILE_DEVICE_FILE_SYSTEM, 57, METHOD_BUFFERED, FILE_ANY_ACCESS)`
+///
+/// 把一个没有变更日志的卷（`ERROR_JOURNAL_NOT_ACTIVE`，1179）变成有日志的卷。
+/// 只有带着 `GENERIC_WRITE` 的句柄、并且拿着「管理卷」的特权才能调用。
+const FSCTL_CREATE_USN_JOURNAL: Dword = 0x0009_00E7;
 
 /// The file attributes the index needs.
 pub const FILE_ATTRIBUTE_READONLY: u32 = 0x0000_0001;
@@ -147,6 +153,7 @@ struct MftEnumDataV0 {
 
 /// `USN_JOURNAL_DATA_V0`, the output of `FSCTL_READ_USN_JOURNAL`.
 #[repr(C)]
+#[derive(Clone, Copy, Debug)]
 pub struct UsnJournalDataV0 {
     pub usn_journal_id: u64,
     pub first_usn: i64,
@@ -591,7 +598,16 @@ pub fn journal_state(volume: &Volume) -> Option<UsnJournalDataV0> {
     let handle = unsafe {
         CreateFileW(
             wide(&volume.root).as_ptr(),
-            FILE_READ_ATTRIBUTES,
+            // The query wants the handle to **read** the volume, just like
+            // the read of the records does (`FSCTL_QUERY_USN_JOURNAL` checks
+            // the rights the handle carries, not the ones the process has).
+            // This used to open with `FILE_READ_ATTRIBUTES`, the query was
+            // turned down, and every caller of this function then fell back
+            // to zero — the place to read from, and the number of the
+            // journal itself. Reading from zero fails with
+            // `ERROR_JOURNAL_ENTRY_DELETED` (1181) for ever, which is what
+            // kept the whole-disk index from ever following the changes.
+            GENERIC_READ,
             FILE_SHARE_READ | FILE_SHARE_WRITE,
             std::ptr::null_mut(),
             OPEN_EXISTING,
@@ -644,6 +660,143 @@ pub fn journal_state_at(root: &str) -> Option<UsnJournalDataV0> {
         device: String::new(),
         label: String::new(),
     })
+}
+
+/// The input of `FSCTL_CREATE_USN_JOURNAL`.
+///
+/// Both fields at zero tell the file system to pick its own sizes, which is
+/// what `fsutil usn createjournal` does when the numbers are left out.
+#[repr(C)]
+struct CreateUsnJournalData {
+    maximum_size: u64,
+    allocation_delta: u64,
+}
+
+/// Make the change journal of a volume that has none.
+///
+/// A volume without a journal (`ERROR_JOURNAL_NOT_ACTIVE`, 1179) can never
+/// be followed — until one is made. The call needs the handle to open the
+/// volume **for writing** and the「管理卷」privilege, which is why it lives
+/// behind the same privilege dance as the reading of the records.
+///
+/// The journal starts empty, so the place to read from afterwards is the
+/// `next_usn` that [`journal_state`] reports right after this call returns.
+pub fn create_journal(volume: &Volume) -> Result<(), u32> {
+    let _ = enable_manage_volume_privilege();
+    let handle = unsafe {
+        CreateFileW(
+            wide(&volume.root).as_ptr(),
+            // Creating the journal is a write to the volume, so the handle
+            // has to carry the write right — the read right of the other
+            // calls is not enough here.
+            GENERIC_READ | GENERIC_WRITE,
+            FILE_SHARE_READ | FILE_SHARE_WRITE,
+            std::ptr::null_mut(),
+            OPEN_EXISTING,
+            FILE_FLAG_BACKUP_SEMANTICS,
+            std::ptr::null_mut(),
+        )
+    };
+    if handle == INVALID_HANDLE_VALUE {
+        return Err(unsafe { GetLastError() });
+    }
+    let request = CreateUsnJournalData {
+        maximum_size: 0,
+        allocation_delta: 0,
+    };
+    let mut returned = 0u32;
+    let ok = unsafe {
+        DeviceIoControl(
+            handle,
+            FSCTL_CREATE_USN_JOURNAL,
+            (&request as *const CreateUsnJournalData).cast(),
+            std::mem::size_of::<CreateUsnJournalData>() as Dword,
+            std::ptr::null_mut(),
+            0,
+            &mut returned,
+            std::ptr::null_mut(),
+        )
+    };
+    unsafe { CloseHandle(handle) };
+    if ok == 0 {
+        return Err(unsafe { GetLastError() });
+    }
+    Ok(())
+}
+
+/// What to do after a round could not read the change journal.
+///
+/// The codes are the ones the system hands back through
+/// [`read_journal_raw`]; the plan is decided from the code and the state of
+/// the journal as it stands **now** — the state that is queried fresh for
+/// every decision, not a copy that might be stale.
+#[derive(Debug, PartialEq, Eq)]
+pub enum JournalRecovery {
+    /// Log it and try the same place again — the right answer when the
+    /// failure looks like nothing this module can fix (an access right the
+    /// process does not have, for instance).
+    Retry,
+    /// The journal is there but the place is not in it any more, or there is
+    /// no place yet: go on from the newest record. Changes that happened
+    /// while the place was stale are lost — the caller has to make up for
+    /// that in its own way (this is also why the plan is only acted on when
+    /// the failures have stacked up).
+    Reanchor(i64),
+    /// The volume has no journal at all: make one, then go on from the
+    /// newest record.
+    CreateJournal,
+    /// The place has fallen out of the ring and the gap cannot be covered:
+    /// the table has to be read off the disk again.
+    Rebuild,
+}
+
+/// Decide what to do about a change journal that could not be read.
+///
+/// The three codes this actually tells apart:
+///
+/// * `ERROR_JOURNAL_NOT_ACTIVE` (1179) — the volume has no journal. Making
+///   one is the fix; from then on the volume is followable.
+/// * `ERROR_JOURNAL_ENTRY_DELETED` (1181) — the place that was asked for is
+///   older than the oldest record still in the ring. The records in between
+///   are gone, so no reading can cover the gap: the table is read again.
+/// * anything else — not this module's call to make. Retry with the same
+///   place, and let the log say which code it is.
+pub fn journal_recovery_plan(
+    code: u32,
+    state: Option<UsnJournalDataV0>,
+    point: i64,
+) -> JournalRecovery {
+    match code {
+        1179 => match state {
+            // The query and the read disagree: the query says there is a
+            // journal, the read says there is not. Trust the query and go on
+            // from where it says the journal stands.
+            Some(state) => JournalRecovery::Reanchor(state.next_usn),
+            None => JournalRecovery::CreateJournal,
+        },
+        1181 => {
+            let Some(state) = state else {
+                // The query itself failed — nothing to decide from. Trying
+                // the same place again costs nothing.
+                return JournalRecovery::Retry;
+            };
+            if point < state.first_usn {
+                // Everything before `first_usn` has been recycled, and the
+                // place is behind that line. The stretch in between cannot
+                // be read from anywhere — the table has to be built again
+                // from the master file table, which also writes a fresh
+                // place into itself.
+                JournalRecovery::Rebuild
+            } else {
+                // The place is inside the ring after all: the failure came
+                // from somewhere else (a wrong number of the journal, for
+                // instance). Going on from the newest record is the fastest
+                // way back.
+                JournalRecovery::Reanchor(state.next_usn)
+            }
+        }
+        _ => JournalRecovery::Retry,
+    }
 }
 
 /// The control codes this module uses, with the names from `winioctl.h`.
@@ -2454,6 +2607,87 @@ mod tests {
     fn filetime_conversion_matches_the_unix_epoch() {
         let ticks = 116_444_736_000_000_000u64.to_le_bytes();
         assert_eq!(filetime_to_unix(&ticks), 0);
+    }
+
+    /// A journal that stands with its ring between these two numbers.
+    fn journal_state_fixture() -> UsnJournalDataV0 {
+        UsnJournalDataV0 {
+            usn_journal_id: 0x1234,
+            first_usn: 1_000_000,
+            next_usn: 9_000_000,
+            lowest_valid_usn: 1_000_000,
+            max_usn: 0,
+            maximum_size: 0,
+            allocation_delta: 0,
+        }
+    }
+
+    #[test]
+    fn a_volume_without_a_journal_gets_one_made() {
+        // 1179 with a query that also failed: making the journal is the only
+        // way a volume like this ever becomes followable.
+        assert_eq!(
+            journal_recovery_plan(1179, None, 0),
+            JournalRecovery::CreateJournal
+        );
+    }
+
+    #[test]
+    fn a_read_that_disagrees_with_a_working_query_anchors_on_the_query() {
+        // 1179 but the query says the journal is there: trust the query and
+        // go on from its newest record.
+        let state = journal_state_fixture();
+        assert_eq!(
+            journal_recovery_plan(1179, Some(state.clone()), 0),
+            JournalRecovery::Reanchor(state.next_usn)
+        );
+    }
+
+    #[test]
+    fn a_place_that_the_ring_has_recycled_needs_a_rebuild() {
+        // 1181 with the place behind the oldest record still in the ring:
+        // the gap cannot be read from anywhere.
+        let state = journal_state_fixture();
+        assert_eq!(
+            journal_recovery_plan(1181, Some(state.clone()), 500_000),
+            JournalRecovery::Rebuild
+        );
+        // Exactly on the line is already outside — the records start at the
+        // first one.
+        assert_eq!(
+            journal_recovery_plan(1181, Some(state.clone()), state.first_usn - 1),
+            JournalRecovery::Rebuild
+        );
+    }
+
+    #[test]
+    fn a_place_inside_the_ring_is_anchored_on_the_newest_record() {
+        // 1181 with a place that is actually still in the ring: the failure
+        // came from something else, and going on from the newest record is
+        // the fastest way back.
+        let state = journal_state_fixture();
+        assert_eq!(
+            journal_recovery_plan(1181, Some(state.clone()), 2_000_000),
+            JournalRecovery::Reanchor(state.next_usn)
+        );
+    }
+
+    #[test]
+    fn a_failed_query_during_a_deleted_entry_is_a_plain_retry() {
+        // 1181 without a state to decide from: retrying costs nothing.
+        assert_eq!(journal_recovery_plan(1181, None, 0), JournalRecovery::Retry);
+    }
+
+    #[test]
+    fn codes_this_module_does_not_decide_about_are_retried() {
+        // Access rights the process does not have, and whatever else the
+        // system can say: not this module's call to make.
+        assert_eq!(journal_recovery_plan(5, None, 0), JournalRecovery::Retry);
+        let state = journal_state_fixture();
+        assert_eq!(
+            journal_recovery_plan(1784, Some(state), 0),
+            JournalRecovery::Retry
+        );
     }
 
     #[test]

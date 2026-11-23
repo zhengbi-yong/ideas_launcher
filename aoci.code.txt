@@ -555,7 +555,7 @@ fsindex.rs[PB8L]: F:全盘文件索引：NTFS直读构建与原地刷新 | R:cod
 lib.rs[LB6T]: F:launcher-index根：程序/文件索引模块声明 | R:code:crates/launcher-index/Cargo.toml | A:- | S:-
 lnk.rs[KB6L]: F:纯Rust的.lnk快捷方式解析器 | R:code:crates/launcher-app/src/bin/lnk-dump.rs | A:- | S:路径字段按机器ACP解码；GBK(936)与CP1252各有断言分支，CP1252下这四字节与Latin-1重合
 mft.rs[KB8L]: F:NTFS主文件表直读：原始字节解析MFT记录 | R:code:analysis/EVERYTHING-REPORT.md,code:crates/launcher-index/src/fsindex.rs | A:- | S:需管理员权限；BPB/属性偏移取证见逆向报告§2
-usn.rs[KB7L]: F:USN/MFT枚举接口的NTFS索引：变更日志跟随 | R:code:analysis/RELEASE-GAP.md | A:- | S:日志句柄需FILE_READ_DATA（错误5教训）
+usn.rs[KB7L]: F:USN/MFT枚举接口的NTFS索引：变更日志跟随、状态查询与日志创建、失败恢复计划 | R:code:analysis/RELEASE-GAP.md,code:crates/launcher-service/src/server.rs | A:journal_state,read_journal,create_journal,journal_recovery_plan | S:卷句柄须GENERIC_READ（QUERY与READ都要读数据权，attributes句柄让state全退化为0→1181永续）；日志句柄需FILE_READ_DATA（错误5教训）
 uwp.rs[IB6L]: F:UWP/微软商店应用索引 | R:code:crates/launcher-app/src/plugins/uwp.rs | A:- | S:-
 watch.rs[RB6L]: F:免管理员的目录变更监视 | R:code:crates/launcher-app/src/plugins/files.rs | A:- | S:USN要管理员时的替代路径
 win32.rs[IB7L]: F:Win32程序索引：六源程序枚举（开始菜单/注册表等） | R:code:analysis/REPORT.md | A:- | S:-
@@ -564,8 +564,8 @@ win32.rs[IB7L]: F:Win32程序索引：六源程序枚举（开始菜单/注册�
 Cargo.toml[FC6T]: F:launcher-service crate清单：全盘索引服务 | R:code:crates/launcher-service/src/main.rs | A:- | S:-
 
 ===/<repository>/crates/launcher-service/src/===
-main.rs[ER6L]: F:服务可执行入口 | R:code:crates/launcher-service/src/server.rs | A:main | S:-
-server.rs[IR7L]: F:索引服务端：持有全盘索引并经命名管道应答launcher | R:code:crates/launcher-core/src/service.rs | A:- | S:退出前上报结束状态，防僵尸进程
+main.rs[ER6L]: F:服务可执行入口：提权重启、管道服务与自引用装配（set_self供恢复重建取Arc） | R:code:crates/launcher-service/src/server.rs | A:main | S:-
+server.rs[IR7L]: F:索引服务端：持有全盘索引并经命名管道应答launcher，监视线程带失败恢复（重锚点/建日志/触发重建） | R:code:crates/launcher-core/src/service.rs,code:crates/launcher-index/src/usn.rs | A:follow_journal,recover_journal | S:重建完成后必须从新表重播种journal_from，否则监视线程从0读→1181永续；退出前上报结束状态防僵尸
 winapi.rs[IR5L]: F:服务所需的Win32声明 | R:code:crates/launcher-service/src/server.rs | A:- | S:-
 
 ===/<repository>/docs/design-system/===

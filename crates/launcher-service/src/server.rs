@@ -99,6 +99,11 @@ pub struct Service {
     stop: AtomicBool,
     /// The folder of the user the service serves.
     profile: String,
+    /// This very service, as the `Arc` its owner holds. The threads that are
+    /// spawned out of `&self` (the rebuild the journal recovery asks for)
+    /// need to hand the *owned* half on, and a `Weak` here is the only way
+    /// for the value to reach its own methods without a cycle.
+    self_ref: std::sync::Mutex<std::sync::Weak<Service>>,
 }
 
 impl Service {
@@ -116,7 +121,24 @@ impl Service {
             ready: AtomicBool::new(false),
             stop: AtomicBool::new(false),
             profile,
+            self_ref: std::sync::Mutex::new(std::sync::Weak::new()),
         }
+    }
+
+    /// Let the service know the `Arc` that owns it.
+    ///
+    /// Called once by whoever creates the `Arc`, before any thread is
+    /// spawned. The rebuild of the journal recovery takes a strong reference
+    /// out of this, so that the work it spawns outlives the call.
+    pub(crate) fn set_self(&self, arc: &std::sync::Arc<Service>) {
+        if let Ok(mut slot) = self.self_ref.lock() {
+            *slot = std::sync::Arc::downgrade(arc);
+        }
+    }
+
+    /// This service, owned — or nothing, before [`Self::set_self`] ran.
+    fn self_arc(&self) -> Option<std::sync::Arc<Service>> {
+        self.self_ref.lock().ok().and_then(|slot| slot.upgrade())
     }
 
     /// Where the index is kept.
@@ -432,6 +454,34 @@ impl Service {
         }
         let mut fresh = fresh;
         fresh.set_fresh_at(fresh.stamp());
+        // The place of the change journal, as the fresh table carries it: it
+        // was taken **before** every volume was read, so going on from here
+        // replays the stretch of the reading itself — nothing is lost, and
+        // the entries that were read twice are simply read twice.
+        //
+        // **This is what the journal thread reads its place from, and it has
+        // to be seeded here.** The thread waits for the table to be ready and
+        // then reads from `journal_from` — a list that only the successful
+        // rounds of the thread itself ever write. On a machine where the
+        // first round failed (a stale place, a missing journal), the list
+        // stayed empty and the thread read from place zero for ever, which
+        // the journal answers with `ERROR_JOURNAL_ENTRY_DELETED` (1181) every
+        // single round.
+        {
+            let mut guard = self
+                .index
+                .write()
+                .unwrap_or_else(|error| error.into_inner());
+            if let Some(index) = guard.as_mut() {
+                for (volume, point) in index
+                    .volumes()
+                    .iter()
+                    .zip(index.journal_points().iter())
+                {
+                    self.set_journal_point(&volume.root, *point as i64);
+                }
+            }
+        }
         *self.index.write().unwrap_or_else(|error| error.into_inner()) = Some(fresh);
         self.building.store(false, Ordering::SeqCst);
     }
@@ -505,6 +555,12 @@ impl Service {
                                 volume.root
                             );
                         }
+                        // The recovery acts on the first failure of a streak;
+                        // when it resets the state of the volume (a new place,
+                        // a new journal), the counting starts from one again.
+                        if self.recover_journal(&volume.root.clone(), volume, code, count) {
+                            failures.retain(|(root, _)| root != &volume.root);
+                        }
                     }
                 }
             }
@@ -536,6 +592,97 @@ impl Service {
         // that they are not lost.
         self.write_changes();
         self.journal.store(false, Ordering::SeqCst);
+    }
+
+    /// Act on a change journal that could not be read.
+    ///
+    /// The plan comes from [`launcher_index::usn::journal_recovery_plan`],
+    /// which only sees the code of the failure and the state of the journal
+    /// as it stands now. What this does about the plan:
+    ///
+    /// * **Reanchor** — the reading goes on from the newest record. The
+    ///   changes between the stale place and the newest record are gone; the
+    ///   changes file covers what it can, and the rest shows up the next
+    ///   time the table is read (once a day, or through the rebuild below).
+    /// * **CreateJournal** — the volume had no journal. One is made, and
+    ///   from then on the volume is followable like any other.
+    /// * **Rebuild** — the place has fallen out of the ring and the gap
+    ///   cannot be read from anywhere: the table is read off the disk again,
+    ///   in a thread of its own (the same thing the「重建索引」button does).
+    ///   This only fires on the **first** failure of a streak — if the
+    ///   rebuild does not cure the reading, hammering it every round would
+    ///   only keep the disk busy.
+    /// Act on a change journal that could not be read.
+    ///
+    /// The plan comes from [`launcher_index::usn::journal_recovery_plan`],
+    /// which only sees the code of the failure and the state of the journal
+    /// as it stands now. What this does about the plan:
+    ///
+    /// * **Reanchor** — the reading goes on from the newest record. The
+    ///   changes between the stale place and the newest record are gone; the
+    ///   changes file covers what it can, and the rest shows up the next
+    ///   time the table is read (once a day, or through the rebuild below).
+    /// * **CreateJournal** — the volume had no journal. One is made, and
+    ///   from then on the volume is followable like any other.
+    /// * **Rebuild** — the place has fallen out of the ring and the gap
+    ///   cannot be read from anywhere: the table is read off the disk again,
+    ///   in a thread of its own (the same thing the「重建索引」button does).
+    ///   This only fires on the **first** failure of a streak — if the
+    ///   rebuild does not cure the reading, hammering it every round would
+    ///   only keep the disk busy.
+    ///
+    /// Returns whether the recovery has reset the state of the volume (a new
+    /// place, a new journal) — the caller clears the failure streak then, so
+    /// the next real failure starts counting from one again.
+    fn recover_journal(
+        &self,
+        root: &str,
+        volume: &usn::Volume,
+        code: u32,
+        streak: u32,
+    ) -> bool {
+        let state = usn::journal_state(volume);
+        let point = self.journal_point(root);
+        match usn::journal_recovery_plan(code, state, point) {
+            launcher_index::usn::JournalRecovery::Retry => false,
+            launcher_index::usn::JournalRecovery::Reanchor(next) => {
+                log::info!(
+                    "the change journal of {root} goes on from the newest record ({code})"
+                );
+                self.set_journal_point(root, next);
+                true
+            }
+            launcher_index::usn::JournalRecovery::CreateJournal => {
+                match usn::create_journal(volume) {
+                    Ok(()) => {
+                        log::info!("a change journal was made for {root}");
+                        if let Some(state) = usn::journal_state(volume) {
+                            self.set_journal_point(root, state.next_usn);
+                        }
+                        true
+                    }
+                    Err(error) => {
+                        log::warn!("a change journal could not be made for {root} ({error})");
+                        false
+                    }
+                }
+            }
+            launcher_index::usn::JournalRecovery::Rebuild => {
+                if streak == 1 {
+                    log::warn!(
+                        "the place of the change journal of {root} has fallen out of the ring — \
+                         the table is read again"
+                    );
+                    if let Some(builder) = self.self_arc() {
+                        std::thread::Builder::new()
+                            .name("index-rebuild".into())
+                            .spawn(move || builder.build())
+                            .ok();
+                    }
+                }
+                false
+            }
+        }
     }
 
     /// Read the change journal of one volume and bring the table up to date.

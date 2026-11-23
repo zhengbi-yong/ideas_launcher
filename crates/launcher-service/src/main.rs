@@ -252,6 +252,9 @@ unsafe extern "system" fn control_handler(control: DWORD, _event: u32, _context:
 /// The work of the service: the index, the journal and the pipe.
 fn start_work(profile: &str) -> Arc<Service> {
     let service = Arc::new(Service::new(profile.to_string()));
+    // The rebuild that the journal recovery asks for takes the owned half
+    // out of the service itself — without this it has no way to reach it.
+    service.set_self(&service);
     let _ = RUNNING.set(service.clone());
 
     // The saved table first: the service answers questions right away, and

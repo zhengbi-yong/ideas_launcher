@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-18T23:56:24Z",
-  "updated_at": "2026-11-23T10:12:48Z",
+  "updated_at": "2026-11-23T19:15:50Z",
   "files": {
     ".gitattributes": {
       "role": "index",
@@ -1854,9 +1854,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "8f65023214658dbd594f01cfd4b522e619bad025fd0c69e8017e0f892dd76aa9",
-      "size": 70379,
-      "normalized_sha256": "8f65023214658dbd594f01cfd4b522e619bad025fd0c69e8017e0f892dd76aa9"
+      "sha256": "a0496117561954ece626fc639fe76c086ceb5980498b4d632ad4841d7ed20d13",
+      "size": 70955,
+      "normalized_sha256": "a0496117561954ece626fc639fe76c086ceb5980498b4d632ad4841d7ed20d13"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -2440,9 +2440,9 @@
     },
     "crates/launcher-index/src/usn.rs": {
       "role": "index",
-      "sha256": "299c1694af3b0b727ec5083f4657ae53b5c707752a3ae5b0808025cc265c244d",
-      "size": 96738,
-      "normalized_sha256": "299c1694af3b0b727ec5083f4657ae53b5c707752a3ae5b0808025cc265c244d"
+      "sha256": "f9fe2651091701f09f2e5d47140ee27aa38b8221dec0aa50d42876a9aaa23a8c",
+      "size": 106329,
+      "normalized_sha256": "f9fe2651091701f09f2e5d47140ee27aa38b8221dec0aa50d42876a9aaa23a8c"
     },
     "crates/launcher-index/src/uwp.rs": {
       "role": "index",
@@ -2470,15 +2470,15 @@
     },
     "crates/launcher-service/src/main.rs": {
       "role": "index",
-      "sha256": "665ecf296ccdb71a74cc4ae7d619329c92826674a194090e867c646dc8e6ffcd",
-      "size": 35194,
-      "normalized_sha256": "665ecf296ccdb71a74cc4ae7d619329c92826674a194090e867c646dc8e6ffcd"
+      "sha256": "4ce9dca98e2088285e8da77a578929c77f522cc9e903aa98e6f70de2299ed41f",
+      "size": 35378,
+      "normalized_sha256": "4ce9dca98e2088285e8da77a578929c77f522cc9e903aa98e6f70de2299ed41f"
     },
     "crates/launcher-service/src/server.rs": {
       "role": "index",
-      "sha256": "379d0e3ec02a4e969abe2cb68bc02a192836ceaf934b333d57283e9fc278a557",
-      "size": 43665,
-      "normalized_sha256": "379d0e3ec02a4e969abe2cb68bc02a192836ceaf934b333d57283e9fc278a557"
+      "sha256": "0a6401da3a5655f5937bda9bd1a343b469cf07edf391e6589b421bb9f30e0463",
+      "size": 51081,
+      "normalized_sha256": "0a6401da3a5655f5937bda9bd1a343b469cf07edf391e6589b421bb9f30e0463"
     },
     "crates/launcher-service/src/winapi.rs": {
       "role": "index",
