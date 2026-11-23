@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  build-test:
+    name: Build & Test (windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Build
+        run: cargo build --workspace --locked
+      - name: Test
+        run: cargo test --workspace --locked
+
+  cognition:
+    name: AOCI cognition drift check
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install aoci v0.2.0-rc2
+        shell: pwsh
+        run: |
+          $url = "https://github.com/aoci-spec/aoci-code/releases/download/v0.2.0-rc2/aoci_0.2.0-rc2_windows_amd64.zip"
+          Invoke-WebRequest -Uri $url -OutFile aoci.zip
+          Expand-Archive aoci.zip -DestinationPath aoci-bin
+          # 与本仓建立索引时一致的 SHA-256（SHA256SUMS 中 windows_amd64 行）
+          $expected = "a07fe6bc6476887ce411ebc58ed8633020e0ad964bf6303ddf608bee9787b2bc"
+          $actual = (Get-FileHash -Algorithm SHA256 aoci.zip).Hash.ToLowerInvariant()
+          if ($actual -ne $expected) { throw "aoci archive checksum mismatch: $actual" }
+      - name: Check cognition layer
+        shell: pwsh
+        run: |
+          $out = ./aoci-bin/aoci.exe --repo . check --json | ConvertFrom-Json
+          if (-not $out.governance_aligned) {
+            Write-Host "::error::AOCI cognition drift detected (missing/orphan/stale) — run aoci_maintain and commit the updated cognition assets"
+            exit 1
+          }
+          Write-Host "AOCI cognition aligned."
