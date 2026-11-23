@@ -542,9 +542,11 @@ mod tests {
         let decoded = decode_ansi(&bytes);
         if code_page() == 936 {
             assert_eq!(decoded, "中文");
-        } else {
+        } else if code_page() != 1252 {
             // Some other code page: the bytes are read in *that* page, which
-            // is not the Latin-1 reading of them.
+            // is not the Latin-1 reading of them. CP1252 (the en-US CI
+            // runner) is the exception: these four bytes map to the same
+            // glyphs as Latin-1 there, so the readings coincide.
             assert_ne!(decoded, "ÖÐÎÄ");
         }
     }

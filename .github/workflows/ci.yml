@@ -36,9 +36,16 @@ jobs:
       - name: Check cognition layer
         shell: pwsh
         run: |
-          $out = ./aoci-bin/aoci.exe --repo . check --json | ConvertFrom-Json
-          if (-not $out.governance_aligned) {
-            Write-Host "::error::AOCI cognition drift detected (missing/orphan/stale) — run aoci_maintain and commit the updated cognition assets"
-            exit 1
+          # Diagnostics: what the runner's git thinks about line endings.
+          git config --list --show-origin | Select-String -Pattern "autocrlf|eol" | Write-Host
+          # aoci check exits nonzero on drift itself; keep its raw output out
+          # of the PowerShell pipe (encoding) via cmd redirection.
+          cmd /c ".\aoci-bin\aoci.exe --repo . check --json > check-out.json 2>&1"
+          $code = $LASTEXITCODE
+          $raw = Get-Content check-out.json -Raw -Encoding UTF8
+          Write-Host ($raw.Substring(0, [Math]::Min(2500, $raw.Length)))
+          if ($code -ne 0) {
+            Write-Host "::error::AOCI cognition drift (aoci exit $code) — run aoci_maintain and commit updated cognition assets"
+            exit $code
           }
           Write-Host "AOCI cognition aligned."
