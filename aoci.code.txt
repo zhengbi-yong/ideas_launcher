@@ -551,7 +551,6 @@ usn_read_probe.rs[XA4T]: F:探针：试读变更日志的几种方式，看内�
 ===/<repository>/crates/launcher-index/src/===
 cache.rs[PD5S]: F:索引缓存持久化 | R:code:crates/launcher-app/src/paths.rs | A:- | S:-
 files.rs[DB7L]: F:文件与文件夹搜索：实时索引上的查询实现 | R:code:crates/launcher-app/src/plugins/files.rs | A:- | S:-
-fsindex.rs[PB8L]: F:全盘文件索引：NTFS直读构建与原地刷新 | R:code:crates/launcher-index/src/mft.rs,code:crates/launcher-index/src/usn.rs | A:- | S:-
 lib.rs[LB6T]: F:launcher-index根：程序/文件索引模块声明 | R:code:crates/launcher-index/Cargo.toml | A:- | S:-
 lnk.rs[KB6L]: F:纯Rust的.lnk快捷方式解析器 | R:code:crates/launcher-app/src/bin/lnk-dump.rs | A:- | S:路径字段按机器ACP解码；GBK(936)与CP1252各有断言分支，CP1252下这四字节与Latin-1重合
 mft.rs[KB8L]: F:NTFS主文件表直读：原始字节解析MFT记录 | R:code:analysis/EVERYTHING-REPORT.md,code:crates/launcher-index/src/fsindex.rs | A:- | S:需管理员权限；BPB/属性偏移取证见逆向报告§2
@@ -654,4 +653,15 @@ eframe_impl.rs[AU8L]: F:eframe::App实现：logic帧调度与ui整体绘制（�
 lifecycle.rs[RU5M]: F:窗口生命周期：设置面板打开/启动即显/帧率自适应/显隐/光标定位 | R:code:crates/launcher-app/src/app/mod.rs,code:crates/launcher-app/src/hotkey.rs | A:- | S:-
 mod.rs[AU8L]: F:app模块根：LauncherApp状态结构/HostApi/自由渲染辅助（菜单帧/行高/主题色板）/共享布局函数与测试 | R:code:crates/launcher-app/src/lib.rs | A:LauncherApp | S:子模块（construct/lifecycle/query/actions/eframe_impl）各管一个关注点，靠私有字段可见性保持纯搬移
 query.rs[AB6M]: F:查询管线：发查询/回收结果/应用结果/窗口高度适配与屏幕边界 | R:code:crates/launcher-core/src/engine.rs,code:crates/launcher-app/src/app/eframe_impl.rs | A:- | S:-
+
+===/<repository>/crates/launcher-index/src/fsindex/===
+build.rs[AU5S]: F:增量填充接口：prepare/finish卷区间、journal point写入与逐条add（EntrySink消费端） | R:code:crates/launcher-index/src/fsindex/mod.rs,code:crates/launcher-index/src/fsindex/sink.rs | A:- | S:重建（Rebuild）与每日刷新都走这条路径；纯搬移自fsindex.rs
+core.rs[AU8L]: F:FsIndex主体实现：查询（掩码过滤/评分/路径谓词）、缓存存取、变更应用与原地刷新 | R:code:crates/launcher-index/src/fsindex/mod.rs,code:crates/launcher-core/src/search_syntax.rs | A:- | S:纯搬移自fsindex.rs（原1938行impl块）；子模块靠私有字段可见性保持等价
+frn.rs[DA3T]: F:FrnMap：文件引用号到条目的开放寻址表（乘移哈希，键已为整数） | R:code:crates/launcher-index/src/fsindex/sink.rs | A:- | S:比HashMap省约210MB内存（919万条）；表建完即弃
+masks.rs[KP3S]: F:字符/词元的过滤位掩码计算：name_mask、required_mask与term_mask | R:code:crates/launcher-core/src/matcher.rs | A:- | S:桶化过滤只能排除不可能命中的候选，反向不成立
+mod.rs[AU8L]: F:fsindex模块根：FsIndex结构/条目与卷元数据类型/IndexChange/Exclusions/journal_changes及测试 | R:code:crates/launcher-index/src/lib.rs,code:crates/launcher-service/src/server.rs | A:FsIndex | S:子模块（core/build/sink等）按关注点拆分，靠私有字段可见性保持纯搬移；EntrySink对外公开
+reader.rs[PD3T]: F:FileReader：索引缓存文件的分块BufReader | R:code:crates/launcher-index/src/fsindex/core.rs | A:- | S:-
+search.rs[CU3T]: F:IndexTarget：实现SearchTarget的索引条目视图（路径/别名/掩码惰性构建） | R:code:crates/launcher-core/src/search_syntax.rs | A:- | S:路径按需上溯构建，不常驻
+sink.rs[DA6M]: F:EntrySink：MFT枚举的条目汇聚端（含Lookup二分定位与父引用回填） | R:code:crates/launcher-index/src/fsindex/mod.rs,code:crates/launcher-index/src/fsindex/frn.rs | A:- | S:纯搬移自fsindex.rs；字段对fsindex树内可见
+writer.rs[PD3S]: F:ChunkWriter：索引文件分块写出，配io_priority低优先级写盘 | R:code:crates/launcher-index/src/fsindex/core.rs | A:- | S:块间暂停+低IO优先级：写索引不挡画面渲染
 

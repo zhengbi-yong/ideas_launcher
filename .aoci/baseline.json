@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-18T23:56:24Z",
-  "updated_at": "2026-11-23T19:15:50Z",
+  "updated_at": "2026-11-23T22:55:21Z",
   "files": {
     ".gitattributes": {
       "role": "index",
@@ -1854,9 +1854,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "a0496117561954ece626fc639fe76c086ceb5980498b4d632ad4841d7ed20d13",
-      "size": 70955,
-      "normalized_sha256": "a0496117561954ece626fc639fe76c086ceb5980498b4d632ad4841d7ed20d13"
+      "sha256": "55e138138091083773143cbcf6a8ab084af148d5646496ced6eb7e3d0a4d2319",
+      "size": 73085,
+      "normalized_sha256": "55e138138091083773143cbcf6a8ab084af148d5646496ced6eb7e3d0a4d2319"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -2419,6 +2419,60 @@
       "sha256": "3cb2dbf146a1e0c49c79b723edfd0903e7e000855f56e2dd2b47cca69a57282f",
       "size": 156161,
       "normalized_sha256": "3cb2dbf146a1e0c49c79b723edfd0903e7e000855f56e2dd2b47cca69a57282f"
+    },
+    "crates/launcher-index/src/fsindex/build.rs": {
+      "role": "index",
+      "sha256": "9b89e0d9fca3d44661b374983f26672a3db738eff4d62583a309d39824d3770c",
+      "size": 4084,
+      "normalized_sha256": "9b89e0d9fca3d44661b374983f26672a3db738eff4d62583a309d39824d3770c"
+    },
+    "crates/launcher-index/src/fsindex/core.rs": {
+      "role": "index",
+      "sha256": "d618046bef05d262e6f348ab9701851fd2d33a7a03a1c09fe83b44c408907821",
+      "size": 79017,
+      "normalized_sha256": "d618046bef05d262e6f348ab9701851fd2d33a7a03a1c09fe83b44c408907821"
+    },
+    "crates/launcher-index/src/fsindex/frn.rs": {
+      "role": "index",
+      "sha256": "345de2e93094535f5fe16ad9ac64821ce5161bc54b35e4431baa49b40c28e57a",
+      "size": 2539,
+      "normalized_sha256": "345de2e93094535f5fe16ad9ac64821ce5161bc54b35e4431baa49b40c28e57a"
+    },
+    "crates/launcher-index/src/fsindex/masks.rs": {
+      "role": "index",
+      "sha256": "a9f2d461139c428e60601c6a594d76d866bb7a141b3636848fb9aead4eb4ca66",
+      "size": 3291,
+      "normalized_sha256": "a9f2d461139c428e60601c6a594d76d866bb7a141b3636848fb9aead4eb4ca66"
+    },
+    "crates/launcher-index/src/fsindex/mod.rs": {
+      "role": "index",
+      "sha256": "abfb9f33e926742ba907430ced1133fabcf052cc6fd79335f0d9e1b9f434b022",
+      "size": 52351,
+      "normalized_sha256": "abfb9f33e926742ba907430ced1133fabcf052cc6fd79335f0d9e1b9f434b022"
+    },
+    "crates/launcher-index/src/fsindex/reader.rs": {
+      "role": "index",
+      "sha256": "a6e9e7d2e4179c73abb612fbb125b66953ece7b2223db38c83c2a6dc5b79fd85",
+      "size": 1403,
+      "normalized_sha256": "a6e9e7d2e4179c73abb612fbb125b66953ece7b2223db38c83c2a6dc5b79fd85"
+    },
+    "crates/launcher-index/src/fsindex/search.rs": {
+      "role": "index",
+      "sha256": "6e73ae968a839d3a1ec1d187eee4d26acb0591ec411449fb897d8e6431e5ab50",
+      "size": 2599,
+      "normalized_sha256": "6e73ae968a839d3a1ec1d187eee4d26acb0591ec411449fb897d8e6431e5ab50"
+    },
+    "crates/launcher-index/src/fsindex/sink.rs": {
+      "role": "index",
+      "sha256": "e219ca70b5f764840f24a23ec0d13db0f806ec72b26dec25be689ae877ae4fb5",
+      "size": 9197,
+      "normalized_sha256": "e219ca70b5f764840f24a23ec0d13db0f806ec72b26dec25be689ae877ae4fb5"
+    },
+    "crates/launcher-index/src/fsindex/writer.rs": {
+      "role": "index",
+      "sha256": "9a4aef0f0026f4b43495befe50baeedd01e9d17928f73e6b067413da4c2b57bb",
+      "size": 3398,
+      "normalized_sha256": "9a4aef0f0026f4b43495befe50baeedd01e9d17928f73e6b067413da4c2b57bb"
     },
     "crates/launcher-index/src/lib.rs": {
       "role": "index",
