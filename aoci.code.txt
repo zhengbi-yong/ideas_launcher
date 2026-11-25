@@ -4,7 +4,7 @@
 .gitattributes[FG3T]: F:全仓文本强制LF检出，覆盖autocrlf，保证AOCI基线跨平台字节一致 | R:- | A:- | S:-
 AGENTS.md[SG8S]: F:宿主Agent指令文件：注入AOCI认知层的使用合同、Overview与维护流程及收尾规则 | R:code:aoci.txt,code:aoci.meta.txt,code:aoci.code.txt | A:aoci_rules,aoci_overview,aoci_maintain,aoci_update_entry | S:整个文件即aoci:begin/end区块，由aoci生成；项目自有Agent指令应写在区块外，避免工具更新区块时冲突
 Cargo.toml[FG8T]: F:Cargo workspace清单：5个launcher crate成员、公共依赖与release优化配置（thin LTO/strip/panic=abort） | R:code:crates/ideas-design/Cargo.toml,code:crates/launcher-core/Cargo.toml,code:crates/launcher-index/Cargo.toml,code:crates/launcher-app/Cargo.toml,code:crates/launcher-service/Cargo.toml | A:workspace,release | S:-
-README.md[SG7L]: F:项目主文档：定位与性能目标、1.0.0双索引架构、查询管线与逐项渲染/索引优化实录、安装与使用说明、FFmpeg运行时获取与许可说明 | R:code:analysis/REPORT.md,code:analysis/RELEASE-GAP.md,code:analysis/EVERYTHING-REPORT.md | A:- | S:-
+README.md[SG7L]: F:项目主文档：定位与性能目标、1.0.0双索引架构、查询管线与逐项渲染/索引优化实录、安装与使用说明、FFmpeg运行时获取与许可说明 | R:code:analysis/REPORT.md,code:analysis/RELEASE-GAP.md,code:analysis/EVERYTHING-REPORT.md | A:- | S:双索引去重叠一节已更新为已修复状态：状态查询句柄权限是第二问题的根因，本机已实测生效
 .gitignore[FG4T]: F:Git忽略规则：构建产物（root与perf的target、dist）、FFmpeg二进制运行时、tmp-diag临时诊断与宿主编辑器配置 | R:code:tools/fetch-ffmpeg.ps1 | A:- | S:认知资产（aoci.txt/aoci.meta.txt/aoci.code.txt/AGENTS.md）绝不加入忽略——被忽略的文件会被scan静默跳过，索引建不起来
 
 ===/<repository>/analysis/===
@@ -27,7 +27,7 @@ Flow.Launcher.Plugin.Sys-clr-types.txt[SA4L]: F:内置插件Sys类型清单（9�
 Flow.Launcher.Plugin.Url-clr-types.txt[SA3S]: F:内置插件Url类型清单（8类型，URL/协议识别与打开） | R:code:analysis/REPORT.md | A:- | S:外部程序集逆向数据，非本仓库代码
 Flow.Launcher.Plugin.WebSearch-clr-types.txt[SA4M]: F:内置插件WebSearch类型清单（22类型，搜索建议SuggestionsAsync） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
 Flow.Launcher.Plugin.WindowsSettings-clr-types.txt[SA4L]: F:内置插件WindowsSettings类型清单（9类型，Windows设置项检索） | R:code:analysis/REPORT.md | A:- | S:外部FlowLauncher 2.1.4程序集逆向数据而非本仓库代码
-RELEASE-GAP.md[SA7L]: F:发布就绪度审计：全盘搜索逐项问题的根因与修法（裁剪交集、窗口高度、USN句柄权限、增量索引、快捷方式目标拼接等） | R:code:README.md,code:analysis/REPORT.md | A:- | S:README等文档以§号引用本文章节（如§1.15），增删或重排章节会断掉这些外部引用
+RELEASE-GAP.md[SA7L]: F:发布就绪度审计：全盘搜索逐项问题的根因与修法（裁剪交集、窗口高度、USN句柄权限、增量索引、快捷方式目标拼接等） | R:code:README.md,code:analysis/REPORT.md | A:- | S:README等文档以§号引用本文章节（如§1.15），增删或重排章节会断掉这些外部引用；§1.15末尾有2026-11-24后续说明
 REPORT.md[SA8L]: F:Flow Launcher 2.1.4逆向分析总报告：分层架构、查询管线逐跳还原、插件系统、原生边界、性能基线实测与Rust重实现设计推导 | R:code:README.md,code:analysis/EVERYTHING-REPORT.md,code:analysis/RELEASE-GAP.md | A:- | S:§8性能基线来自本机251个日志/374次启动的实测口径，仅代表当时那台机器；§9起的Rust设计结论均由该基线推导
 
 ===/<repository>/analysis/dev-logs/===
