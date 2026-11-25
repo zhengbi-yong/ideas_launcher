@@ -554,7 +554,6 @@ files.rs[DB7L]: F:文件与文件夹搜索：实时索引上的查询实现 | R:
 lib.rs[LB6T]: F:launcher-index根：程序/文件索引模块声明 | R:code:crates/launcher-index/Cargo.toml | A:- | S:-
 lnk.rs[KB6L]: F:纯Rust的.lnk快捷方式解析器 | R:code:crates/launcher-app/src/bin/lnk-dump.rs | A:- | S:路径字段按机器ACP解码；GBK(936)与CP1252各有断言分支，CP1252下这四字节与Latin-1重合
 mft.rs[KB8L]: F:NTFS主文件表直读：原始字节解析MFT记录 | R:code:analysis/EVERYTHING-REPORT.md,code:crates/launcher-index/src/fsindex.rs | A:- | S:需管理员权限；BPB/属性偏移取证见逆向报告§2
-usn.rs[KB7L]: F:USN/MFT枚举接口的NTFS索引：变更日志跟随、状态查询与日志创建、失败恢复计划 | R:code:analysis/RELEASE-GAP.md,code:crates/launcher-service/src/server.rs | A:journal_state,read_journal,create_journal,journal_recovery_plan | S:卷句柄须GENERIC_READ（QUERY与READ都要读数据权，attributes句柄让state全退化为0→1181永续）；日志句柄需FILE_READ_DATA（错误5教训）
 uwp.rs[IB6L]: F:UWP/微软商店应用索引 | R:code:crates/launcher-app/src/plugins/uwp.rs | A:- | S:-
 watch.rs[RB6L]: F:免管理员的目录变更监视 | R:code:crates/launcher-app/src/plugins/files.rs | A:- | S:USN要管理员时的替代路径
 win32.rs[IB7L]: F:Win32程序索引：六源程序枚举（开始菜单/注册表等） | R:code:analysis/REPORT.md | A:- | S:-
@@ -664,4 +663,12 @@ reader.rs[PD3T]: F:FileReader：索引缓存文件的分块BufReader | R:code:cr
 search.rs[CU3T]: F:IndexTarget：实现SearchTarget的索引条目视图（路径/别名/掩码惰性构建） | R:code:crates/launcher-core/src/search_syntax.rs | A:- | S:路径按需上溯构建，不常驻
 sink.rs[DA6M]: F:EntrySink：MFT枚举的条目汇聚端（含Lookup二分定位与父引用回填） | R:code:crates/launcher-index/src/fsindex/mod.rs,code:crates/launcher-index/src/fsindex/frn.rs | A:- | S:纯搬移自fsindex.rs；字段对fsindex树内可见
 writer.rs[PD3S]: F:ChunkWriter：索引文件分块写出，配io_priority低优先级写盘 | R:code:crates/launcher-index/src/fsindex/core.rs | A:- | S:块间暂停+低IO优先级：写索引不挡画面渲染
+
+===/<repository>/crates/launcher-index/src/usn/===
+mod.rs[AU7L]: F:usn模块根：Win32 FFI声明、Volume/UsnError、ntfs_volumes、FSCTL_CODES、公开数据类型与测试的聚合出口 | R:code:crates/launcher-index/src/lib.rs,code:crates/launcher-index/src/fsindex/sink.rs | A:Volume,UsnError,ntfs_volumes | S:纯搬移自usn.rs（非空行多重集已验证）；子模块经use super::*共享私有项；pub再导出保持usn::reason等外部路径不变
+mft.rs[KB7L]: F:FSCTL_ENUM_USN_DATA全盘MFT枚举与区间枚举（enumerate_volume/changed_since/with_handle） | R:code:crates/launcher-index/src/usn/mod.rs,code:crates/launcher-index/src/fsindex/build.rs | A:enumerate_volume,enumerate_changed_since,enumerate_mft | S:一次顺序读整表是全盘索引性能来源；枚举前置SeManageVolumePrivilege，失败即错误5；progress回调每轮必达不能重
+journal.rs[KB7L]: F:变更日志跟随：journal_state查询与创建（create_journal）、日志读取、USN记录解析与失败恢复计划 | R:code:crates/launcher-service/src/server.rs,code:crates/launcher-index/src/usn/mod.rs | A:journal_state,read_journal,create_journal,journal_recovery_plan,parse_usn_record | S:卷句柄须GENERIC_READ（QUERY/READ都要读数据权，attributes句柄→state全退化→1181永续）；建日志须先启用SeManageVolumePrivilege
+metadata.rs[KD6M]: F:文件身份与元数据：按FRN开句柄读元数据、file_identity、FRN父映射与属性判定 | R:code:crates/launcher-index/src/usn/mod.rs,code:crates/launcher-index/src/fsindex/build.rs | A:file_metadata,file_identity,build_parent_map,volume_root | S:按ID开句柄须FILE_FLAG_BACKUP_SEMANTICS；push_utf16/FILE_ID_LAYOUTS供journal共享
+privilege.rs[KM5M]: F:进程特权：is_elevated、token查询与SeManageVolumePrivilege启用（两种内核路径） | R:code:crates/launcher-index/src/usn/journal.rs,code:crates/launcher-index/src/usn/mft.rs | A:enable_manage_volume_privilege,is_elevated,enable_privilege | S:RtlAdjustPrivilege失败回退AdjustTokenPrivileges，特权是枚举与建日志的前置条件
+win32.rs[DD5S]: F:手工Win32 FFI：CreateFileW/DeviceIoControl/NtOpenFile/token内核原型与C结构体声明 | R:code:crates/launcher-index/src/usn/mod.rs | A:- | S:extern块不带可见性，函数级pub(in crate::usn)；结构体字段对usn树内公开
 
